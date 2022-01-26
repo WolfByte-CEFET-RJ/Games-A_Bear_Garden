@@ -7,18 +7,19 @@ using UnityEngine.SceneManagement;
 public class teste : MonoBehaviour
 {
 
-    public int vidaVilao, vidaPlayer;
-    public float timer;
+    public int vidaVilao, vidaPlayer;               //armazena os valores das vidas do vilao e do player
+    public float timer;                             //delimita o tempo de jogada do vilao
 
-    public Text vidaPlayerTxt;
-    public Text vidaVilaoTxt;
+    public Text vidaPlayerTxt;                      //Objeto de texto que mostra as vidas do player na tela
+    public Text vidaVilaoTxt;                       //Objeto de texto que mostra as vidas do vilao na tela
 
-    private int resultP, p, v, verificacao;
-
+    private int resultP, p, v, verificacao;         //resultP = valor retornado pela funcao 'playerResultado'
+                                                    // p e v = recebem o valor retornado pelas funcoes 'playerResultado' e 'jokenpoVilao'
+                                                    //verificacao = melhor explicita na funcao 'checkResultados'
    void Setup(){
        
-       vidaPlayer = 3;
-       vidaVilao = 3;
+       vidaPlayer = 5;
+       vidaVilao = 5;
        timer = 0;
 
    }
@@ -71,15 +72,18 @@ public class teste : MonoBehaviour
        switch(a){
 
            case 1:
+            a = (int) Random.Range(1, 4);
             Debug.Log("\nVilao: Pedra!");
            break;
 
            case 2:
             Debug.Log("\nVilao: Tesoura!");
+            a = (int) Random.Range(1, 4);
            break;
 
            case 3:
             Debug.Log("Vilao: Papel!");
+            a = (int) Random.Range(1, 4);
            break;
        }
 
