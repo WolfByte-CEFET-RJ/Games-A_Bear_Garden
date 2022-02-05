@@ -2,53 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class tirinho : MonoBehaviour
+public class Tirinho : MonoBehaviour
 {
 
-    public GameObject tirin;
-    public GameObject player;
-    public float x,y,z;
-    public float speedT;
-
-
+    public float tirinhoSpeed = 20f;
+    public Rigidbody2D rb;
+  
     void Start()
     {
-
-       
-
+        rb.velocity = transform.up * tirinhoSpeed;
     }
 
-    
-    
-    void Update()
-    {
-
-        //movimenta o tiro para cima 
-        transform.Translate(Vector3.up * speedT * Time.deltaTime);
-
-        // permite que o tiro acompanhe o Player
-
-        x = player.transform.position.x;
-        y = player.transform.position.y;
-        z = player.transform.position.z;
-
-        GameObject t;
-
-        if (Input.GetKeyDown(KeyCode.S)){
-
-            t = Instantiate(tirin) as GameObject;
-            t.transform.position = new Vector3(x,y,z);
-        
-        }
-
-    }
-
-    //destrói tiro fora da tela
-
-    void OnBecameInvisible()
-    {
-        Destroy(this.gameObject);
-    }
-
-
+    void onTriggerEnter2D()
+	{
+        Destroy(gameObject);
+	}
 }

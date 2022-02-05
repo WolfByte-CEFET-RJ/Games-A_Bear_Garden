@@ -25,4 +25,9 @@ public class NewBehaviourScript : MonoBehaviour
         transform.Translate(Vector3.up * verticalI * speed * Time.deltaTime);
 
     }
+
+    void getDistanceFromBorder()
+	{
+        
+	}
 }
