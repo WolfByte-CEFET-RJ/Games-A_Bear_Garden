@@ -9,12 +9,6 @@ public class NewBehaviourScript : MonoBehaviour
     public float speed;
     public float verticalI;
 
-    void Start()
-    {
-
-        
-    }
-
     void Update()
     {
 
@@ -25,9 +19,4 @@ public class NewBehaviourScript : MonoBehaviour
         transform.Translate(Vector3.up * verticalI * speed * Time.deltaTime);
 
     }
-
-    void getDistanceFromBorder()
-	{
-        
-	}
 }

@@ -9,6 +9,8 @@ public class EnemyMovement : MonoBehaviour
 	private int timesEnemyMoved = 0; //vezes que o inimigo se moveu
 	private int timesEnemyPassedThroughScreen = 0; //número de vezes que eles passaram pela tela
 	private Vector3 direction; //vetor de atribuição da direção
+	public GameObject shootObject;
+	public Transform firePosition;
 
 	void Update()
 	{
@@ -19,7 +21,7 @@ public class EnemyMovement : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.gameObject.tag == "Tiro")
-			Destroy(this.gameObject);
+			Destroy(gameObject);
 	}
 
 	void enemyMovement()
@@ -28,7 +30,7 @@ public class EnemyMovement : MonoBehaviour
 		enemyMovementTimer += Time.deltaTime;
 
 		// numero de movimentos recebe 6 se o a variável de número de vezes que passou na tela for 0 e 12 se for em qualquer outra vez
-		attemptingMoves = timesEnemyPassedThroughScreen == 0 ? 6: 6*2; // pensar em uma maneira de deixar menos hard coded
+		attemptingMoves = timesEnemyPassedThroughScreen == 0 ? 6 : 6 * 2; // pensar em uma maneira de deixar menos hard coded
 
 		if (timesEnemyMoved == attemptingMoves) // se o número de vezes que ele se mexeu for igual ao número máximo que esperamos
 		{
@@ -38,7 +40,7 @@ public class EnemyMovement : MonoBehaviour
 
 		// se o número de vezes que passou pela tela tiver mod 2 == 0 recebe movimento para a direita
 		// senão movimento para a esquerda
-		direction = timesEnemyPassedThroughScreen % 2 == 0 ? Vector3.right : Vector3.left; 
+		direction = timesEnemyPassedThroughScreen % 2 == 0 ? Vector3.right : Vector3.left;
 
 		//movimento coordenado do inimigo -> de 1 em 1s o inimigo se mexe
 		if (enemyMovementTimer >= enemyTimer)
@@ -48,6 +50,11 @@ public class EnemyMovement : MonoBehaviour
 			timesEnemyMoved++; // toda vez que ele se move a variável aumenta 1
 			enemyMovementTimer = 0; //e o timer 0
 		}
+	}
+
+	void shoot()
+	{
+		Instantiate(shootObject, firePosition.position, firePosition.rotation);
 	}
 }
 
