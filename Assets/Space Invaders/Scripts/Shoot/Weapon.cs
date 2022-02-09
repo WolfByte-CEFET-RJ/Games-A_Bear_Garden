@@ -5,7 +5,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
 
-    public GameObject shootObject;
+    public GameObject shootObject; //prefab = tirinho
     public Transform firePoint;
 
     // Update is called once per frame
@@ -15,11 +15,11 @@ public class Weapon : MonoBehaviour
         //Esse comando também acaba com o problema dos tiros estarem se multiplicando
 		if (Input.GetButtonDown("Jump"))
 		{
-            shoot();
+            Shoot();
 		}
     }
 
-    void shoot()
+    void Shoot()
 	{
         Instantiate(shootObject, firePoint.position, firePoint.rotation);
 	}
