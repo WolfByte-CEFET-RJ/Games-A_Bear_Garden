@@ -6,6 +6,8 @@
 [Bb]uild
 /[Bb]uilds/
 /[Ll]ibrary/
+/[Ll]ogs/
+/[Mm]emoryCaptures/
 sysinfo.txt
 *.stackdump
 /Assets/AssetStoreTools*
@@ -47,4 +49,3 @@ Corridor/Library/ShaderCache/
 Corridor/Library/metadata/
 Assets/PolygonFarm/Demo/Materials.meta
 Assets/StreamingAssets/build_info.txt.meta
-Assets/StreamingAssets/build_info.txt
