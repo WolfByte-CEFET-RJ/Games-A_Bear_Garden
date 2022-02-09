@@ -9,22 +9,15 @@ public class EnemyMovement : MonoBehaviour
 	private int timesEnemyMoved = 0; //vezes que o inimigo se moveu
 	private int timesEnemyPassedThroughScreen = 0; //número de vezes que eles passaram pela tela
 	private Vector3 direction; //vetor de atribuição da direção
-	public GameObject shootObject;
-	public Transform firePosition;
+	[SerializeField] private Transform firePos;
+
 
 	void Update()
 	{
-		enemyMovement();
+		Movement();
 	}
 
-	//Tiro -> destroi inimigo
-	void OnTriggerEnter2D(Collider2D other)
-	{
-		if (other.gameObject.tag == "Tiro")
-			Destroy(gameObject);
-	}
-
-	void enemyMovement()
+	void Movement()
 	{
 		// atribuição do tempo
 		enemyMovementTimer += Time.deltaTime;
@@ -52,9 +45,15 @@ public class EnemyMovement : MonoBehaviour
 		}
 	}
 
-	void shoot()
+	//Tiro -> destroi inimigo
+	void OnTriggerEnter2D(Collider2D other)
 	{
-		Instantiate(shootObject, firePosition.position, firePosition.rotation);
+		if (other.gameObject.tag == "Tiro")
+			Destroy(this.gameObject);
 	}
+
+	/* melhor usar Properties que variaveis publicas*/ 
+	public Transform FirePosition 
+	{ get { return firePos; } }
 }
 

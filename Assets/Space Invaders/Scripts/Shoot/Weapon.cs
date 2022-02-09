@@ -5,7 +5,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
 
-    public GameObject shootObject; //prefab = tirinho
+    public Tirinho shootObject; //prefab = tirinho
     public Transform firePoint;
 
     // Update is called once per frame
@@ -21,6 +21,7 @@ public class Weapon : MonoBehaviour
 
     void Shoot()
 	{
-        Instantiate(shootObject, firePoint.position, firePoint.rotation);
+        shootObject.playerShoot = true;
+        Instantiate(shootObject.gameObject, firePoint.position, firePoint.rotation);
 	}
 }

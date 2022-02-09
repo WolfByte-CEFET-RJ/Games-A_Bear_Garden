@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemiesShoot : MonoBehaviour
+public class EnemiesShoot : EnemyMovement
 {
-    public GameObject[] enemies;
-    private float triggerTime;
+    [SerializeField] List<EnemyMovement> enemies = new List<EnemyMovement>();
+    [SerializeField] private float triggerTime;
+    private int enemyNumber = 0;
+
+    [SerializeField] private Tirinho shootObject;
 
     void Start()
     {
@@ -18,10 +21,14 @@ public class EnemiesShoot : MonoBehaviour
 
 		if (triggerTime >= 2)
 		{
-            int enemyNumber = Random.Range(0, 6);
-
+            enemyNumber = Random.Range(0, enemies.Count);
+            Shoot(enemies[enemyNumber].FirePosition);
             triggerTime = 0;
 		}
         
+    }
+    void Shoot(Transform firePosition)
+    {
+        Instantiate(shootObject.gameObject, firePosition.position, firePosition.rotation);
     }
 }

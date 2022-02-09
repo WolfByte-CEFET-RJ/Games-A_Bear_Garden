@@ -5,11 +5,17 @@ using UnityEngine;
 public class Tirinho : MonoBehaviour
 {
 
-    public float tirinhoSpeed = 20f;
-    public Rigidbody2D rb;
+    private float tirinhoSpeed = 20f;
+    [SerializeField] private Rigidbody2D rb;
+    public bool playerShoot = false;
   
     void Start()
     {
+
+        //if(playerShoot)
+        //    rb.velocity = transform.up * tirinhoSpeed;
+        //else
+        //    rb.velocity = -transform.up * tirinhoSpeed;
         rb.velocity = transform.up * tirinhoSpeed;
     }
 
@@ -22,14 +28,19 @@ public class Tirinho : MonoBehaviour
          * Se o "tirinho" acertar o inimigo, acontece x
          * Se acertar o player, acontece 2x
          * 
-         * para cada item acertado tem uma consequencia diferente
+         * para cada item acertado uma consequencia diferente
          */
+
         if (other.gameObject.tag == "Enemy")
+        {
+            //playerShoot = false;
             Destroy(gameObject);
+        }
 
         if (other.gameObject.tag == "Player")
-            print("acertou o player");
+            Destroy(gameObject);
     }
+
 
 	private void OnBecameInvisible()
 	{
