@@ -1,0 +1,67 @@
+trackSelection = true
+fetchPreview = true
+wantsMore = false
+keepOpen = false
+itemIconSize = 1
+queryFolder = "Assets"
+onBoardingDoNotAskAgain = true
+showPackageIndexes = false
+showStatusBar = false
+debounceMs = 250
+scopes = {
+	"last_search.B1CC2302" = ""
+	"m_ShownPanels.B1CC2302" = "3"
+	"m_SideBarSplitter.B1CC2302" = "180"
+	"m_DetailsPanelSplitter.B1CC2302" = "700"
+	"currentGroup.B1CC2302" = "scene"
+	"last_search.4DA8DDFE" = ""
+	"m_ShownPanels.4DA8DDFE" = "3"
+	"m_SideBarSplitter.4DA8DDFE" = "180"
+	"m_DetailsPanelSplitter.4DA8DDFE" = "700"
+	"currentGroup.4DA8DDFE" = "asset"
+}
+providers = {
+	asset = {
+		active = true
+		priority = 25
+		defaultAction = null
+	}
+	store = {
+		active = true
+		priority = 100
+		defaultAction = null
+	}
+	find = {
+		active = true
+		priority = 25
+		defaultAction = null
+	}
+	log = {
+		active = false
+		priority = 210
+		defaultAction = null
+	}
+	object = {
+		active = true
+		priority = 55
+		defaultAction = null
+	}
+	packages = {
+		active = true
+		priority = 90
+		defaultAction = null
+	}
+	scene = {
+		active = true
+		priority = 50
+		defaultAction = null
+	}
+	query = {
+		active = true
+		priority = 100
+		defaultAction = null
+	}
+}
+recentSearches = [
+]
+savedSearchesSortOrder = 0
