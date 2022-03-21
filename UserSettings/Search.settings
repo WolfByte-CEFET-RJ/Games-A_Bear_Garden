@@ -64,4 +64,4 @@ providers = {
 }
 recentSearches = [
 ]
-savedSearchesSortOrder = 0
+savedSearchesSortOrder = 1

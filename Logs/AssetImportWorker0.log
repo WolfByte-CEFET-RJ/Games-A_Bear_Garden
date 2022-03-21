@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.0b3 (202fb86be42c) revision 2109368'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19044.1526; Version 2009; 64bit' Language: 'pt' Physical Memory: 16323 MB
+OS: 'Windows 10 Pro; OS build 19044.1586; Version 2009; 64bit' Language: 'pt' Physical Memory: 16323 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ D:/OneDrive - cefet-rj.br/Cefet/Projeto-IEEE-games-2021.2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64345
+63296
 Successfully changed project path to: D:/OneDrive - cefet-rj.br/Cefet/Projeto-IEEE-games-2021.2
 D:/OneDrive - cefet-rj.br/Cefet/Projeto-IEEE-games-2021.2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 120.68 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 129.92 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.0b3 (202fb86be42c)
 [Subsystems] Discovering subsystems at path D:/Unity hub/2021.1.0b3/Editor/Data/Resources/UnitySubsystems
@@ -35,2260 +35,254 @@ Initialize mono
 Mono path[0] = 'D:/Unity hub/2021.1.0b3/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity hub/2021.1.0b3/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity hub/2021.1.0b3/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56756
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity hub/2021.1.0b3/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Unity hub/2021.1.0b3/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.002161 seconds.
+Registered in 0.002719 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 103.93 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 114.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.915 seconds
+- Completed reload, in  2.162 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003490 seconds.
+Registered in 0.004253 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 125.70 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 120.15 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.359 seconds
+- Completed reload, in  1.574 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3350 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 259.2 MB.
-System memory in use after: 259.4 MB.
+Unloading 3356 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 259.4 MB.
+System memory in use after: 259.6 MB.
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 3805.
-Total: 2.997300 ms (FindLiveObjects: 0.344900 ms CreateObjectMapping: 0.223500 ms MarkObjects: 2.324300 ms  DeleteObjects: 0.103600 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Labirinto/Prefabs/Casa01.prefab
-  artifactKey: Guid(987de4f43348f1a46aa0c8c06f9edcd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Prefabs/Casa01.prefab using Guid(987de4f43348f1a46aa0c8c06f9edcd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9dcce949c875e90409464888055c7fb') in 0.148845 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004666 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.173 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3339 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 262.4 MB.
-System memory in use after: 262.6 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3814.
-Total: 3.130600 ms (FindLiveObjects: 0.484300 ms CreateObjectMapping: 0.391600 ms MarkObjects: 2.232900 ms  DeleteObjects: 0.020600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004255 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.180 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3339 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 262.5 MB.
-System memory in use after: 262.7 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3817.
-Total: 3.917300 ms (FindLiveObjects: 0.547100 ms CreateObjectMapping: 0.422300 ms MarkObjects: 2.895000 ms  DeleteObjects: 0.051000 ms)
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 3811.
+Total: 3.075000 ms (FindLiveObjects: 0.356800 ms CreateObjectMapping: 0.258800 ms MarkObjects: 2.342500 ms  DeleteObjects: 0.115600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 415.032951 seconds.
-  path: Assets/Labirinto/Arts
-  artifactKey: Guid(79ba39cf6db8fbc46a9e3534e6e58425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts using Guid(79ba39cf6db8fbc46a9e3534e6e58425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81f6a733b4b0f50618a426439e3b501') in 0.010861 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.306131 seconds.
-  path: Assets/Labirinto/Arts/Square.png
-  artifactKey: Guid(cf3e153d33819304f90640912763b29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Square.png using Guid(cf3e153d33819304f90640912763b29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12e26f820b2d0d1b63f5d2aaf8d9cc4d') in 0.146250 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.101036 seconds.
-  path: Assets/Labirinto/Arts/Dado
-  artifactKey: Guid(74d98c68ee09fbf46a7cb1e3d7976d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado using Guid(74d98c68ee09fbf46a7cb1e3d7976d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99968ae1d4c25c54aebdd43ba1afac1d') in 0.009546 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 60.219712 seconds.
-  path: Assets/Labirinto/Arts/Dado/Square.png
-  artifactKey: Guid(cf3e153d33819304f90640912763b29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Square.png using Guid(cf3e153d33819304f90640912763b29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78033e6d4c6d064bdf19fe66950439dd') in 0.011155 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 193.386648 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/9-Sliced.png
-  artifactKey: Guid(cc35afd292fc349128b36a291fb3a165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/9-Sliced.png using Guid(cc35afd292fc349128b36a291fb3a165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e1b008a26ef51f6f98556337a0eaaf') in 0.062348 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.021821 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/HexagonPointed-Top.png
-  artifactKey: Guid(4b2a04fdbe0ef4d8da8f90eaca817cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/HexagonPointed-Top.png using Guid(4b2a04fdbe0ef4d8da8f90eaca817cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9977e2cf9171bb3202acabbae67f989c') in 0.065388 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.022590 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/HexagonFlat-Top.png
-  artifactKey: Guid(a9716c16a44a94eed9b5c90fbf4d9bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/HexagonFlat-Top.png using Guid(a9716c16a44a94eed9b5c90fbf4d9bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c641c5ed4133a927cf01d8155ddb0fd') in 0.048749 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.024646 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/CircleMask.png
-  artifactKey: Guid(87aaca0a643d54397ba969dab4fc8875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/CircleMask.png using Guid(87aaca0a643d54397ba969dab4fc8875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd9dcbe7b26a028a362b53f48bc6776') in 0.033491 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.021403 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/Circle.png
-  artifactKey: Guid(4adeaf2d2b1c7417e89f026626d8264f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/Circle.png using Guid(4adeaf2d2b1c7417e89f026626d8264f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd156ecff12e7629f2a002bad5a84d2') in 0.021825 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.022698 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/Square.png
-  artifactKey: Guid(db750325989564987a34393247d883b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/Square.png using Guid(db750325989564987a34393247d883b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb3fe4c71998bf5f998a5348f3f685b2') in 0.040882 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.022707 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/Capsule.png
-  artifactKey: Guid(34587324d412940a79d530020c957dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/Capsule.png using Guid(34587324d412940a79d530020c957dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '598c2314c40f3ecf15a4c6a5bb83c93c') in 0.034446 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.023781 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/IsometricDiamond.png
-  artifactKey: Guid(0d267bc78a0864eb48358689b29ed20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/IsometricDiamond.png using Guid(0d267bc78a0864eb48358689b29ed20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d12d4b0bb122cd024ddf949d7222501') in 0.041803 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 47.709078 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
-  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfc25dde658bd608b4b2f33daab7c220') in 0.038224 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 43.434993 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 2 Variant.prefab
-  artifactKey: Guid(e2a3c40794ec81d4fa72cc862f93aa5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 2 Variant.prefab using Guid(e2a3c40794ec81d4fa72cc862f93aa5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea5718581eb58f81beae415997ef855') in 0.022033 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 30.087102 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 3.prefab
-  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d383c596aee1e0da41f55ecaba7292b') in 0.014009 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 50.194372 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 2.prefab
-  artifactKey: Guid(2d70dca701184d74599977fadf3f2e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 2.prefab using Guid(2d70dca701184d74599977fadf3f2e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de0524f2fdea47c786198eb20361d19b') in 0.036123 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.687932 seconds.
   path: Assets/Labirinto/Arts/Dado/Dado 4.prefab
-  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a7c7b59f07eb67e8e4fc9c0a63142f') in 0.016243 seconds 
+  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/fe8f43dbabc710041abfd97126315b60.asset.1.index for Assets/Labirinto/Arts/Dado/Dado 4.prefab with Types
+ -> (artifact id: 'a8e94cca296ba70fcd18a3b8783461ad') in 0.201653 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 25.706779 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 5.prefab
-  artifactKey: Guid(b18b4de52c96ba943a026a488dcbbff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 5.prefab using Guid(b18b4de52c96ba943a026a488dcbbff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e21b70a980911cd7fb6ca6b19db8a73d') in 0.018607 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.746140 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 6.prefab
-  artifactKey: Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 6.prefab using Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d6d404165edc6b59d7cd9efdb78239d') in 0.015205 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 151.447448 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro
-  artifactKey: Guid(6dcb0b680dc324f47860b5a37dc70e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro using Guid(6dcb0b680dc324f47860b5a37dc70e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eed3d826f2fc4ec436b303331a838747') in 0.008253 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.128652 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/New Prefab.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/New Prefab.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd33547b9c53b6e8b8dd7cd03954087') in 0.009100 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.273637 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfbc720f9759f926bb37796b899a07d3') in 0.007873 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.307837 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30db782d611a2c5d8d095049e7d1c00b') in 0.028982 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.189733 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8029d7021ef12f5ba777f8f40f4a494') in 0.038912 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.160197 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd93c01b061a55b6a12c8899d43cc6665') in 0.013815 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.045987 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c4821958bc0612ffa76ccd6feb5533c') in 0.015071 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.225962 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20bc413dead8d96874ccefc3f40ed652') in 0.017740 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.407051 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7185cf99950eb5f0a0517fc4c895bfc0') in 0.029041 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.598891 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94fe57e975041fe0110528088c570c98') in 0.026401 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.713014 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c33f462ed08af5df2979836af0f6c1e') in 0.010789 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 79.330990 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef0f7ecfbebac8ec4c6b7982e30250b9') in 0.028154 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.021462 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f50352082cb6bac588179ca9ba616b0e') in 0.018688 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.329748 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b04af95869376808cbb0c2e36eb84cd9') in 0.012612 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.021914 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49e3a06eb3cecaea8290e5aaac4608d8') in 0.014190 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 376.915931 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9896c38f4fe21b4263a4ec44fd385b4') in 0.032812 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.020698 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e986ec3cd5b5efc3acf5e2050dc76f83') in 0.012548 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.407635 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9c1c2529fc68e30334125848f5cdfa') in 0.014072 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.023318 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00f797099886cf056db912bec50d09bd') in 0.013905 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.573736 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45210c852ad084ac8958eb4c09153798') in 0.020851 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.021784 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88f54e978e562787c0f14f1c6b2663d0') in 0.012136 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.961463 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0088997d3733e0a9bf976bc5ba829d59') in 0.012592 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.018542 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f32bd16d570c26a0bba0024641f02f4') in 0.061874 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 341.830800 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e4aa3ba894fadfd7ac75e6dfdc8b743') in 0.012266 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.022977 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f998aa0ce92059a4ab6b1b6a26e5aa65') in 0.012672 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 473.606376 seconds.
-  path: Assets/Labirinto/Scripts/GameControle.cs
-  artifactKey: Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/GameControle.cs using Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294283513476e7e93bea7252745e5947') in 0.028724 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003645 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.570 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3348 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.4 MB.
-System memory in use after: 267.7 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3980.
-Total: 3.059600 ms (FindLiveObjects: 0.346200 ms CreateObjectMapping: 0.205600 ms MarkObjects: 2.469500 ms  DeleteObjects: 0.036100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 4540.789762 seconds.
-  path: Assets/Labirinto/Scripts/GameControle.cs
-  artifactKey: Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/GameControle.cs using Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ecd7fcdeb3c44ee7d148699ffc9a6a0') in 0.118740 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.913267 seconds.
+  Time since last request: 0.025942 seconds.
   path: Assets/Labirinto/Scripts/Dados.cs
-  artifactKey: Guid(d992f7fbf3815d84780a7b94ef40f044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/Dados.cs using Guid(d992f7fbf3815d84780a7b94ef40f044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0408924435b2ca44cbe0098ea5292b5') in 0.009567 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003921 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.443 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.1 MB.
-System memory in use after: 267.4 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3984.
-Total: 3.160100 ms (FindLiveObjects: 0.332700 ms CreateObjectMapping: 0.156100 ms MarkObjects: 2.649900 ms  DeleteObjects: 0.020500 ms)
-
+  artifactKey: Guid(d992f7fbf3815d84780a7b94ef40f044) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Scripts/Dados.cs using Guid(d992f7fbf3815d84780a7b94ef40f044) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/16d953d78bf94a74388d7d6dcf0f5313.asset.1.index for Assets/Labirinto/Scripts/Dados.cs with Types
+ -> (artifact id: '4db3682809c6fd19ce2bf941fe3dea31') in 0.027167 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 907.856934 seconds.
-  path: Assets/Labirinto/Scripts/GameControle.cs
-  artifactKey: Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/GameControle.cs using Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003c7f56dc5b3c7cb209e476d594a115') in 0.009146 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003657 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.268 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.2 MB.
-System memory in use after: 267.4 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3987.
-Total: 3.452700 ms (FindLiveObjects: 0.393600 ms CreateObjectMapping: 0.267200 ms MarkObjects: 2.736100 ms  DeleteObjects: 0.055000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004561 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.320 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.23 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.2 MB.
-System memory in use after: 267.4 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3990.
-Total: 4.442500 ms (FindLiveObjects: 0.486100 ms CreateObjectMapping: 0.311700 ms MarkObjects: 3.612400 ms  DeleteObjects: 0.031000 ms)
-
+  Time since last request: 0.027356 seconds.
+  path: Assets/Labirinto/Scripts/Tabuleiro.cs
+  artifactKey: Guid(7fd909d3b8f9c534c96132be73fa4d23) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Scripts/Tabuleiro.cs using Guid(7fd909d3b8f9c534c96132be73fa4d23) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/fc78a6b8b77d6584e8db69c6f8cf7bdc.asset.1.index for Assets/Labirinto/Scripts/Tabuleiro.cs with Types
+ -> (artifact id: '622ba65ca584b464078bef8631161e8a') in 0.011899 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 249.847343 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa52cc1303f0e08756ef38c33af3f1cd') in 0.076253 seconds 
+  Time since last request: 0.028651 seconds.
+  path: Assets/Labirinto/Arts/Dado
+  artifactKey: Guid(74d98c68ee09fbf46a7cb1e3d7976d04) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Arts/Dado using Guid(74d98c68ee09fbf46a7cb1e3d7976d04) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/4b48167dca870434a96588016194c63f.asset.1.index for Assets/Labirinto/Arts/Dado with Types
+ -> (artifact id: 'c9dfe8a6ef16ae3642d5c84138adee6a') in 0.009920 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.018841 seconds.
+  Time since last request: 0.026185 seconds.
   path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a54aa61ba55820f68f4ae532139336c0') in 0.031549 seconds 
+  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/f165496656ff4ac498fb125adc2726ba.asset.1.index for Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab with Types
+ -> (artifact id: '19ce42b6eb4bac8dd2699afc1e2188cf') in 0.010568 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 145.871714 seconds.
-  path: Assets/Jokenpo
-  artifactKey: Guid(8f7a3612be7af264f8896852380547f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Jokenpo using Guid(8f7a3612be7af264f8896852380547f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6d623265ecc47979be6cb8d48ca0f6b') in 0.006730 seconds 
+  Time since last request: 0.028551 seconds.
+  path: Assets/Labirinto/Labirinto.unity
+  artifactKey: Guid(2b5ef2c878f2c6e4fbcad3adec465d84) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Labirinto.unity using Guid(2b5ef2c878f2c6e4fbcad3adec465d84) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/875197b8e4e05fa4ea3a683f0f9423d2.asset.1.index for Assets/Labirinto/Labirinto.unity with Types
+ -> (artifact id: '5aa520e5cacd5a883f890575ad8f73cc') in 0.010984 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.420121 seconds.
-  path: Assets/Jokenpo/Audio
-  artifactKey: Guid(8af75803660161445ab656dd7bcb7bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Jokenpo/Audio using Guid(8af75803660161445ab656dd7bcb7bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8785c07627ccd6f12dfb240666db227e') in 0.006275 seconds 
+  Time since last request: 0.028307 seconds.
+  path: Assets/Labirinto/Arts/Palette/Palet01.prefab
+  artifactKey: Guid(13c1cff68fda76843bd391b6083be0f0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Arts/Palette/Palet01.prefab using Guid(13c1cff68fda76843bd391b6083be0f0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/505a2108286114648a16aa22346dbc83.asset.1.index for Assets/Labirinto/Arts/Palette/Palet01.prefab with Types
+ -> (artifact id: 'df179ad536636ae26bbf31eeff6a5c10') in 0.013141 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.772184 seconds.
-  path: Assets/Jokenpo/Arts
-  artifactKey: Guid(d17e8f2070f197a449c743e235f4ebfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Jokenpo/Arts using Guid(d17e8f2070f197a449c743e235f4ebfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd92a3a6ebe29390b468155f057746a78') in 0.007414 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.396476 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
-  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc4a56e1b26542564ad683b3afdbcede') in 0.017369 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.019606 seconds.
+  Time since last request: 0.027129 seconds.
   path: Assets/Labirinto/Arts/Dado/Dado 3.prefab
-  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30e9ba841614febddd8c9d7d380f2efc') in 0.015875 seconds 
+  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/4ecc610e4be63164e8e66ce1978badc4.asset.1.index for Assets/Labirinto/Arts/Dado/Dado 3.prefab with Types
+ -> (artifact id: '9fa8b999e91263537bd6d2bf881cdf36') in 0.010814 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.950553 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
-  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a87fc8ce8778ce3b0d5d74860e5e3246') in 0.014203 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.019318 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 3.prefab
-  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b34060e6c1f7c7a7676970b385cfb4fa') in 0.015862 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.412205 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
-  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6734302728ed40aa907bccb354775703') in 0.025914 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.019248 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 3.prefab
-  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e85bcac3c7c4bd37b0823f153f1539') in 0.012837 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.936732 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
-  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae346bb05ddf0dd1a7c21e8f36f13186') in 0.018883 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.017011 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 3.prefab
-  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a516b1427bde0d5b87f9b55ada9c9e81') in 0.034424 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.362048 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
-  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd289ec215f274454f2cbeb4ebec67919') in 0.014072 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.018578 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 3.prefab
-  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca64948c1df600abde6529b90225ec60') in 0.027356 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.786235 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
-  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e21e86eae762628ef73adcc7a0756c') in 0.013151 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.018254 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 3.prefab
-  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3fc0135a79b2069edb89d595afb4b3') in 0.011153 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.804697 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
-  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22bf47e089d8c8a1ca9aa0d250ef2ec3') in 0.021220 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.016671 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 3.prefab
-  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a521f680438aaf63eb9c05c6c443c6') in 0.013567 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.833572 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
-  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '222588c5ff2b559c02b143a69f7d0319') in 0.015568 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.016750 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 3.prefab
-  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f70e071f65e5968d562df949a9b29f1') in 0.017100 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.548185 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
-  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96b14d48db3fec45f6710b78200b4f20') in 0.016009 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.017536 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 3.prefab
-  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d9f14b45a09170fab2247a3310ab665') in 0.009740 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.229809 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
-  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd13e436960d4609ec6deb3a29b8601b') in 0.013009 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.016402 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 3.prefab
-  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6417962853f59471fde17bb017dde10') in 0.014336 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.951645 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
-  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c96754196473259bc59b7b919846473') in 0.016672 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.017251 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 3.prefab
-  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c561acedea0bd13ac021ea72296cc31') in 0.013811 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.193184 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
-  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82dc2263b6e1f9a8cd92d519827e057f') in 0.014227 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.017430 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 3.prefab
-  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db9fd28416761fbb741d90b506bf8ca4') in 0.012313 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 162.482178 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 2.prefab
-  artifactKey: Guid(2d70dca701184d74599977fadf3f2e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 2.prefab using Guid(2d70dca701184d74599977fadf3f2e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36f69f8108498d6f392ee7e5437c465d') in 0.059594 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.557029 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 2.prefab
-  artifactKey: Guid(2d70dca701184d74599977fadf3f2e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 2.prefab using Guid(2d70dca701184d74599977fadf3f2e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e995e85e16040350cf65cf4f4bb7a2c') in 0.022135 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.610063 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 2.prefab
-  artifactKey: Guid(2d70dca701184d74599977fadf3f2e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 2.prefab using Guid(2d70dca701184d74599977fadf3f2e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec30657c64a14f34f0dd1ef4700f7853') in 0.059297 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.576218 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 2.prefab
-  artifactKey: Guid(2d70dca701184d74599977fadf3f2e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 2.prefab using Guid(2d70dca701184d74599977fadf3f2e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29f05f36c0516339c50d14a18ff6d17c') in 0.012481 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.000222 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 4.prefab
-  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '860db9267b206e96f5f9971a835eb2b6') in 0.262418 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.536249 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 4.prefab
-  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2963a0c0abc0e7d4a1fb19bac2e3eb29') in 0.015811 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.551972 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 4.prefab
-  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c758227e7add1a2d4ac4eca54472a8f') in 0.079219 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.848530 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 4.prefab
-  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57c9dfab41b0bdc02b5b83a82115468e') in 0.031107 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.677205 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 4.prefab
-  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c9e7d6a0259ff629b74d3ccaff253ed') in 0.055471 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.336947 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 4.prefab
-  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad65ae5a2972d42fa85aaa0d7be36ea6') in 0.013177 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.917556 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 4.prefab
-  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '193f0a56288e90e1e61b97e6f5066493') in 0.031793 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.070552 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 4.prefab
-  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0040514482fa61f36690821808e79d36') in 0.016402 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.789986 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 4.prefab
-  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93fab857bb08437d89ac396aa1dd9659') in 0.014311 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.199469 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 4.prefab
-  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82692f45261dc3587073db3cd36c6076') in 0.015476 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.605247 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 4.prefab
-  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3eac46f5318758f6697aa6e03288eff') in 0.029663 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.987478 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 4.prefab
-  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2f71af0dc607bc8da5ef97d8837318d') in 0.013026 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.007555 seconds.
+  Time since last request: 0.026585 seconds.
   path: Assets/Labirinto/Arts/Dado/Dado 5.prefab
-  artifactKey: Guid(b18b4de52c96ba943a026a488dcbbff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 5.prefab using Guid(b18b4de52c96ba943a026a488dcbbff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b90e01715b478362c081e82ae549b84d') in 0.016162 seconds 
+  artifactKey: Guid(b18b4de52c96ba943a026a488dcbbff7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Arts/Dado/Dado 5.prefab using Guid(b18b4de52c96ba943a026a488dcbbff7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/159dbac1bf401fa4c85f1f709a4f3713.asset.1.index for Assets/Labirinto/Arts/Dado/Dado 5.prefab with Types
+ -> (artifact id: 'c54f1896b0844ecc26606248656f0732') in 0.010873 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.506334 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 5.prefab
-  artifactKey: Guid(b18b4de52c96ba943a026a488dcbbff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 5.prefab using Guid(b18b4de52c96ba943a026a488dcbbff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9982a335ebb8af80ba1b5a2c298343') in 0.013274 seconds 
+  Time since last request: 0.026493 seconds.
+  path: Assets/Labirinto/Scripts/Player 02/GameControle02.cs
+  artifactKey: Guid(7e436968451021144995f9fe52610f18) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Scripts/Player 02/GameControle02.cs using Guid(7e436968451021144995f9fe52610f18) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/c45231d55f6eb2a42ae24fb84298aafb.asset.1.index for Assets/Labirinto/Scripts/Player 02/GameControle02.cs with Types
+ -> (artifact id: '357dc019377a91cda43cfc31f7bd7f44') in 0.012057 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.398801 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 5.prefab
-  artifactKey: Guid(b18b4de52c96ba943a026a488dcbbff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 5.prefab using Guid(b18b4de52c96ba943a026a488dcbbff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50cf8d0b9725664834fefc182c287533') in 0.014390 seconds 
+  Time since last request: 0.026627 seconds.
+  path: Assets/Labirinto/Scripts/Floor.cs
+  artifactKey: Guid(08f9b6b3aefbf7e40bf8fb755ed3116b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Scripts/Floor.cs using Guid(08f9b6b3aefbf7e40bf8fb755ed3116b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/31d48590a852ae14696d5b87995cf82b.asset.1.index for Assets/Labirinto/Scripts/Floor.cs with Types
+ -> (artifact id: '9f449c07dff4b7b3a8fe5403b9678ca5') in 0.011344 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.215573 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 5.prefab
-  artifactKey: Guid(b18b4de52c96ba943a026a488dcbbff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 5.prefab using Guid(b18b4de52c96ba943a026a488dcbbff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16012a501239d5ffb4e4688fea70f390') in 0.035620 seconds 
+  Time since last request: 0.026379 seconds.
+  path: Assets/Labirinto/Scripts/Player 03/GameControle03.cs
+  artifactKey: Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Scripts/Player 03/GameControle03.cs using Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/0cffcbc453d4ef84793230943d03f16f.asset.1.index for Assets/Labirinto/Scripts/Player 03/GameControle03.cs with Types
+ -> (artifact id: '160399d7e0108e4a95cfa66df0646423') in 0.011647 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.959936 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 6.prefab
-  artifactKey: Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 6.prefab using Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '730f4d0ce930c5eca194454d52047f53') in 0.017915 seconds 
+  Time since last request: 0.027027 seconds.
+  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
+  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/bd47d0e52a718284683efa40a459a316.asset.1.index for Assets/Labirinto/Arts/Dado/Dado 1.prefab with Types
+ -> (artifact id: '0902456cccd9815ca1ffc4c14ad640ba') in 0.012412 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.489806 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 6.prefab
-  artifactKey: Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 6.prefab using Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5db9eae78705198c8de28031260a0703') in 0.017701 seconds 
+  Time since last request: 0.027289 seconds.
+  path: Assets/Labirinto/Scripts/Player 01/GameControle01.cs
+  artifactKey: Guid(1fa0cf5154014394084a2b4a22e1cfd5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Scripts/Player 01/GameControle01.cs using Guid(1fa0cf5154014394084a2b4a22e1cfd5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/7fb969ef08d98454eb6b4e1847eef129.asset.1.index for Assets/Labirinto/Scripts/Player 01/GameControle01.cs with Types
+ -> (artifact id: '15aed024594296ce0dee284f1af595b3') in 0.011571 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.414202 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 6.prefab
-  artifactKey: Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 6.prefab using Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a6e75d2c0432a58e1737b49588fd36a') in 0.014626 seconds 
+  Time since last request: 0.026294 seconds.
+  path: Assets/Labirinto/Arts/Dado/Dado 2.prefab
+  artifactKey: Guid(2d70dca701184d74599977fadf3f2e07) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Arts/Dado/Dado 2.prefab using Guid(2d70dca701184d74599977fadf3f2e07) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/e64f7d61445ec3440b39342f285eea81.asset.1.index for Assets/Labirinto/Arts/Dado/Dado 2.prefab with Types
+ -> (artifact id: '9b796ac70b65e2fffab8bcc1a6838fbc') in 0.011345 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.426152 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 6.prefab
-  artifactKey: Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 6.prefab using Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4db0816a292eeb2122029c06f399b40') in 0.016168 seconds 
+  Time since last request: 0.028143 seconds.
+  path: Assets/Labirinto/Scripts/TileLogic.cs
+  artifactKey: Guid(917afb7f2fea12c47a7ec84bb5563b60) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Scripts/TileLogic.cs using Guid(917afb7f2fea12c47a7ec84bb5563b60) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/389a6ec3cc0c6c94ba65c78c35a0154d.asset.1.index for Assets/Labirinto/Scripts/TileLogic.cs with Types
+ -> (artifact id: 'c5d98762def006c502584ee9b6a685ef') in 0.011926 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.215403 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 6.prefab
-  artifactKey: Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 6.prefab using Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb8f8c467b46d074ba348a0bf410a137') in 0.014039 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.199794 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 6.prefab
-  artifactKey: Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 6.prefab using Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b9c89b8e36a1485794f0a383e5cab5') in 0.015355 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.797996 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 6.prefab
-  artifactKey: Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 6.prefab using Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91168629ea6f3f4a232fe1dcae3f50b2') in 0.015692 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.408716 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 6.prefab
-  artifactKey: Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 6.prefab using Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f604292cddedfb252b1ebc0c8ccf87') in 0.013607 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.996408 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 6.prefab
-  artifactKey: Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 6.prefab using Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c872a492244decea41ac54259c1e133') in 0.013877 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.772509 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 6.prefab
-  artifactKey: Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 6.prefab using Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c299ae3d397d0f500ae12ee76d7a65') in 0.014827 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.817019 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 6.prefab
-  artifactKey: Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Dado/Dado 6.prefab using Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5426928f432eb61f97a464d81817a660') in 0.014796 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005071 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.238 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.4 MB.
-System memory in use after: 267.6 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3994.
-Total: 2.482800 ms (FindLiveObjects: 0.320800 ms CreateObjectMapping: 0.193300 ms MarkObjects: 1.952500 ms  DeleteObjects: 0.015500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 840.457085 seconds.
+  Time since last request: 0.026139 seconds.
   path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '445083e015a92de4042d0da7f2d9da93') in 0.060348 seconds 
+  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/718199bcc7749eb4a8a53adeed5cd1ad.asset.1.index for Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab with Types
+ -> (artifact id: '9abc6ce214e4b0933af835575d1d060a') in 0.011725 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.016460 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d0ac248cf8ed67cdc3077ea3f58371c') in 0.024650 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.853673 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f23a2cec3bc8352204f7f6289dfe23e5') in 0.078383 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.016989 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e647e31c3cae9c62d2e2a181e0147545') in 0.011198 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.447154 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbf4013419463a1b62374b661f40bf7a') in 0.011104 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.016429 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80b050c7de3cf82270d6cc123b29d5a') in 0.011336 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.488107 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb92c535e8fcff97c3f9832330dbd7f5') in 0.082032 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.014863 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f06e963aefb1e0fca08bc7be894b0c8') in 0.024177 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.071938 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2edff9caca5bf27cdfa7e299bc86926b') in 0.009906 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.016228 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0811f6b77beaa821f27a97f39670e7c') in 0.014741 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005190 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.249 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.4 MB.
-System memory in use after: 267.7 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3998.
-Total: 3.220400 ms (FindLiveObjects: 0.358700 ms CreateObjectMapping: 0.243500 ms MarkObjects: 2.581800 ms  DeleteObjects: 0.035000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005272 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.265 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.4 MB.
-System memory in use after: 267.7 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4001.
-Total: 2.546300 ms (FindLiveObjects: 0.248100 ms CreateObjectMapping: 0.185600 ms MarkObjects: 2.097100 ms  DeleteObjects: 0.014800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003542 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.055 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.4 MB.
-System memory in use after: 267.7 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4004.
-Total: 3.449900 ms (FindLiveObjects: 0.472200 ms CreateObjectMapping: 0.285700 ms MarkObjects: 2.672900 ms  DeleteObjects: 0.017900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 368.897582 seconds.
+  Time since last request: 0.024963 seconds.
   path: Assets/Labirinto/Scripts/Player 01/PlayerControle01.cs
-  artifactKey: Guid(76daade614962254e8275deacda81190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/Player 01/PlayerControle01.cs using Guid(76daade614962254e8275deacda81190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84115a216958e43263f6fde8d119810d') in 0.012287 seconds 
+  artifactKey: Guid(76daade614962254e8275deacda81190) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Scripts/Player 01/PlayerControle01.cs using Guid(76daade614962254e8275deacda81190) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/47c30c327f931b64283bbe1e89a33e36.asset.1.index for Assets/Labirinto/Scripts/Player 01/PlayerControle01.cs with Types
+ -> (artifact id: 'ef56f7af93eaab01f0ad9202307ba768') in 0.010726 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.994587 seconds.
-  path: Assets/Labirinto/Scripts/Player 01/GameControle01.cs
-  artifactKey: Guid(1fa0cf5154014394084a2b4a22e1cfd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/Player 01/GameControle01.cs using Guid(1fa0cf5154014394084a2b4a22e1cfd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4320e8e6c61466e86becb5ae5d5f6937') in 0.008098 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003195 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.053 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3342 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.5 MB.
-System memory in use after: 267.7 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4008.
-Total: 3.867400 ms (FindLiveObjects: 0.350800 ms CreateObjectMapping: 0.285400 ms MarkObjects: 3.203600 ms  DeleteObjects: 0.026300 ms)
-
+  Time since last request: 0.025762 seconds.
+  path: Assets/Labirinto/Arts/Palette
+  artifactKey: Guid(d094680eb8a14bd45805ae97f8ddf70d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Arts/Palette using Guid(d094680eb8a14bd45805ae97f8ddf70d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/46665f11b74e5244da7d263c99587838.asset.1.index for Assets/Labirinto/Arts/Palette with Types
+ -> (artifact id: '6c13a1b1f1ddfe0454b4cf46fc8853e9') in 0.013782 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 29.987710 seconds.
-  path: Assets/Labirinto/Scripts/Player 01/GameControle01.cs
-  artifactKey: Guid(1fa0cf5154014394084a2b4a22e1cfd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/Player 01/GameControle01.cs using Guid(1fa0cf5154014394084a2b4a22e1cfd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9dbef90e8a133e297da42e797c9fea5') in 0.007905 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004534 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.053 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3342 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.5 MB.
-System memory in use after: 267.7 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4011.
-Total: 3.846700 ms (FindLiveObjects: 0.405500 ms CreateObjectMapping: 0.263400 ms MarkObjects: 3.158100 ms  DeleteObjects: 0.018600 ms)
-
+  Time since last request: 0.026329 seconds.
+  path: Assets/Labirinto/Arts/Casa e Tabuleiro
+  artifactKey: Guid(6dcb0b680dc324f47860b5a37dc70e35) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Arts/Casa e Tabuleiro using Guid(6dcb0b680dc324f47860b5a37dc70e35) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/512b23e34d5922c44a18968d3d9746ec.asset.1.index for Assets/Labirinto/Arts/Casa e Tabuleiro with Types
+ -> (artifact id: '5460dde0546b3d02ad71a73c3800f8c8') in 0.011136 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 41.125708 seconds.
-  path: Assets/Labirinto/Scripts/Player 03/GameControle.cs
-  artifactKey: Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/Player 03/GameControle.cs using Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e00c461293de4fff4da56b598ecead0') in 0.007037 seconds 
+  Time since last request: 0.026015 seconds.
+  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Bloco de Grarma 128.png
+  artifactKey: Guid(9aa546b4f68a3074f95e3ea1832ff679) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Bloco de Grarma 128.png using Guid(9aa546b4f68a3074f95e3ea1832ff679) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/061fdb43e8f8df946b58b66b24c56045.asset.1.index for Assets/Labirinto/Arts/Casa e Tabuleiro/Bloco de Grarma 128.png with Types
+ -> (artifact id: 'eb219d5af0567931ac2707f2af1732ea') in 0.074651 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.361617 seconds.
+  Time since last request: 0.024454 seconds.
+  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Bloco de Grarma 128.asset
+  artifactKey: Guid(5d652d7dc6c112b4f956ea4dfd7c0c4e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Bloco de Grarma 128.asset using Guid(5d652d7dc6c112b4f956ea4dfd7c0c4e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/ddeacdebb30d18340b8916ffd90916ce.asset.1.index for Assets/Labirinto/Arts/Casa e Tabuleiro/Bloco de Grarma 128.asset with Types
+ -> (artifact id: 'a5495c47e9e2d56e60dcbb178f47d438') in 0.014281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.026981 seconds.
+  path: Assets/Labirinto/Arts/Dado/Dado 6.prefab
+  artifactKey: Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Labirinto/Arts/Dado/Dado 6.prefab using Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
+[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/d4a6dc35aa1bb3c48ae7bb1c4d0b6976.asset.1.index for Assets/Labirinto/Arts/Dado/Dado 6.prefab with Types
+ -> (artifact id: '58d035c7191941a1900c3e540834c67a') in 0.012409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.233511 seconds.
   path: Assets/Labirinto/Scripts/Player 03/GameControle03.cs
   artifactKey: Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/Player 03/GameControle03.cs using Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd27ee49afaacda731d78818c2cd59ef') in 0.009060 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003625 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.146 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3342 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.5 MB.
-System memory in use after: 267.7 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4014.
-Total: 3.413000 ms (FindLiveObjects: 0.433100 ms CreateObjectMapping: 0.276200 ms MarkObjects: 2.682800 ms  DeleteObjects: 0.019800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003558 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.209 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3342 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.5 MB.
-System memory in use after: 267.7 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4017.
-Total: 3.482300 ms (FindLiveObjects: 0.556300 ms CreateObjectMapping: 0.182200 ms MarkObjects: 2.697200 ms  DeleteObjects: 0.045900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005102 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.272 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3342 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.6 MB.
-System memory in use after: 267.8 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4020.
-Total: 3.093100 ms (FindLiveObjects: 0.349700 ms CreateObjectMapping: 0.187700 ms MarkObjects: 2.536600 ms  DeleteObjects: 0.018400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004331 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.326 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3342 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.6 MB.
-System memory in use after: 267.8 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4023.
-Total: 3.525500 ms (FindLiveObjects: 0.466700 ms CreateObjectMapping: 0.323800 ms MarkObjects: 2.708700 ms  DeleteObjects: 0.024900 ms)
-
+Start importing Assets/Labirinto/Scripts/Player 03/GameControle03.cs using Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fefb8a31512b86d45f2d3a046359f838') in 0.006897 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2186.384246 seconds.
-  path: Assets/Labirinto/Scripts/Player 01/GameControle01.cs
-  artifactKey: Guid(1fa0cf5154014394084a2b4a22e1cfd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/Player 01/GameControle01.cs using Guid(1fa0cf5154014394084a2b4a22e1cfd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff88262c87ba8b585d3795d20561a76c') in 0.006361 seconds 
+  Time since last request: 938.225970 seconds.
+  path: Assets/Labirinto/Scripts/TileLogic.cs
+  artifactKey: Guid(917afb7f2fea12c47a7ec84bb5563b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Labirinto/Scripts/TileLogic.cs using Guid(917afb7f2fea12c47a7ec84bb5563b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f67c5a04d950d3de99fe74cba9863d33') in 0.009662 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003620 seconds.
+Registered in 0.013070 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.118 seconds
+- Completed reload, in  6.775 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3342 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.6 MB.
-System memory in use after: 267.9 MB.
+Unloading 3346 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 259.1 MB.
+System memory in use after: 259.3 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4026.
-Total: 3.359000 ms (FindLiveObjects: 0.523600 ms CreateObjectMapping: 0.309800 ms MarkObjects: 2.505800 ms  DeleteObjects: 0.018300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003971 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.233 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3342 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.6 MB.
-System memory in use after: 267.9 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4029.
-Total: 3.551200 ms (FindLiveObjects: 0.407800 ms CreateObjectMapping: 0.210300 ms MarkObjects: 2.907900 ms  DeleteObjects: 0.024000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003575 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.353 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3342 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.6 MB.
-System memory in use after: 267.9 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4032.
-Total: 3.519500 ms (FindLiveObjects: 0.446800 ms CreateObjectMapping: 0.342800 ms MarkObjects: 2.699300 ms  DeleteObjects: 0.029600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 437.596926 seconds.
-  path: Assets/Labirinto/Scripts/Player 02/GameControle02.cs
-  artifactKey: Guid(7e436968451021144995f9fe52610f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/Player 02/GameControle02.cs using Guid(7e436968451021144995f9fe52610f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25e5c861a3d7427ca3398984456324ce') in 0.013808 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003665 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.152 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.7 MB.
-System memory in use after: 267.9 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4036.
-Total: 3.355200 ms (FindLiveObjects: 0.362200 ms CreateObjectMapping: 0.233600 ms MarkObjects: 2.734800 ms  DeleteObjects: 0.023500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 46.943759 seconds.
-  path: Assets/Labirinto/Scripts/Player 02/GameControle02.cs
-  artifactKey: Guid(7e436968451021144995f9fe52610f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/Player 02/GameControle02.cs using Guid(7e436968451021144995f9fe52610f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c701c19101e73c453e571bb4ca12a1e') in 0.007590 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005206 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.217 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.7 MB.
-System memory in use after: 267.9 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4039.
-Total: 3.552800 ms (FindLiveObjects: 0.425000 ms CreateObjectMapping: 0.256800 ms MarkObjects: 2.833400 ms  DeleteObjects: 0.036400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 180.754608 seconds.
-  path: Assets/Labirinto/Scripts/Player 03/GameControle03.cs
-  artifactKey: Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/Player 03/GameControle03.cs using Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998278e5adaed5ffafe61174fc0f3d6e') in 0.007889 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 58.050290 seconds.
-  path: Assets/Labirinto/Scripts/Player 02/PlayerControle02.cs
-  artifactKey: Guid(909fcb0f87a22904a89e453385ae1c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/Player 02/PlayerControle02.cs using Guid(909fcb0f87a22904a89e453385ae1c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85e18b2ae5f7c124de1cc9ca00eb846') in 0.007202 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004420 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.199 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.7 MB.
-System memory in use after: 267.9 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4042.
-Total: 3.043300 ms (FindLiveObjects: 0.346800 ms CreateObjectMapping: 0.184500 ms MarkObjects: 2.457400 ms  DeleteObjects: 0.053900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004537 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.078 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.7 MB.
-System memory in use after: 267.9 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4045.
-Total: 3.717500 ms (FindLiveObjects: 0.320100 ms CreateObjectMapping: 0.308000 ms MarkObjects: 3.025200 ms  DeleteObjects: 0.061500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004086 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.121 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.7 MB.
-System memory in use after: 267.9 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4048.
-Total: 3.180200 ms (FindLiveObjects: 0.459100 ms CreateObjectMapping: 0.266200 ms MarkObjects: 2.411900 ms  DeleteObjects: 0.042300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004043 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.281 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.7 MB.
-System memory in use after: 267.9 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4051.
-Total: 2.973600 ms (FindLiveObjects: 0.380000 ms CreateObjectMapping: 0.183800 ms MarkObjects: 2.374600 ms  DeleteObjects: 0.034100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003768 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.145 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.7 MB.
-System memory in use after: 268.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4054.
-Total: 3.399200 ms (FindLiveObjects: 0.405900 ms CreateObjectMapping: 0.214300 ms MarkObjects: 2.744400 ms  DeleteObjects: 0.033100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003730 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.181 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.7 MB.
-System memory in use after: 268.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4057.
-Total: 3.159300 ms (FindLiveObjects: 0.276400 ms CreateObjectMapping: 0.293900 ms MarkObjects: 2.493500 ms  DeleteObjects: 0.094300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004122 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.374 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.7 MB.
-System memory in use after: 268.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4060.
-Total: 4.063300 ms (FindLiveObjects: 0.620400 ms CreateObjectMapping: 0.264900 ms MarkObjects: 3.151200 ms  DeleteObjects: 0.025500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003442 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.027 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.7 MB.
-System memory in use after: 268.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4063.
-Total: 2.878700 ms (FindLiveObjects: 0.616300 ms CreateObjectMapping: 0.151500 ms MarkObjects: 2.045800 ms  DeleteObjects: 0.064100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004179 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.331 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.7 MB.
-System memory in use after: 268.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4066.
-Total: 2.691300 ms (FindLiveObjects: 0.311500 ms CreateObjectMapping: 0.224500 ms MarkObjects: 2.109900 ms  DeleteObjects: 0.044100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003825 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.125 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.8 MB.
-System memory in use after: 268.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4069.
-Total: 3.100800 ms (FindLiveObjects: 0.304600 ms CreateObjectMapping: 0.191600 ms MarkObjects: 2.580700 ms  DeleteObjects: 0.022900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004550 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.315 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.8 MB.
-System memory in use after: 268.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4072.
-Total: 3.138900 ms (FindLiveObjects: 0.327400 ms CreateObjectMapping: 0.206700 ms MarkObjects: 2.567400 ms  DeleteObjects: 0.036200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005250 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.087 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.8 MB.
-System memory in use after: 268.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4075.
-Total: 3.202600 ms (FindLiveObjects: 0.374700 ms CreateObjectMapping: 0.198900 ms MarkObjects: 2.566800 ms  DeleteObjects: 0.061400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004925 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.341 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.8 MB.
-System memory in use after: 268.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4078.
-Total: 3.199400 ms (FindLiveObjects: 0.484300 ms CreateObjectMapping: 0.335700 ms MarkObjects: 2.355000 ms  DeleteObjects: 0.023400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003884 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.066 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.8 MB.
-System memory in use after: 268.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4081.
-Total: 3.199500 ms (FindLiveObjects: 0.466800 ms CreateObjectMapping: 0.168900 ms MarkObjects: 2.513800 ms  DeleteObjects: 0.049200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013916 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.182 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.8 MB.
-System memory in use after: 268.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4084.
-Total: 2.999800 ms (FindLiveObjects: 0.457400 ms CreateObjectMapping: 0.360300 ms MarkObjects: 2.164900 ms  DeleteObjects: 0.016500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003880 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.077 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.8 MB.
-System memory in use after: 268.1 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4087.
-Total: 3.626400 ms (FindLiveObjects: 0.437500 ms CreateObjectMapping: 0.188900 ms MarkObjects: 2.801400 ms  DeleteObjects: 0.197300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003650 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.267 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.8 MB.
-System memory in use after: 268.1 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4090.
-Total: 2.617800 ms (FindLiveObjects: 0.301300 ms CreateObjectMapping: 0.168500 ms MarkObjects: 2.132000 ms  DeleteObjects: 0.015100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003338 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.081 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.8 MB.
-System memory in use after: 268.1 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4093.
-Total: 2.726500 ms (FindLiveObjects: 0.328500 ms CreateObjectMapping: 0.277700 ms MarkObjects: 2.101500 ms  DeleteObjects: 0.018100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004466 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.231 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.8 MB.
-System memory in use after: 268.1 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4096.
-Total: 3.385300 ms (FindLiveObjects: 0.420700 ms CreateObjectMapping: 0.206100 ms MarkObjects: 2.697400 ms  DeleteObjects: 0.060200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003645 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.195 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.8 MB.
-System memory in use after: 268.1 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4099.
-Total: 4.010900 ms (FindLiveObjects: 0.596300 ms CreateObjectMapping: 0.346300 ms MarkObjects: 3.001900 ms  DeleteObjects: 0.063700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004592 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.080 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.9 MB.
-System memory in use after: 268.1 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4102.
-Total: 3.276800 ms (FindLiveObjects: 0.336100 ms CreateObjectMapping: 0.198700 ms MarkObjects: 2.705400 ms  DeleteObjects: 0.035500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003542 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.252 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.9 MB.
-System memory in use after: 268.1 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4105.
-Total: 2.560200 ms (FindLiveObjects: 0.313600 ms CreateObjectMapping: 0.159600 ms MarkObjects: 2.043500 ms  DeleteObjects: 0.042500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003366 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.059 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.9 MB.
-System memory in use after: 268.1 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4108.
-Total: 2.677500 ms (FindLiveObjects: 0.336200 ms CreateObjectMapping: 0.175300 ms MarkObjects: 2.116500 ms  DeleteObjects: 0.048900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004234 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.168 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.9 MB.
-System memory in use after: 268.1 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4111.
-Total: 2.894100 ms (FindLiveObjects: 0.343800 ms CreateObjectMapping: 0.201400 ms MarkObjects: 2.323600 ms  DeleteObjects: 0.024300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004553 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.073 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.9 MB.
-System memory in use after: 268.1 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4114.
-Total: 2.617700 ms (FindLiveObjects: 0.300800 ms CreateObjectMapping: 0.185200 ms MarkObjects: 1.992500 ms  DeleteObjects: 0.138000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003721 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.157 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.9 MB.
-System memory in use after: 268.1 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4117.
-Total: 3.326300 ms (FindLiveObjects: 0.353300 ms CreateObjectMapping: 0.177800 ms MarkObjects: 2.755100 ms  DeleteObjects: 0.039300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003891 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.120 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.9 MB.
-System memory in use after: 268.2 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4120.
-Total: 3.526000 ms (FindLiveObjects: 0.467700 ms CreateObjectMapping: 0.225400 ms MarkObjects: 2.815300 ms  DeleteObjects: 0.016500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004308 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.209 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.9 MB.
-System memory in use after: 268.2 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4123.
-Total: 3.027800 ms (FindLiveObjects: 0.424200 ms CreateObjectMapping: 0.225600 ms MarkObjects: 2.286400 ms  DeleteObjects: 0.090900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003283 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.105 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.9 MB.
-System memory in use after: 268.2 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4126.
-Total: 3.225200 ms (FindLiveObjects: 0.423900 ms CreateObjectMapping: 0.169000 ms MarkObjects: 2.567000 ms  DeleteObjects: 0.064200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003806 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.125 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.9 MB.
-System memory in use after: 268.2 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4129.
-Total: 3.176500 ms (FindLiveObjects: 0.389000 ms CreateObjectMapping: 0.306900 ms MarkObjects: 2.438800 ms  DeleteObjects: 0.040800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003526 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.235 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 267.9 MB.
-System memory in use after: 268.2 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4132.
-Total: 3.383200 ms (FindLiveObjects: 0.658600 ms CreateObjectMapping: 0.256800 ms MarkObjects: 2.428700 ms  DeleteObjects: 0.038000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003818 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.058 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.0 MB.
-System memory in use after: 268.2 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4135.
-Total: 3.278600 ms (FindLiveObjects: 0.404900 ms CreateObjectMapping: 0.213700 ms MarkObjects: 2.630300 ms  DeleteObjects: 0.028700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008967 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.136 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.2 MB.
-System memory in use after: 268.4 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4138.
-Total: 3.522400 ms (FindLiveObjects: 0.478400 ms CreateObjectMapping: 0.215900 ms MarkObjects: 2.791800 ms  DeleteObjects: 0.035000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004689 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.074 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.2 MB.
-System memory in use after: 268.4 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4141.
-Total: 3.441000 ms (FindLiveObjects: 0.358000 ms CreateObjectMapping: 0.240900 ms MarkObjects: 2.793700 ms  DeleteObjects: 0.047500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003336 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.414 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.2 MB.
-System memory in use after: 268.4 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4144.
-Total: 2.709300 ms (FindLiveObjects: 0.464400 ms CreateObjectMapping: 0.197100 ms MarkObjects: 2.031900 ms  DeleteObjects: 0.015100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003718 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.057 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.2 MB.
-System memory in use after: 268.4 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4147.
-Total: 9.912600 ms (FindLiveObjects: 0.501500 ms CreateObjectMapping: 1.379900 ms MarkObjects: 8.004100 ms  DeleteObjects: 0.025500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003850 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.352 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.2 MB.
-System memory in use after: 268.4 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4150.
-Total: 3.860800 ms (FindLiveObjects: 0.628800 ms CreateObjectMapping: 0.404800 ms MarkObjects: 2.790100 ms  DeleteObjects: 0.035800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003517 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.099 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.2 MB.
-System memory in use after: 268.4 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4153.
-Total: 4.255300 ms (FindLiveObjects: 0.467500 ms CreateObjectMapping: 0.274300 ms MarkObjects: 3.487000 ms  DeleteObjects: 0.025400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009910 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.150 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.2 MB.
-System memory in use after: 268.5 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4156.
-Total: 3.326000 ms (FindLiveObjects: 0.435200 ms CreateObjectMapping: 0.207200 ms MarkObjects: 2.641300 ms  DeleteObjects: 0.041000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004181 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.035 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.2 MB.
-System memory in use after: 268.5 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4159.
-Total: 3.443700 ms (FindLiveObjects: 0.728800 ms CreateObjectMapping: 0.345000 ms MarkObjects: 2.337700 ms  DeleteObjects: 0.030900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003447 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.313 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.2 MB.
-System memory in use after: 268.5 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4162.
-Total: 4.003700 ms (FindLiveObjects: 0.356400 ms CreateObjectMapping: 0.242400 ms MarkObjects: 3.369000 ms  DeleteObjects: 0.034500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003690 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.090 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.2 MB.
-System memory in use after: 268.5 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4165.
-Total: 5.919800 ms (FindLiveObjects: 0.619100 ms CreateObjectMapping: 0.325500 ms MarkObjects: 4.949800 ms  DeleteObjects: 0.023800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003660 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.388 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.2 MB.
-System memory in use after: 268.5 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4168.
-Total: 3.520100 ms (FindLiveObjects: 0.584400 ms CreateObjectMapping: 0.249200 ms MarkObjects: 2.633800 ms  DeleteObjects: 0.051300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003903 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.079 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.2 MB.
-System memory in use after: 268.5 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4171.
-Total: 3.115100 ms (FindLiveObjects: 0.398400 ms CreateObjectMapping: 0.233800 ms MarkObjects: 2.447100 ms  DeleteObjects: 0.034700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003445 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.157 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.3 MB.
-System memory in use after: 268.5 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4174.
-Total: 3.403300 ms (FindLiveObjects: 0.537700 ms CreateObjectMapping: 0.412300 ms MarkObjects: 2.431700 ms  DeleteObjects: 0.020200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003904 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.089 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.3 MB.
-System memory in use after: 268.5 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4177.
-Total: 3.172200 ms (FindLiveObjects: 0.482200 ms CreateObjectMapping: 0.299200 ms MarkObjects: 2.355100 ms  DeleteObjects: 0.034900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004974 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.388 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.3 MB.
-System memory in use after: 268.5 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4180.
-Total: 3.429200 ms (FindLiveObjects: 0.404300 ms CreateObjectMapping: 0.226400 ms MarkObjects: 2.764500 ms  DeleteObjects: 0.032700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005058 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.110 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 268.3 MB.
-System memory in use after: 268.5 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4183.
-Total: 3.264600 ms (FindLiveObjects: 0.513200 ms CreateObjectMapping: 0.203600 ms MarkObjects: 2.477300 ms  DeleteObjects: 0.069600 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3814.
+Total: 41.485800 ms (FindLiveObjects: 0.494600 ms CreateObjectMapping: 0.465400 ms MarkObjects: 40.415100 ms  DeleteObjects: 0.108400 ms)
 
