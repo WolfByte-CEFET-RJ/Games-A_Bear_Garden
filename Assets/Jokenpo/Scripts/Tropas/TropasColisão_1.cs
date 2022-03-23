@@ -15,11 +15,12 @@ public class TropasColisao : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        /*if(other.relativeVelocity.magnitude > 0)
+        if(other.relativeVelocity.magnitude > 0)
         {
-            Destroy(gameObject);
-        }        */
+            Debug.Log("colidiu!");
+            //Destroy(gameObject);
+        }
     }
 }

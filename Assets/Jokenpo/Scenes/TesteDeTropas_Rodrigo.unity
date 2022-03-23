@@ -170,7 +170,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 101015653}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c56a6a36b46469c4cbfe9b76304819c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5be4da3a8746a3646801e5a6fbb9618f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &500446592
@@ -183,6 +183,10 @@ PrefabInstance:
     - target: {fileID: 320972084511459080, guid: a2221042d1d6aed4ea65904f48d8ed73, type: 3}
       propertyPath: m_Radius
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 320972084511459080, guid: a2221042d1d6aed4ea65904f48d8ed73, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1615304586471643805, guid: a2221042d1d6aed4ea65904f48d8ed73, type: 3}
       propertyPath: m_RootOrder
@@ -336,6 +340,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2233926078255759607, guid: 1ca60a281c829f74089098b3d9a1b43a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6101883034988402124, guid: 1ca60a281c829f74089098b3d9a1b43a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -437,7 +445,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1721468082}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c56a6a36b46469c4cbfe9b76304819c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5be4da3a8746a3646801e5a6fbb9618f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2049277030
