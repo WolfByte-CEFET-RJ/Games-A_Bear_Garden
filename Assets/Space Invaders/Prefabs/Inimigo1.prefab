@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 4193907602707122893}
   - component: {fileID: 4193907602707122892}
   - component: {fileID: 4193907602707122891}
+  - component: {fileID: 5287752581595658901}
   m_Layer: 0
   m_Name: Inimigo1
   m_TagString: Enemy
@@ -158,3 +159,15 @@ MonoBehaviour:
   enemyTimer: 1
   attemptingMoves: 6
   firePos: {fileID: 2516184669024016931}
+--- !u!114 &5287752581595658901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4193907602707122890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21265948d63da834aa4d3470c7e48ec7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

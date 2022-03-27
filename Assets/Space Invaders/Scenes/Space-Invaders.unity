@@ -765,7 +765,10 @@ GameObject:
   - component: {fileID: 1442250917}
   - component: {fileID: 1442250920}
   - component: {fileID: 1442250921}
+  - component: {fileID: 1442250923}
+  - component: {fileID: 1442250922}
   - component: {fileID: 1442250916}
+  - component: {fileID: 1442250924}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -785,9 +788,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 435edcfb9be42124ab20f90d7113734c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalI: 0
+  playerInput: {fileID: 1442250922}
   speed: 2
-  verticalI: 0
 --- !u!61 &1442250917
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -916,6 +918,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootObject: {fileID: 3254207018020747268, guid: e03d5ebfdf827694cb7a815540f6315b, type: 3}
   firePoint: {fileID: 1586281885}
+--- !u!114 &1442250922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442250915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51cb74998b36b6f488a58fb52f179063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1442250923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442250915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f8b3c2635c5eb4886dcb0264b5438e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1442250924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442250915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b589f5e1f2e9324ca7e3e9c606703b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1489361190 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4193907602707122894, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
