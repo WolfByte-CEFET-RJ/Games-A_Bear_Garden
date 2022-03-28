@@ -15,11 +15,11 @@ C:/Users/Vinicius/Desktop/Byte Game 2022/ProjetoByteGames2022
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57176
+49551
 Successfully changed project path to: C:/Users/Vinicius/Desktop/Byte Game 2022/ProjetoByteGames2022
 C:/Users/Vinicius/Desktop/Byte Game 2022/ProjetoByteGames2022
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 151.73 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 157.59 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.0b3 (202fb86be42c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.0b3/Editor/Data/Resources/UnitySubsystems
@@ -35,228 +35,40 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.0b3/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.0b3/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.0b3/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56172
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56468
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.0b3/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003598 seconds.
+Registered in 0.006334 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 139.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 161.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.817 seconds
+- Completed reload, in  4.874 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006408 seconds.
+Registered in 0.007119 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 148.75 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 178.14 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.135 seconds
+- Completed reload, in  2.420 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3355 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 259.3 MB.
-System memory in use after: 259.4 MB.
-
-Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3806.
-Total: 5.240800 ms (FindLiveObjects: 0.581200 ms CreateObjectMapping: 0.193200 ms MarkObjects: 4.201300 ms  DeleteObjects: 0.263200 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Space Invaders/Scenes/Space-Invaders.unity
-  artifactKey: Guid(c9e91e34c7a8ae344aa4f2a392ae0d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Space Invaders/Scenes/Space-Invaders.unity using Guid(c9e91e34c7a8ae344aa4f2a392ae0d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55076bf958828e6a5aeeb1c9b85dc5c2') in 0.034520 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1396.265332 seconds.
-  path: Assets/Space Invaders/Scripts/Inimigos/EnemyMovement.cs
-  artifactKey: Guid(89ac3378f8638ba41b3c859b2eea8b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Space Invaders/Scripts/Inimigos/EnemyMovement.cs using Guid(89ac3378f8638ba41b3c859b2eea8b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29097455d87c549733b161595fe412b8') in 0.045320 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.973532 seconds.
-  path: Assets/Space Invaders/Scripts/Inimigos/EnemiesShoot.cs
-  artifactKey: Guid(567b3777dd43c3942ab01b82e4948bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Space Invaders/Scripts/Inimigos/EnemiesShoot.cs using Guid(567b3777dd43c3942ab01b82e4948bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b97a4cbd5349d5d06f56ad81b4ff17') in 0.012827 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 402.756578 seconds.
-  path: Assets/Space Invaders/Scripts/Inimigos
-  artifactKey: Guid(1abb414d1f2faac47a732f8a2ea9e0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Space Invaders/Scripts/Inimigos using Guid(1abb414d1f2faac47a732f8a2ea9e0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3a3b218593b789d2b0611eba6e14682') in 0.014406 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.896438 seconds.
-  path: Assets/Space Invaders/Scripts/Inimigos/EnemyCollider.cs
-  artifactKey: Guid(3ccdc83a6192b1b448361fc59ab37957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Space Invaders/Scripts/Inimigos/EnemyCollider.cs using Guid(3ccdc83a6192b1b448361fc59ab37957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60cf27d1619b0b6194348c6926b7a3ef') in 0.025931 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.295323 seconds.
-  path: Assets/Space Invaders/Scripts/Inimigos/EnemyCollider.cs
-  artifactKey: Guid(3ccdc83a6192b1b448361fc59ab37957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Space Invaders/Scripts/Inimigos/EnemyCollider.cs using Guid(3ccdc83a6192b1b448361fc59ab37957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3047de04f40940429d6ce1c791b2a3') in 0.007136 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007426 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.932 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3351 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 259.4 MB.
-System memory in use after: 259.5 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3810.
-Total: 5.388300 ms (FindLiveObjects: 0.529300 ms CreateObjectMapping: 0.190600 ms MarkObjects: 4.498700 ms  DeleteObjects: 0.168100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008256 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.820 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3351 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 259.5 MB.
+Unloading 3364 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 259.6 MB.
 System memory in use after: 259.6 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3813.
-Total: 3.796400 ms (FindLiveObjects: 0.492400 ms CreateObjectMapping: 0.177400 ms MarkObjects: 2.956800 ms  DeleteObjects: 0.168300 ms)
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3815.
+Total: 4.671700 ms (FindLiveObjects: 0.674800 ms CreateObjectMapping: 0.264400 ms MarkObjects: 3.475400 ms  DeleteObjects: 0.254500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 171.015509 seconds.
-  path: Assets/Space Invaders/Scripts/Player/PlayerManager.cs
-  artifactKey: Guid(96f8b3c2635c5eb4886dcb0264b5438e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Space Invaders/Scripts/Player/PlayerManager.cs using Guid(96f8b3c2635c5eb4886dcb0264b5438e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e8781cb1510a9b2f13c7008864e75d2') in 0.020537 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007736 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.24 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.829 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3352 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 259.5 MB.
-System memory in use after: 259.7 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3817.
-Total: 4.002000 ms (FindLiveObjects: 0.691500 ms CreateObjectMapping: 0.225700 ms MarkObjects: 2.926200 ms  DeleteObjects: 0.156900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.170822 seconds.
-  path: Assets/Space Invaders/Scripts/GameManager.cs
-  artifactKey: Guid(c82604287ebaaec4396b8c27c9c5d248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Space Invaders/Scripts/GameManager.cs using Guid(c82604287ebaaec4396b8c27c9c5d248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b720d7902084de2f55b23a70bcc7ae7d') in 0.021892 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006727 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.27 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.934 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3353 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 259.6 MB.
-System memory in use after: 259.7 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3821.
-Total: 3.879900 ms (FindLiveObjects: 0.532200 ms CreateObjectMapping: 0.188300 ms MarkObjects: 2.976900 ms  DeleteObjects: 0.174600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007156 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.844 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3353 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 259.6 MB.
-System memory in use after: 259.7 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3824.
-Total: 3.729500 ms (FindLiveObjects: 0.545700 ms CreateObjectMapping: 0.190800 ms MarkObjects: 2.832200 ms  DeleteObjects: 0.159600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 2305.288947 seconds.
-  path: Assets/Space Invaders/Scripts/Player/PlayerInput.cs
-  artifactKey: Guid(51cb74998b36b6f488a58fb52f179063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Space Invaders/Scripts/Player/PlayerInput.cs using Guid(51cb74998b36b6f488a58fb52f179063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6360f4357379d4500fe863e36def1f03') in 0.022347 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006534 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.847 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3354 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 259.7 MB.
-System memory in use after: 259.8 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3828.
-Total: 3.610900 ms (FindLiveObjects: 0.467300 ms CreateObjectMapping: 0.178700 ms MarkObjects: 2.812600 ms  DeleteObjects: 0.150800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007212 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.781 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3354 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 259.7 MB.
-System memory in use after: 259.8 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3831.
-Total: 3.860500 ms (FindLiveObjects: 0.512000 ms CreateObjectMapping: 0.187500 ms MarkObjects: 2.948800 ms  DeleteObjects: 0.210900 ms)
-
+  path: Assets/Space Invaders/Scripts/Player/PlayerCollider.cs
+  artifactKey: Guid(1b589f5e1f2e9324ca7e3e9c606703b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Space Invaders/Scripts/Player/PlayerCollider.cs using Guid(1b589f5e1f2e9324ca7e3e9c606703b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f003e25c0c259d46aa9a3a82136be049') in 0.050979 seconds 
