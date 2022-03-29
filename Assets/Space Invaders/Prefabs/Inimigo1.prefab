@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 4193907602707122892}
   - component: {fileID: 4193907602707122891}
   - component: {fileID: 5287752581595658901}
+  - component: {fileID: 883241221874854854}
   m_Layer: 0
   m_Name: Inimigo1
   m_TagString: Enemy
@@ -171,3 +172,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21265948d63da834aa4d3470c7e48ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootDamage: 10
+  health: {fileID: 883241221874854854}
+--- !u!114 &883241221874854854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4193907602707122890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabea2b701ebbfb478490d56692ca5c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHP: 50
