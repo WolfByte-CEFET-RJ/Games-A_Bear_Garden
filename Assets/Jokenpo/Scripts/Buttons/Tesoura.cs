@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class Tesoura : MonoBehaviour
 {
-
+    
     private int verificacao;
-
+    
     // GATILHO DO SCRIPT
     public void tesoura(){
         
@@ -40,8 +40,7 @@ public class Tesoura : MonoBehaviour
     //ANALISA OS RESULTADOS DO PLAYER E DO VILÃO
     int checkResultados(int v){    
        
-        /*Foi utilizado o sistema abaixo ao longo de todo o jogo, ou seja,
-        esses códigos de verificação serão iguais para todos os scripts*/
+        //Foi utilizado o sistema abaixo ao longo de todo o jogo, ou seja, esses códigos de verificação serão iguais para todos os scripts
 
        if(v == 3){
            Debug.Log("Situacao: Vitoria Player!");
