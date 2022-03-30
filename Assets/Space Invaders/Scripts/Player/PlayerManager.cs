@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : GameManager
 {
-    // Start is called before the first frame update
+    [SerializeField] private PlayerHealth playerHealth;
+    [SerializeField] private GameManager gameManager;
+
     void Start()
     {
         
@@ -14,5 +16,10 @@ public class PlayerManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    protected override void GameOver()
+    {
+        base.GameOver();
     }
 }
