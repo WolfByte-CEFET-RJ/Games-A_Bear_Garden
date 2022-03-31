@@ -712,6 +712,7 @@ GameObject:
   - component: {fileID: 1442250917}
   - component: {fileID: 1442250920}
   - component: {fileID: 1442250921}
+  - component: {fileID: 1442250925}
   - component: {fileID: 1442250923}
   - component: {fileID: 1442250922}
   - component: {fileID: 1442250916}
@@ -889,6 +890,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f8b3c2635c5eb4886dcb0264b5438e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealth: {fileID: 1442250925}
+  playerCollider: {fileID: 0}
 --- !u!114 &1442250924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -901,6 +904,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b589f5e1f2e9324ca7e3e9c606703b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1442250925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442250915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fab5c20e7cfbef49b0e32def75e08ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 10
 --- !u!4 &1489361190 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4193907602707122894, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
