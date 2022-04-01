@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class TamanhoUI : MonoBehaviour
 {
-    public Slider tamanhoUI;
-    public GameObject ui;
+    public Slider       _tamanhoUI;
+    public GameObject   _ui;
 
     void Start()
     {
-        tamanhoUI.value = 0.75f;
+        _tamanhoUI.value = PlayerPrefs.GetFloat("ui", (_tamanhoUI.value));
     }
 
     void Update()
     {
-        tamanhoUI.GetComponent<Slider>();
-        ui.GetComponent<RectTransform>().localScale = new Vector3(tamanhoUI.value, tamanhoUI.value, tamanhoUI.value);
+        _tamanhoUI.GetComponent<Slider>();
+        _ui.GetComponent<RectTransform>().localScale = new Vector3(_tamanhoUI.value, _tamanhoUI.value, _tamanhoUI.value);
 
-        PlayerPrefs.SetFloat("ui", (tamanhoUI.value));
+        PlayerPrefs.SetFloat("ui", (_tamanhoUI.value));
     }
 }
