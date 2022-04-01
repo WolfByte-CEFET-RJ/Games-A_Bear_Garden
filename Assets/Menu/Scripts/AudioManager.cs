@@ -32,4 +32,5 @@ public class AudioManager : MonoBehaviour
         float sfxVolume = PlayerPrefs.GetFloat(SFX_Chave, 1f);
         float masterVolume = PlayerPrefs.GetFloat(Master_Chave, 1f);
     }
+
 }
