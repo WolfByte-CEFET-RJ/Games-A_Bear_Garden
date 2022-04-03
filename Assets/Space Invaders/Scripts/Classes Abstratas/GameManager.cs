@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public abstract class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    
+
     private void Pause()
     {
 
@@ -16,9 +16,14 @@ public abstract class GameManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    protected virtual void GameOver()
+    protected virtual void GameOver(bool condition)
     {
+        print("Resultado: " + condition);
         Time.timeScale = 0;
-        //gameOverScreen.gameObject.SetActive(true);
+        
+        //if(condition)
+        //    //youWin
+        //else 
+        //    //gameOverScreen.gameObject.SetActive(true);
     }
 }

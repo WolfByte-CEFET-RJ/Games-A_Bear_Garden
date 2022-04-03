@@ -431,6 +431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 615087475}
+  - component: {fileID: 615087477}
   - component: {fileID: 615087476}
   m_Layer: 0
   m_Name: Inimigos
@@ -486,6 +487,19 @@ MonoBehaviour:
   - {fileID: 1412320409}
   triggerTime: 0
   shootObject: {fileID: 3254207018020747268, guid: e03d5ebfdf827694cb7a815540f6315b, type: 3}
+--- !u!114 &615087477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615087474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 951c307e82594b546a1251c345297749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies: 0
 --- !u!1001 &617721526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -711,9 +725,9 @@ GameObject:
   - component: {fileID: 1442250918}
   - component: {fileID: 1442250917}
   - component: {fileID: 1442250920}
+  - component: {fileID: 1442250923}
   - component: {fileID: 1442250921}
   - component: {fileID: 1442250925}
-  - component: {fileID: 1442250923}
   - component: {fileID: 1442250922}
   - component: {fileID: 1442250916}
   - component: {fileID: 1442250924}
@@ -891,7 +905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1442250925}
-  playerCollider: {fileID: 0}
+  playerCollider: {fileID: 1442250924}
 --- !u!114 &1442250924
 MonoBehaviour:
   m_ObjectHideFlags: 0

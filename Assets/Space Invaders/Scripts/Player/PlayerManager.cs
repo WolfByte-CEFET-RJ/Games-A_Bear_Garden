@@ -7,16 +7,13 @@ public class PlayerManager : GameManager
     [SerializeField] private PlayerHealth playerHealth;
     [SerializeField] private PlayerCollider playerCollider;
 
+    private bool youWin;
 
     void Start()
     {
         playerCollider = GetComponentInParent<PlayerCollider>();
-        PlayerHealth.PlayerDied += PlayerHealth_PlayerDied; 
-    }
-
-    private void PlayerHealth_PlayerDied()
-    {
-        GameOver();    
+        PlayerHealth.PlayerDied += PlayerHealth_PlayerDied;
+        base.GameStart();
     }
 
     private void Update()
@@ -24,15 +21,19 @@ public class PlayerManager : GameManager
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            playerCollider.GetHit();
+            //playerCollider.GetHit();
         }
 #endif
     }
-    
-
-    protected override void GameOver()
+    private void PlayerHealth_PlayerDied()
     {
-        base.GameOver();
+        GameOver(!youWin);
+    }
+
+    protected override void GameOver(bool value)
+    {
+        print("You Lost !!!");
+        base.GameOver(value);
     }
 
     private void OnDisable()
