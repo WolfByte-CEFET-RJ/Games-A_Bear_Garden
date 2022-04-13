@@ -6,9 +6,10 @@ public class TempoJokenpo : MonoBehaviour
 {
     //Script para liberar os jogadores de jogarem o Jokenpo de 6 em 6 segundos
 
-    private int tempoInt, j;
+    public int tempoInt, j;
     private float temporizador;
-    public bool jogo;
+    [HideInInspector]
+    public bool jogo = false;   //Rodrigo --> Variável jogo precisa ser pública para ser utiliizada em outros scritps, "[HideInInspector]" utilizado para escondê-la como se fosse privada
 
     void Start()
     {

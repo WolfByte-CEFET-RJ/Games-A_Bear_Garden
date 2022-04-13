@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class Pedra : MonoBehaviour
 {
-    private int verificacao;
+    private int verificacao, count = 0;
+    public TempoJokenpo tempJkp;    //Rodrigo --> Variável que instancia a classe controladora do tempo "TempoJokenpo"
 
     // GATILHO DO SCRPIT
     public void pedra(){
-        
-        Debug.Log("Pedra");
+        if(tempJkp.jogo)    //Rodrigo --> If para verificar se a ação de Jokenpo poderá ocorrer (a cada 6 segundos)
+        {
+            for(int i = count; i < 1; i++)  //Rodrigo --> For para restringir a ação a uma vez (com auxílio da variável count)
+            {
+                Debug.Log("Pedra");
 
-        int v = jokenpoVilao();
-        checkResultados(v);
+                int v = jokenpoVilao();
+                checkResultados(v);
+            }
+            count = 1;  //Rodrigo --> Variável count é modificada para garantir a execução única
+        }
+        else
+        {
+            count = 0;
+        }
+
     }
 
     // DECIDE SE O VILAO USARA PEDRA, PAPEL OU TESOURA
