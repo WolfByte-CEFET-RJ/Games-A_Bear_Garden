@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MenuInicial : MonoBehaviour
+public class Carregamento : MonoBehaviour
 {
 	[Header("Tela de Carregamento")]
 	public GameObject _telaCarregamento;
@@ -23,16 +23,13 @@ public class MenuInicial : MonoBehaviour
 
 		while (!operation.isDone)
 		{
-			float progress = Mathf.Clamp01(operation.progress / .9f);
+			float progress1 = Mathf.Clamp01(operation.progress / .9f);
+			int progress = (int) progress1;
 			_slider.value = progress;
 			_progressoText.text = progress * 100f + "%";
-
-			yield return null;
-		}	
-	}
-
-	public void Sair()
-	{
-		Application.Quit();
+			Debug.Log(operation.progress);
+			
+            yield return null;
+		}
 	}
 }

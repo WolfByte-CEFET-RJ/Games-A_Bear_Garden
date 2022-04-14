@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ModoTelaCheia : MonoBehaviour
 {
-    private int _modoTelaCheia = 1;
+    private int _modoTelaCheia = 0;
     public Text _txtTela;
 
 
