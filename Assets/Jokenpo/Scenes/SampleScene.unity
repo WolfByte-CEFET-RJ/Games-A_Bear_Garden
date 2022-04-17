@@ -643,6 +643,7 @@ GameObject:
   - component: {fileID: 672707503}
   - component: {fileID: 672707505}
   - component: {fileID: 672707506}
+  - component: {fileID: 672707507}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -723,6 +724,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jogo: 0
+--- !u!114 &672707507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672707501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5138c322c95e7414e91deacfd63ec64e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trp_vida: 2
+  trp_atk: 1
+  trp_spd: 0.05
+--- !u!114 &1131679752 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6330568518736944889, guid: 1ca60a281c829f74089098b3d9a1b43a, type: 3}
+  m_PrefabInstance: {fileID: 3448533702593454615}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175a5931bebf272468e69a3de6f31f36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1143916151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,7 +1679,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: InimigoTipo1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5534632650179151445, guid: a2221042d1d6aed4ea65904f48d8ed73, type: 3}
+      propertyPath: _stats
+      value: 
+      objectReference: {fileID: 672707507}
+    - target: {fileID: 6689034827302538190, guid: a2221042d1d6aed4ea65904f48d8ed73, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6689034827302538190, guid: a2221042d1d6aed4ea65904f48d8ed73, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a2221042d1d6aed4ea65904f48d8ed73, type: 3}
 --- !u!4 &2297430449302548989 stripped
 Transform:
@@ -1767,11 +1803,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6159725947014528615, guid: 1ca60a281c829f74089098b3d9a1b43a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7958844923284186612, guid: 1ca60a281c829f74089098b3d9a1b43a, type: 3}
+      propertyPath: _scriptGeral
+      value: 
+      objectReference: {fileID: 1131679752}
     - target: {fileID: 8412294873685160715, guid: 1ca60a281c829f74089098b3d9a1b43a, type: 3}
       propertyPath: m_Name
       value: InimigoTipo2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6159725947014528615, guid: 1ca60a281c829f74089098b3d9a1b43a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1ca60a281c829f74089098b3d9a1b43a, type: 3}
 --- !u!4 &3448533702593454616 stripped
 Transform:

@@ -18,13 +18,13 @@ public class TropasSpawn : MonoBehaviour
     
     void Update()
     {
-        //Rodrigo <-- Atualizando a variável temporizador/contabilizando a passagem de tempo
+        //Rodrigo --> Atualizando a variável temporizador/contabilizando a passagem de tempo
         temporizador += Time.deltaTime;
 
-        //Rodrigo <-- Atribuindo o valor de tempo a uma variável inteira
+        //Rodrigo --> Atribuindo o valor de tempo a uma variável inteira
         tempoInt = (int)temporizador;
 
-        //Rodrigo <-- if para spawnar tropas de 2 em 2 segundos (modificar o número dividindo tempoInt para mudar o intervalo de tempo)
+        //Rodrigo --> if para spawnar tropas de 2 em 2 segundos (modificar o número dividindo tempoInt para mudar o intervalo de tempo)
         if(tempoInt % 2 == 0)
         {
             for(int i = j; j < 1; i++)  //Rodrigo <-- for que limita o spawn a uma vez usando o valor de j
@@ -33,7 +33,7 @@ public class TropasSpawn : MonoBehaviour
                 j = 1;
             }
         }
-        else    //Rodrigo <-- else para resetar o valor de j
+        else    //Rodrigo --> else para resetar o valor de j
         {
             j = 0;
         }
