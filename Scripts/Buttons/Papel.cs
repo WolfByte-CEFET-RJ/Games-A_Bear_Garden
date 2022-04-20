@@ -6,22 +6,28 @@ using UnityEngine.UI;
 public class Papel : MonoBehaviour
 {
 
-    private int verificacao;
-    public GameObject spawnPapel, papelPrefab;
+    private int verificacao, count = 0;
+    public TempoJokenpo tempJkp;    //Rodrigo --> Variável que instancia a classe controladora do tempo "TempoJokenpo"
 
-    // =================================================================================================================================//
     //GATILHO DO SCRIPT
     public void papel(){
-        Debug.Log("Papel");
+        if(tempJkp.jogo)    //Rodrigo --> If para verificar se a ação de Jokenpo poderá ocorrer (a cada 6 segundos)
+        {
+            for(int i = count; i < 1; i++)  //Rodrigo --> For para restringir a ação a uma vez (com auxílio da variável count)
+            {
+                Debug.Log("Papel");
 
-        GameObject spawnPapel = Instantiate(papelPrefab) as GameObject;             // realiza o Spawn do papel
-        papelPrefab.transform.position = new Vector3(spawnPapel.transform.position.x, spawnPapel.transform.position.y, 0);                      // realiza o Spawn do papel
-
-        int v = jokenpoVilao();                                                     // retorno da jogada do vilão
-        checkResultados(v);
+                int v = jokenpoVilao();
+                checkResultados(v);
+            }
+            count = 1;  //Rodrigo --> Variável count é modificada para garantir a execução única
+        }
+        else
+        {
+            count = 0;
+        }
     }
 
-    // =================================================================================================================================//
     // DECIDE SE O VILAO USARA PEDRA, PAPEL OU TESOURA
     int jokenpoVilao(){
         int a = (int) Random.Range(1, 60); // a = codigo de resposta do vilao
@@ -45,7 +51,6 @@ public class Papel : MonoBehaviour
        return a;
    }
 
-    // =================================================================================================================================//
     // ANALISA A JOGADA DO PLAYER E DO VILÃO
    int checkResultados(int v){
 
