@@ -4,32 +4,26 @@ using UnityEngine;
 
 public class Pedra : MonoBehaviour
 {
-    private int verificacao, count = 0;
-    public TempoJokenpo tempJkp;    //Rodrigo --> Variável que instancia a classe controladora do tempo "TempoJokenpo"
+    private int verificacao;
+    public GameObject pedraPrefab, spawnPedra;
 
+    // =================================================================================================================================//
     // GATILHO DO SCRPIT
     public void pedra(){
-        if(tempJkp.jogo)    //Rodrigo --> If para verificar se a ação de Jokenpo poderá ocorrer (a cada 6 segundos)
-        {
-            for(int i = count; i < 1; i++)  //Rodrigo --> For para restringir a ação a uma vez (com auxílio da variável count)
-            {
-                Debug.Log("Pedra");
+        
+        Debug.Log("Pedra");
 
-                int v = jokenpoVilao();
-                checkResultados(v);
-            }
-            count = 1;  //Rodrigo --> Variável count é modificada para garantir a execução única
-        }
-        else
-        {
-            count = 0;
-        }
+        GameObject spawnPedra = Instantiate(pedraPrefab) as GameObject;         // realiza o spawn da pedra
+        pedraPrefab.transform.position = new Vector3(spawnPedra.transform.position.x, spawnPedra.transform.position.y, 0);                  // realiza o spawn da pedra
 
+        int v = jokenpoVilao();                                                 // retorno da jogada do vilão
+        checkResultados(v);                                                     // retorna a análise da jogada
     }
-
+    // =================================================================================================================================//
     // DECIDE SE O VILAO USARA PEDRA, PAPEL OU TESOURA
+
     int jokenpoVilao(){
-        int a = (int) Random.Range(1, 60); // a = codigo de resposta do vilao
+        int a = (int) Random.Range(1, 60);                                      // a = codigo de resposta do vilao
 
        if(a <= 20){
            a = 1;
@@ -47,6 +41,7 @@ public class Pedra : MonoBehaviour
        return a;
    }
 
+    // =================================================================================================================================//
     // ANALISA OS RESULTADOS DO PLAYER E DO VILÃO
     int checkResultados(int v){    
        
