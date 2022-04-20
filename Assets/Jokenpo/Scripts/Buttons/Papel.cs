@@ -5,26 +5,25 @@ using UnityEngine.UI;
 
 public class Papel : MonoBehaviour
 {
-
-    private int verificacao, count = 0;
+    int verificacao;
     public TempoJokenpo tempJkp;    //Rodrigo --> Variável que instancia a classe controladora do tempo "TempoJokenpo"
 
     //GATILHO DO SCRIPT
     public void papel(){
         if(tempJkp.jogo)    //Rodrigo --> If para verificar se a ação de Jokenpo poderá ocorrer (a cada 6 segundos)
         {
-            for(int i = count; i < 1; i++)  //Rodrigo --> For para restringir a ação a uma vez (com auxílio da variável count)
+            for(int i = tempJkp.count; i < 1; i++)  //Rodrigo --> For para restringir a ação a uma vez (com auxílio da variável count)
             {
                 Debug.Log("Papel");
 
                 int v = jokenpoVilao();
                 checkResultados(v);
             }
-            count = 1;  //Rodrigo --> Variável count é modificada para garantir a execução única
+            tempJkp.count = 1;  //Rodrigo --> Variável count (variável global entre os 3 botões para evitar repetições e bugs) é modificada para garantir a execução única
         }
         else
         {
-            count = 0;
+            tempJkp.count = 0;
         }
     }
 
