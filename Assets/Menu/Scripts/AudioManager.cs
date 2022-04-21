@@ -29,8 +29,7 @@ public class AudioManager : MonoBehaviour
     void LoadVolume()
     {
         float musicaVolume = PlayerPrefs.GetFloat(Musica_Chave, 1f);
-        float sfxVolume = PlayerPrefs.GetFloat(SFX_Chave, 1f);
+        float sfxVolume    = PlayerPrefs.GetFloat(SFX_Chave, 1f);
         float masterVolume = PlayerPrefs.GetFloat(Master_Chave, 1f);
     }
-
 }

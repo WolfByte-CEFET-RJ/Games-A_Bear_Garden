@@ -32,11 +32,13 @@ public class Mute : MonoBehaviour
         {
             muted = true;
             AudioListener.pause = true;
+            //AudioListener.volume = 0.0001f; - Natty
         }
         else
         {
             muted = false;
             AudioListener.pause = false;
+            //AudioListener.volume = 1f; - Natty
         }
 
         Save();
