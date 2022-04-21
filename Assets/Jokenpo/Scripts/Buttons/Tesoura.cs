@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Tesoura : MonoBehaviour
 {
+    public static int verificacao_tesoura;  //Daniel --> Variável que controla spawn de tropas de tesoura
     
     int verificacao;
     public TempoJokenpo tempJkp;    //Rodrigo --> Variável que instancia a classe controladora do tempo "TempoJokenpo"
@@ -18,7 +19,7 @@ public class Tesoura : MonoBehaviour
                 Debug.Log("Tesoura");
 
                 int v = jokenpoVilao();
-                checkResultados(v);
+                verificacao_tesoura = checkResultados(v);
             }
             tempJkp.count = 1;  //Rodrigo --> Variável count é modificada para garantir a execução única
         }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pedra : MonoBehaviour
 {
+    public static int verificacao_pedra;  //Daniel --> Variável que controla spawn de tropas de pedra
     int verificacao;
     public TempoJokenpo tempJkp;    //Rodrigo --> Variável que instancia a classe controladora do tempo "TempoJokenpo"
 
@@ -16,7 +17,7 @@ public class Pedra : MonoBehaviour
                 Debug.Log("Pedra");
 
                 int v = jokenpoVilao();
-                checkResultados(v);
+                verificacao_pedra = checkResultados(v);
             }
             tempJkp.count = 1;  //Rodrigo --> Variável count (variável global entre os 3 botões para evitar repetições e bugs) é modificada para garantir a execução única
         }

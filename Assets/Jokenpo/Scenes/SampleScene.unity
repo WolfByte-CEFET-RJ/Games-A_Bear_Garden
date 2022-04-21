@@ -723,6 +723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc0e07c21c753f34aad969ad987a91e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: 0
   jogo: 0
 --- !u!114 &672707507
 MonoBehaviour:
@@ -1019,7 +1020,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd66bbcb6f67129448c5213daa82efcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tropaQualquer: {fileID: 5066651107832431020, guid: a2221042d1d6aed4ea65904f48d8ed73, type: 3}
+  tropaQualquer:
+  - {fileID: 5066651107832431020, guid: a2221042d1d6aed4ea65904f48d8ed73, type: 3}
+  - {fileID: 3939942514259272347, guid: ab6cca63074021b40bf699a25474693a, type: 3}
+  - {fileID: 331683285063536100, guid: 19f2fdd98c4d6b6479efa3c44b8964e2, type: 3}
+  - {fileID: 7770659065726038005, guid: 73abb169e440f6149b2be4445d737a53, type: 3}
 --- !u!4 &1335414529
 Transform:
   m_ObjectHideFlags: 0
@@ -1060,10 +1065,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1396003793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd66bbcb6f67129448c5213daa82efcd, type: 3}
+  m_Script: {fileID: 11500000, guid: b55753c97ff9b954da7707e7b600b4b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tropaQualquer: {fileID: 8412294873685160715, guid: 1ca60a281c829f74089098b3d9a1b43a, type: 3}
+  tropaQualquer:
+  - {fileID: 8412294873685160715, guid: 1ca60a281c829f74089098b3d9a1b43a, type: 3}
+  - {fileID: 8496914450891272245, guid: 299f162b4fd5d844988df94b9d742663, type: 3}
+  - {fileID: 5469257242268799468, guid: edcde8e6e82cfed4f8c9235efdf569db, type: 3}
+  - {fileID: 6638159419439070107, guid: c863af061cf70474f86205cc0c356745, type: 3}
 --- !u!4 &1396003795
 Transform:
   m_ObjectHideFlags: 0

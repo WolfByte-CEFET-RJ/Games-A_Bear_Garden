@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Papel : MonoBehaviour
 {
+    public static int verificacao_papel;  //Daniel --> Variável que controla spawn de tropas de papel
     int verificacao;
     public TempoJokenpo tempJkp;    //Rodrigo --> Variável que instancia a classe controladora do tempo "TempoJokenpo"
 
@@ -17,7 +18,7 @@ public class Papel : MonoBehaviour
                 Debug.Log("Papel");
 
                 int v = jokenpoVilao();
-                checkResultados(v);
+                verificacao_papel = checkResultados(v);
             }
             tempJkp.count = 1;  //Rodrigo --> Variável count (variável global entre os 3 botões para evitar repetições e bugs) é modificada para garantir a execução única
         }

@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TropasSpawn : MonoBehaviour
+public class TropasSpawnVilao : MonoBehaviour
 {
-    //Script que regula o spawn de tropas de x em x segundos (2 atualmente)
-
+    // Start is called before the first frame update
     public GameObject[] tropaQualquer; //Daniel --> Vetor para guardar prefab das tropas
     private int tempoInt, j;
     private float temporizador;
@@ -18,40 +17,40 @@ public class TropasSpawn : MonoBehaviour
     
     void Update()
     {
-        //Rodrigo --> Atualizando a variável temporizador/contabilizando a passagem de tempo
+        //Rodrigo <-- Atualizando a variável temporizador/contabilizando a passagem de tempo
         temporizador += Time.deltaTime;
 
-        //Rodrigo --> Atribuindo o valor de tempo a uma variável inteira
+        //Rodrigo <-- Atribuindo o valor de tempo a uma variável inteira
         tempoInt = (int)temporizador;
 
-        //Rodrigo --> if para spawnar tropas de 2 em 2 segundos (modificar o número dividindo tempoInt para mudar o intervalo de tempo)
+        //Rodrigo <-- if para spawnar tropas de 2 em 2 segundos (modificar o número dividindo tempoInt para mudar o intervalo de tempo)
         if(tempoInt % 2 == 0)
         {
             for(int i = j; j < 1; i++)  //Rodrigo <-- for que limita o spawn a uma vez usando o valor de j
             {
-                 if(Papel.verificacao_papel == 1) //Daniel --> If para instanciar tropa de papel caso player ganhe.
+                if(Papel.verificacao_papel == 2) //Daniel --> If para instanciar tropa de papel caso vilão ganhe.
                 {
                     Instantiate(tropaQualquer[1], transform.position, transform.rotation);
                     Papel.verificacao_papel = 0; //Daniel --> Atribuir zero após intanciar tropa especial para voltar a instanciar tropas normais.
                 }
-                else if(Tesoura.verificacao_tesoura == 1) //Daniel --> If para instanciar tropa de tesoura caso player ganhe.
+                else if(Tesoura.verificacao_tesoura == 2) //Daniel --> If para instanciar tropa de tesoura caso vilão ganhe.
                 {
                     Instantiate(tropaQualquer[2], transform.position, transform.rotation);
                     Tesoura.verificacao_tesoura = 0;
                 }
-                else if(Pedra.verificacao_pedra == 1)  //Daniel --> If para instanciar tropa de pedra caso player ganhe.
+                else if(Pedra.verificacao_pedra == 2) //Daniel --> If para instanciar tropa de pedra caso vilão ganhe.
                 {
                     Instantiate(tropaQualquer[3], transform.position, transform.rotation);
                     Pedra.verificacao_pedra = 0;
                 }
-                else  //Daniel --> Instanciar tropas normais do player consecutivamente
+                else //Daniel --> Instanciar tropas normais do vilão consecutivamente
                     Instantiate(tropaQualquer[0], transform.position, transform.rotation);
                 j = 1;
             }
         }
-        else    //Rodrigo --> else para resetar o valor de j
+        else    //Rodrigo <-- else para resetar o valor de j
         {
             j = 0;
         }
-    }
+    }  
 }
