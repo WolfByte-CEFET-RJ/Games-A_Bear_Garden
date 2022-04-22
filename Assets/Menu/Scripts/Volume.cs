@@ -25,14 +25,14 @@ public class Volume : MonoBehaviour
     private void Start()
     {
         _musicaSlider.value = PlayerPrefs.GetFloat(AudioManager.Musica_Chave, 1f);
-        _sfxSlider.value    = PlayerPrefs.GetFloat(AudioManager.SFX_Chave, 1f);
+        _sfxSlider.value    = PlayerPrefs.GetFloat(AudioManager.SFX_Chave,    1f);
         _masterSlider.value = PlayerPrefs.GetFloat(AudioManager.Master_Chave, 1f);
     }
 
     private void OnDisable()
     {
         PlayerPrefs.SetFloat(AudioManager.Musica_Chave, _musicaSlider.value);
-        PlayerPrefs.SetFloat(AudioManager.SFX_Chave, _sfxSlider.value);
+        PlayerPrefs.SetFloat(AudioManager.SFX_Chave,    _sfxSlider.value);
         PlayerPrefs.SetFloat(AudioManager.Master_Chave, _masterSlider.value);
     }
 
