@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TempoJokenpo : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class TempoJokenpo : MonoBehaviour
     float temporizador;
     [HideInInspector]
     public bool jogo = false;   //Rodrigo --> Variável jogo precisa ser pública para ser utiliizada em outros scritps, "[HideInInspector]" utilizado para escondê-la como se fosse privada
+    public Text tempTxt;
+
 
     void Start()
     {
@@ -26,6 +29,9 @@ public class TempoJokenpo : MonoBehaviour
 
         //Rodrigo --> Atribuindo o valor de tempo a uma variável inteira
         tempoInt = (int)temporizador;
+
+        //Felipe --> Joga o valor do temporizador para uma UI de texto na cena do jogo
+        tempTxt.text = tempoInt.ToString();
 
         //Rodrigo --> if para realizar o jokenpo de 6 em 6 segundos (modificar o número dividindo tempoInt para mudar o intervalo de tempo)
         if(tempoInt % 6 == 0 && tempoInt != 0)
