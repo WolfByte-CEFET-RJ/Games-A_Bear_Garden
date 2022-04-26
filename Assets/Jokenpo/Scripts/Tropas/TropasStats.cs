@@ -4,19 +4,44 @@ using UnityEngine;
 
 public class TropasStats : MonoBehaviour
 {
-    //Variáveis para tropas comuns ('trp_' para tropa) com seus valores definidos
     [HideInInspector]
-    public float trp_vida = 1;
+    public float trp_vida;
     [HideInInspector]
-    public float trp_atk = 1;
+    public float trp_atk;
     [HideInInspector]
-    public float trp_spd = 0.05f;
+    public float trp_spd;
 
-    //Variáveis para supertropas com seus valores definidos
-        //Pedra
-    //
-        //Papel
-    //
-        //Tesoura
-    //
+    //Variáveis para tropas comuns com seus valores definidos
+    public void TropaComum()
+    {
+        trp_vida = 1;
+        trp_atk = 1;
+        //mudança de speed
+        trp_spd = 0.05f;
+    }
+    
+    //Variáveis para supertropas com seus valores definidos    
+    public void Pedra()
+    {
+        trp_vida = 5;
+        trp_atk = 1;
+        //mudança de speed
+        trp_spd = 0.05f;
+    }
+
+    public void Papel()
+    {
+        trp_vida = 3;
+        trp_atk = 1;
+        //mudança de speed
+        trp_spd = 0.05f;
+    }
+
+    public void Tesoura()
+    {
+        trp_vida = 3;
+        trp_atk = 2;
+        //mudança de speed
+        trp_spd = 0.05f;
+    }
 }

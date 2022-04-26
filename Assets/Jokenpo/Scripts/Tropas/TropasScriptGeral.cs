@@ -17,9 +17,14 @@ public class TropasScriptGeral : MonoBehaviour
     {
         //Rodrigo --> inserir futuramente um if para cada tipo de tropa
         _stats = new TropasStats();
-        vida = _stats.trp_vida;
-        ataque = _stats.trp_atk;
-        speed = _stats.trp_spd;
+        if(this.gameObject.tag == "TropaBasica")
+        {
+            _stats.TropaComum();
+            vida = _stats.trp_vida;
+            ataque = _stats.trp_atk;
+            speed = _stats.trp_spd;
+        }        
+
     }
 
     void Start()

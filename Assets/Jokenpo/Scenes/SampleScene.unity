@@ -725,6 +725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   count: 0
   jogo: 0
+  tempTxt: {fileID: 2009944628}
 --- !u!114 &672707507
 MonoBehaviour:
   m_ObjectHideFlags: 0
