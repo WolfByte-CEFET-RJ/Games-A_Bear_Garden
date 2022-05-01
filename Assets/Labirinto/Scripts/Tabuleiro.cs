@@ -5,7 +5,7 @@ using UnityEngine;
 public class Tabuleiro : MonoBehaviour
 {
     public Dictionary<Vector3Int, TileLogic> tiles;// Dicionário de Posição
-    public List<Floor> floors;
+    public List<Floor> floors;// Andares do Labirinto
     public static Tabuleiro instance;
 
     public Grid grid;
@@ -34,7 +34,7 @@ public class Tabuleiro : MonoBehaviour
             {
                 if(!tiles.ContainsKey(floorTiles[j]))
                 {
-                    CreateTile(floorTiles[j], floors[i]);
+                    CreateTile(floorTiles[j], floors[i]);// Posição e andar do Tile.
                 }
             }
         }

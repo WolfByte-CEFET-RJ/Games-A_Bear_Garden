@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.0b3 (202fb86be42c) revision 2109368'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19044.1586; Version 2009; 64bit' Language: 'pt' Physical Memory: 16323 MB
+OS: 'Windows 10 Pro; OS build 19044.1645; Version 2009; 64bit' Language: 'pt' Physical Memory: 16323 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ D:/OneDrive - cefet-rj.br/Cefet/Projeto-IEEE-games-2021.2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63296
+56908
 Successfully changed project path to: D:/OneDrive - cefet-rj.br/Cefet/Projeto-IEEE-games-2021.2
 D:/OneDrive - cefet-rj.br/Cefet/Projeto-IEEE-games-2021.2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 129.92 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 209.62 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.0b3 (202fb86be42c)
 [Subsystems] Discovering subsystems at path D:/Unity hub/2021.1.0b3/Editor/Data/Resources/UnitySubsystems
@@ -30,259 +30,23 @@ Direct3D:
     Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
     Vendor:   NVIDIA
     VRAM:     4043 MB
-    Driver:   30.0.15.1179
+    Driver:   30.0.15.1259
 Initialize mono
 Mono path[0] = 'D:/Unity hub/2021.1.0b3/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity hub/2021.1.0b3/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity hub/2021.1.0b3/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56956
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity hub/2021.1.0b3/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Unity hub/2021.1.0b3/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.002719 seconds.
+Registered in 0.003847 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 114.54 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 201.87 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.162 seconds
+- Completed reload, in  5.586 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004253 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 120.15 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.574 seconds
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 1.42 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3356 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 259.4 MB.
-System memory in use after: 259.6 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 3811.
-Total: 3.075000 ms (FindLiveObjects: 0.356800 ms CreateObjectMapping: 0.258800 ms MarkObjects: 2.342500 ms  DeleteObjects: 0.115600 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Labirinto/Arts/Dado/Dado 4.prefab
-  artifactKey: Guid(fef7da168000051448939575bf57ba0a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Arts/Dado/Dado 4.prefab using Guid(fef7da168000051448939575bf57ba0a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/fe8f43dbabc710041abfd97126315b60.asset.1.index for Assets/Labirinto/Arts/Dado/Dado 4.prefab with Types
- -> (artifact id: 'a8e94cca296ba70fcd18a3b8783461ad') in 0.201653 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.025942 seconds.
-  path: Assets/Labirinto/Scripts/Dados.cs
-  artifactKey: Guid(d992f7fbf3815d84780a7b94ef40f044) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Scripts/Dados.cs using Guid(d992f7fbf3815d84780a7b94ef40f044) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/16d953d78bf94a74388d7d6dcf0f5313.asset.1.index for Assets/Labirinto/Scripts/Dados.cs with Types
- -> (artifact id: '4db3682809c6fd19ce2bf941fe3dea31') in 0.027167 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.027356 seconds.
-  path: Assets/Labirinto/Scripts/Tabuleiro.cs
-  artifactKey: Guid(7fd909d3b8f9c534c96132be73fa4d23) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Scripts/Tabuleiro.cs using Guid(7fd909d3b8f9c534c96132be73fa4d23) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/fc78a6b8b77d6584e8db69c6f8cf7bdc.asset.1.index for Assets/Labirinto/Scripts/Tabuleiro.cs with Types
- -> (artifact id: '622ba65ca584b464078bef8631161e8a') in 0.011899 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.028651 seconds.
-  path: Assets/Labirinto/Arts/Dado
-  artifactKey: Guid(74d98c68ee09fbf46a7cb1e3d7976d04) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Arts/Dado using Guid(74d98c68ee09fbf46a7cb1e3d7976d04) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/4b48167dca870434a96588016194c63f.asset.1.index for Assets/Labirinto/Arts/Dado with Types
- -> (artifact id: 'c9dfe8a6ef16ae3642d5c84138adee6a') in 0.009920 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.026185 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab
-  artifactKey: Guid(30128e1bdd62c6e4399c29495de2854c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab using Guid(30128e1bdd62c6e4399c29495de2854c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/f165496656ff4ac498fb125adc2726ba.asset.1.index for Assets/Labirinto/Arts/Casa e Tabuleiro/Tabuleiro.prefab with Types
- -> (artifact id: '19ce42b6eb4bac8dd2699afc1e2188cf') in 0.010568 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.028551 seconds.
-  path: Assets/Labirinto/Labirinto.unity
-  artifactKey: Guid(2b5ef2c878f2c6e4fbcad3adec465d84) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Labirinto.unity using Guid(2b5ef2c878f2c6e4fbcad3adec465d84) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/875197b8e4e05fa4ea3a683f0f9423d2.asset.1.index for Assets/Labirinto/Labirinto.unity with Types
- -> (artifact id: '5aa520e5cacd5a883f890575ad8f73cc') in 0.010984 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.028307 seconds.
-  path: Assets/Labirinto/Arts/Palette/Palet01.prefab
-  artifactKey: Guid(13c1cff68fda76843bd391b6083be0f0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Arts/Palette/Palet01.prefab using Guid(13c1cff68fda76843bd391b6083be0f0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/505a2108286114648a16aa22346dbc83.asset.1.index for Assets/Labirinto/Arts/Palette/Palet01.prefab with Types
- -> (artifact id: 'df179ad536636ae26bbf31eeff6a5c10') in 0.013141 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.027129 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 3.prefab
-  artifactKey: Guid(c3191043765563347959670763853ff6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Arts/Dado/Dado 3.prefab using Guid(c3191043765563347959670763853ff6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/4ecc610e4be63164e8e66ce1978badc4.asset.1.index for Assets/Labirinto/Arts/Dado/Dado 3.prefab with Types
- -> (artifact id: '9fa8b999e91263537bd6d2bf881cdf36') in 0.010814 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.026585 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 5.prefab
-  artifactKey: Guid(b18b4de52c96ba943a026a488dcbbff7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Arts/Dado/Dado 5.prefab using Guid(b18b4de52c96ba943a026a488dcbbff7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/159dbac1bf401fa4c85f1f709a4f3713.asset.1.index for Assets/Labirinto/Arts/Dado/Dado 5.prefab with Types
- -> (artifact id: 'c54f1896b0844ecc26606248656f0732') in 0.010873 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.026493 seconds.
-  path: Assets/Labirinto/Scripts/Player 02/GameControle02.cs
-  artifactKey: Guid(7e436968451021144995f9fe52610f18) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Scripts/Player 02/GameControle02.cs using Guid(7e436968451021144995f9fe52610f18) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/c45231d55f6eb2a42ae24fb84298aafb.asset.1.index for Assets/Labirinto/Scripts/Player 02/GameControle02.cs with Types
- -> (artifact id: '357dc019377a91cda43cfc31f7bd7f44') in 0.012057 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.026627 seconds.
-  path: Assets/Labirinto/Scripts/Floor.cs
-  artifactKey: Guid(08f9b6b3aefbf7e40bf8fb755ed3116b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Scripts/Floor.cs using Guid(08f9b6b3aefbf7e40bf8fb755ed3116b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/31d48590a852ae14696d5b87995cf82b.asset.1.index for Assets/Labirinto/Scripts/Floor.cs with Types
- -> (artifact id: '9f449c07dff4b7b3a8fe5403b9678ca5') in 0.011344 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.026379 seconds.
-  path: Assets/Labirinto/Scripts/Player 03/GameControle03.cs
-  artifactKey: Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Scripts/Player 03/GameControle03.cs using Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/0cffcbc453d4ef84793230943d03f16f.asset.1.index for Assets/Labirinto/Scripts/Player 03/GameControle03.cs with Types
- -> (artifact id: '160399d7e0108e4a95cfa66df0646423') in 0.011647 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.027027 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 1.prefab
-  artifactKey: Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Arts/Dado/Dado 1.prefab using Guid(0756e8bca4a71b744ae7f698e2137f34) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/bd47d0e52a718284683efa40a459a316.asset.1.index for Assets/Labirinto/Arts/Dado/Dado 1.prefab with Types
- -> (artifact id: '0902456cccd9815ca1ffc4c14ad640ba') in 0.012412 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.027289 seconds.
-  path: Assets/Labirinto/Scripts/Player 01/GameControle01.cs
-  artifactKey: Guid(1fa0cf5154014394084a2b4a22e1cfd5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Scripts/Player 01/GameControle01.cs using Guid(1fa0cf5154014394084a2b4a22e1cfd5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/7fb969ef08d98454eb6b4e1847eef129.asset.1.index for Assets/Labirinto/Scripts/Player 01/GameControle01.cs with Types
- -> (artifact id: '15aed024594296ce0dee284f1af595b3') in 0.011571 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.026294 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 2.prefab
-  artifactKey: Guid(2d70dca701184d74599977fadf3f2e07) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Arts/Dado/Dado 2.prefab using Guid(2d70dca701184d74599977fadf3f2e07) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/e64f7d61445ec3440b39342f285eea81.asset.1.index for Assets/Labirinto/Arts/Dado/Dado 2.prefab with Types
- -> (artifact id: '9b796ac70b65e2fffab8bcc1a6838fbc') in 0.011345 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.028143 seconds.
-  path: Assets/Labirinto/Scripts/TileLogic.cs
-  artifactKey: Guid(917afb7f2fea12c47a7ec84bb5563b60) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Scripts/TileLogic.cs using Guid(917afb7f2fea12c47a7ec84bb5563b60) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/389a6ec3cc0c6c94ba65c78c35a0154d.asset.1.index for Assets/Labirinto/Scripts/TileLogic.cs with Types
- -> (artifact id: 'c5d98762def006c502584ee9b6a685ef') in 0.011926 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.026139 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab
-  artifactKey: Guid(4fc797185012daa49ba72766e3c5ce76) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab using Guid(4fc797185012daa49ba72766e3c5ce76) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/718199bcc7749eb4a8a53adeed5cd1ad.asset.1.index for Assets/Labirinto/Arts/Casa e Tabuleiro/Casas.prefab with Types
- -> (artifact id: '9abc6ce214e4b0933af835575d1d060a') in 0.011725 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.024963 seconds.
-  path: Assets/Labirinto/Scripts/Player 01/PlayerControle01.cs
-  artifactKey: Guid(76daade614962254e8275deacda81190) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Scripts/Player 01/PlayerControle01.cs using Guid(76daade614962254e8275deacda81190) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/47c30c327f931b64283bbe1e89a33e36.asset.1.index for Assets/Labirinto/Scripts/Player 01/PlayerControle01.cs with Types
- -> (artifact id: 'ef56f7af93eaab01f0ad9202307ba768') in 0.010726 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.025762 seconds.
-  path: Assets/Labirinto/Arts/Palette
-  artifactKey: Guid(d094680eb8a14bd45805ae97f8ddf70d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Arts/Palette using Guid(d094680eb8a14bd45805ae97f8ddf70d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/46665f11b74e5244da7d263c99587838.asset.1.index for Assets/Labirinto/Arts/Palette with Types
- -> (artifact id: '6c13a1b1f1ddfe0454b4cf46fc8853e9') in 0.013782 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.026329 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro
-  artifactKey: Guid(6dcb0b680dc324f47860b5a37dc70e35) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro using Guid(6dcb0b680dc324f47860b5a37dc70e35) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/512b23e34d5922c44a18968d3d9746ec.asset.1.index for Assets/Labirinto/Arts/Casa e Tabuleiro with Types
- -> (artifact id: '5460dde0546b3d02ad71a73c3800f8c8') in 0.011136 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.026015 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Bloco de Grarma 128.png
-  artifactKey: Guid(9aa546b4f68a3074f95e3ea1832ff679) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Bloco de Grarma 128.png using Guid(9aa546b4f68a3074f95e3ea1832ff679) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/061fdb43e8f8df946b58b66b24c56045.asset.1.index for Assets/Labirinto/Arts/Casa e Tabuleiro/Bloco de Grarma 128.png with Types
- -> (artifact id: 'eb219d5af0567931ac2707f2af1732ea') in 0.074651 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.024454 seconds.
-  path: Assets/Labirinto/Arts/Casa e Tabuleiro/Bloco de Grarma 128.asset
-  artifactKey: Guid(5d652d7dc6c112b4f956ea4dfd7c0c4e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Arts/Casa e Tabuleiro/Bloco de Grarma 128.asset using Guid(5d652d7dc6c112b4f956ea4dfd7c0c4e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/ddeacdebb30d18340b8916ffd90916ce.asset.1.index for Assets/Labirinto/Arts/Casa e Tabuleiro/Bloco de Grarma 128.asset with Types
- -> (artifact id: 'a5495c47e9e2d56e60dcbb178f47d438') in 0.014281 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.026981 seconds.
-  path: Assets/Labirinto/Arts/Dado/Dado 6.prefab
-  artifactKey: Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Labirinto/Arts/Dado/Dado 6.prefab using Guid(a8e7c400845d6fa48a3c146b3c87e51e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) 
-[QS] Generated asset artifact (ASIEI01) VirtualArtifacts/NamedExtra/d4a6dc35aa1bb3c48ae7bb1c4d0b6976.asset.1.index for Assets/Labirinto/Arts/Dado/Dado 6.prefab with Types
- -> (artifact id: '58d035c7191941a1900c3e540834c67a') in 0.012409 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.233511 seconds.
-  path: Assets/Labirinto/Scripts/Player 03/GameControle03.cs
-  artifactKey: Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/Player 03/GameControle03.cs using Guid(958cdcc143c2f8a4599acf61e34a4be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fefb8a31512b86d45f2d3a046359f838') in 0.006897 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 938.225970 seconds.
-  path: Assets/Labirinto/Scripts/TileLogic.cs
-  artifactKey: Guid(917afb7f2fea12c47a7ec84bb5563b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Labirinto/Scripts/TileLogic.cs using Guid(917afb7f2fea12c47a7ec84bb5563b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f67c5a04d950d3de99fe74cba9863d33') in 0.009662 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013070 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  6.775 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.85 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3346 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 259.1 MB.
-System memory in use after: 259.3 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3814.
-Total: 41.485800 ms (FindLiveObjects: 0.494600 ms CreateObjectMapping: 0.465400 ms MarkObjects: 40.415100 ms  DeleteObjects: 0.108400 ms)
-
+Registered in 0.007151 seconds.

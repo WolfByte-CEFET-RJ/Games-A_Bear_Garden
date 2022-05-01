@@ -19,7 +19,7 @@ public class Floor : MonoBehaviour
         tilemapRenderer = this.transform.GetComponent<TilemapRenderer>();
         tilemap = GetComponent<Tilemap>();
     }
-    public List<Vector3Int> LoadTiles()
+    public List<Vector3Int> LoadTiles()// Somente irá retornar os Tiles existente no Tabuleiro.
     {
         List<Vector3Int> tiles = new List<Vector3Int>();
         for(int i=minimoXY.x; i<=maximoXY.x; i++)
