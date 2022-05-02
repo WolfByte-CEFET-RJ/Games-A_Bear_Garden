@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Mute : MonoBehaviour
 {
+    [Header("Imagens do Mute")]
     [SerializeField] Image soundOnIcon;
     [SerializeField] Image soundOffIcon;
 

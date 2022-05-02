@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tamanhoUI: {fileID: 5895990067614080133}
-  _uiMenu: {fileID: 0}
+  _uiInterface: {fileID: 0}
   _uiFase: {fileID: 0}
 --- !u!1 &5121520235940715686
 GameObject:
@@ -1392,8 +1392,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 19.2}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: 19}
+  m_SizeDelta: {x: 199.42, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5121520236788950478
 CanvasRenderer:
@@ -1436,7 +1436,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Modo de exibi\xE7\xE3o"
+  m_Text: "Modo de exibi\xE7\xE3o: Tela Cheia"
 --- !u!1 &5121520236800370950
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,9 +6,9 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager instance;
+    public static    AudioManager instance;
 
-    [SerializeField] AudioMixer _mixer;
+    [SerializeField] AudioMixer   _mixer;
     
     public const string Musica_Chave = "musicaVolume";
     public const string SFX_Chave = "sFXVolume";

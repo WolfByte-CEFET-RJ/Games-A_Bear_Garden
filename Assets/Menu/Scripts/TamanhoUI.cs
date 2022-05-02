@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class TamanhoUI : MonoBehaviour
 {
-    public Slider       _tamanhoUI;
-    public GameObject   _uiMenu;
-    public GameObject   _uiFase;
+    public Slider       _tamanhoUI;     //Natty Slider de UI
+    public GameObject   _uiInterface;   //Natty GameObject com os canvas da interface
+    public GameObject   _uiFase;        //Natty GameObject com os canvas da fase 
 
     void Start()
     {
@@ -17,7 +17,7 @@ public class TamanhoUI : MonoBehaviour
     void Update()
     {
         _tamanhoUI.GetComponent<Slider>();
-        _uiMenu.GetComponent<RectTransform>().localScale = new Vector3(_tamanhoUI.value, _tamanhoUI.value, _tamanhoUI.value);
+        _uiInterface.GetComponent<RectTransform>().localScale = new Vector3(_tamanhoUI.value, _tamanhoUI.value, _tamanhoUI.value);
         _uiFase.GetComponent<RectTransform>().localScale = new Vector3(_tamanhoUI.value, _tamanhoUI.value, _tamanhoUI.value);
 
         PlayerPrefs.SetFloat("ui", (_tamanhoUI.value));

@@ -6,6 +6,7 @@ using UnityEngine.Audio;
 
 public class Volume : MonoBehaviour
 {
+    [Header("Mixer e Sliders")]
     [SerializeField] AudioMixer _mixer;
     [SerializeField] Slider     _musicaSlider;
     [SerializeField] Slider     _sfxSlider;
