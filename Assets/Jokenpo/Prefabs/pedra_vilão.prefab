@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 6758653743042871094}
   m_Layer: 0
   m_Name: "pedra_vil\xE3o"
-  m_TagString: TropaBasica
+  m_TagString: SupertropaPedra
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -354,6 +354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 175a5931bebf272468e69a3de6f31f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stats: {fileID: 6758653743042871094}
   vida: 0
   ataque: 0
   speed: 0

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5166894048708823576}
   m_Layer: 0
   m_Name: papel
-  m_TagString: TropaBasica
+  m_TagString: SupertropaPapel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 175a5931bebf272468e69a3de6f31f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stats: {fileID: 5166894048708823576}
   vida: 0
   ataque: 0
   speed: 0
