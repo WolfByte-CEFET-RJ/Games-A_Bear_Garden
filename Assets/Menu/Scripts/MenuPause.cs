@@ -34,12 +34,6 @@ public class MenuPause : MonoBehaviour
         //_Canvas.SetActive(false);
         Debug.Log("Jogo Pausado!");
     }
-    public void VoltaparaMenu()
-    {
-        SceneManager.LoadScene("Menu");     //Natty vai para o menu
-        Time.timeScale = 1f;
-        Debug.Log("Voltou para Menu Principal!");
-    }
 
     public void RetomarFase()
     {
@@ -48,5 +42,20 @@ public class MenuPause : MonoBehaviour
         _pausePainel.SetActive(false);
         //_Canvas.SetActive(true);
         Debug.Log("Retomou Fase!");
+    }
+
+    public void VoltaparaMenu()
+    {
+        SceneManager.LoadScene("Menu");     //Natty vai para o menu
+        Time.timeScale = 1f;
+        Debug.Log("Voltou para Menu Principal!");
+    }
+
+    public void InstrucaoScreen()
+    {
+        Time.timeScale = 0f;                //Natty Pausa ao abrir as instruções
+        _pausePainel.SetActive(true);
+        //_Canvas.SetActive(false);
+        Debug.Log("Jogo Pausado Pelas Instruções!");
     }
 }
