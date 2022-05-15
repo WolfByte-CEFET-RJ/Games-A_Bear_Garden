@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Mute : MonoBehaviour
-{
+public class Mute : MonoBehaviour {
+    
     [Header("Imagens do Mute")]
     [SerializeField] Image soundOnIcon;
     [SerializeField] Image soundOffIcon;
 
-    private bool muted = false;
+    public bool muted = false;
 
-    public void Start()
-    {
+    public void Start() {
         if(!PlayerPrefs.HasKey("muted"))
         {
             PlayerPrefs.SetInt("muted", 0);
@@ -27,8 +26,7 @@ public class Mute : MonoBehaviour
         AudioListener.pause = muted;
     }
 
-    public void OnButtonPress() 
-    {
+    public void OnButtonPress() {
         if (muted == false)
         {
             muted = true;
@@ -46,8 +44,7 @@ public class Mute : MonoBehaviour
         UpdateButtonIcon();
     }
 
-    private void UpdateButtonIcon()
-    {
+    private void UpdateButtonIcon() {
         if(muted == false)
         {
             soundOnIcon.enabled = true;
@@ -60,13 +57,18 @@ public class Mute : MonoBehaviour
         }
     }
 
-    private void Load()
-    {
+    private void Update() {
+        if(AudioListener.pause==false) {
+            muted = false;
+            UpdateButtonIcon();
+        }
+    }
+
+    private void Load() {
         muted = PlayerPrefs.GetInt("muted") == 1;
     }
 
-    private void Save()
-    {
+    private void Save() {
         PlayerPrefs.SetInt("muted", muted ? 1 : 0);
     }
 }

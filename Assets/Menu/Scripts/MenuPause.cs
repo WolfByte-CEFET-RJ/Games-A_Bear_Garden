@@ -8,54 +8,84 @@ public class MenuPause : MonoBehaviour
 {
     [Header("Pause e Menus")]
     public GameObject   _pausePainel;   //Natty Variavel do GameObject do "MenuPause"
+    public GameObject   _pauseInstruction;
     //public GameObject   _Canvas;        //Natty Insira o GameObject com todos os Canvas da fase dentro
     public bool         _estaPausado;   //Natty Bool sobre o Pause
 
-    //Natty Lembre-se de manter o CanvasMenuPause como false para não abrir quando o jogo começa
-
-    void Start()
-    {
-        Time.timeScale = 1f;                //Natty Tempo do jogo = 1, logo se pausado vira 0 e para os elementos
-    }
+    //Natty Lembre-se de manter o CanvasMenuPause como false para nï¿½o abrir quando o jogo comeï¿½a
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            PauseScreen();                  //Natty Chama o Pause
+            _estaPausado = !_estaPausado;   //Ferrari  Modifica a variavel para seu contrario
+            PauseScreen();
+            _pauseInstruction.SetActive(false);           
         }
+    }
+
+    public void OnButtaoPress() 
+    {
+        _estaPausado = !_estaPausado;  
+        PauseScreen();
+    }
+
+    public void OnInstructionPress()
+    {
+        _estaPausado = !_estaPausado;
+        Time.timeScale = 0;
+        _pauseInstruction.SetActive(true);
     }
 
     public void PauseScreen()
     {
-        _estaPausado = true;                //Natty caracteristica para o jogo pausado
-        Time.timeScale = 0f;
-        _pausePainel.SetActive(true);
-        //_Canvas.SetActive(false);
-        Debug.Log("Jogo Pausado!");
+        if(_estaPausado)                     //Ferrari Adicionei o if para retomar o jogo ou pausar
+        {              
+            _pausePainel.SetActive(true);
+            Time.timeScale = 0;
+            //_Canvas.SetActive(false);
+            Debug.Log("Jogo Pausado!");
+        } 
+        else 
+        {
+            _pausePainel.SetActive(false);
+            Time.timeScale = 1;
+            //_Canvas.SetActive(true);
+            Debug.Log("Retomou Fase!");
+        }
     }
 
     public void RetomarFase()
     {
-        _estaPausado = false;               //Natty caracteristicas para voltar ao jogo (inversas ao pause)
-        Time.timeScale = 1f;
-        _pausePainel.SetActive(false);
+        Time.timeScale = 1;
+        _estaPausado = false;                 //Natty caracteristicas para voltar ao jogo (inversas ao pause)
+        _pausePainel.SetActive(false);  
         //_Canvas.SetActive(true);
         Debug.Log("Retomou Fase!");
     }
 
+
     public void VoltaparaMenu()
     {
         SceneManager.LoadScene("Menu");     //Natty vai para o menu
-        Time.timeScale = 1f;
+        Time.timeScale = 1;
+        _estaPausado = false;
         Debug.Log("Voltou para Menu Principal!");
     }
 
+
+
     public void InstrucaoScreen()
     {
-        Time.timeScale = 0f;                //Natty Pausa ao abrir as instruções
+        
+        Time.timeScale = 0;                //Natty Pausa ao abrir as instruï¿½ï¿½es
+        _estaPausado = true;
         _pausePainel.SetActive(true);
         //_Canvas.SetActive(false);
-        Debug.Log("Jogo Pausado Pelas Instruções!");
+        Debug.Log("Jogo Pausado Pelas Instruï¿½ï¿½es!");
     }
+
+
+
+
 }

@@ -1798,7 +1798,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5121520236924093869}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: MenuOpcoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1828,8 +1828,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 280, y: 114}
+  m_AnchoredPosition: {x: 2, y: -10}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5121520236926151426
 GameObject:
@@ -2894,10 +2894,10 @@ RectTransform:
   m_Father: {fileID: 5121520236924093869}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.45041454, y: 0.79571915}
-  m_AnchorMax: {x: 0.53553444, y: 0.93375593}
-  m_AnchoredPosition: {x: 1.938736, y: 5.276547}
-  m_SizeDelta: {x: 476.12253, y: -5.4705687}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 185}
+  m_SizeDelta: {x: 582.12256, y: 85.44818}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5121520237540054684
 CanvasRenderer:

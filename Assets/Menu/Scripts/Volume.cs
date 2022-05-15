@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 
+
 public class Volume : MonoBehaviour
 {
     [Header("Mixer e Sliders")]
@@ -37,18 +38,23 @@ public class Volume : MonoBehaviour
         PlayerPrefs.SetFloat(AudioManager.Master_Chave, _masterSlider.value);
     }
 
+
+    //Nat adicionei uma linha de codigo em cada funcao, vou explicar o porque: Ao alterar o AudioListener ao mexer no volume, eu despauso a musica e no script de mute eu altero a imagem do botao de mute, comentei a alteracao no outro script tambem.
     void SetMusicaVolume(float value)
     {
+        AudioListener.pause = false; //           <--
         _mixer.SetFloat(Mixer_Musica, Mathf.Log10(value) * 20);
     }
 
     void SetSFXVolume(float value)
     {
+        AudioListener.pause = false;//            <--
         _mixer.SetFloat(Mixer_SFX, Mathf.Log10(value) * 20);
     }
 
     void SetMasterVolume(float value)
     {
+        AudioListener.pause = false;//            <--
         _mixer.SetFloat(Mixer_Master, Mathf.Log10(value) * 20);
     }
 }

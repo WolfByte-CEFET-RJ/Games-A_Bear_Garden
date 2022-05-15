@@ -1780,6 +1780,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7001933053782477827, guid: 11df6e916ebf8de479b0592e6dcd04c6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.11999512
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001933053782477827, guid: 11df6e916ebf8de479b0592e6dcd04c6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.090026855
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11df6e916ebf8de479b0592e6dcd04c6, type: 3}
 --- !u!1001 &5121520237331481887
@@ -1875,11 +1883,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5121520236924093869, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 280
+      value: 1086.39
       objectReference: {fileID: 0}
     - target: {fileID: 5121520236924093869, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 114
+      value: 551.89
       objectReference: {fileID: 0}
     - target: {fileID: 5121520236924093869, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1915,7 +1923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5121520236924093869, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 5121520236924093869, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1945,6 +1953,38 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5121520237540054686, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121520237540054686, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121520237540054686, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121520237540054686, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121520237540054686, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 529.12256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121520237540054686, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 86.529434
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121520237540054686, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121520237540054686, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 184.40002
+      objectReference: {fileID: 0}
     - target: {fileID: 5121520237934839571, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.6629663
@@ -1957,6 +1997,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 467051003}
+    - target: {fileID: 5121520237944004861, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -295.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121520237944004861, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 184.4
+      objectReference: {fileID: 0}
     - target: {fileID: 5895990067614080133, guid: 8e38fab836c94d04a8034344375f6a21, type: 3}
       propertyPath: m_Value
       value: 0.7
