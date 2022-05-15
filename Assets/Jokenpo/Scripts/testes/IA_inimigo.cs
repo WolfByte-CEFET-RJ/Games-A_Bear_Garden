@@ -2,33 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pedra : MonoBehaviour
+public class IA_inimigo : MonoBehaviour
 {
-    public static int verificacao_pedra;  //Daniel --> Variável que controla spawn de tropas de pedra
-    int verificacao;
-    public TempoJokenpo tempJkp;    //Rodrigo --> Variável que instancia a classe controladora do tempo "TempoJokenpo"
+    
+    // randomizar a resposta do vilão (1/3, 2/3, 2/3)
+    // comparar a resposta do vilão com a do player
+    // retornar o resultado para o jogo
 
-    // GATILHO DO SCRPIT
-    public void pedra(){
-        if(tempJkp.jogo)    //Rodrigo --> If para verificar se a ação de Jokenpo poderá ocorrer (a cada 6 segundos)
-        {
-            for(int i = tempJkp.count; i < 1; i++)  //Rodrigo --> For para restringir a ação a uma vez (com auxílio da variável count)
-            {
-                Debug.Log("Pedra");
+    private int verificacao_pedra, verificacao, jg = 0;
+    public TempoJokenpo tempJkp;
 
-                int v = jokenpoVilao();
-                verificacao_pedra = checkResultados(v);
+    public void Pedra()
+    {
+        
+        int v = jokenpoVilao();
+
+        if(jg != 0){
+            verificacao_pedra = checkResultados(v);
+        } else{
+            if (tempJkp.jogo){
+                jg = 0;
+            } else{
+                jg = 1;
             }
-            tempJkp.count = 1;  //Rodrigo --> Variável count (variável global entre os 3 botões para evitar repetições e bugs) é modificada para garantir a execução única
-        }
-        else
-        {
-            tempJkp.count = 0;
         }
 
     }
 
-    // DECIDE SE O VILAO USARA PEDRA, PAPEL OU TESOURA
+     // DECIDE SE O VILAO USARA PEDRA, PAPEL OU TESOURA
     int jokenpoVilao(){
         int a = (int) Random.Range(1, 60); // a = codigo de resposta do vilao
 

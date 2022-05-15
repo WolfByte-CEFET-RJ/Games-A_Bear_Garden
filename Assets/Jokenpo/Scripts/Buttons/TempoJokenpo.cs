@@ -34,13 +34,12 @@ public class TempoJokenpo : MonoBehaviour
         tempTxt.text = tempoInt.ToString();
 
         //Rodrigo --> if para realizar o jokenpo de 6 em 6 segundos (modificar o número dividindo tempoInt para mudar o intervalo de tempo)
-        if(tempoInt > 6  && tempoInt != 0)
+        if(tempoInt < 6  /*&& tempoInt != 0*/)
         {
-            temporizador = 1;           // Felipe --> troca o valor do temporizador para 1 ao final de cada partida
 
             for(int i = j; j < 1; i++)  //Rodrigo --> for que limita o for a uma vez usando o valor de j
             {
-                //Debug.Log("TempoJokenpo funcionando.");
+                Debug.Log("TempoJokenpo funcionando.");
                 jogo = true;
                 j = 1;
             }

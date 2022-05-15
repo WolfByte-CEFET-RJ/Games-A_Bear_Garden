@@ -5,11 +5,9 @@ using UnityEngine.UI;
 
 public class Papel : MonoBehaviour
 {
-    public Text resultado_papel; //Daniel --> Variável para manipular a UI do resultado do jokenpo referente ao papel.
     public static int verificacao_papel;  //Daniel --> Variável que controla spawn de tropas de papel
     int verificacao;
     public TempoJokenpo tempJkp;    //Rodrigo --> Variável que instancia a classe controladora do tempo "TempoJokenpo"
-
 
     //GATILHO DO SCRIPT
     public void papel(){
@@ -55,40 +53,26 @@ public class Papel : MonoBehaviour
 
     // ANALISA A JOGADA DO PLAYER E DO VILÃO
    int checkResultados(int v){
-       string situacao; //Daniel --> Variável para armazenar situacao da partida a ser usada na corrotina.
 
     /*Foi utilizado o sistema abaixo ao longo de todo o jogo, ou seja,
     esses códigos de verificação serão iguais para todos os scripts*/
 
+
        if(v == 3){
            Debug.Log("Situacao: Empate!");
            verificacao = 0;
-           situacao = "Empate!";
-           StartCoroutine(result(situacao)); //Daniel --> Iniciando corrotina.
 
        } else if(v == 2){
             Debug.Log("Situacao: Vitoria Vilao!");
             verificacao = 2;
-            situacao = "Vitória do Vilão!";
-            StartCoroutine(result(situacao));
 
        } else{
            Debug.Log("Situacao: Vitoria Player!");
            verificacao = 1;
-           situacao = "Vitória do player";
-           StartCoroutine(result(situacao));
 
        }
 
         return verificacao;
    }
-
-    IEnumerator result(string situacao)
-    {
-        //Daniel --> Corrotina para mostrar a situação na tela e depois de 2 segundos limpar.
-        resultado_papel.text = situacao;
-        yield return new WaitForSeconds(2f); //Altere esse valor para mudar os segundos.
-        resultado_papel.text = "";
-    }
 
 }

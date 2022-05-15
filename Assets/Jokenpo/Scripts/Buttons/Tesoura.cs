@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Tesoura : MonoBehaviour
 {
-    public Text resultado_tesoura; //Daniel --> Variável para manipular a UI do resultado do jokenpo referente a tesoura.
     public static int verificacao_tesoura;  //Daniel --> Variável que controla spawn de tropas de tesoura
     
     int verificacao;
@@ -51,38 +50,23 @@ public class Tesoura : MonoBehaviour
    }
 
     //ANALISA OS RESULTADOS DO PLAYER E DO VILÃO
-    int checkResultados(int v){  
-        string situacao; //Daniel --> Variável para armazenar situacao da partida a ser usada na corrotina.
+    int checkResultados(int v){    
        
         //Foi utilizado o sistema abaixo ao longo de todo o jogo, ou seja, esses códigos de verificação serão iguais para todos os scripts
 
        if(v == 3){
            Debug.Log("Situacao: Vitoria Player!");
            verificacao = 1;
-           situacao = "Vitoria Player!";
-           StartCoroutine(result(situacao)); //Daniel --> Iniciando corrotina.
 
        } else if(v == 2){
            Debug.Log("Situacao: Empate!");
            verificacao = 0;
-           situacao = "Empate!";
-           StartCoroutine(result(situacao));
 
        } else{
            Debug.Log("Situacao: Vitoria Vilao!");
            verificacao = 2;
-           situacao = "Vitoria Vilão!";
-           StartCoroutine(result(situacao));
        }
 
         return verificacao;
    }
-
-    IEnumerator result(string situacao)
-    {
-        //Daniel --> Corrotina para mostrar a situação na tela e depois de 2 segundos limpar.
-        resultado_tesoura.text = situacao;
-        yield return new WaitForSeconds(2f); //Altere esse valor para mudar os segundos.
-        resultado_tesoura.text = "";
-    }
 }

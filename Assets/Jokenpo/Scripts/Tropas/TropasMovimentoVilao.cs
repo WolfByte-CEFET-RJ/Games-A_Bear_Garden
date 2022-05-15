@@ -11,7 +11,7 @@ public class TropasMovimentoVilao : MonoBehaviour
     
     void Start()
     {
-        valorX = -1 * _scriptGeral.speed;
+        valorX = _scriptGeral.speed;
         vetorMovimento = new Vector3(valorX, 0, 0);     //Rodrigo --> Criar o movimento das tropas (0.05: 0.05 para a direita)
     }
 
