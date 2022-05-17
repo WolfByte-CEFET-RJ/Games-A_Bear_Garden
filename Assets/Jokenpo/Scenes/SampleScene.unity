@@ -636,7 +636,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 402205701}
   m_OnClick:
     m_PersistentCalls:
@@ -1209,6 +1209,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempJkp: {fileID: 672707506}
+  pedraButton: {fileID: 1320835171}
+  papelButton: {fileID: 402205700}
+  tesouraButton: {fileID: 1454429632}
 --- !u!114 &1143916154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1222,6 +1225,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempJkp: {fileID: 672707506}
+  pedraButton: {fileID: 1320835171}
+  papelButton: {fileID: 402205700}
+  tesouraButton: {fileID: 1454429632}
 --- !u!114 &1143916155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1235,6 +1241,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempJkp: {fileID: 672707506}
+  pedraButton: {fileID: 1320835171}
+  papelButton: {fileID: 402205700}
+  tesouraButton: {fileID: 1454429632}
 --- !u!1 &1167595314
 GameObject:
   m_ObjectHideFlags: 0
@@ -1454,7 +1463,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1320835172}
   m_OnClick:
     m_PersistentCalls:
@@ -1551,7 +1560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335414527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: 0, z: 0}
+  m_LocalPosition: {x: -7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1599,7 +1608,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396003793}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: 0, z: 0}
+  m_LocalPosition: {x: 7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1683,7 +1692,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1454429633}
   m_OnClick:
     m_PersistentCalls:

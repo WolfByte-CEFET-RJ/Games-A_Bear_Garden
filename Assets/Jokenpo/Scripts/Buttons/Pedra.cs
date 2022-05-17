@@ -1,31 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Pedra : MonoBehaviour
 {
     public static int verificacao_pedra;  //Daniel --> Variável que controla spawn de tropas de pedra
-    int verificacao;
+    int verificacao, j = 0;
     public TempoJokenpo tempJkp;    //Rodrigo --> Variável que instancia a classe controladora do tempo "TempoJokenpo"
+    public Button pedraButton;
+    public Button papelButton;
+    public Button tesouraButton;    //Rodrigo --> Variáveis controladoras dos botões
 
-    // GATILHO DO SCRPIT
-    public void pedra(){
-        if(tempJkp.jogo)    //Rodrigo --> If para verificar se a ação de Jokenpo poderá ocorrer (a cada 6 segundos)
+    void Update()   //Rodrigo --> Função para ativar e desativar o OnClick do botão
+    {
+        if(tempJkp.jogo)
         {
-            for(int i = tempJkp.count; i < 1; i++)  //Rodrigo --> For para restringir a ação a uma vez (com auxílio da variável count)
+            for(int i = j; i < 1; i++)  //Rodrigo --> For para restringir a ação a uma vez (com auxílio da variável count)
             {
-                Debug.Log("Pedra");
-
-                int v = jokenpoVilao();
-                verificacao_pedra = checkResultados(v);
+                pedraButton.interactable = true;
             }
-            tempJkp.count = 1;  //Rodrigo --> Variável count (variável global entre os 3 botões para evitar repetições e bugs) é modificada para garantir a execução única
+            j = 1;            
         }
         else
         {
-            tempJkp.count = 0;
+            j = 0;
         }
+    }
 
+    // GATILHO DO SCRPIT
+    public void pedra(){
+        Debug.Log("Pedra");
+        int v = jokenpoVilao();
+        verificacao_pedra = checkResultados(v);
+        DesativaBotoes();
+        //tempJkp.count = 1;  //Rodrigo --> Variável count (variável global entre os 3 botões para evitar repetições e bugs) é modificada para garantir a execução única
+    }
+
+    void DesativaBotoes()   //Rodrigo --> Função para desativar os botões quando ocorrer a jogada
+    {
+        pedraButton.interactable = false;
+        papelButton.interactable = false;
+        tesouraButton.interactable = false;
     }
 
     // DECIDE SE O VILAO USARA PEDRA, PAPEL OU TESOURA
