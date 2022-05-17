@@ -1145,7 +1145,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &4067986850980740576
@@ -1476,6 +1476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pausePainel: {fileID: 4067986851253157892}
+  _pauseInstruction: {fileID: 0}
   _estaPausado: 0
 --- !u!1001 &4067986850404324777
 PrefabInstance:

@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class TelaOutdoor : MonoBehaviour
 {
-    public int      _players;
-    public int      _vilan;
+    public int       _players;
+    public int       _vilan;
     private string   _jogadores;
     private string   _vilao;
-    public Text     _vencedor;
+    public Text      _vencedor;
+    public bool      _estaPausado;
+
 
     void Start()
     {
@@ -30,6 +32,28 @@ public class TelaOutdoor : MonoBehaviour
         else if (_vilan > _players)
         {
             _vencedor.text = _vilao.ToString();
+        }
+    }
+
+    public void OnButtaoPress()
+    {
+        _estaPausado = !_estaPausado;
+        PauseScene();
+    }
+
+    public void PauseScene()
+    {
+        if (_estaPausado)                     //Ferrari Adicionei o if para retomar o jogo ou pausar
+        {
+            Time.timeScale = 0;
+            //_Canvas.SetActive(false);
+            Debug.Log("Fim de Jogo!");
+        }
+        else
+        {
+            Time.timeScale = 1;
+            //_Canvas.SetActive(true);
+            Debug.Log("Retomou Fase!");
         }
     }
 }
