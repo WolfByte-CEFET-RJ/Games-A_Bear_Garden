@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 88837891}
   - component: {fileID: 88837890}
   m_Layer: 5
-  m_Name: vidaVilaoTxt
+  m_Name: resultadoTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,8 +191,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.50769, y: 3.0762177}
-  m_SizeDelta: {x: 318.95, y: 94.71}
+  m_AnchoredPosition: {x: -1.6483754, y: 3.72}
+  m_SizeDelta: {x: 1121.7329, y: 94.71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &88837890
 MonoBehaviour:
@@ -221,13 +221,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 6
     m_MaxSize: 60
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 3
+  m_Text: 
 --- !u!222 &88837891
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1209,6 +1209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempJkp: {fileID: 672707506}
+  resultado_tesoura: {fileID: 88837890}
   pedraButton: {fileID: 1320835171}
   papelButton: {fileID: 402205700}
   tesouraButton: {fileID: 1454429632}
@@ -1225,6 +1226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempJkp: {fileID: 672707506}
+  resultado_papel: {fileID: 88837890}
   pedraButton: {fileID: 1320835171}
   papelButton: {fileID: 402205700}
   tesouraButton: {fileID: 1454429632}
@@ -1241,6 +1243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempJkp: {fileID: 672707506}
+  resultado_pedra: {fileID: 88837890}
   pedraButton: {fileID: 1320835171}
   papelButton: {fileID: 402205700}
   tesouraButton: {fileID: 1454429632}
@@ -1560,7 +1563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335414527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: 0, z: 0}
+  m_LocalPosition: {x: -6.37, y: 0.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1608,7 +1611,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396003793}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: 0, z: 0}
+  m_LocalPosition: {x: 6.19, y: 0.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
