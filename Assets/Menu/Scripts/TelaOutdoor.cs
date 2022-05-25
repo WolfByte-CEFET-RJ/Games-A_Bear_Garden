@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class TelaOutdoor : MonoBehaviour
 {
+    [Header("Caracteres")]
     public int       _players;
     public int       _vilan;
     private string   _jogadores;
