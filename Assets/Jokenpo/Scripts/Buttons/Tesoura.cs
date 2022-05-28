@@ -47,19 +47,20 @@ public class Tesoura : MonoBehaviour
 
     // DECIDE SE O VILAO USARA PEDRA, PAPEL OU TESOURA
     int jokenpoVilao(){
-        int a = (int) Random.Range(1, 60); // a = codigo de resposta do vilao
+        int a = (int) Random.Range(1, 100); // a = codigo de resposta do vilao
+        Debug.Log(a);
 
-       if(a <= 20){
+       if(a <= 100 && a > 60){ // Daniel --> 40% de chance do vilão ganhar.
            a = 1;
            Debug.Log("Vilao: Pedra!");
        }
-       else if(a <= 40){
-           a = 2;
-           Debug.Log("Vilao: Tesoura!");
-       }
-       else{
+       else if(a <= 60 && a > 20){ // Daniel --> 40% de chance do player ganhar.
            a = 3;
            Debug.Log("Vilao: Papel!");
+       }
+       else{ // Daniel --> 20% de chance de dar empate.
+           a = 2;
+           Debug.Log("Vilao: Tesoura!");
        }
 
        return a;
