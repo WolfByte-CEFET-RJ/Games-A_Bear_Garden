@@ -6,43 +6,18 @@ using UnityEngine.UI;
 public class Pedra : MonoBehaviour
 {
     public static int verificacao_pedra;  //Daniel --> Variável que controla spawn de tropas de pedra
-    int verificacao, j = 0;
+    int verificacao;
     public TempoJokenpo tempJkp;    //Rodrigo --> Variável que instancia a classe controladora do tempo "TempoJokenpo"
     public Text resultado_pedra; //Daniel --> Variável para manipular a UI do resultado do jokenpo.
-    public Button pedraButton;
-    public Button papelButton;
-    public Button tesouraButton;    //Rodrigo --> Variáveis controladoras dos botões
-
-    void Update()   //Rodrigo --> Função para ativar e desativar o OnClick do botão
-    {
-        if(tempJkp.jogo)
-        {
-            for(int i = j; i < 1; i++)  //Rodrigo --> For para restringir a ação a uma vez (com auxílio da variável count)
-            {
-                pedraButton.interactable = true;
-            }
-            j = 1;            
-        }
-        else
-        {
-            j = 0;
-        }
-    }
+    public AtivadorBotao active;    //Rodrigo --> Variável que instancia a classe de ativação "AtivadorBotao"
 
     // GATILHO DO SCRPIT
     public void pedra(){
         Debug.Log("Pedra");
         int v = jokenpoVilao();
         verificacao_pedra = checkResultados(v);
-        DesativaBotoes();
+        active.DesativaBotoes();
         //tempJkp.count = 1;  //Rodrigo --> Variável count (variável global entre os 3 botões para evitar repetições e bugs) é modificada para garantir a execução única
-    }
-
-    void DesativaBotoes()   //Rodrigo --> Função para desativar os botões quando ocorrer a jogada
-    {
-        pedraButton.interactable = false;
-        papelButton.interactable = false;
-        tesouraButton.interactable = false;
     }
 
     // DECIDE SE O VILAO USARA PEDRA, PAPEL OU TESOURA

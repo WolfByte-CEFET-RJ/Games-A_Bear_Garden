@@ -1000,6 +1000,7 @@ GameObject:
   - component: {fileID: 672707503}
   - component: {fileID: 672707506}
   - component: {fileID: 672707507}
+  - component: {fileID: 672707505}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1055,6 +1056,22 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!114 &672707505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672707501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4a55d86f28dd934c8cad05b3a740ba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempJkp: {fileID: 672707506}
+  pedraButton: {fileID: 1320835171}
+  papelButton: {fileID: 402205700}
+  tesouraButton: {fileID: 1454429632}
 --- !u!114 &672707506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1210,9 +1227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempJkp: {fileID: 672707506}
   resultado_tesoura: {fileID: 88837890}
-  pedraButton: {fileID: 1320835171}
-  papelButton: {fileID: 402205700}
-  tesouraButton: {fileID: 1454429632}
+  active: {fileID: 672707505}
 --- !u!114 &1143916154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1227,9 +1242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempJkp: {fileID: 672707506}
   resultado_papel: {fileID: 88837890}
-  pedraButton: {fileID: 1320835171}
-  papelButton: {fileID: 402205700}
-  tesouraButton: {fileID: 1454429632}
+  active: {fileID: 672707505}
 --- !u!114 &1143916155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1244,9 +1257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempJkp: {fileID: 672707506}
   resultado_pedra: {fileID: 88837890}
-  pedraButton: {fileID: 1320835171}
-  papelButton: {fileID: 402205700}
-  tesouraButton: {fileID: 1454429632}
+  active: {fileID: 672707505}
 --- !u!1 &1167595314
 GameObject:
   m_ObjectHideFlags: 0

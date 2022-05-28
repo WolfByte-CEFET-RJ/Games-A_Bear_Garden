@@ -7,42 +7,17 @@ public class Tesoura : MonoBehaviour
 {
     public static int verificacao_tesoura;  //Daniel --> Variável que controla spawn de tropas de tesoura
     
-    int verificacao, j = 0;
+    int verificacao;
     public TempoJokenpo tempJkp;    //Rodrigo --> Variável que instancia a classe controladora do tempo "TempoJokenpo"
     public Text resultado_tesoura; //Daniel --> Variável para manipular a UI do resultado do jokenpo.
-    public Button pedraButton;
-    public Button papelButton;
-    public Button tesouraButton;    //Rodrigo --> Variáveis controladoras dos botões
-
-    void Update()   //Rodrigo --> Função para ativar e desativar o OnClick do botão
-    {
-        if(tempJkp.jogo)
-        {
-            for(int i = j; i < 1; i++)  //Rodrigo --> For para restringir a ação a uma vez (com auxílio da variável j)
-            {
-                tesouraButton.interactable = true;
-            }
-            j = 1;            
-        }
-        else
-        {
-            j = 0;
-        }
-    }
+    public AtivadorBotao active;    //Rodrigo --> Variável que instancia a classe de ativação "AtivadorBotao"
 
     // GATILHO DO SCRIPT
     public void tesoura(){
         Debug.Log("Tesoura");
         int v = jokenpoVilao();
         verificacao_tesoura = checkResultados(v);
-        DesativaBotoes();
-    }
-
-    void DesativaBotoes()   //Rodrigo --> Função para desativar os botões quando ocorrer a jogada
-    {
-        pedraButton.interactable = false;
-        papelButton.interactable = false;
-        tesouraButton.interactable = false;
+        active.DesativaBotoes();
     }
 
     // DECIDE SE O VILAO USARA PEDRA, PAPEL OU TESOURA
