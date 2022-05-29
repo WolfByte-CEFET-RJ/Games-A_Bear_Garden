@@ -23,24 +23,24 @@ public class TropasStats : MonoBehaviour
     //Variáveis para supertropas com seus valores definidos    
     public void Pedra()
     {
-        trp_vida = 3;
-        trp_atk = 1;
+        trp_vida = 6;
+        trp_atk = 2;
         //mudança de speed
         trp_spd = 0.05f;
     }
 
     public void Papel()
     {
-        trp_vida = 2;
-        trp_atk = 1;
+        trp_vida = 4;
+        trp_atk = 2;
         //mudança de speed
         trp_spd = 0.075f;
     }
 
     public void Tesoura()
     {
-        trp_vida = 2;
-        trp_atk = 2;
+        trp_vida = 4;
+        trp_atk = 4;
         //mudança de speed
         trp_spd = 0.05f;
     }
