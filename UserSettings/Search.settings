@@ -19,6 +19,15 @@ scopes = {
 	"m_SideBarSplitter.4DA8DDFE" = "180"
 	"m_DetailsPanelSplitter.4DA8DDFE" = "700"
 	"currentGroup.4DA8DDFE" = "asset"
+	"last_search.B064B029" = "leantwee"
+	"asset.B064B029" = "False"
+	"menu.B064B029" = "False"
+	"scene.B064B029" = "False"
+	"settings.B064B029" = "False"
+	"m_ShownPanels.B064B029" = "3"
+	"m_SideBarSplitter.B064B029" = "180"
+	"m_DetailsPanelSplitter.B064B029" = "700"
+	"currentGroup.B064B029" = "all"
 }
 providers = {
 	asset = {
@@ -63,5 +72,6 @@ providers = {
 	}
 }
 recentSearches = [
+	"leantwee"
 ]
 savedSearchesSortOrder = 1

@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class Movimento : MonoBehaviour
 {
-   
+    const float MoveSpeed = 0.5f;
+    const float jumpHeight = 0.5f;
     public bool teste;
-    public Vector3Int destino;
+    public List<Vector3Int> path;
     SpriteRenderer SR;
-    Transform pulo;
+    Transform jumper;
     TileLogic tileAtual;
 
-    void Start()
+    void Awake()
     {
-        pulo = transform.Find("Jumper");
-        SR = GetComponent<SpriteRenderer>();
+        jumper = transform.Find("Jumper");
+        SR = GetComponentInChildren<SpriteRenderer>();
     }
     void Update()
     {
@@ -25,61 +26,70 @@ public class Movimento : MonoBehaviour
             StartCoroutine(Move());
         }
     }
-    IEnumerator Move()
+    IEnumerator Move()// Divite a função ou tarefa em varios frames
     {
-        yield return null;
-        TileLogic t = Tabuleiro.instance.tiles[destino];
+       tileAtual = Tabuleiro.GetTile(path[0]);
+       transform.position = tileAtual.worldPos;
 
-        Vector3 startPos = transform.position;
-        Vector3 endPos = t.worldPos;
-        float totalTime=1;
-        float tempTime=0;
+       for (int i = 1; i < path.Count; i++)
+       {
+           TileLogic to = Tabuleiro.GetTile(path[i]);
+           if(to==null)
+            {
+                Debug.Log("Tile não encontrado");
+                continue;
 
-        if(tileAtual == null)
-        tileAtual = t;
-        if(tileAtual.floor != t.floor)
-        StartCoroutine(Jump(t, totalTime));
-
-        while(transform.position != endPos)
-        {
-            tempTime += Time.deltaTime;
-            float perc = tempTime / totalTime;
-            transform.position = Vector3.Lerp(startPos, endPos, perc);
-            yield return null;
-        }
-
-        
-
-        SR.sortingOrder = t.contentOrder;
-        t.content = this.gameObject;
-    }
-    IEnumerator Jump(TileLogic t, float totalTime)
-    {
-        Vector3 halfwayPos;
-        Vector3 startpos = halfwayPos = pulo.localPosition;// Movimenta a Posição local ddo personagem
-        halfwayPos.y += 0.5f;// Adiciona a distancia de pulo do personagem 
-        float tempTime = 0;
-
-        if(tileAtual.floor.tilemap.tileAnchor.y < t.floor.tilemap.tileAnchor.y)
-        {
-            SR.sortingOrder = t.contentOrder;
-        }
-
-        while(pulo.localPosition!=halfwayPos)
-        {
-            tempTime += Time.deltaTime;
-            float perc = tempTime / (totalTime/2);// Ao chegar ao ponto mais alto do pulo isso deve acontecer em metade do tempo.
-            pulo.localPosition = Vector3.Lerp(startpos, halfwayPos, perc);
-            yield return null;
-        }
-        tempTime = 0;
-        while(pulo.localPosition!=startpos)//Caminho contrario do pulo
-        {
-            tempTime += Time.deltaTime;
-            float perc = tempTime / (totalTime/2);
-            pulo.localPosition = Vector3.Lerp(halfwayPos,startpos, perc);
-            yield return null;
-        }
+                tileAtual.content = null; //
+            }
+            if(tileAtual.floor!=to.floor)
+            {
+                yield return StartCoroutine(Jump(to));
+            }
+            else
+            {
+                yield return StartCoroutine(Walk(to));// Espera o fim da animação (Walk)
+            }
+       }
     }
 
+    IEnumerator Walk(TileLogic to)
+    {
+        int id = LeanTween.move(transform.gameObject,to.worldPos, MoveSpeed).id;// cria um ID único enquanto esta se movendo
+        tileAtual = to;
+
+        yield return new WaitForSeconds(MoveSpeed*0.5f);// espera o tempo de movimento
+        SR.sortingOrder = to.contentOrder;
+
+        while(LeanTween.descr(id)!=null)
+        {
+            yield return null;//pula para o proximo frame
+        }
+        to.content = this.gameObject;
+    }
+
+    IEnumerator Jump(TileLogic to)
+    {
+        int id1 = LeanTween.move(transform.gameObject,to.worldPos, MoveSpeed).id;
+        LeanTween.moveLocalY(jumper.gameObject,jumpHeight, MoveSpeed*0.5f).//Posição Local ou Pulo na metade do tempo da animação
+        setLoopPingPong(1).setEase(LeanTweenType.easeInOutQuad);// Variaçoes de velocidade para a animação (tipo de animação com base em tipos de curvas ou constantes)
+
+        float timerOrderUpdate = MoveSpeed;//Utilizo o MoveSpeed para atualizar a ordem do sprite, quando o personagem estiver pulando ou caindo apos o pulo.
+        if(tileAtual.floor.tilemap.tileAnchor.y > to.floor.tilemap.tileAnchor.y)
+        {
+            timerOrderUpdate*=0.85f;
+        }
+        else
+        {
+            timerOrderUpdate*=0.2f;
+        }
+        yield return new WaitForSeconds(timerOrderUpdate);
+        tileAtual = to;
+        SR.sortingOrder = to.contentOrder;
+
+        while(LeanTween.descr(id1)!=null)
+        {
+            yield return null;
+        }
+        to.content = this.gameObject;
+    }
 }

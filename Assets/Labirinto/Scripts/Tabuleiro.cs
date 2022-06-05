@@ -21,12 +21,14 @@ public class Tabuleiro : MonoBehaviour
         InitSequence();
     }
 
-    public void InitSequence()
+    void InitSequence()
     {
         LoadFloors();
         Debug.Log("Foram criados "+tiles.Count+" tiles");
+        ShadowOrdering();
     }
-   void LoadFloors(){
+   void LoadFloors()
+   {
         for(int i=0; i<floors.Count; i++)
         {
             List<Vector3Int> floorTiles = floors[i].LoadTiles();
@@ -46,5 +48,39 @@ public class Tabuleiro : MonoBehaviour
         worldPos.y+= (floor.tilemap.tileAnchor.y/2)-0.5f;
         TileLogic tileLogic = new TileLogic(pos, worldPos, floor);
         tiles.Add(pos, tileLogic);
+    }
+
+    void ShadowOrdering()
+    {
+        foreach(TileLogic t in tiles.Values)
+        {
+            int floorIndex = floors.IndexOf(t.floor);
+            floorIndex -= 2;// Se houver mais de 2 andares, a ordem de renderização é diferente
+
+            if(floorIndex >=floors.Count || floorIndex <0)
+            {
+                continue;
+            }
+            Floor floorToCheck = floors[floorIndex];
+
+            Vector3Int pos = t.pos;
+            IsNECheck(floorToCheck,t ,pos+Vector3Int.right);// Caso o personagem esteja a esquerda ordena o tile da direita
+            IsNECheck(floorToCheck,t ,pos+Vector3Int.up);// Caso o personagem esteja a baixo ordena o tile da cima
+            IsNECheck(floorToCheck,t ,pos+Vector3Int.right+Vector3Int.up);// Caso o personagem esteja a nordeste ordena o tile da
+        }
+    }
+
+    void IsNECheck(Floor floor, TileLogic t, Vector3Int NEPosition)
+    {
+        if(floor.tilemap.HasTile(NEPosition))
+        {
+            t.contentOrder = floor.order;// Ordena o tile do andar do personagem
+        }
+    }
+    public static TileLogic GetTile(Vector3Int pos)
+    {
+        TileLogic tile = null;
+        instance.tiles.TryGetValue(pos, out tile);
+        return tile;
     }
 }
