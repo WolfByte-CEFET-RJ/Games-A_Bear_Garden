@@ -16,7 +16,6 @@ public class TropasScriptGeral : MonoBehaviour
 
     void Awake()    //Rodrigo --> inicialização dos stats da tropa 
     {
-        //_stats = new TropasStats();
         if(this.gameObject.tag == "TropaBasica")
         {
             _stats.TropaComum();
@@ -63,12 +62,17 @@ public class TropasScriptGeral : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D other)      //Rodrigo --> Detecta a colisão com uma tropa básica e destrói a tropa (esquema de vidas para  o futuro)
+    void OnCollisionEnter2D(Collision2D other)      //Rodrigo --> Detecta a colisão com uma tropa qualquer e destrói esta tropa (esquema de vidas para  o futuro) + vida vai a 0 após colidir com uma base
     {
         if(other.gameObject.tag == "TropaBasica" || other.gameObject.tag == "SupertropaPapel" || other.gameObject.tag == "SupertropaPedra" || other.gameObject.tag == "SupertropaTesoura")
         //Rodrigo --> introduzir o conceito de pegar os ataques
         {
             vida--;
+        }
+
+        if(other.gameObject.tag == "baseAmiga" || other.gameObject.tag == "baseInimiga")
+        {
+            vida = 0;
         }
     }
 }

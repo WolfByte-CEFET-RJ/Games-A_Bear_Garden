@@ -256,6 +256,7 @@ MonoBehaviour:
   vida: 0
   ataque: 0
   speed: 0
+  scriptDano: {fileID: 0}
 --- !u!114 &7040074637691523621
 MonoBehaviour:
   m_ObjectHideFlags: 0

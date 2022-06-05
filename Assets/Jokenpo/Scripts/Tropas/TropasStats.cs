@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TropasStats : MonoBehaviour
 {
+    //Rodrigo --> Script para armazenar e disponibilizar stats de cada classe de tropa
     [HideInInspector]
     public float trp_vida;
     [HideInInspector]
@@ -11,21 +12,19 @@ public class TropasStats : MonoBehaviour
     [HideInInspector]
     public float trp_spd;
 
-    //Variáveis para tropas comuns com seus valores definidos
+    //Rodrigo --> Variáveis para tropas comuns com seus valores definidos
     public void TropaComum()
     {
         trp_vida = 1;
         trp_atk = 1;
-        //mudança de speed
         trp_spd = 0.05f;
     }
     
-    //Variáveis para supertropas com seus valores definidos    
+    //Rodrigo --> Variáveis para supertropas com seus valores definidos    
     public void Pedra()
     {
         trp_vida = 6;
         trp_atk = 2;
-        //mudança de speed
         trp_spd = 0.05f;
     }
 
@@ -33,7 +32,6 @@ public class TropasStats : MonoBehaviour
     {
         trp_vida = 4;
         trp_atk = 2;
-        //mudança de speed
         trp_spd = 0.075f;
     }
 
@@ -41,7 +39,6 @@ public class TropasStats : MonoBehaviour
     {
         trp_vida = 4;
         trp_atk = 4;
-        //mudança de speed
         trp_spd = 0.05f;
     }
 }

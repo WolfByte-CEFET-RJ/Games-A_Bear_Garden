@@ -8,6 +8,9 @@ TagManager:
   - SupertropaPapel
   - SupertropaPedra
   - SupertropaTesoura
+  - baseInimiga
+  - baseAmiga
+  - Base
   layers:
   - Default
   - TransparentFX

@@ -36,7 +36,7 @@ public class TempoJokenpo : MonoBehaviour
         tempTxt.text = tempoInt.ToString();
 
         if(tempoInt > 6)    //Rodrigo --> If que reinicia o valor do tempo, mantendo o loop de 0 a 6 segundos;
-            temporizador = 0;
+            temporizador = 1;
 
         //Rodrigo --> if para realizar o jokenpo no intervalo de 5 a 6 segundos
         if(tempoInt <= 6 && tempoInt >= 5)
