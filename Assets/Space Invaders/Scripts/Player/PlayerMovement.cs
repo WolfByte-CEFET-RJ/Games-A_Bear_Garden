@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : PlayerInput
 {
-    [SerializeField] private PlayerInput playerInput;
     [SerializeField] private float speed;
 
     void Update()
     {
-        transform.Translate(playerInput.GetInput() * speed * Time.deltaTime);
+        transform.Translate(new Vector2 (GetPlayerInput(playerType) * speed * Time.deltaTime, 0));
 
     }
 

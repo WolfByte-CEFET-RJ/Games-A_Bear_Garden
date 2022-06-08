@@ -2,47 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInput : MonoBehaviour
+public abstract class PlayerInput : MonoBehaviour
 {
     public enum PlayerType { PLAYER1, PLAYER2, PLAYER3, PLAYER4 }
     
-    [SerializeField] protected float horizontalI;
-    [SerializeField] protected float verticalI;
-    
-    [SerializeField] private PlayerType tipo;
+    [SerializeField] protected PlayerType playerType;
 
-    private void Start()
-    {
-    }
 
-    private void Update()
-    {
-        GetPlayerInput(tipo);
-    }
-    private void GetPlayerInput(PlayerType type)
+    //Seria bom mudar isso pra que não aconteça a cada update
+    protected float GetPlayerInput(PlayerType type)
     {
         switch (type)
         {
             case PlayerType.PLAYER1:
-                horizontalI = Input.GetAxis("Horizontal");
-                break;
+                return  Input.GetAxis("Horizontal");
             case PlayerType.PLAYER2:
-                horizontalI = Input.GetAxis("Horizontal2");
-                break;
+                return  Input.GetAxis("Horizontal2");
             case PlayerType.PLAYER3:
-                horizontalI = Input.GetAxis("Horizontal3");
-                break;
+                return  Input.GetAxis("Horizontal3");
             case PlayerType.PLAYER4:
-                horizontalI = Input.GetAxis("Horizontal4");
-                break;
-            default: horizontalI = verticalI = 0;
-                break;
+                return  Input.GetAxis("Horizontal4");
+            default: return  0;
 
         }
     }
 
-    public Vector2 GetInput()
-    {
-        return new Vector2(horizontalI, 0);
-    }
+ 
 }
