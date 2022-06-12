@@ -39,7 +39,7 @@ public class Movimento : MonoBehaviour
                 Debug.Log("Tile não encontrado");
                 continue;
 
-                tileAtual.content = null; //
+                tileAtual.content = null;
             }
             if(tileAtual.floor!=to.floor)
             {

@@ -16,22 +16,21 @@ public class Tabuleiro : MonoBehaviour
         instance = this;
         grid = GetComponent<Grid>();
     }
-    void Start()
-    {
-        InitSequence();
-    }
 
-    void InitSequence()
+    public IEnumerator InitSequence(LoadState loadState)
     {
-        LoadFloors();
+        yield return StartCoroutine(LoadFloors(loadState));
+        yield return null; // Continua o carregamento do labirinto no proximo frame
         Debug.Log("Foram criados "+tiles.Count+" tiles");
         ShadowOrdering();
+        yield return null;
     }
-   void LoadFloors()
-   {
+    IEnumerator LoadFloors(LoadState loadState)
+    {
         for(int i=0; i<floors.Count; i++)
         {
             List<Vector3Int> floorTiles = floors[i].LoadTiles();
+            yield return null;// Continua o carregamento do labirinto no proximo frame
             for(int j=0; j<floorTiles.Count; j++)
             {
                 if(!tiles.ContainsKey(floorTiles[j]))
