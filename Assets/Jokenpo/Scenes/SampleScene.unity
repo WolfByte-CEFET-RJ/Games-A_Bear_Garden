@@ -285,6 +285,7 @@ GameObject:
   - component: {fileID: 163169315}
   - component: {fileID: 163169317}
   - component: {fileID: 163169316}
+  - component: {fileID: 163169318}
   m_Layer: 0
   m_Name: baseInimiga
   m_TagString: baseAmiga
@@ -372,6 +373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barraVida: {fileID: 173566894}
   _stats: {fileID: 163169317}
+  _troca: {fileID: 0}
 --- !u!61 &163169316
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -413,6 +415,21 @@ MonoBehaviour:
   trp_vida: 0
   trp_atk: 0
   trp_spd: 0
+--- !u!114 &163169318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163169312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152c8744172b599488dc5182dc758b4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barraVida: {fileID: 173566894}
+  _stats: {fileID: 672707507}
+  _troca: {fileID: 672707508}
 --- !u!1 &173566892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,6 +1120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc0e07c21c753f34aad969ad987a91e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  condicao: 0
   tempoInt: 0
   tempoLoop: 0
   j: 0
@@ -1959,9 +1977,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1663355727}
   - component: {fileID: 1663355726}
-  - component: {fileID: 1663355728}
   - component: {fileID: 1663355730}
   - component: {fileID: 1663355729}
+  - component: {fileID: 1663355728}
   m_Layer: 0
   m_Name: baseAmiga
   m_TagString: baseInimiga
@@ -2044,11 +2062,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1663355725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72a97e769c896144595b7ca773d270b2, type: 3}
+  m_Script: {fileID: 11500000, guid: ac49a18b94facba46ad410af0a4d3d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   barraVida: {fileID: 2029393177}
-  _stats: {fileID: 1663355730}
+  _stats: {fileID: 672707507}
+  _troca: {fileID: 672707508}
 --- !u!61 &1663355729
 BoxCollider2D:
   m_ObjectHideFlags: 0

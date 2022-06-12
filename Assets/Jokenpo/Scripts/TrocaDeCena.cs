@@ -36,7 +36,7 @@ public class TrocaDeCena : MonoBehaviour
 
     }
 
-    void TrocaCena()
+    public void TrocaCena()
     {
             SceneManager.LoadScene("TesteFelipe");
     }

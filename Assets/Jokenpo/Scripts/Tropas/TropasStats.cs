@@ -24,21 +24,21 @@ public class TropasStats : MonoBehaviour
     public void Pedra()
     {
         trp_vida = 6;
-        trp_atk = 2;
+        trp_atk = 30;
         trp_spd = 0.05f;
     }
 
     public void Papel()
     {
         trp_vida = 4;
-        trp_atk = 2;
+        trp_atk = 30;
         trp_spd = 0.075f;
     }
 
     public void Tesoura()
     {
         trp_vida = 4;
-        trp_atk = 4;
+        trp_atk = 60;
         trp_spd = 0.05f;
     }
 }
