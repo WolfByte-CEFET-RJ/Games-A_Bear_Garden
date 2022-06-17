@@ -5,56 +5,52 @@ using UnityEngine.UI;
 
 public class BloqueandoCasa : MonoBehaviour
 {
-    /* public Animator _anim;
-    public Button   _Botao;
-    public bool     _selecionando;
-    public bool     _jogavel;
-    public bool     _ocupado; // (oncolisionwithplayer);
-    public bool     _bloqueado; */
-
     [Header("Casinhas")]
     public bool _bloqueado; //Variavel da casinha bloqueada
     public bool _jogavel;   //variavel da casnha jogavel
     public bool _ocupado;   //variavel da casinha ocupada pelo player
     public bool _selecionavel;  //variavel da casinha disponivel para ser bloqueada
-    public bool _jogada;    //variavel da jogada do vil�o
-    public Button _Botao;
-    //public Animation    _anim;      //Variavel para chamar as anima��es
+    public bool _jogada;    //variavel da jogada do vilao
+    public Button _Botao;   //variavel do Botao da casinha
+    public Animator    _anim;      //Variavel para chamar as animacoes
 
 
-    public void Update()    //Checa se a fun��o Pisca vai ser chamada
+    public void Update()    //Checa se a funcao Pisca vai ser chamada
     {
         Pisca();
     }
 
-    public void InicioJogada() //Onclick para dar inicio a jogada do vil�o
+    public void InicioJogada() //Onclick para dar inicio a jogada do vilao
     {
         _jogada = true;
-        Debug.Log("Vil�o est� selecionando a casinha!");
+        Debug.Log("Vilao esta selecionando a casinha!");
     }
 
-    public void Pisca()     //Fun��o de selecionar as casas
+    public void Pisca()     //Funcao de selecionar as casas
     {
-        if (_jogada == true && _ocupado == false && _jogavel == true && _bloqueado == false) //S� ficar� disponivel para clicar se comprir essas condi��es
+        if (_jogada == true && _ocupado == false && _jogavel == true && _bloqueado == false) //So ficara disponivel para clicar se comprir essas condicoes
         {
             _selecionavel = true;
             _Botao.interactable = true;
             Debug.Log("disponivel");
-            //_anim.Setbool("selecionando", _pisca);
+            _anim.SetBool("_selecionavel", _selecionavel);
         }
-        else    //Caso n�o, n�o ficar� disponivel para ser bloqueado pelo vil�o
+        else    //Caso nao, nao ficara disponivel para ser bloqueado pelo vilao
         {
             _selecionavel = false;
         }
     }
 
-    public void Bloqueada()     //Fun��o da casinha bloqueada
+    public void Bloqueada()     //Funcao da casinha bloqueada
     {
         if (_selecionavel == true)
         {
-            //_anim.SetBool("Bloqueado", _bloqueado);
+            _bloqueado = true;
+            _anim.SetBool("_selecionavel", _selecionavel = false);
+            _anim.SetBool("_bloqueado", _bloqueado);
             _Botao.interactable = false;
             Debug.Log("Bloqueada, fim da jogada");
+            _selecionavel = false;
             _jogavel = false;
             _jogada = false;
         }
