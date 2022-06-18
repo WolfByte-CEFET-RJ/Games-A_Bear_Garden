@@ -12,9 +12,16 @@ public class SelecionandoFase : MonoBehaviour
     [SerializeField] Text   _labText;
     [SerializeField] Text   _pptText;
     [SerializeField] Text   _navesText;
-    public string  _lab_chave = "2";
+    public string  _lab_chave;
     public string  _ppt_chave;
     public string  _naves_chave;
+
+    
+    public List<string> ids = new List<string>();
+    private bool ativado_1 = false;
+    private bool ativado_2 = false;
+    private bool ativado_3 = false;
+
 
     public void Start()
     {
@@ -23,7 +30,62 @@ public class SelecionandoFase : MonoBehaviour
         _navesText.text = " ";
     }
 
-    public void Validador() //verificar se em todos os campos não tiverem repedidos e salva
+
+    public void Update() 
+    {
+        VerificaLista();
+    }
+
+
+    public void VerificaLista() 
+    {
+        for (int i = 0; i < ids.Count; i++) {
+            int texto = i + 1;
+            if (ids[i] == "ID_lab") {
+                _labText.text = texto.ToString();
+            } else if (ids[i] == "ID_ppt"){
+                _pptText.text = texto.ToString();
+            } else if (ids[i] == "ID_naves") {
+                _navesText.text = texto.ToString();
+            }
+        }
+    }
+
+    public void OnClickButton(Button button) 
+    {
+        if (button.name == "_labButton") {
+            if (ativado_1 == false) {
+                ids.Add("ID_lab");
+            } else {
+                ids.Remove("ID_lab");
+                _labText.text = " ";
+            }
+            ativado_1 = !ativado_1;
+        }
+
+        if (button.name == "_pptButton") {
+            if (ativado_2 == false) {
+                ids.Add("ID_ppt");
+            } else {
+                ids.Remove("ID_ppt");
+                _pptText.text = " ";
+            }
+            ativado_2 = !ativado_2;
+        }
+
+        if (button.name == "_navesButton") {
+            if (ativado_3 == false) {
+                ids.Add("ID_naves");
+            } else {
+                ids.Remove("ID_naves");
+                _navesText.text = " ";  
+            }
+            ativado_3 = !ativado_3;
+        }
+    }
+
+    /*
+    public void Validador() //verificar se em todos os campos nï¿½o tiverem repedidos e salva
     {
         PlayerPrefs.GetFloat(_labText.text, _lab);
         PlayerPrefs.GetFloat(_pptText.text, _ppt);
@@ -36,7 +98,7 @@ public class SelecionandoFase : MonoBehaviour
         _pptText.text = "1";
         _navesText.text = "3";//_labText.text = PlayerPrefs.GetFloat(Text._lab_chave, 1f);
 
-        /*if ()//Se nenhum valor, ao clicar vira 1
+        if ()//Se nenhum valor, ao clicar vira 1
         {
             _text.text = "1";
         }
@@ -47,11 +109,12 @@ public class SelecionandoFase : MonoBehaviour
         else //Se clicado de novo, vira 3 
         {
             _text.text = "3";
-        }*/
+        }
     }
 
     public void SalvandoOrdem()
     {
 
     }
+    */
 }

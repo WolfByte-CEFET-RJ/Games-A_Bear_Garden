@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 53795754}
   - component: {fileID: 53795753}
   m_Layer: 5
-  m_Name: Button
+  m_Name: _navesButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -327,7 +327,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 53795754}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336828903}
+        m_TargetAssemblyTypeName: SelecionandoFase, Assembly-CSharp
+        m_MethodName: OnClickButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 53795753}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &53795754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1174,6 +1186,7 @@ MonoBehaviour:
   _lab_chave: 2
   _ppt_chave: 
   _naves_chave: 
+  ids: []
 --- !u!1 &424755491
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,7 +3258,7 @@ GameObject:
   - component: {fileID: 992776316}
   - component: {fileID: 992776315}
   m_Layer: 5
-  m_Name: Button
+  m_Name: _labButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3317,11 +3330,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 336828903}
         m_TargetAssemblyTypeName: SelecionandoFase, Assembly-CSharp
-        m_MethodName: NumerandoFase
-        m_Mode: 1
+        m_MethodName: OnClickButton
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 992776315}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5797,7 +5810,7 @@ GameObject:
   - component: {fileID: 1932418343}
   - component: {fileID: 1932418342}
   m_Layer: 5
-  m_Name: Button
+  m_Name: _pptButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5866,7 +5879,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1932418343}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336828903}
+        m_TargetAssemblyTypeName: SelecionandoFase, Assembly-CSharp
+        m_MethodName: OnClickButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1932418342}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1932418343
 MonoBehaviour:
   m_ObjectHideFlags: 0
