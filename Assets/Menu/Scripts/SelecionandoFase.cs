@@ -12,9 +12,9 @@ public class SelecionandoFase : MonoBehaviour
     [SerializeField] Text   _labText;
     [SerializeField] Text   _pptText;
     [SerializeField] Text   _navesText;
-    public string  _lab_chave;
-    public string  _ppt_chave;
-    public string  _naves_chave;
+    //public string  _lab_chave;
+    //public string  _ppt_chave;
+    //public string  _naves_chave;
 
     
     public List<string> ids = new List<string>();

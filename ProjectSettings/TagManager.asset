@@ -42,3 +42,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: chao
+    uniqueID: 2245954467
+    locked: 0
+  - name: New Layer 2
+    uniqueID: 3172584045
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 2532491323
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 1251085655
+    locked: 0
+  - name: Player
+    uniqueID: 1036734441
+    locked: 0
