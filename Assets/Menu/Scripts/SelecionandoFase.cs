@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Tilemaps;
 
 public class SelecionandoFase : MonoBehaviour
 {
@@ -9,18 +10,25 @@ public class SelecionandoFase : MonoBehaviour
     public int _lab;
     public int _ppt;
     public int _naves;
-    [SerializeField] Text   _labText;
-    [SerializeField] Text   _pptText;
-    [SerializeField] Text   _navesText;
-    //public string  _lab_chave;
-    //public string  _ppt_chave;
-    //public string  _naves_chave;
+    [SerializeField] Text _labText;
+    [SerializeField] Text _pptText;
+    [SerializeField] Text _navesText;
 
-    
     public List<string> ids = new List<string>();
     private bool ativado_1 = false;
     private bool ativado_2 = false;
     private bool ativado_3 = false;
+
+    [Header("Condioes")]
+    public int _passada;
+    public int _disponivel;
+    public int _bloqueada;
+
+    [Header("Mapa")]
+    public Tilemap _tiles;
+    public Tile _tile;
+    public Vector3Int _local;
+
 
 
     public void Start()
@@ -85,36 +93,16 @@ public class SelecionandoFase : MonoBehaviour
     }
 
     /*
-    public void Validador() //verificar se em todos os campos n�o tiverem repedidos e salva
-    {
-        PlayerPrefs.GetFloat(_labText.text, _lab);
-        PlayerPrefs.GetFloat(_pptText.text, _ppt);
-        PlayerPrefs.GetFloat(_navesText.text, _naves);
-    }
+    Definir qual o tipo de mapa que vamos usar;
 
-    public void NumerandoFase()
-    {
-        _labText.text = "2";
-        _pptText.text = "1";
-        _navesText.text = "3";//_labText.text = PlayerPrefs.GetFloat(Text._lab_chave, 1f);
+    Atribuir uma fase ao botao/tile - + definir a cor do botão de acordo com o estado da fase;
 
-        if ()//Se nenhum valor, ao clicar vira 1
-        {
-            _text.text = "1";
-        }
-        else //Se clicado de novo, vira 2
-        {
-            _text.text = "2";
-        }
-        else //Se clicado de novo, vira 3 
-        {
-            _text.text = "3";
-        }
-    }
+    Collider em volta da fase;
 
-    public void SalvandoOrdem()
-    {
+    Collider vai selecionar a fase - trigger (espaço/enter)
 
-    }
+    Entrar na condicional: Qual a condição da fase;
+
+    Chama o resultado(se tiver como passada não acontece nada);
     */
 }
