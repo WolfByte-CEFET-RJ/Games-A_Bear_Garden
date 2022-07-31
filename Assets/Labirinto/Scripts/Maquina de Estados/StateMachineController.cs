@@ -13,7 +13,7 @@ public class StateMachineController : MonoBehaviour
 
     [Header("ChooseActionState")]
     public List<Image> chooseActionButtons;
-    public Image chooseActionState;
+    public Image chooseActionSelection;
     
     void Awake(){
         instance = this;

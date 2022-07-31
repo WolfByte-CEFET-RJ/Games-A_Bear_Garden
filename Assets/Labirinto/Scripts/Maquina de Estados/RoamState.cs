@@ -25,7 +25,7 @@ public class RoamState : State
 
       if(t!=null)// Seletor do tabuleiro não saia dos limites dele
       {
-         Selector.instance.position = t.pos;
+         //Selector.instance.position = t.pos;
          Selector.instance.tile = t;
          Selector.instance.spriteRenderer.sortingOrder = t.contentOrder;
          Selector.instance.transform.position = t.worldPos;
@@ -36,8 +36,8 @@ public class RoamState : State
    {
       if(Selector.instance.position==null)
       {
-         TileLogic t = Tabuleiro.GetTile(new Vector3Int (0, 0, 0)); // Posição padrão do Seletor no tabuleiro.
-         Selector.instance.position = t.pos;
+         TileLogic t = Tabuleiro.GetTile(new Vector3Int (-6, -6, 0)); // Posição padrão do Seletor no tabuleiro.
+         //Selector.instance.position = t.pos;
          Selector.instance.tile = t;
          Selector.instance.spriteRenderer.sortingOrder = t.contentOrder;
          Selector.instance.transform.position = t.worldPos;
