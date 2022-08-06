@@ -70,6 +70,7 @@ public class MenuPause : MonoBehaviour
         SceneManager.LoadScene("Menu");     //Natty vai para o menu
         Time.timeScale = 1;
         _estaPausado = false;
+        _pauseInstruction.SetActive(false);
         Debug.Log("Voltou para Menu Principal!");
     }
 

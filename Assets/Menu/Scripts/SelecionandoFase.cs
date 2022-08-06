@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Tilemaps;
+using UnityEngine.SceneManagement;
 
 public class SelecionandoFase : MonoBehaviour
 {
@@ -28,7 +29,6 @@ public class SelecionandoFase : MonoBehaviour
     public Tilemap _tiles;
     public Tile _tile;
     public Vector3Int _local;
-
 
 
     public void Start()
@@ -89,6 +89,27 @@ public class SelecionandoFase : MonoBehaviour
                 _navesText.text = " ";  
             }
             ativado_3 = !ativado_3;
+        }
+    }
+
+    public void Fase1()
+    {
+        if (ids[0] == "ID_lab")
+        {
+            SceneManager.LoadScene("Lab");
+            _lab = _passada;
+        }
+
+        if (ids[0] == "ID_ppt")
+        {
+            SceneManager.LoadScene("ppt");
+            _ppt = _passada;
+        }
+
+        if (ids[0] == "ID_naves")
+        {
+            SceneManager.LoadScene("Space");
+            _naves = _passada;
         }
     }
 
