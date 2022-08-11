@@ -193,7 +193,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.6483754, y: 3.72}
+  m_AnchoredPosition: {x: -1.6483754, y: 2.89}
   m_SizeDelta: {x: 1121.7329, y: 94.71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &88837890
@@ -218,10 +218,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 0
     m_MaxSize: 60
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -372,8 +372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9cbbf98041f6784a8ea18bb2390397f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barraVidaI: {fileID: 173566894}
-  _stats: {fileID: 672707507}
 --- !u!61 &163169316
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1183,6 +1181,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc0e07c21c753f34aad969ad987a91e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  condicao: 0
+  tempoInt: 0
+  tempoLoop: 0
+  j: 0
   count: 0
   jogo: 0
   tempTxt: {fileID: 1982360777}
@@ -1213,8 +1215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca1a1efa47ef68345b3f052042a55e68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaATxt: {fileID: 638474267}
-  vidaITxt: {fileID: 1749745582}
 --- !u!1 &712959284
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,8 +2074,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02047ecf9d98af7499c1dc69ea5653d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barraVidaA: {fileID: 2029393177}
-  _stats: {fileID: 672707507}
 --- !u!61 &1663355729
 BoxCollider2D:
   m_ObjectHideFlags: 0

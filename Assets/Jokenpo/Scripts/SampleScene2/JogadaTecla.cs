@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class JogadaTecla : MonoBehaviour
@@ -7,8 +8,8 @@ public class JogadaTecla : MonoBehaviour
     public TempoJokenpo tempJkp;
     private int j = 0, j1 = 0, j2 = 0;  //Rodrigo --> variáveis controladoras "j" anteriormente utilizadas seccionadas em j, j1 e j2 para diferentes análises
     public int p1, p2;
-    public bool resp1 = false, resp2 = false, respostas = false;    //Rodrigo --> variáveis para checar se cada player fez sua jogada
-
+    public bool resp1 = false, resp2 = false, respostas = false;    //Rodrigo --> variáveis para checar se cada player fez sua jogada    
+    
     void Start(){
         Debug.Log("inicializando...");
         p1 = 0;
@@ -20,7 +21,8 @@ public class JogadaTecla : MonoBehaviour
         Jogada_Player_01();
         Jogada_Player_02();
         Respostas();
-        
+
+
         if (!resp1 && resp2 && !tempJkp.jogo)   //Rodrigo --> ifs para análise de qual jogador ganha por W.O.
         {
             for(int i = j; i < 1; i++)  //Rodrigo --> for que limita o for a uma vez usando o valor de j
@@ -34,6 +36,7 @@ public class JogadaTecla : MonoBehaviour
         {
             for(int i = j; i < 1; i++)
             {
+      
                 Debug.Log("Vitória do Player!");
                 j = 1;
                 resp1 = false;
@@ -59,6 +62,7 @@ public class JogadaTecla : MonoBehaviour
             if(Input.GetKey(KeyCode.A)){    //Rodrigo --> ...joga pedra se apertado A
                 for(int i = j1; i < 1; i++)   //Rodrigo --> for que limita o for a uma vez usando o valor de j1
                 {
+                    TeclaResposta.pedraPlayer = true; //Daniel --> boolean pra controlar spawn de pedra do player
                     p1 = 1;
                     resp1 = true;
                     j1 = 1;
@@ -67,6 +71,7 @@ public class JogadaTecla : MonoBehaviour
             else if(Input.GetKeyDown(KeyCode.S)){   //Rodrigo --> ...joga papel se apertado S
                 for(int i = j1; i < 1; i++)
                 {
+                    TeclaResposta.papelPlayer = true; //Daniel --> boolean pra controlar spawn de papel do player
                     p1 = 2;
                     resp1 = true;
                     j1 = 1;
@@ -75,6 +80,7 @@ public class JogadaTecla : MonoBehaviour
             else if(Input.GetKeyDown(KeyCode.D)){   //Rodrigo --> ...joga tesoura se apertado D
                 for(int i = j1; i < 1; i++)
                 {
+                    TeclaResposta.tesouraPlayer = true; //Daniel --> boolean pra controlar spawn de tesoura do player
                     p1 = 3;
                     resp1 = true;
                     j1 = 1;
@@ -91,6 +97,7 @@ public class JogadaTecla : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.J)){    //Rodrigo --> ...joga pedra se apertado J
                 for(int i = j2; i < 1; i++)   //Rodrigo --> for que limita o for a uma vez usando o valor de j2
                 {
+                    TeclaResposta.pedraVilao = true; //Daniel --> boolean pra controlar spawn de pedra do vilão
                     p2 = 1;
                     resp2 = true;
                     j2 = 1;
@@ -99,6 +106,7 @@ public class JogadaTecla : MonoBehaviour
             else if(Input.GetKeyDown(KeyCode.K)){   //Rodrigo --> ...joga papel se apertado K
                 for(int i = j2; i < 1; i++)
                 {
+                    TeclaResposta.papelVilao = true; ; //Daniel --> boolean pra controlar spawn de papel do vilão
                     p2 = 2;
                     resp2 = true;
                     j2 = 1;
@@ -107,6 +115,7 @@ public class JogadaTecla : MonoBehaviour
             else if(Input.GetKeyDown(KeyCode.L)){   //Rodrigo --> ...joga tesoura se apertado L
                 for(int i = j2; i < 1; i++)
                 {
+                    TeclaResposta.tesouraVilao= true; //Daniel --> boolean pra controlar spawn de tesoura do vilão
                     p2 = 3;
                     resp2 = true;
                     j2 = 1;
@@ -126,6 +135,7 @@ public class JogadaTecla : MonoBehaviour
             respostas = false;
 
     }
+
 
     /*  minha cola, ignorem
     1 -> pedra
