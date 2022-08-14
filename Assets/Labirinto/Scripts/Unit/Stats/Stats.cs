@@ -5,7 +5,7 @@ using UnityEngine;
 public class Stats : MonoBehaviour
 {
 
-    public List<Stat> stats;// quantidade de Status do personagem e suas intereções com os objetos    void Awake()
+    public List<Stat> stats;// quantidade de Status do personagem e suas intereções com os objetos do jogo
     void Awake()
     {
         stats = new List<Stat>();

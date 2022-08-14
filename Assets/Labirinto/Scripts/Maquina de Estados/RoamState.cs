@@ -7,34 +7,35 @@ public class RoamState : State
    public override void Enter()
    {
       base.Enter();
-      InputController.instance.OnMove+=OnMove;
+      inputs.OnMove+=OnMoveTileSelector;
+      inputs.OnFire+=OnFire;
       Debug.Log("Entrou no RoamState");
       CheckNullPosition();
    }
    public override void Exit()
    {
       base.Exit();
-      InputController.instance.OnMove-=OnMove;
+      inputs.OnMove-=OnMoveTileSelector;
+      inputs.OnFire-=OnFire;
       Debug.Log("Saiu do RoamState");
    }
 
-   void OnMove(object sender, object args)
-   {
-      Vector3Int input = (Vector3Int)args;
-      TileLogic t = Tabuleiro.GetTile(Selector.instance.position + input);
 
-      if(t!=null)// Seletor do tabuleiro não saia dos limites dele
+   void OnFire(object sender, object args)
+   {
+      int button = (int)args;
+      if(button==1)
       {
-         //Selector.instance.position = t.pos;
-         Selector.instance.tile = t;
-         Selector.instance.spriteRenderer.sortingOrder = t.contentOrder;
-         Selector.instance.transform.position = t.worldPos;
+         
+      }
+      else if(button==2)
+      {
+         sMachine.ChangeTo<ChooseActionState>();
       }
    }
-
    void CheckNullPosition()
    {
-      if(Selector.instance.position==null)
+      if(Selector.instance.tile==null)
       {
          TileLogic t = Tabuleiro.GetTile(new Vector3Int (-6, -6, 0)); // Posição padrão do Seletor no tabuleiro.
          //Selector.instance.position = t.pos;

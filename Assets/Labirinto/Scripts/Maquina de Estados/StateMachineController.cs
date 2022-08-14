@@ -10,10 +10,13 @@ public class StateMachineController : MonoBehaviour
     bool busy;
     public State current{get{return _current;}}
     public Transform selector;
+    public TileLogic selectedTile;
+    public List<Unit> units; // lista de unidades que podem ser selecionadas
 
     [Header("ChooseActionState")]
     public List<Image> chooseActionButtons;
     public Image chooseActionSelection;
+    public LugarPainel chooseActionPainel;
     
     void Awake(){
         instance = this;

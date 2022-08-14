@@ -13,8 +13,19 @@ public class LoadState : State
     {
         yield return  StartCoroutine(Tabuleiro.instance.InitSequence(this));
         Debug.Log("Entrou no LoadState");
-
         yield return null; // Continua o carregamento do labirinto no proximo frame
-        StateMachineController.instance.ChangeTo<RoamState>();
+
+        MapLoader.instance.CriaUnidades();
+        yield return null;
+        InitialTurnOrdering();
+
+        StateMachineController.instance.ChangeTo<ChooseActionState>();
+    }
+    void InitialTurnOrdering()
+    {
+        int Primeiro = Random.Range(0, sMachine.units.Count);
+        Turnos.hasActed = false;
+        Turnos.hasMoved = false;
+        Turnos.unit = sMachine.units[Primeiro];
     }
 }
