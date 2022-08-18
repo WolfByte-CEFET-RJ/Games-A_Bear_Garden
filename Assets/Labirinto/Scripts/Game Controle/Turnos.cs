@@ -6,6 +6,6 @@ public static class Turnos
 {
    public static Unit unit;
    public static bool hasActed;
-   public static bool hasMoved;
+   public static bool hasMoved;// adição de comentarios
 
 }
