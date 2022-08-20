@@ -1,16 +1,18 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
 public class TeclaResposta : MonoBehaviour
 {
-    public static bool pedraPlayer, pedraVilao, papelPlayer, papelVilao, tesouraPlayer, tesouraVilao;
+    private static bool pedraPlayer, pedraVilao, papelPlayer, papelVilao, tesouraPlayer, tesouraVilao; //Daniel --> Variáveis para controle de jogadas (Encapsuladas)
+    public static bool PedraPlayer { set { pedraPlayer = value; } } public static bool PapelPlayer { set { papelPlayer = value; } } //Daniel --> Setters para as variáveis de controle das jogadas
+    public static bool TesouraPlayer { set { tesouraPlayer = value; } } public static bool PedraVilao { set { pedraVilao = value; } }
+    public static bool PapelVilao { set { papelVilao = value; } } public static bool TesouraVilao { set { tesouraVilao = value; } }
 
     public GameObject[] tropas; //Daniel --> Vetor para guardar prefabs das tropas
     public GameObject spawnPlayer, spawnVilao; //Daniel --> Objetos pra instanciar os prefabs nas posições do player e vilão
-    public Text resultadoText;
-    private string situacao;
+    public Text resultadoText; //Daniel --> Texto do resultado da partida
+    private string situacao; //Daniel --> Variável auxiliar para manipular o resultadoText
 
     private int tempoInt, j;
     private float temporizador;
@@ -46,74 +48,33 @@ public class TeclaResposta : MonoBehaviour
 
     void Resposta() //Daniel --> Método pra spawnar tropas de acordo com a resposta do adversário
     {
-        if (pedraPlayer == true && pedraVilao == true) // Empate
+        if ((pedraPlayer == true && pedraVilao == true) || (tesouraPlayer == true && tesouraVilao == true) || (papelPlayer == true && papelVilao == true)) // Empate
         {
-            reset();
-            Debug.Log("Empate");
-            situacao = "Empate!";
-            StartCoroutine(resultado(situacao));
-        }
-        else if (tesouraPlayer == true && tesouraVilao == true) // Empate
-        {
-            reset();
-            Debug.Log("Empate");
-            situacao = "Empate!";
-            StartCoroutine(resultado(situacao));
-        }
-        else if (papelPlayer == true && papelVilao == true) // Empate
-        {
-            reset();
-            Debug.Log("Empate");
-            situacao = "Empate!";
-            StartCoroutine(resultado(situacao));
+            Empate();
         }
         else if (papelPlayer == true && pedraVilao == true) //Vitória do Player com Papel
         {
-            Instantiate(tropas[0], spawnPlayer.transform.position, spawnPlayer.transform.rotation); //Daniel --> Instanciar tropa de papel do player na posição do spawner do player
-            reset();
-            Debug.Log("Player");
-            situacao = "Vitória Player!";
-            StartCoroutine(resultado(situacao));
+            playerWin(0);
         }
         else if (papelVilao == true && pedraPlayer == true) //Vitória do Vilão com Papel
         {
-            Instantiate(tropas[1], spawnVilao.transform.position, spawnVilao.transform.rotation); //Daniel --> Instanciar tropa de papel do vilão na posição do spawner do vilão
-            reset();
-            Debug.Log("Vilão");
-            situacao = "Vitória Vilão!";
-            StartCoroutine(resultado(situacao));
+            vilainWin(1);
         }
         else if (pedraPlayer == true && tesouraVilao == true) //Vitória do Player com Pedra
         {
-            Instantiate(tropas[2], spawnPlayer.transform.position, spawnPlayer.transform.rotation);
-            reset();
-            Debug.Log("Player");
-            situacao = "Vitória Player!";
-            StartCoroutine(resultado(situacao));
+            playerWin(2);
         }
         else if (pedraVilao == true && tesouraPlayer == true) //Vitória do Vilão com Pedra
         {
-            Instantiate(tropas[3], spawnVilao.transform.position, spawnVilao.transform.rotation);
-            reset();
-            Debug.Log("Vilão");
-            situacao = "Vitória Vilão!";
-            StartCoroutine(resultado(situacao));
+            vilainWin(3);
         }
         else if (tesouraPlayer == true && papelVilao == true) //Vitória do Player com Tesoura
         {
-            Instantiate(tropas[4], spawnPlayer.transform.position, spawnPlayer.transform.rotation);
-            reset();
-            Debug.Log("Player");
-            situacao = "Vitória Player!";
-            StartCoroutine(resultado(situacao));
+            playerWin(4);
         }
         else if (tesouraVilao == true && papelPlayer == true) //Vitória do Vilão com Tesoura
         {
-            Instantiate(tropas[5], spawnVilao.transform.position, spawnVilao.transform.rotation);
-            reset();
-            Debug.Log("Vilão");
-            situacao = "Vitória Vilão!";
-            StartCoroutine(resultado(situacao));
+            vilainWin(5);
         }
     }
 
@@ -133,5 +94,31 @@ public class TeclaResposta : MonoBehaviour
         resultadoText.text = situacao;
         yield return new WaitForSeconds(2f); //Altere esse valor para mudar os segundos.
         resultadoText.text = "";
+    }
+
+    void playerWin(int spawnIndex) //Daniel --> Spawnar tropas do player de acordo com resultado da partida caso ele ganhe
+    {
+        Instantiate(tropas[spawnIndex], spawnPlayer.transform.position, spawnPlayer.transform.rotation);
+        reset();
+        Debug.Log("Player");
+        situacao = "Vitória Player!";
+        StartCoroutine(resultado(situacao));
+    }
+
+    void vilainWin(int spawnIndex) //Daniel --> Spawnar tropas do vilão de acordo com resultado da partida caso ele ganhe
+    {
+        Instantiate(tropas[spawnIndex], spawnVilao.transform.position, spawnVilao.transform.rotation);
+        reset();
+        Debug.Log("Vilão");
+        situacao = "Vitória Vilão!";
+        StartCoroutine(resultado(situacao));
+    }
+
+    void Empate()
+    {
+        reset();
+        Debug.Log("Empate");
+        situacao = "Empate!";
+        StartCoroutine(resultado(situacao));
     }
 }

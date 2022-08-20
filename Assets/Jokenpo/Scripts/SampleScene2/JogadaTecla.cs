@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
 using UnityEngine;
+
 
 public class JogadaTecla : MonoBehaviour
 {
@@ -9,7 +9,8 @@ public class JogadaTecla : MonoBehaviour
     private int j = 0, j1 = 0, j2 = 0;  //Rodrigo --> variáveis controladoras "j" anteriormente utilizadas seccionadas em j, j1 e j2 para diferentes análises
     public int p1, p2;
     public bool resp1 = false, resp2 = false, respostas = false;    //Rodrigo --> variáveis para checar se cada player fez sua jogada    
-    
+    public GameObject playerJogou, vilaoJogou; //Daniel --> GameObjects dos popups para mostrar quem fez a jogada na tela    
+
     void Start(){
         Debug.Log("inicializando...");
         p1 = 0;
@@ -20,6 +21,7 @@ public class JogadaTecla : MonoBehaviour
         //Rodrigo --> chama as funções de jogada para o player 1 (Player) e 2 (Vilão) e a validação das jogadas
         Jogada_Player_01();
         Jogada_Player_02();
+        checaJogada();
         Respostas();
 
 
@@ -62,7 +64,7 @@ public class JogadaTecla : MonoBehaviour
             if(Input.GetKey(KeyCode.A)){    //Rodrigo --> ...joga pedra se apertado A
                 for(int i = j1; i < 1; i++)   //Rodrigo --> for que limita o for a uma vez usando o valor de j1
                 {
-                    TeclaResposta.pedraPlayer = true; //Daniel --> boolean pra controlar spawn de pedra do player
+                    TeclaResposta.PedraPlayer = true; //Daniel --> boolean pra controlar spawn de pedra do player
                     p1 = 1;
                     resp1 = true;
                     j1 = 1;
@@ -71,7 +73,7 @@ public class JogadaTecla : MonoBehaviour
             else if(Input.GetKeyDown(KeyCode.S)){   //Rodrigo --> ...joga papel se apertado S
                 for(int i = j1; i < 1; i++)
                 {
-                    TeclaResposta.papelPlayer = true; //Daniel --> boolean pra controlar spawn de papel do player
+                    TeclaResposta.PapelPlayer = true; //Daniel --> boolean pra controlar spawn de papel do player
                     p1 = 2;
                     resp1 = true;
                     j1 = 1;
@@ -80,7 +82,7 @@ public class JogadaTecla : MonoBehaviour
             else if(Input.GetKeyDown(KeyCode.D)){   //Rodrigo --> ...joga tesoura se apertado D
                 for(int i = j1; i < 1; i++)
                 {
-                    TeclaResposta.tesouraPlayer = true; //Daniel --> boolean pra controlar spawn de tesoura do player
+                    TeclaResposta.TesouraPlayer = true; //Daniel --> boolean pra controlar spawn de tesoura do player
                     p1 = 3;
                     resp1 = true;
                     j1 = 1;
@@ -97,7 +99,7 @@ public class JogadaTecla : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.J)){    //Rodrigo --> ...joga pedra se apertado J
                 for(int i = j2; i < 1; i++)   //Rodrigo --> for que limita o for a uma vez usando o valor de j2
                 {
-                    TeclaResposta.pedraVilao = true; //Daniel --> boolean pra controlar spawn de pedra do vilão
+                    TeclaResposta.PedraVilao = true; //Daniel --> boolean pra controlar spawn de pedra do vilão
                     p2 = 1;
                     resp2 = true;
                     j2 = 1;
@@ -106,7 +108,7 @@ public class JogadaTecla : MonoBehaviour
             else if(Input.GetKeyDown(KeyCode.K)){   //Rodrigo --> ...joga papel se apertado K
                 for(int i = j2; i < 1; i++)
                 {
-                    TeclaResposta.papelVilao = true; ; //Daniel --> boolean pra controlar spawn de papel do vilão
+                    TeclaResposta.PapelVilao = true; ; //Daniel --> boolean pra controlar spawn de papel do vilão
                     p2 = 2;
                     resp2 = true;
                     j2 = 1;
@@ -115,7 +117,7 @@ public class JogadaTecla : MonoBehaviour
             else if(Input.GetKeyDown(KeyCode.L)){   //Rodrigo --> ...joga tesoura se apertado L
                 for(int i = j2; i < 1; i++)
                 {
-                    TeclaResposta.tesouraVilao= true; //Daniel --> boolean pra controlar spawn de tesoura do vilão
+                    TeclaResposta.TesouraVilao= true; //Daniel --> boolean pra controlar spawn de tesoura do vilão
                     p2 = 3;
                     resp2 = true;
                     j2 = 1;
@@ -129,13 +131,24 @@ public class JogadaTecla : MonoBehaviour
     }
 
     void Respostas(){
-        if(resp1 && resp2)  //Rodrigo --> checa se ambos os players fizeram jogadas
+        if (resp1 && resp2) //Rodrigo --> checa se ambos os players fizeram jogadas
             respostas = true;
         else
             respostas = false;
-
     }
 
+    void checaJogada() //Daniel --> Verifica quem fez a jogada para mostrar na tela
+    {
+        if(resp1) StartCoroutine(tempoPopuP(playerJogou));
+        if(resp2) StartCoroutine(tempoPopuP(vilaoJogou));
+    }
+
+    public IEnumerator tempoPopuP(GameObject x) //Daniel --> Indicar quem ganhou na tela e 1,5 segundos depois tirar.
+    {
+        x.SetActive(true);
+        yield return new WaitForSeconds(1.5f); //Altere esse valor para mudar os segundos.
+        x.SetActive(false);
+    }
 
     /*  minha cola, ignorem
     1 -> pedra
