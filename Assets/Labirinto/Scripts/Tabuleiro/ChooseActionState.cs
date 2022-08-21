@@ -11,17 +11,17 @@ public class ChooseActionState : State
         MoveSelector(Turnos.unit.tile);
         base.Enter();
         index = 0;// posição do Seletor de Ações no tabuleiro.
-        ChangeSelector();
+        ChangeUISelector();
         inputs.OnMove+=OnMove;
         inputs.OnFire+=OnFire;
-        sMachine.chooseActionPainel.MoveTo("Show"); // Move o painel para a posição "Show" 54 e -50.
+        machine.chooseActionPainel.MoveTo("Show"); // Move o painel para a posição "Show" 54 e -50.
     }
     public override void Exit()
     {
         base.Exit();
         inputs.OnMove-=OnMove;
         inputs.OnFire-=OnFire;
-        sMachine.chooseActionPainel.MoveTo("Hide"); // Move o painel para a posição "Hide" 54 e 50.
+        machine.chooseActionPainel.MoveTo("Hide"); // Move o painel para a posição "Hide" 54 e 50.
     }
     void OnMove(object sender, object args)
     {
@@ -29,12 +29,12 @@ public class ChooseActionState : State
         if(button == Vector3Int.left)
         {
             index--;
-            ChangeSelector();
+            ChangeUISelector();
         }
         else if(button == Vector3Int.right)
         {
             index++;
-            ChangeSelector();
+            ChangeUISelector();
         }
     }
     void OnFire(object sender, object args)
@@ -46,22 +46,22 @@ public class ChooseActionState : State
         }
         else if(button==2)
         {
-            sMachine.ChangeTo<RoamState>();
+            machine.ChangeTo<RoamState>();
         }
     }
 
-    void ChangeSelector()
+    void ChangeUISelector()
     {
         if(index==-1)
         {
-            index = sMachine.chooseActionButtons.Count-1;// Seletor de Ações no tabuleiro apertado para esquerda, volta para o último item.
+            index = machine.chooseActionButtons.Count-1;// Seletor de Ações no tabuleiro apertado para esquerda, volta para o último item.
         }
-        else if(index==sMachine.chooseActionButtons.Count)
+        else if(index==machine.chooseActionButtons.Count)
         {
             index = 0;// Seletor de Ações no tabuleiro apertado para direita, volta para o primeiro item.
         }
 
-        sMachine.chooseActionSelection.transform.localPosition = sMachine.chooseActionButtons[index].transform.localPosition;
+        machine.chooseActionSelection.transform.localPosition = machine.chooseActionButtons[index].transform.localPosition;
     }
 
     void ActionButtons()
@@ -70,16 +70,16 @@ public class ChooseActionState : State
         switch(index)
         {
             case 0:
-                //sMachine.ChangeTo<MoveTargetState>();
+                machine.ChangeTo<MoveSelectionState>();
                 break;
             case 1:
-                //sMachine.ChangeTo<ActionSelectState>();
+                //machine.ChangeTo<ActionSelectState>();
                 break;
             case 2:
-               // sMachine.ChangeTo<ItemSelectState>();
+               // machine.ChangeTo<ItemSelectState>();
                 break;
             case 3:
-                //sMachine.ChangeTo<WaitState>();
+                //machine.ChangeTo<WaitState>();
                 break;
         }
     }

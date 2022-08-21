@@ -27,8 +27,8 @@ public class MapLoader : MonoBehaviour
         Unit unit2 = CreateUnit(new Vector3Int(-1, -1, 0), "Inimigo");
         StateMachineController.instance.units.Add(unit1);
         StateMachineController.instance.units.Add(unit2);
-        unit1.faction = 0;// define o tipo de unidade a qual ela pertence
-        unit2.faction = 1;
+        unit1.equipes = 0;// define o tipo de unidade a qual ela pertence
+        unit2.equipes = 1;
     }
 
     public Unit CreateUnit(Vector3Int pos, string name)

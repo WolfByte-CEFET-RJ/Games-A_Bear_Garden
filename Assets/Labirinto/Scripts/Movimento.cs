@@ -6,8 +6,7 @@ public class Movimento : MonoBehaviour
 {
     const float MoveSpeed = 0.5f;
     const float jumpHeight = 0.5f;
-    public bool teste;
-    public List<Vector3Int> path;
+
     SpriteRenderer SR;
     Transform jumper;
     TileLogic tileAtual;
@@ -17,30 +16,16 @@ public class Movimento : MonoBehaviour
         jumper = transform.Find("Jumper");
         SR = GetComponentInChildren<SpriteRenderer>();
     }
-    void Update()
-    {
-        if(teste)
-        {
-            teste = false;
-            StopAllCoroutines();
-            StartCoroutine(Move());
-        }
-    }
-    IEnumerator Move()// Divite a função ou tarefa em varios frames
-    {
-       tileAtual = Tabuleiro.GetTile(path[0]);
-       transform.position = tileAtual.worldPos;
 
-       for (int i = 1; i < path.Count; i++)
+    public IEnumerator Move(List<TileLogic> path)// Divite a função ou tarefa em varios frames
+    {
+       tileAtual = Turnos.unit.tile;
+       tileAtual.content = null;
+
+
+       for (int i = 0; i < path.Count; i++)
        {
-           TileLogic to = Tabuleiro.GetTile(path[i]);
-           if(to==null)
-            {
-                Debug.Log("Tile não encontrado");
-                continue;
-
-                tileAtual.content = null;
-            }
+           TileLogic to = path[i];
             if(tileAtual.floor!=to.floor)
             {
                 yield return StartCoroutine(Jump(to));

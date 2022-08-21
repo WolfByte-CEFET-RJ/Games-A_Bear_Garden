@@ -23,9 +23,9 @@ public class LoadState : State
     }
     void InitialTurnOrdering()
     {
-        int Primeiro = Random.Range(0, sMachine.units.Count);
+        int Primeiro = Random.Range(0, machine.units.Count);
         Turnos.hasActed = false;
         Turnos.hasMoved = false;
-        Turnos.unit = sMachine.units[Primeiro];
+        Turnos.unit = machine.units[Primeiro];
     }
 }

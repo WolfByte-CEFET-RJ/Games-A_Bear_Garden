@@ -30,7 +30,7 @@ public class RoamState : State
       }
       else if(button==2)
       {
-         sMachine.ChangeTo<ChooseActionState>();
+         machine.ChangeTo<ChooseActionState>();
       }
    }
    void CheckNullPosition()
