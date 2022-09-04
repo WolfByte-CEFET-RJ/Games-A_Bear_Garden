@@ -287,6 +287,8 @@ GameObject:
   - component: {fileID: 163169317}
   - component: {fileID: 163169316}
   - component: {fileID: 163169315}
+  - component: {fileID: 163169319}
+  - component: {fileID: 163169318}
   m_Layer: 0
   m_Name: baseInimiga
   m_TagString: baseAmiga
@@ -413,6 +415,32 @@ MonoBehaviour:
   trp_vida: 0
   trp_atk: 0
   trp_spd: 0
+--- !u!114 &163169318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163169312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1511ccae7919cfc46b603b9b337fdc94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &163169319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163169312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a97e769c896144595b7ca773d270b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barraVida: {fileID: 173566894}
+  _stats: {fileID: 163169317}
 --- !u!1 &173566892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1126,7 @@ GameObject:
   - component: {fileID: 672707507}
   - component: {fileID: 672707505}
   - component: {fileID: 672707508}
+  - component: {fileID: 672707509}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1215,6 +1244,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca1a1efa47ef68345b3f052042a55e68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &672707509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672707501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d5bb0fc811c41a4084a4222f437ac5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tmpjkp: {fileID: 672707506}
+  tempoTotal: 0
+  condicao: 0
+  tempoTxt: {fileID: 1982360777}
 --- !u!1 &712959284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,6 +2034,8 @@ GameObject:
   - component: {fileID: 1663355730}
   - component: {fileID: 1663355729}
   - component: {fileID: 1663355728}
+  - component: {fileID: 1663355732}
+  - component: {fileID: 1663355731}
   m_Layer: 0
   m_Name: baseAmiga
   m_TagString: baseInimiga
@@ -2115,6 +2162,32 @@ MonoBehaviour:
   trp_vida: 0
   trp_atk: 0
   trp_spd: 0
+--- !u!114 &1663355731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663355725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1511ccae7919cfc46b603b9b337fdc94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1663355732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663355725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a97e769c896144595b7ca773d270b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barraVida: {fileID: 2029393177}
+  _stats: {fileID: 1663355730}
 --- !u!1 &1709296997
 GameObject:
   m_ObjectHideFlags: 0

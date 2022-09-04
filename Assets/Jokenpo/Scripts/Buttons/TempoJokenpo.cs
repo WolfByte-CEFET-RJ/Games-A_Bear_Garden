@@ -14,7 +14,7 @@ public class TempoJokenpo : MonoBehaviour
     float temporizador;
     [HideInInspector]
     public bool jogo = false;   //Rodrigo --> Variável jogo precisa ser pública para ser utiliizada em outros scritps, "[HideInInspector]" utilizado para escondê-la como se fosse privada
-    public Text tempTxt;
+    public Text tempTxt, jogadaTxt;
 
 
     void Awake()
@@ -36,6 +36,7 @@ public class TempoJokenpo : MonoBehaviour
 
         //Felipe --> Joga o valor do temporizador para uma UI de texto na cena do jogo
         tempTxt.text = tempoLoop.ToString();
+        jogadaTxt.text = condicao.ToString();
 
         if(condicao != tempoLoop)   //Rodrigo --> if para verificar a mudança de 1 segundo no tempo e adicionar 1 unidade à tempoInt
         {
