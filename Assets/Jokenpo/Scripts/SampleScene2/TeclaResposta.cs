@@ -4,34 +4,38 @@ using UnityEngine;
 
 public class TeclaResposta : MonoBehaviour
 {
-    private static bool pedraPlayer, pedraVilao, papelPlayer, papelVilao, tesouraPlayer, tesouraVilao; //Daniel --> Variáveis para controle de jogadas (Encapsuladas)
-    public static bool PedraPlayer { set { pedraPlayer = value; } } public static bool PapelPlayer { set { papelPlayer = value; } } //Daniel --> Setters para as variáveis de controle das jogadas
+    private static bool pedraPlayer, pedraVilao, papelPlayer, papelVilao, tesouraPlayer, tesouraVilao; //Daniel --> Variï¿½veis para controle de jogadas (Encapsuladas)
+    public static bool PedraPlayer { set { pedraPlayer = value; } } public static bool PapelPlayer { set { papelPlayer = value; } } //Daniel --> Setters para as variï¿½veis de controle das jogadas
     public static bool TesouraPlayer { set { tesouraPlayer = value; } } public static bool PedraVilao { set { pedraVilao = value; } }
     public static bool PapelVilao { set { papelVilao = value; } } public static bool TesouraVilao { set { tesouraVilao = value; } }
 
     public GameObject[] tropas; //Daniel --> Vetor para guardar prefabs das tropas
-    public GameObject spawnPlayer, spawnVilao; //Daniel --> Objetos pra instanciar os prefabs nas posições do player e vilão
-    public Text resultadoText; //Daniel --> Texto do resultado da partida
-    private string situacao; //Daniel --> Variável auxiliar para manipular o resultadoText
+    private GameObject spawnPlayer, spawnVilao; //Daniel --> Objetos pra instanciar os prefabs nas posiï¿½ï¿½es do player e vilï¿½o
+    private Text resultadoText; //Daniel --> Texto do resultado da partida
+    private string situacao; //Daniel --> Variï¿½vel auxiliar para manipular o resultadoText
 
     private int tempoInt, j;
     private float temporizador;
+    private JogadaTecla jogTc;
 
     void Start()
     {
+        spawnPlayer = GameObject.FindGameObjectWithTag("spawnPlayer");
+        spawnVilao = GameObject.FindGameObjectWithTag("spawnVilain");
+        resultadoText =  GameObject.FindGameObjectWithTag("resultadoTxt").GetComponent<Text>();
         temporizador = 0;
         j = 0;
     }
 
     void Update()
     {
-        //Rodrigo --> Atualizando a variável temporizador/contabilizando a passagem de tempo
+        //Rodrigo --> Atualizando a variï¿½vel temporizador/contabilizando a passagem de tempo
         temporizador += Time.deltaTime;
 
-        //Rodrigo --> Atribuindo o valor de tempo a uma variável inteira
+        //Rodrigo --> Atribuindo o valor de tempo a uma variï¿½vel inteira
         tempoInt = (int)temporizador;
 
-        //Rodrigo --> if para spawnar tropas de 2 em 2 segundos (modificar o número dividindo tempoInt para mudar o intervalo de tempo)
+        //Rodrigo --> if para spawnar tropas de 2 em 2 segundos (modificar o nï¿½mero dividindo tempoInt para mudar o intervalo de tempo)
         if (tempoInt % 2 == 0)
         {
             for (int i = j; j < 1; i++) //Rodrigo <-- for que limita o spawn a uma vez usando o valor de j
@@ -46,39 +50,39 @@ public class TeclaResposta : MonoBehaviour
         }
     }
 
-    void Resposta() //Daniel --> Método pra spawnar tropas de acordo com a resposta do adversário
+    void Resposta() //Daniel --> Mï¿½todo pra spawnar tropas de acordo com a resposta do adversï¿½rio
     {
         if ((pedraPlayer == true && pedraVilao == true) || (tesouraPlayer == true && tesouraVilao == true) || (papelPlayer == true && papelVilao == true)) // Empate
         {
             Empate();
         }
-        else if (papelPlayer == true && pedraVilao == true) //Vitória do Player com Papel
+        else if ((papelPlayer == true && pedraVilao == true) || (papelPlayer == true && JogadaTecla.WOPLayer() == true)) //Vitï¿½ria do Player com Papel
         {
             playerWin(0);
         }
-        else if (papelVilao == true && pedraPlayer == true) //Vitória do Vilão com Papel
+        else if ((papelVilao == true && pedraPlayer == true) || (papelVilao == true && JogadaTecla.WOVilao() == true)) //Vitï¿½ria do Vilï¿½o com Papel
         {
             vilainWin(1);
         }
-        else if (pedraPlayer == true && tesouraVilao == true) //Vitória do Player com Pedra
+        else if ((pedraPlayer == true && tesouraVilao == true) || (pedraPlayer == true && JogadaTecla.WOPLayer() == true)) //Vitï¿½ria do Player com Pedra
         {
             playerWin(2);
         }
-        else if (pedraVilao == true && tesouraPlayer == true) //Vitória do Vilão com Pedra
+        else if ((pedraVilao == true && tesouraPlayer == true || (pedraVilao == true && JogadaTecla.WOVilao() == true))) //Vitï¿½ria do Vilï¿½o com Pedra
         {
             vilainWin(3);
         }
-        else if (tesouraPlayer == true && papelVilao == true) //Vitória do Player com Tesoura
+        else if ((tesouraPlayer == true && papelVilao == true) || (tesouraPlayer == true && JogadaTecla.WOPLayer() == true)) //Vitï¿½ria do Player com Tesoura
         {
             playerWin(4);
         }
-        else if (tesouraVilao == true && papelPlayer == true) //Vitória do Vilão com Tesoura
+        else if ((tesouraVilao == true && papelPlayer == true )|| (tesouraVilao == true && JogadaTecla.WOVilao() == true)) //Vitï¿½ria do Vilï¿½o com Tesoura
         {
             vilainWin(5);
         }
     }
 
-    void reset() //Daniel --> Método para resetar todas as variáveis
+    void reset() //Daniel --> Mï¿½todo para resetar todas as variï¿½veis
     {
         papelPlayer = false;
         papelVilao = false;
@@ -90,7 +94,7 @@ public class TeclaResposta : MonoBehaviour
 
     public IEnumerator resultado(string situacao)
     {
-        //Daniel --> Corrotina para mostrar a situação na tela e depois de 2 segundos limpar.
+        //Daniel --> Corrotina para mostrar a situaï¿½ï¿½o na tela e depois de 2 segundos limpar.
         resultadoText.text = situacao;
         yield return new WaitForSeconds(2f); //Altere esse valor para mudar os segundos.
         resultadoText.text = "";
@@ -101,16 +105,16 @@ public class TeclaResposta : MonoBehaviour
         Instantiate(tropas[spawnIndex], spawnPlayer.transform.position, spawnPlayer.transform.rotation);
         reset();
         Debug.Log("Player");
-        situacao = "Vitória Player!";
+        situacao = "VitÃ³ria Player!";
         StartCoroutine(resultado(situacao));
     }
 
-    void vilainWin(int spawnIndex) //Daniel --> Spawnar tropas do vilão de acordo com resultado da partida caso ele ganhe
+    void vilainWin(int spawnIndex) //Daniel --> Spawnar tropas do vilï¿½o de acordo com resultado da partida caso ele ganhe
     {
         Instantiate(tropas[spawnIndex], spawnVilao.transform.position, spawnVilao.transform.rotation);
         reset();
-        Debug.Log("Vilão");
-        situacao = "Vitória Vilão!";
+        Debug.Log("VilÃ£o");
+        situacao = "VitÃ³ria VilÃ£o!";
         StartCoroutine(resultado(situacao));
     }
 

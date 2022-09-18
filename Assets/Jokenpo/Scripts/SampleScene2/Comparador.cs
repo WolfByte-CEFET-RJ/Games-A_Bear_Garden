@@ -10,7 +10,7 @@ public class Comparador : MonoBehaviour
 
     void Update()
     {
-        if (jogTc.respostas)    //Rodrigo --> caso ambos os players tenham jogado...
+        if (jogTc.Respostas)    //Rodrigo --> caso ambos os players tenham jogado...
         {
                 for(int i = j; i < 1; i++)  //Rodrigo --> for que limita o for a uma vez usando o valor de j
                 {
@@ -40,9 +40,10 @@ public class Comparador : MonoBehaviour
         else //if (jogTc.p1 == jogTc.p2)
             Debug.Log("Empate!");
 
-        jogTc.resp1 = false;    //Rodrigo --> reset da variável resp1
-        jogTc.resp2 = false;    //Rodrigo --> reset da variável resp2
+        jogTc.Resp1 = false;    //Rodrigo --> reset da variável resp1
+        jogTc.Resp2 = false;    //Rodrigo --> reset da variável resp2
     }
+
 
     /*  minha cola, ignorem
     1 -> pedra

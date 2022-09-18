@@ -8,8 +8,20 @@ public class JogadaTecla : MonoBehaviour
     public TempoJokenpo tempJkp;
     private int j = 0, j1 = 0, j2 = 0;  //Rodrigo --> variáveis controladoras "j" anteriormente utilizadas seccionadas em j, j1 e j2 para diferentes análises
     public int p1, p2;
-    public bool resp1 = false, resp2 = false, respostas = false;    //Rodrigo --> variáveis para checar se cada player fez sua jogada    
+    private bool resp1 = false, resp2 = false, respostas = false;    //Rodrigo --> variáveis para checar se cada player fez sua jogada    
+    public bool Resp1 { get{return this.resp1;} set { resp1 = value; } } 
+    public bool Resp2 { get{return this.resp2;} set { resp2 = value; } } 
+    public bool Respostas { get{return this.respostas;}set { respostas = value; } }
     public GameObject playerJogou, vilaoJogou; //Daniel --> GameObjects dos popups para mostrar quem fez a jogada na tela    
+
+    private static bool woPlayer = false, woVilao = false;
+
+    public static bool WOPLayer(){
+        return woPlayer;
+    }
+    public static bool WOVilao(){
+        return woVilao;
+    }
 
     void Start(){
         Debug.Log("inicializando...");
@@ -22,13 +34,17 @@ public class JogadaTecla : MonoBehaviour
         Jogada_Player_01();
         Jogada_Player_02();
         checaJogada();
-        Respostas();
+        RespostasFunc();
+        Wo();
+            
+    }
 
-
-        if (!resp1 && resp2 && !tempJkp.jogo)   //Rodrigo --> ifs para análise de qual jogador ganha por W.O.
+    void Wo(){
+         if (!resp1 && resp2 && !tempJkp.jogo)   //Rodrigo --> ifs para análise de qual jogador ganha por W.O.
         {
             for(int i = j; i < 1; i++)  //Rodrigo --> for que limita o for a uma vez usando o valor de j
             {
+                woVilao = true;
                 Debug.Log("Vitória do Vilão!");
                 j = 1;
                 resp2 = false;
@@ -38,7 +54,7 @@ public class JogadaTecla : MonoBehaviour
         {
             for(int i = j; i < 1; i++)
             {
-      
+                woPlayer = true;
                 Debug.Log("Vitória do Player!");
                 j = 1;
                 resp1 = false;
@@ -46,7 +62,6 @@ public class JogadaTecla : MonoBehaviour
         }
         else
             j = 0;
-            
     }
 
     void loop(){
@@ -117,7 +132,7 @@ public class JogadaTecla : MonoBehaviour
             else if(Input.GetKeyDown(KeyCode.L)){   //Rodrigo --> ...joga tesoura se apertado L
                 for(int i = j2; i < 1; i++)
                 {
-                    TeclaResposta.TesouraVilao= true; //Daniel --> boolean pra controlar spawn de tesoura do vilão
+                    TeclaResposta.TesouraVilao = true; //Daniel --> boolean pra controlar spawn de tesoura do vilão
                     p2 = 3;
                     resp2 = true;
                     j2 = 1;
@@ -130,7 +145,7 @@ public class JogadaTecla : MonoBehaviour
 
     }
 
-    void Respostas(){
+    void RespostasFunc(){
         if (resp1 && resp2) //Rodrigo --> checa se ambos os players fizeram jogadas
             respostas = true;
         else

@@ -11,6 +11,12 @@ TagManager:
   - baseInimiga
   - baseAmiga
   - Base
+  - SpawnPlayer2
+  - spawnPlayer
+  - spawnVilain
+  - resultadoTxt
+  - playerJogou
+  - vilaoJogou
   layers:
   - Default
   - TransparentFX
