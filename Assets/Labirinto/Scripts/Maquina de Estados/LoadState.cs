@@ -19,13 +19,13 @@ public class LoadState : State
         yield return null;
         InitialTurnOrdering();
 
-        StateMachineController.instance.ChangeTo<ChooseActionState>();
+        StateMachineController.instance.ChangeTo<ComeçodeTurnos>();
     }
     void InitialTurnOrdering()
     {
-        int Primeiro = Random.Range(0, machine.units.Count);
-        Turnos.hasActed = false;
-        Turnos.hasMoved = false;
-        Turnos.unit = machine.units[Primeiro];
+        for(int i=0;i<machine.units.Count; i++)
+        {
+            machine.units[i].chargeTime = 100-machine.units[i].GetStat(StatEnum.SPEED);
+        }
     }
 }

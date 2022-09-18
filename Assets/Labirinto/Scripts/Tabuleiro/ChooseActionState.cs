@@ -11,7 +11,7 @@ public class ChooseActionState : State
         MoveSelector(Turnos.unit.tile);
         base.Enter();
         index = 0;// posição do Seletor de Ações no tabuleiro.
-        ChangeUISelector();
+        ChangeUISelector();// Seletor da interface
         inputs.OnMove+=OnMove;
         inputs.OnFire+=OnFire;
         machine.chooseActionPainel.MoveTo("Show"); // Move o painel para a posição "Show" 54 e -50.
@@ -29,12 +29,12 @@ public class ChooseActionState : State
         if(button == Vector3Int.left)
         {
             index--;
-            ChangeUISelector();
+            ChangeUISelector();// Seletor da interface
         }
         else if(button == Vector3Int.right)
         {
             index++;
-            ChangeUISelector();
+            ChangeUISelector();// Seletor da interface
         }
     }
     void OnFire(object sender, object args)
@@ -50,7 +50,7 @@ public class ChooseActionState : State
         }
     }
 
-    void ChangeUISelector()
+    void ChangeUISelector()// Seletor da interface
     {
         if(index==-1)
         {

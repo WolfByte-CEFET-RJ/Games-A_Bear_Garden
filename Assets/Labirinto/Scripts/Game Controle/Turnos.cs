@@ -5,7 +5,7 @@ using UnityEngine;
 public static class Turnos
 {
    public static Unit unit;
-   public static bool hasActed;
-   public static bool hasMoved;// adição de comentarios
+   public static bool hasActed;// Esta ativo
+   public static bool hasMoved;// Esta se movendo
 
 }
