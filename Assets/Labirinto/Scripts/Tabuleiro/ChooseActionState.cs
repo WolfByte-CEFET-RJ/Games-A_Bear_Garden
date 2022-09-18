@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChooseActionState : State
 {
@@ -12,6 +13,7 @@ public class ChooseActionState : State
         base.Enter();
         index = 0;// posição do Seletor de Ações no tabuleiro.
         ChangeUISelector();// Seletor da interface
+        CheckAction();
         inputs.OnMove+=OnMove;
         inputs.OnFire+=OnFire;
         machine.chooseActionPainel.MoveTo("Show"); // Move o painel para a posição "Show" 54 e -50.
@@ -70,7 +72,10 @@ public class ChooseActionState : State
         switch(index)
         {
             case 0:
+            if(!Turnos.hasMoved)
+            {
                 machine.ChangeTo<MoveSelectionState>();
+            }
                 break;
             case 1:
                 //machine.ChangeTo<ActionSelectState>();
@@ -79,8 +84,25 @@ public class ChooseActionState : State
                // machine.ChangeTo<ItemSelectState>();
                 break;
             case 3:
-                //machine.ChangeTo<WaitState>();
+                machine.ChangeTo<FinaldeTurnos>();
                 break;
+        }
+    }
+    void CheckAction()
+    {
+        PaintButton(machine.chooseActionButtons[0], Turnos.hasMoved);
+        PaintButton(machine.chooseActionButtons[1], Turnos.hasActed);// Cor Skills
+        PaintButton(machine.chooseActionButtons[2], Turnos.hasActed);// Cor Item 
+    }
+    void PaintButton(Image image, bool check)// Seletor da interface irá trocar de Cor se Ele se Mover para Cinza, Senão continuará Branco
+    {
+        if(check)
+        {
+            image.color = Color.gray;
+        }
+        else
+        {
+            image.color = Color.white;
         }
     }
 }
