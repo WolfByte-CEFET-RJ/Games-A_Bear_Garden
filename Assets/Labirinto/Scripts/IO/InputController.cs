@@ -29,6 +29,7 @@ public class InputController : MonoBehaviour
         if(h!=0)
         {
             moved.x = GetMoved(ref hCooldown, h);
+            
         }
         else
         {
