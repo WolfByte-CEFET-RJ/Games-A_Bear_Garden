@@ -20,6 +20,8 @@ public class TileSelectVilao : MonoBehaviour
         {
             GetT();
         }
+        else if(Input.GetMouseButtonDown(0))
+            PlaceParede();
         
     }
 
@@ -31,12 +33,10 @@ public class TileSelectVilao : MonoBehaviour
         
         if(tiles.GetTile(LocationOfCell) )
         {
-            Vector3 posTrap = tiles.CellToWorld(LocationOfCell); // posicao das celulas no mundo da unity, que será onde a armadilha será spawnada
-
-            Debug.Log("Tile encontrado na pos relacionado a Celula: "+LocationOfCell+" do TileMap Andar01");
-            Debug.Log("Tile encontrado na pos relacionado ao mundo Unity: "+tiles.CellToWorld(LocationOfCell)+" do TileMap Andar01");
-
-            Instantiate(trapVilao,new Vector3(posTrap.x, posTrap.y+0.25f, posTrap.z+10), Quaternion.identity); // os valores sao somados ao eixo y e z para corrigir o bug da posicao
+            
+            Debug.Log("Tile encontrado na pos: "+LocationOfCell+" do TileMap Andar01");
+            Debug.Log("Tile encontrado na pos: "+tiles.CellToWorld(LocationOfCell)+" do TileMap Andar01");
+            Instantiate(trapVilao,tiles.CellToWorld(LocationOfCell), Quaternion.identity);
             return;
         }
         else
@@ -45,5 +45,18 @@ public class TileSelectVilao : MonoBehaviour
             return;
         }
         
+    }
+
+    void PlaceParede()
+    {
+        Vector3 mousePosWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        LocationOfCell = tiles.WorldToCell(mousePosWorld);
+
+        if(tiles.GetTile(LocationOfCell))
+        {
+            Debug.Log("Posição: "+LocationOfCell);
+            //inserir prefab do chão, encaixar o vilao nos turnos
+            return;
+        }
     }
 }
