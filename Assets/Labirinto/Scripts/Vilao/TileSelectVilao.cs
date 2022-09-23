@@ -18,14 +18,14 @@ public class TileSelectVilao : MonoBehaviour
 
         if(Input.GetMouseButtonDown(1))
         {
-            GetT();
+            SpawnTrap();
         }
         else if(Input.GetMouseButtonDown(0))
             PlaceParede();
         
     }
 
-    void GetT()
+    void SpawnTrap()
     {
         Vector3 mousePosWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition); // Transforma a posicao do mouse da tela para a posicao do mouse no mundo da unity
         LocationOfCell = tiles.WorldToCell(mousePosWorld); // Basicamente vai retornar o valor de cada célula do timemap através da posicao do mouse
@@ -34,9 +34,12 @@ public class TileSelectVilao : MonoBehaviour
         if(tiles.GetTile(LocationOfCell) )
         {
             
-            Debug.Log("Tile encontrado na pos: "+LocationOfCell+" do TileMap Andar01");
-            Debug.Log("Tile encontrado na pos: "+tiles.CellToWorld(LocationOfCell)+" do TileMap Andar01");
-            Instantiate(trapVilao,tiles.CellToWorld(LocationOfCell), Quaternion.identity);
+            Vector3 posTrap = tiles.CellToWorld(LocationOfCell); // posicao das celulas no mundo da unity, que será onde a armadilha será spawnada
+
+            Debug.Log("Tile encontrado na pos relacionado a Celula: "+LocationOfCell+" do TileMap Andar01");
+            Debug.Log("Tile encontrado na pos relacionado ao mundo Unity: "+tiles.CellToWorld(LocationOfCell)+" do TileMap Andar01");
+    
+            Instantiate(trapVilao,new Vector3(posTrap.x, posTrap.y+0.25f, posTrap.z+10), Quaternion.identity); // os valores sao somados ao eixo y e z para corrigir o bug da posicao
             return;
         }
         else
