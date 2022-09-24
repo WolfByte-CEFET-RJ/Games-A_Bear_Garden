@@ -20,13 +20,16 @@ public class EnemyManager : GameManager
     // Update is called once per frame
     void Update()
     {
+        if (enemiesShoot.EnemyCount != enemies)
+            enemies = enemiesShoot.EnemyCount;
+
         if (enemies <= 0)
             GameOver(youLost);
     }
     protected override void GameOver(bool value)
     {
         print("You Win!!!!");
-        enemiesShoot.Clear();
+        //enemiesShoot.Clear();
         base.GameOver(value);
     }
 }

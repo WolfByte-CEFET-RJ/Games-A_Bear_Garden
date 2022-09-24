@@ -31,13 +31,20 @@ public class Tirinho : MonoBehaviour
          * para cada item acertado uma consequencia diferente
          */
 
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy")//Caso um tiro acerte no inimigo...
         {
             //playerShoot = false;
             Destroy(gameObject);
-            Destroy(other.gameObject);
-        }
-
+            Destroy(other.gameObject);//Alem de destruir o inimigo e o tiro
+            EnemyMovement en = other.gameObject.GetComponent<EnemyMovement>();
+            if(en != null)
+            {
+                EnemiesShoot shoot = en.GetComponentInParent<EnemiesShoot>();//*
+                shoot.Enemies.Remove(en);//É preciso remover ele da lista dos inimigos atuais
+                shoot.EnemyCount--;//E reduzir o numero de inimigos vivos
+            }
+        }//*Obs.: Caso seja necessário criar outros inimigos, lembrar de cria-los como filhos do objeto que possui 
+        //o componente EnemiesShoot, como ja ocorre no inicio do jogo
         if (other.gameObject.tag == "Player")
             Destroy(gameObject);
     }

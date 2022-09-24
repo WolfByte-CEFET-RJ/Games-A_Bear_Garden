@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AllPlayersDeath : MonoBehaviour
-{
-
-    
+{    
     public delegate void PlayerDeath();
     public static event PlayerDeath PlayerDied;
 
     public GameObject player_01, player_02, player_03, player_04;
+
 
     void setup(){
 

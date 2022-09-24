@@ -9,7 +9,14 @@ public class EnemiesShoot : EnemyMovement
     private int enemyNumber = 0;
     private int enemyCount;
 
-    [SerializeField] private Tirinho shootObject;
+    [SerializeField] private GameObject shootObject;
+
+    public List<EnemyMovement> Enemies
+    {
+        get => enemies;
+        set => enemies = value;
+    }
+
 
     void Awake()
     {
@@ -19,19 +26,22 @@ public class EnemiesShoot : EnemyMovement
 
     void Update()
 	{
-		triggerTime += Time.deltaTime;
+        if(enemyCount > 0)
+        {
+            triggerTime += Time.deltaTime;
 
-		if (triggerTime >= 2)
-		{
-            enemyNumber = Random.Range(0, enemies.Count);
-            Shoot(enemies[enemyNumber].FirePosition);
-            triggerTime = 0;
-		}
+            if (triggerTime >= 2)
+            {
+                enemyNumber = Random.Range(0, enemies.Count);
+                Shoot(enemies[enemyNumber].FirePosition);
+                triggerTime = 0;
+            }
+        }
         
     }
     void Shoot(Transform firePosition)
     {
-        Instantiate(shootObject.gameObject, firePosition.position, firePosition.rotation);
+        Instantiate(shootObject, firePosition.position, firePosition.rotation);
     }
     
     public void Clear()
@@ -41,5 +51,6 @@ public class EnemiesShoot : EnemyMovement
             enemies.Clear();
         }
     }
-    public int EnemyCount { get =>enemyCount; } 
+    public int EnemyCount { get => enemyCount; set => enemyCount = value; } 
+
 }

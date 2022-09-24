@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class PlayerInput : MonoBehaviour
+public class PlayerInput : MonoBehaviour
 {
     public enum PlayerType { PLAYER1, PLAYER2, PLAYER3, PLAYER4 }
     
