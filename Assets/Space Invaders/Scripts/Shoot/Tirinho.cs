@@ -21,7 +21,7 @@ public class Tirinho : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //implementar uma interface com essa função -> pensar nisso
+        //implementar uma interface com essa funï¿½ï¿½o -> pensar nisso
 
         /* 
          * Tratamento individual 
@@ -35,6 +35,7 @@ public class Tirinho : MonoBehaviour
         {
             //playerShoot = false;
             Destroy(gameObject);
+            Destroy(other.gameObject);
         }
 
         if (other.gameObject.tag == "Player")

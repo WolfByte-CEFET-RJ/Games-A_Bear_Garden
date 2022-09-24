@@ -13,16 +13,16 @@ public class PlayerHealth : MonoBehaviour, IHealth
 
     void IHealth.Damage(int damageRecieved)
     {
-        if (_health > 0)
+        if (_health > 0){
             _health -= damageRecieved;
-        else if (_health <= 0)
+        } else if (_health <= 0)
             OnDeath();
     }
 
     void IHealth.SetHealth(int value) => _health = value;
 
     public void OnDeath() {
-        PlayerDied?.Invoke();
+        //PlayerDied?.Invoke();
         gameObject.SetActive(false);
     }
 

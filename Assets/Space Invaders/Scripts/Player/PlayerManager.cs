@@ -25,6 +25,7 @@ public class PlayerManager : GameManager
         }
 #endif
     }
+    
     private void PlayerHealth_PlayerDied()
     {
         GameOver(!youWin);
