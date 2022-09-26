@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Menu/Scenes/Menu.unity
     guid: 8fd969eb3be750346865e7a0c87fcc89
   - enabled: 1
-    path: Assets/Menu/Scenes/FaseTest.unity
+    path: Assets/Menu/Scenes/Mapa.unity
     guid: 5a868cb490250ad4299224b0f7e4ace1
   - enabled: 1
     path: Assets/Menu/Scenes/Space.unity

@@ -15,21 +15,19 @@ public class SelecionandoFase : MonoBehaviour
     [SerializeField] Text _pptText;
     [SerializeField] Text _navesText;
 
+    
+
     public List<string> ids = new List<string>();
     private bool ativado_1 = false;
     private bool ativado_2 = false;
     private bool ativado_3 = false;
 
-    [Header("Condioes")]
-    public int _passada;
-    public int _disponivel;
-    public int _bloqueada;
+    //[Header("Mapa")]
+    //public Tilemap _tiles;
+    //public Tile _tile;
+    //public Vector3Int _local;
 
-    [Header("Mapa")]
-    public Tilemap _tiles;
-    public Tile _tile;
-    public Vector3Int _local;
-
+    //public static SelecionandoFase Instance { get; private set; }
 
     public void Start()
     {
@@ -97,22 +95,54 @@ public class SelecionandoFase : MonoBehaviour
         if (ids[0] == "ID_lab")
         {
             SceneManager.LoadScene("Lab");
-            _lab = _passada;
         }
 
         if (ids[0] == "ID_ppt")
         {
             SceneManager.LoadScene("ppt");
-            _ppt = _passada;
         }
 
         if (ids[0] == "ID_naves")
         {
             SceneManager.LoadScene("Space");
-            _naves = _passada;
         }
     }
 
+    public void Fase2()
+    {
+        if (ids[1] == "ID_lab")
+        {
+            SceneManager.LoadScene("Lab");
+        }
+
+        if (ids[1] == "ID_ppt")
+        {
+            SceneManager.LoadScene("ppt");
+        }
+
+        if (ids[1] == "ID_naves")
+        {
+            SceneManager.LoadScene("Space");
+        }
+    }
+
+    public void Fase3()
+    {
+        if (ids[2] == "ID_lab")
+        {
+            SceneManager.LoadScene("Lab");
+        }
+
+        if (ids[2] == "ID_ppt")
+        {
+            SceneManager.LoadScene("ppt");
+        }
+
+        if (ids[2] == "ID_naves")
+        {
+            SceneManager.LoadScene("Space");
+        }
+    }
     /*
     Definir qual o tipo de mapa que vamos usar;
 

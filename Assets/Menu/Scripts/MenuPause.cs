@@ -20,7 +20,7 @@ public class MenuPause : MonoBehaviour
         {
             _estaPausado = !_estaPausado;   //Ferrari  Modifica a variavel para seu contrario
             PauseScreen();
-            _pauseInstruction.SetActive(false);
+            //_pauseInstruction.SetActive(false);
         }
     }
 
@@ -70,7 +70,7 @@ public class MenuPause : MonoBehaviour
         SceneManager.LoadScene("Menu");     //Natty vai para o menu
         Time.timeScale = 1;
         _estaPausado = false;
-        _pauseInstruction.SetActive(false);
+        //_pauseInstruction.SetActive(false);
         Debug.Log("Voltou para Menu Principal!");
     }
 

@@ -39,8 +39,6 @@ public class Mute : MonoBehaviour {
             AudioListener.pause = false;
             //AudioListener.volume = 1f; - Natty
         }
-
-        Save();
         UpdateButtonIcon();
     }
 
@@ -55,6 +53,7 @@ public class Mute : MonoBehaviour {
             soundOnIcon.enabled = false;
             soundOffIcon.enabled = true;
         }
+        Save();
     }
 
     private void Update() {
