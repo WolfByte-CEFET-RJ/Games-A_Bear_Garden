@@ -39,7 +39,7 @@ public class TileSelectVilao : MonoBehaviour
             Debug.Log("Tile encontrado na pos relacionado a Celula: "+LocationOfCell+" do TileMap Andar01");
             Debug.Log("Tile encontrado na pos relacionado ao mundo Unity: "+tiles.CellToWorld(LocationOfCell)+" do TileMap Andar01");
     
-            Instantiate(trapVilao,new Vector3(posTrap.x, posTrap.y+0.25f, posTrap.z+10), Quaternion.identity); // os valores sao somados ao eixo y e z para corrigir o bug da posicao
+            Instantiate(trapVilao,new Vector3(posTrap.x, posTrap.y+0.25f, posTrap.z+2), Quaternion.identity); // os valores sao somados ao eixo y e z para corrigir o bug da posicao
             return;
         }
         else
