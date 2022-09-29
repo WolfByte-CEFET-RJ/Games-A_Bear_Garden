@@ -31,7 +31,7 @@ public class Tirinho : MonoBehaviour
          * para cada item acertado uma consequencia diferente
          */
 
-        if (other.gameObject.tag == "Enemy")//Caso um tiro acerte no inimigo...
+        if (other.gameObject.tag == "Enemy" && playerShoot)//Caso um tiro acerte no inimigo...
         {
             //playerShoot = false;
             Destroy(gameObject);

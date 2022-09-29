@@ -31,5 +31,6 @@ public class EnemyManager : GameManager
         print("You Win!!!!");
         //enemiesShoot.Clear();
         base.GameOver(value);
+        Destroy(gameObject);
     }
 }

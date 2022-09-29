@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    public enum PlayerType { PLAYER1, PLAYER2, PLAYER3, PLAYER4 }
+    public enum PlayerType { PLAYER1, PLAYER2, PLAYER3, BOSS }
     
     [SerializeField] protected PlayerType playerType;
 
@@ -19,9 +19,9 @@ public class PlayerInput : MonoBehaviour
             case PlayerType.PLAYER2:
                 return  Input.GetAxis("Horizontal2");//A e D
             case PlayerType.PLAYER3:
-                return  Input.GetAxis("Horizontal3");//F e H
-            case PlayerType.PLAYER4:
-                return  Input.GetAxis("Horizontal4");//J e L
+                return  Input.GetAxis("Horizontal3");//J e L
+            case PlayerType.BOSS:
+                return  Input.GetAxis("Horizontal4");//4 e 6 (do lado direito)
             default: return  0;
 
         }
@@ -36,8 +36,8 @@ public class PlayerInput : MonoBehaviour
                 return "ShootSI2";//W
             case PlayerType.PLAYER3:
                 return "ShootSI3";//t
-            case PlayerType.PLAYER4:
-                return "ShootSI4";//i
+            case PlayerType.BOSS:
+                return "ShootSI4";//8(do lado direito)
             default: Debug.LogError("Input não encontrado");
                 return "null";
         }

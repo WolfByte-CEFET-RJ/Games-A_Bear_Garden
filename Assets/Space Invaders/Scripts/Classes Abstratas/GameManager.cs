@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     protected virtual void GameOver(bool condition)
     {
         print("Resultado: " + condition);
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
         
         //if(condition)
         //    //youWin
