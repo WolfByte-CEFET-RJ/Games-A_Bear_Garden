@@ -10,9 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2975464588335401136}
   - component: {fileID: 2429843752513130667}
+  - component: {fileID: 8693601712247881583}
+  - component: {fileID: -2137772024553689118}
+  - component: {fileID: -4620539637359389608}
   m_Layer: 0
   m_Name: TrapVilao
-  m_TagString: Untagged
+  m_TagString: TrapVilao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,3 +86,93 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &8693601712247881583
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4665262668052893472}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.02}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.5, y: 0.0020332336}
+  - {x: 0.010406256, y: 0.25698563}
+  - {x: -0.45422697, y: 0.024890404}
+  - {x: -0.48371243, y: 0.010161877}
+  - {x: -0.49184513, y: -0.0020370483}
+  - {x: -0.3315537, y: -0.083172336}
+  - {x: 0.0022211075, y: -0.25211957}
+  - {x: 0.50238633, y: -0.002036605}
+  - {x: 0.50238633, y: -0.002036605}
+  - {x: 0.35986638, y: 0.018846493}
+  - {x: 0.01791811, y: 0.21936654}
+  - {x: -0.39958358, y: 0.0072789006}
+  - {x: -0.21498942, y: -0.06690456}
+  - {x: -0.0045440197, y: -0.1478286}
+  - {x: 0.2789178, y: -0.010657806}
+  - {x: 0.2022314, y: 0.029817086}
+  - {x: 0.009589672, y: 0.11569975}
+  - {x: -0.16890693, y: -0.0014448352}
+  - {x: -0.08342624, y: -0.056777496}
+  - {x: -0.0031075478, y: -0.05058481}
+  - {x: 0.13004851, y: 0.0011205487}
+  - {x: 0.07492232, y: 0.023307782}
+  - {x: 0.006162405, y: 0.024521332}
+  - {x: -0.03920412, y: -0.031002063}
+  - {x: -0.10556769, y: -0.0043049045}
+  - {x: -0.046430826, y: 0.043349724}
+  - {x: 0.014611006, y: 0.066151604}
+  - {x: 0.21336246, y: -0.001401443}
+  - {x: 0.032091856, y: -0.0860758}
+  - {x: -0.022704124, y: -0.110113636}
+  - {x: -0.28834438, y: 0.0030693822}
+  - {x: -0.068448305, y: 0.12256239}
+  - {x: 0.0027649403, y: 0.16738318}
+  - {x: 0.38775778, y: -0.018601913}
+  - {x: 0.08304095, y: -0.16080524}
+  - {x: 0.0078547, y: -0.19950391}
+  - {x: -0.48390007, y: 0.004063096}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!50 &-2137772024553689118
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4665262668052893472}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!114 &-4620539637359389608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4665262668052893472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e5d40e4fa0701d44b0b4b47d38869a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

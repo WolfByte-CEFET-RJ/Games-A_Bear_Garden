@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ceafe39a1dd57734fa265b88d5736474
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - tiles: {instanceID: 0}
+  - trapVilao: {fileID: 4665262668052893472, guid: c680304650516454f8cc5e2639103283, type: 3}
+  - mouseVilao: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
