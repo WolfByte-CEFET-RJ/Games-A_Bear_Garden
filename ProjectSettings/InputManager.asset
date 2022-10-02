@@ -9,8 +9,8 @@ InputManager:
     m_Name: Horizontal
     descriptiveName: Buttons for Player1
     descriptiveNegativeName: 
-    negativeButton: left
-    positiveButton: right
+    negativeButton: a
+    positiveButton: d
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -25,8 +25,8 @@ InputManager:
     m_Name: Horizontal2
     descriptiveName: Buttons for Player2
     descriptiveNegativeName: 
-    negativeButton: a
-    positiveButton: d
+    negativeButton: f
+    positiveButton: h
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -57,8 +57,8 @@ InputManager:
     m_Name: Horizontal4
     descriptiveName: Buttons for Player4
     descriptiveNegativeName: 
-    negativeButton: '[4]'
-    positiveButton: '[6]'
+    negativeButton: left
+    positiveButton: right
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -298,7 +298,7 @@ InputManager:
     descriptiveName: Shoot in Space Invaders (Player1)
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: up
+    positiveButton: w
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -314,7 +314,7 @@ InputManager:
     descriptiveName: Shoot in Space Invaders (Player2)
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: w
+    positiveButton: t
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -346,7 +346,7 @@ InputManager:
     descriptiveName: Shoot in Space Invaders (Player4)
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: '[8]'
+    positiveButton: up
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000

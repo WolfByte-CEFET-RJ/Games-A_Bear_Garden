@@ -38,7 +38,6 @@ public class BossMove : PlayerInput
 
     private void FixedUpdate()
     {
-        if(GetPlayerInput(playerType) != 0)
-            rig.velocity = new Vector2(GetPlayerInput(playerType) * speed, rig.velocity.y);
+       rig.velocity = new Vector2(GetPlayerInput(playerType) * speed, rig.velocity.y);
     }
 }
