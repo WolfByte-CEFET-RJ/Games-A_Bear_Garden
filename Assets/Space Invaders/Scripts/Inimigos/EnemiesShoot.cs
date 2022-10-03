@@ -10,20 +10,23 @@ public class EnemiesShoot : EnemyMovement
     private int enemyCount;
 
     [SerializeField] private GameObject shootObject;
-
+    [SerializeField] private GameObject powerUpObj;
     public List<EnemyMovement> Enemies
     {
         get => enemies;
         set => enemies = value;
     }
 
-
-    void Awake()
+    private void Start()
     {
         enemyCount = enemies.Count;
         print($"EnemiesShoot: {enemyCount}");
-    }
 
+        //Para aproveitar a lista, estarei selecionando aqui um inimigo para dropar um power-up quando morrer
+        int enIndex = Random.Range(0, enemyCount);
+        enemies[enIndex].CanSpawnP_up = true;
+        enemies[enIndex].PowerUp = powerUpObj;
+    }
     void Update()
 	{
         if (enemyCount > 0)

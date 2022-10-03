@@ -1069,6 +1069,7 @@ MonoBehaviour:
   - {fileID: 1412320409}
   triggerTime: 0
   shootObject: {fileID: 1548278244383134007, guid: e03d5ebfdf827694cb7a815540f6315b, type: 3}
+  powerUpObj: {fileID: 4584256492935585039, guid: 870a127cdf6ec424aaed836bca471e76, type: 3}
 --- !u!114 &615087477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2189,7 +2190,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442250915}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.309999, y: -7.4, z: 0}
+  m_LocalPosition: {x: -4.2, y: -7.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 695936894}
@@ -2854,7 +2855,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018891268}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.69, y: -7.4, z: 0}
+  m_LocalPosition: {x: 0.3, y: -7.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 325992414}
@@ -3116,6 +3117,14 @@ PrefabInstance:
     - target: {fileID: 4193907602707122891, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
       propertyPath: speedI
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193907602707122891, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
+      propertyPath: powerUp
+      value: 
+      objectReference: {fileID: 4584256492935585039, guid: 870a127cdf6ec424aaed836bca471e76, type: 3}
+    - target: {fileID: 4193907602707122891, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
+      propertyPath: canSpawnP_up
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4193907602707122892, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
       propertyPath: m_Size.x

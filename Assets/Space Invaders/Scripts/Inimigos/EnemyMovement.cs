@@ -11,7 +11,19 @@ public class EnemyMovement : MonoBehaviour
 	private Vector3 direction; //vetor de atribuição da direção
 	[SerializeField] private Transform firePos;
 
+	private bool canSpawnP_up;
+	private GameObject powerUp;
+	public bool CanSpawnP_up
+    {
+		get => canSpawnP_up;
+		set => canSpawnP_up = value;
+    }
 
+	public GameObject PowerUp
+    {
+		get => powerUp;
+		set => powerUp = value;
+    }
 	void Update()
 	{
 		Movement();
@@ -48,5 +60,13 @@ public class EnemyMovement : MonoBehaviour
 	/* melhor usar Properties que variaveis publicas*/ 
 	public Transform FirePosition 
 	{ get { return firePos; } }
+
+    private void OnDestroy()
+    {
+        if (CanSpawnP_up)
+        {
+			Instantiate(powerUp, transform.position, transform.rotation);
+        }
+    }
 }
 
