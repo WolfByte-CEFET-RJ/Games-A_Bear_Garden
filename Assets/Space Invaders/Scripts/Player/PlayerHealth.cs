@@ -27,7 +27,7 @@ public class PlayerHealth : MonoBehaviour, IHealth
         {
             lifeBar.fillAmount = (float)_health / maxHealth;
         } 
-        else if (_health <= 0)
+        else 
             OnDeath();
     }
 

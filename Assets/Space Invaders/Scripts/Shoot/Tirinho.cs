@@ -45,20 +45,11 @@ public class Tirinho : MonoBehaviour
             }
         }//*Obs.: Caso seja necessário criar outros inimigos, lembrar de cria-los como filhos do objeto que possui 
         //o componente EnemiesShoot, como ja ocorre no inicio do jogo
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" || other.gameObject.tag == "Boss" || other.gameObject.tag == "Barrier")
         {
             Destroy(gameObject);
             IHealth health = other.gameObject.GetComponent<IHealth>();
             if(health != null)
-            {
-                health.Damage(10);
-            }
-        }
-        if(other.gameObject.tag == "Boss")
-        {
-            Destroy(gameObject);
-            IHealth health = other.gameObject.GetComponent<IHealth>();
-            if (health != null)
             {
                 health.Damage(10);
             }
