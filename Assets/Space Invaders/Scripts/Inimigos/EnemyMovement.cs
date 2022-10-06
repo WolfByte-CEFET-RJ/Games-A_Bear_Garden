@@ -15,13 +15,13 @@ public class EnemyMovement : MonoBehaviour
 	private GameObject powerUp;
 	public bool CanSpawnP_up
     {
-		get => canSpawnP_up;
+		private get => canSpawnP_up;
 		set => canSpawnP_up = value;
     }
 
 	public GameObject PowerUp
     {
-		get => powerUp;
+		private get => powerUp;
 		set => powerUp = value;
     }
 	void Update()
