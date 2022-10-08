@@ -26,4 +26,5 @@ public class PowerUp : MonoBehaviour
             }//Apenas para aumentar a vida
         }
     }
+
 }

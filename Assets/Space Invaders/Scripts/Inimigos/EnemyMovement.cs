@@ -15,7 +15,7 @@ public class EnemyMovement : MonoBehaviour
 	private GameObject powerUp;
 	public bool CanSpawnP_up
     {
-		private get => canSpawnP_up;
+		get => canSpawnP_up;
 		set => canSpawnP_up = value;
     }
 
@@ -56,17 +56,14 @@ public class EnemyMovement : MonoBehaviour
 			enemyMovementTimer = 0; //e o timer 0
 		}
 	}
-
+	public void CreateP_Up()
+    {
+		Instantiate(PowerUp, transform.position, transform.rotation);
+    }
 	/* melhor usar Properties que variaveis publicas*/ 
 	public Transform FirePosition 
 	{ get { return firePos; } }
 
-    private void OnDestroy()
-    {
-        if (CanSpawnP_up)
-        {
-			Instantiate(powerUp, transform.position, transform.rotation);
-        }
-    }
+
 }
 

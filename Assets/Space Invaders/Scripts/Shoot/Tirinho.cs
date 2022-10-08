@@ -42,6 +42,11 @@ public class Tirinho : MonoBehaviour
                 EnemiesShoot shoot = en.GetComponentInParent<EnemiesShoot>();//*
                 shoot.Enemies.Remove(en);//É preciso remover ele da lista dos inimigos atuais
                 shoot.EnemyCount--;//E reduzir o numero de inimigos vivos
+
+                if(en.CanSpawnP_up)//Estava ocorrendo um bug ao chamar o Instantiate no OnDestroy ou OnDisable do inimigo, então passei a 
+                {//Criacao desse power up para o momento em que ocorre o tiro
+                    en.CreateP_Up();
+                }
             }
         }//*Obs.: Caso seja necessário criar outros inimigos, lembrar de cria-los como filhos do objeto que possui 
         //o componente EnemiesShoot, como ja ocorre no inicio do jogo
