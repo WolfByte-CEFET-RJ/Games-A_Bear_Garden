@@ -24,7 +24,10 @@ public class EnemyManager : GameManager
             enemies = enemiesShoot.EnemyCount;
 
         if (enemies <= 0)
+        {
             GameOver(youLost);
+            Destroy(gameObject);
+        }
     }
     protected override void GameOver(bool value)
     {

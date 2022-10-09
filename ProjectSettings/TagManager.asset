@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Boss
   - Barrier
+  - Border
   layers:
   - Default
   - TransparentFX

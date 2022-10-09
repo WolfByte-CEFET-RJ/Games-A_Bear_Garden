@@ -26,8 +26,9 @@ public class EnemyMovement : MonoBehaviour
     }
 	void Update()
 	{
-		Movement();
-	}
+		//Movement();
+		//Esse metodo e o primeiro estilo de movimentacao pra esse projeto. Tentei fazer um novo no metodo EnemyFatherMove, deixando esse como a
+	}//Outra metade da nova logica 
 
 	void Movement()
 	{
@@ -60,8 +61,21 @@ public class EnemyMovement : MonoBehaviour
     {
 		Instantiate(PowerUp, transform.position, transform.rotation);
     }
-	/* melhor usar Properties que variaveis publicas*/ 
-	public Transform FirePosition 
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Border"))
+        {
+			Debug.Log("Encostou");
+			EnemyFatherMove father = GetComponentInParent<EnemyFatherMove>();
+			if(father != null)
+            {
+				father.StartCoroutine(father.ChangeSize());
+            }
+        }
+    }
+    /* melhor usar Properties que variaveis publicas*/
+    public Transform FirePosition 
 	{ get { return firePos; } }
 
 
