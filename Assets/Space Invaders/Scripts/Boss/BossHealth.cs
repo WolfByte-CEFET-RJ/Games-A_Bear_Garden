@@ -11,6 +11,7 @@ public class BossHealth : MonoBehaviour , IHealth
     private int maxHealth;
 
     [SerializeField] private Image LifeBar;
+    [SerializeField] private GameObject bossLosePanel;
 
     void Start()
     {
@@ -23,7 +24,9 @@ public class BossHealth : MonoBehaviour , IHealth
         if(_health <= 0)
         {
             Debug.Log("Players venceram\nBoss foi jogar no vasco");
-            Destroy(gameObject);
+            bossLosePanel.SetActive(true);
+            gameObject.SetActive(false);
+            Time.timeScale = 0;
         }
     }
 

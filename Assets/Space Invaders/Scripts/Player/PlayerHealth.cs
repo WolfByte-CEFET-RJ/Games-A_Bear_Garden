@@ -33,10 +33,11 @@ public class PlayerHealth : MonoBehaviour, IHealth
 
     void IHealth.SetHealth(int value) => _health = value;
 
-    public void OnDeath() {
-        //PlayerDied?.Invoke();
+    public void OnDeath() 
+    {
         gameObject.SetActive(false);
-    }
+        AllPlayersDeath.allPlayerDied?.Invoke();//Delegate chamado a cada Player morto. Se apenas um ou dois morrerem, não acontece nada.
+    }//Quando os 3 forem mortos, o metodo que ele armazena e finalmente executado.
 
     public int Health
     {
