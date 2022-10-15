@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Weapon : PlayerInput
 {
-
     public Tirinho shootObject; //prefab = tirinho
     public Transform firePoint;
     private string InputName;
+
+    [SerializeField] private float fireRate;
+    private float cronometer;
     private void Start()
     {
         InputName = GetShootInput(playerType);//Referenciar o nome do Input pelo metodo na classe pai
@@ -17,9 +19,11 @@ public class Weapon : PlayerInput
     {
         //queria deixar o espaço como trigger 
         //Esse comando também acaba com o problema dos tiros estarem se multiplicando
-		if (Input.GetButtonDown(InputName))
+        cronometer += Time.deltaTime;
+		if (Input.GetButton(InputName) && cronometer >= fireRate)
 		{
             Shoot();
+            cronometer = 0f;
 		}
     }
 

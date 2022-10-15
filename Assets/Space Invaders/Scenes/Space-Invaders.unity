@@ -475,6 +475,7 @@ MonoBehaviour:
   playerType: 2
   shootObject: {fileID: 3254207018020747268, guid: e03d5ebfdf827694cb7a815540f6315b, type: 3}
   firePoint: {fileID: 1719698210}
+  fireRate: 0.5
 --- !u!114 &327146160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2506,6 +2507,7 @@ MonoBehaviour:
   playerType: 0
   shootObject: {fileID: 3254207018020747268, guid: e03d5ebfdf827694cb7a815540f6315b, type: 3}
   firePoint: {fileID: 1586281885}
+  fireRate: 0.5
 --- !u!114 &1442250923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2894,6 +2896,7 @@ MonoBehaviour:
   tirinho: {fileID: 1548278244383134007, guid: e03d5ebfdf827694cb7a815540f6315b, type: 3}
   shootPos1: {fileID: 1564371454}
   shootPos2: {fileID: 1531680060}
+  fireRate: 0.5
   speed: 1
 --- !u!50 &1583339235
 Rigidbody2D:
@@ -3400,6 +3403,7 @@ MonoBehaviour:
   playerType: 1
   shootObject: {fileID: 3254207018020747268, guid: e03d5ebfdf827694cb7a815540f6315b, type: 3}
   firePoint: {fileID: 325992414}
+  fireRate: 0.5
 --- !u!114 &2018891271
 MonoBehaviour:
   m_ObjectHideFlags: 0

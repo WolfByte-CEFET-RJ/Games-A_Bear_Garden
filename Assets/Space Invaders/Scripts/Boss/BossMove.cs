@@ -8,8 +8,10 @@ public class BossMove : PlayerInput
     [SerializeField] private GameObject tirinho;
     [SerializeField] private Transform shootPos1;
     [SerializeField] private Transform shootPos2;
+    [SerializeField] private float fireRate;
 
     private string shootInputName;
+    private float cronometer;
 
     [Header("Movement Settings")]
     [SerializeField] private float speed;
@@ -23,9 +25,12 @@ public class BossMove : PlayerInput
 
     void Update()
     {
-        if (Input.GetButtonDown(shootInputName))
+        cronometer += Time.deltaTime;
+
+        if (Input.GetButton(shootInputName) && cronometer >= fireRate)
         {
             Shoot();
+            cronometer = 0f;
         }
     }
 
