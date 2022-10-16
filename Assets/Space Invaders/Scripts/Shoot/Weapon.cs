@@ -32,4 +32,11 @@ public class Weapon : PlayerInput
         shootObject.playerShoot = true;
         Instantiate(shootObject.gameObject, firePoint.position, firePoint.rotation);
 	}
+
+    public IEnumerator SetFireRate(float timeEffect)
+    {
+        fireRate /= 2;
+        yield return new WaitForSeconds(timeEffect);
+        fireRate *= 2;
+    }
 }

@@ -3825,6 +3825,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inimigos Control
       objectReference: {fileID: 0}
+    - target: {fileID: 1703096304154924389, guid: e8ecdf98e6a87034fb754641956a5dc1, type: 3}
+      propertyPath: powerUpLife
+      value: 
+      objectReference: {fileID: 4584256492935585039, guid: 870a127cdf6ec424aaed836bca471e76, type: 3}
+    - target: {fileID: 1703096304154924389, guid: e8ecdf98e6a87034fb754641956a5dc1, type: 3}
+      propertyPath: powerUpSpeed
+      value: 
+      objectReference: {fileID: 4584256492935585039, guid: 392480fa17acd3340b7699ddfba34cff, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8ecdf98e6a87034fb754641956a5dc1, type: 3}
 --- !u!1001 &5559815446803506320

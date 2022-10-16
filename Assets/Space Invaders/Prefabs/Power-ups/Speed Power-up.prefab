@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7700617958772441658}
   - component: {fileID: 1915471318558792431}
   m_Layer: 0
-  m_Name: Life Power-up
+  m_Name: Speed Power-up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: a9716c16a44a94eed9b5c90fbf4d9bdd, type: 3}
-  m_Color: {r: 0, g: 0.7843385, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.44850826, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -173,4 +173,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   life: 50
-  type: 76
+  type: 83

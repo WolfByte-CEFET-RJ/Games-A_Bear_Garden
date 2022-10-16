@@ -100,7 +100,8 @@ MonoBehaviour:
   - {fileID: 3283508605826665580}
   triggerTime: 0
   shootObject: {fileID: 1548278244383134007, guid: e03d5ebfdf827694cb7a815540f6315b, type: 3}
-  powerUpObj: {fileID: 4584256492935585039, guid: 870a127cdf6ec424aaed836bca471e76, type: 3}
+  powerUpLife: {fileID: 4584256492935585039, guid: 870a127cdf6ec424aaed836bca471e76, type: 3}
+  powerUpSpeed: {fileID: 4584256492935585039, guid: 392480fa17acd3340b7699ddfba34cff, type: 3}
 --- !u!114 &1703096304154924391
 MonoBehaviour:
   m_ObjectHideFlags: 0

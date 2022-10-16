@@ -10,7 +10,8 @@ public class EnemiesShoot : EnemyMovement
     private int enemyCount;
 
     [SerializeField] private GameObject shootObject;
-    [SerializeField] private GameObject powerUpObj;
+    [SerializeField] private GameObject powerUpLife;
+    [SerializeField] private GameObject powerUpSpeed;
     public List<EnemyMovement> Enemies
     {
         get => enemies;
@@ -25,7 +26,16 @@ public class EnemiesShoot : EnemyMovement
         //Para aproveitar a lista, estarei selecionando aqui um inimigo para dropar um power-up quando morrer
         int enIndex = Random.Range(0, enemyCount);
         enemies[enIndex].CanSpawnP_up = true;
-        enemies[enIndex].PowerUp = powerUpObj;
+        enemies[enIndex].PowerUp = powerUpLife;
+        int enIndex2;
+        do
+        {
+            enIndex2 = Random.Range(0, enemyCount);
+
+        } while (enIndex2 == enIndex);
+        enemies[enIndex2].CanSpawnP_up = true;
+        enemies[enIndex2].PowerUp = powerUpSpeed;
+
     }
     void Update()
 	{
