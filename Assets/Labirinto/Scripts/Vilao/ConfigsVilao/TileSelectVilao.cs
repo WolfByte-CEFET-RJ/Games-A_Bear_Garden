@@ -17,9 +17,14 @@ public class TileSelectVilao : MonoBehaviour
     {
         
         
-        if(Input.GetMouseButtonDown(1) && GetEnableSpawnTrap() == true) // o GetEnableSpawnTrap() basicamente verifica se ja tem uma armadilha existente naquele tile, se tiver, retorna false, se nao, true
+        if(Input.GetMouseButtonDown(1)) // o GetEnableSpawnTrap() basicamente verifica se ja tem uma armadilha existente naquele tile, se tiver, retorna false, se nao, true
         {
-                SpawnTrap();
+                if(GetEnableSpawnTrap() == true)
+                {
+                    SpawnTrap();
+                }
+                
+                
         }
         else if(Input.GetMouseButtonDown(0))
         {
