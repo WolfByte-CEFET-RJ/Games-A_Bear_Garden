@@ -22,6 +22,7 @@ public class MoveSelectionState : State
       if(button==1)
       {
         machine.ChangeTo<MoveSequenceState>();
+        //machine.ChangeTo<TurnoDoVilao>();
       }
       else if(button==2)
       {

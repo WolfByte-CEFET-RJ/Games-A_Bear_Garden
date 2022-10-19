@@ -6,17 +6,23 @@ using UnityEngine.UI;
 public class ChooseActionState : State
 {
     int index;
+    Text txtInicioTurno;
+    GameObject textoTurno;
 
     public override void Enter()
     {
         MoveSelector(Turnos.unit.tile);
         base.Enter();
+        
+        textoTurno = GameObject.Find("TurnoVilao"); //
+        txtInicioTurno = textoTurno.GetComponent<Text>();   //
+        
         index = 0;// posição do Seletor de Ações no tabuleiro.
         ChangeUISelector();// Seletor da interface
         CheckAction();
         inputs.OnMove+=OnMove;
         inputs.OnFire+=OnFire;
-        machine.chooseActionPainel.MoveTo("Show"); // Move o painel para a posição "Show" 54 e -50.
+        machine.chooseActionPainel.MoveTo("Show"); // Move o painel para a posição "Show" 54 e -50.            
     }
     public override void Exit()
     {
@@ -45,6 +51,7 @@ public class ChooseActionState : State
         if(button==1)
         {
             ActionButtons();
+
         }
         else if(button==2)
         {
@@ -69,24 +76,26 @@ public class ChooseActionState : State
     void ActionButtons()
     {
         Debug.Log(index);
-        switch(index)
-        {
-            case 0:
-            if(!Turnos.hasMoved)
+            txtInicioTurno.text = "";
+
+            switch(index)
             {
-                machine.ChangeTo<MoveSelectionState>();
+                case 0:
+                if(!Turnos.hasMoved)
+                {
+                    machine.ChangeTo<MoveSelectionState>();
+                }
+                    break;
+                case 1:
+                    //machine.ChangeTo<ActionSelectState>();
+                    break;
+                case 2:
+                    //machine.ChangeTo<ItemSelectState>();
+                    break;
+                case 3:
+                    machine.ChangeTo<FinaldeTurnos>();
+                    break;
             }
-                break;
-            case 1:
-                //machine.ChangeTo<ActionSelectState>();
-                break;
-            case 2:
-               // machine.ChangeTo<ItemSelectState>();
-                break;
-            case 3:
-                machine.ChangeTo<FinaldeTurnos>();
-                break;
-        }
     }
     void CheckAction()
     {
@@ -104,5 +113,9 @@ public class ChooseActionState : State
         {
             image.color = Color.white;
         }
+    }
+
+    void TurnoVilao(){
+        machine.ChangeTo<TurnoDoVilao>();
     }
 }

@@ -6,9 +6,12 @@ using UnityEngine.Tilemaps;
 public class TileSelectVilao : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private Tilemap tiles; // Conjuntos de tiles(TileMap)
-    [SerializeField] private GameObject trapVilao; // Prefab da armadilha do vilao
+    public Tilemap tiles; // Conjuntos de tiles(TileMap)
+    [SerializeField] private GameObject trapVilao2; // Prefab da armadilha do vilao
+    [SerializeField] public Armadilha trapVilao;
     [SerializeField] private GameObject mouseVilao; // objeto que está definido como mouse para auxiliar á spawn trap do vilao de possiveis erros
+    public GameObject trapVilaoPrefab;
+
     private Tile tile; // Um Tile(uma célula)
 
     public Vector3Int LocationOfCell{get; private set;} // Localizacao de cada célula do meu TileMap
@@ -17,14 +20,14 @@ public class TileSelectVilao : MonoBehaviour
     {
         
         
-        if(Input.GetMouseButtonDown(1) && GetEnableSpawnTrap() == true) // o GetEnableSpawnTrap() basicamente verifica se ja tem uma armadilha existente naquele tile, se tiver, retorna false, se nao, true
+        /*if(Input.GetMouseButtonDown(1) && GetEnableSpawnTrap() == true) // o GetEnableSpawnTrap() basicamente verifica se ja tem uma armadilha existente naquele tile, se tiver, retorna false, se nao, true
         {
                 SpawnTrap();
         }
         else if(Input.GetMouseButtonDown(0))
         {
                 PlaceParede();
-        }    
+        }  */  
         
     }
 
@@ -41,7 +44,7 @@ public class TileSelectVilao : MonoBehaviour
             Debug.Log("Tile encontrado na pos relacionado a Celula: "+LocationOfCell+" do TileMap Andar01");
             Debug.Log("Tile encontrado na pos relacionado ao mundo Unity: "+tiles.CellToWorld(LocationOfCell)+" do TileMap Andar01");
             
-            Instantiate(trapVilao,new Vector3(posTrap.x, posTrap.y+0.25f, posTrap.z+2), Quaternion.identity); // os valores sao somados ao eixo y e z para corrigir o bug da posicao
+            Instantiate(trapVilao2,new Vector3(posTrap.x, posTrap.y+0.25f, posTrap.z+2), Quaternion.identity); // os valores sao somados ao eixo y e z para corrigir o bug da posicao
             return;
         }
         else
@@ -57,8 +60,8 @@ public class TileSelectVilao : MonoBehaviour
         return mouseVilao.GetComponent<MouseVilao>().EnableSpawnTrap; // pegando o valor da permissao ou negacao de spawnar trapVilao no tile
     }
 
-    void PlaceParede()
-    {
+    void PlaceParede()  //Rodrigo --> base do script feita, está comentada pois não está em uso e será editada no futuro
+    {/*
         Vector3 mousePosWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         LocationOfCell = tiles.WorldToCell(mousePosWorld);
 
@@ -67,7 +70,7 @@ public class TileSelectVilao : MonoBehaviour
             Debug.Log("Posição: "+LocationOfCell);
             //inserir prefab do chão, encaixar o vilao nos turnos
             return;
-        }
+        }*/
     }
     
      

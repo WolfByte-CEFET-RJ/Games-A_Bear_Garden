@@ -54,7 +54,7 @@ public class InputController : MonoBehaviour
             Debug.Log("Tecla esquerda da mouse pressionada");
             OnFire(null, 1);
         }
-         if(Input.GetButtonDown("Fire2") && OnFire!=null)
+        if(Input.GetButtonDown("Fire2") && OnFire!=null)
         {
             Debug.Log("Tecla direita da mouse pressionada");
             OnFire(null, 2);
