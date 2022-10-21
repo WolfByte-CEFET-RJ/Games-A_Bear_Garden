@@ -55,8 +55,8 @@ public class EnemiesShoot : EnemyMovement
     void Shoot(Transform firePosition)
     {
         shootObject.GetComponent<Tirinho>().playerShoot = false;
-        Instantiate(shootObject, firePosition.position, firePosition.rotation);
-        
+        if(firePosition != null)
+            Instantiate(shootObject, firePosition.position, firePosition.rotation);      
     }
     
     public void Clear()

@@ -779,8 +779,8 @@ GameObject:
   - component: {fileID: 375881842}
   - component: {fileID: 375881843}
   - component: {fileID: 375881844}
-  m_Layer: 0
-  m_Name: Right
+  m_Layer: 31
+  m_Name: MinionsRight
   m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -813,7 +813,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.35008192}
+  m_Offset: {x: 0, y: -1.820508}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -824,7 +824,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 10.175832}
+  m_Size: {x: 1, y: 17.480528}
   m_EdgeRadius: 0
 --- !u!50 &375881844
 Rigidbody2D:
@@ -1961,8 +1961,8 @@ GameObject:
   - component: {fileID: 962034501}
   - component: {fileID: 962034502}
   - component: {fileID: 962034503}
-  m_Layer: 0
-  m_Name: Left
+  m_Layer: 31
+  m_Name: MinionsLeft
   m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1995,7 +1995,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.35008192}
+  m_Offset: {x: 0, y: -1.3224602}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2006,7 +2006,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 10.175832}
+  m_Size: {x: 1, y: 17.243362}
   m_EdgeRadius: 0
 --- !u!50 &962034503
 Rigidbody2D:
@@ -4894,6 +4894,10 @@ PrefabInstance:
     - target: {fileID: 2358028091824117888, guid: 6ec195c63068a294593de4bda46423eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871037967614423091, guid: 6ec195c63068a294593de4bda46423eb, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ec195c63068a294593de4bda46423eb, type: 3}

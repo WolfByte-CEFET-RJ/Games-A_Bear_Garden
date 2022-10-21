@@ -18,14 +18,5 @@ public class Barrier : MonoBehaviour, IHealth
 
     void IHealth.SetHealth(int value) => structure = value;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

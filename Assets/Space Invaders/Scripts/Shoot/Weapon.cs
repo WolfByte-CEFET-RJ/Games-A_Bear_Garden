@@ -36,7 +36,9 @@ public class Weapon : PlayerInput
     public IEnumerator SetFireRate(float timeEffect)
     {
         fireRate /= 2;
+        gameObject.GetComponent<PlayerMovement>().Speed *=  1.5f;
         yield return new WaitForSeconds(timeEffect);
         fireRate *= 2;
+        gameObject.GetComponent<PlayerMovement>().Speed /= 1.5f;
     }
 }
