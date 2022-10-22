@@ -22,7 +22,7 @@ public class Selector : MonoBehaviour
         if(col.gameObject.tag == "TrapVilao")
         {
             Debug.Log("O selector entrou em colisao com a trapVIlao");
-            MoveSelectionState.EnableSpawn = false;
+           // MoveSelectionState.EnableSpawn = false;
         }
 
        
@@ -32,7 +32,7 @@ public class Selector : MonoBehaviour
         if(col.gameObject.tag == "TrapVilao")
         {
             Debug.Log("O selector está colidindo com a trapVilao");
-            MoveSelectionState.EnableSpawn = false;
+           // MoveSelectionState.EnableSpawn = false;
         }
        
     }
@@ -41,7 +41,7 @@ public class Selector : MonoBehaviour
         if(col.gameObject.tag == "TrapVilao")
         {
             Debug.Log("O selector não está colidindo com a trapVilao");
-            MoveSelectionState.EnableSpawn = true;
+           // MoveSelectionState.EnableSpawn = true;
         }
 
         
