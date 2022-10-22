@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 public class MapLoader : MonoBehaviour
 {
     public Unit unitPrefab;
-    public Armadilha _trapV;
+    public Armadilha _trapV; // Eduardo --> Prefab trap vilao
+    public BlockingBlock block; // Eduardo --> Prefab bloco que atrapalha o player
     
     //Jobs
     //Objetos do map

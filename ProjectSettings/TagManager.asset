@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Plataforma
   - TrapVilao
+  - Block
   layers:
   - Default
   - TransparentFX
@@ -48,4 +49,13 @@ TagManager:
     locked: 0
   - name: Players
     uniqueID: 3982149469
+    locked: 0
+  - name: Andar01
+    uniqueID: 2803519093
+    locked: 0
+  - name: Andar02
+    uniqueID: 4277614421
+    locked: 0
+  - name: Selector
+    uniqueID: 2948711699
     locked: 0

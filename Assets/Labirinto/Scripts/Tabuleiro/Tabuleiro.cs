@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Tilemaps;
 public class Tabuleiro : MonoBehaviour
 {
     public Dictionary<Vector3Int, TileLogic> tiles;// Dicionário de Posição
     public List<Floor> floors;// Andares do Labirinto
     public static Tabuleiro instance;
-
+    
     public Grid grid;
     
     void Awake()
@@ -41,7 +41,7 @@ public class Tabuleiro : MonoBehaviour
         }
     }
 
-    void CreateTile(Vector3Int pos, Floor floor)
+    public void CreateTile(Vector3Int pos, Floor floor)
     {
         Vector3 worldPos = grid.CellToWorld(pos);
         worldPos.y+= (floor.tilemap.tileAnchor.y/2)-0.5f;
