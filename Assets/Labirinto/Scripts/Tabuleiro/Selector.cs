@@ -22,7 +22,7 @@ public class Selector : MonoBehaviour
         if(col.gameObject.tag == "TrapVilao")
         {
             Debug.Log("O selector entrou em colisao com a trapVIlao");
-           // MoveSelectionState.EnableSpawn = false;
+            MoveSelectionState.EnableSpawn = false;
         }
 
        
@@ -32,7 +32,7 @@ public class Selector : MonoBehaviour
         if(col.gameObject.tag == "TrapVilao")
         {
             Debug.Log("O selector está colidindo com a trapVilao");
-           // MoveSelectionState.EnableSpawn = false;
+            MoveSelectionState.EnableSpawn = false;
         }
        
     }
@@ -41,33 +41,33 @@ public class Selector : MonoBehaviour
         if(col.gameObject.tag == "TrapVilao")
         {
             Debug.Log("O selector não está colidindo com a trapVilao");
-           // MoveSelectionState.EnableSpawn = true;
+            MoveSelectionState.EnableSpawn = true;
         }
 
         
     }
 
     private void OnTriggerEnter2D(Collider2D col) {
-        if(col.CompareTag("Block"))
+        if(col.CompareTag("BlockTrigger"))
         {
             Debug.Log("Seletor colidiu com o bloco");
-           // MoveSelectionState.EnableSpawnBlock = false;
+          // MoveSelectionState.EnableSpawnBlock = false;
         }
     }
 
      private void OnTriggerStay2D(Collider2D col) {
-        if(col.CompareTag("Block"))
+        if(col.CompareTag("BlockTrigger"))
         {
             Debug.Log("Seletor colidindo com o bloco");
-           // MoveSelectionState.EnableSpawnBlock = false;
+          // MoveSelectionState.EnableSpawnBlock = false;
         }
     }
 
      private void OnTriggerExit2D(Collider2D col) {
-        if(col.CompareTag("Block"))
+        if(col.CompareTag("BlockTrigger"))
         {
             Debug.Log("Seletor saiu do bloco");
-           // MoveSelectionState.EnableSpawnBlock = true;
+          // MoveSelectionState.EnableSpawnBlock = true;
         }
     }
 
