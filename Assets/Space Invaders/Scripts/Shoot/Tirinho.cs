@@ -35,10 +35,11 @@ public class Tirinho : MonoBehaviour
         {
             //playerShoot = false;
             Destroy(gameObject);
-            Destroy(other.gameObject);//Alem de destruir o inimigo e o tiro
+            //Destroy(other.gameObject);//Alem de destruir o tiro
             EnemyMovement en = other.gameObject.GetComponent<EnemyMovement>();
             if(en != null)
             {
+                en.StartCoroutine(en.OnDeathSound());
                 EnemiesShoot shoot = en.GetComponentInParent<EnemiesShoot>();//*
                 shoot.Enemies.Remove(en);//É preciso remover ele da lista dos inimigos atuais
                 shoot.EnemyCount--;//E reduzir o numero de inimigos vivos

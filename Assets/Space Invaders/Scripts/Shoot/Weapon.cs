@@ -10,6 +10,7 @@ public class Weapon : PlayerInput
 
     [SerializeField] private float fireRate;
     private float cronometer;
+
     private void Start()
     {
         InputName = GetShootInput(playerType);//Referenciar o nome do Input pelo metodo na classe pai
@@ -31,6 +32,7 @@ public class Weapon : PlayerInput
 	{
         shootObject.playerShoot = true;
         Instantiate(shootObject.gameObject, firePoint.position, firePoint.rotation);
+        //gameObject.GetComponent<PlayerHealth>().AudioS.PlayOneShot(shootSound);
 	}
 
     public IEnumerator SetFireRate(float timeEffect)

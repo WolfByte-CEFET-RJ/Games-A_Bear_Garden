@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour, IHealth
 {
+    [Header("Life Configs")]
     [SerializeField] int _health;
     private int maxHealth;
 
@@ -15,9 +16,15 @@ public class PlayerHealth : MonoBehaviour, IHealth
 
     int IHealth.health => _health;
 
+    [Header("Sound Configs")]
+
+    [SerializeField] private AudioClip damageSound;
+    private AudioSource audioS;
+
     void Start()
     {
         maxHealth = _health;
+        audioS = GetComponent<AudioSource>();
     }
 
     void IHealth.Damage(int damageRecieved)
@@ -26,6 +33,7 @@ public class PlayerHealth : MonoBehaviour, IHealth
         if (_health > 0)
         {
             lifeBar.fillAmount = (float)_health / maxHealth;
+            audioS.PlayOneShot(damageSound);
         } 
         else 
             OnDeath();
@@ -43,4 +51,5 @@ public class PlayerHealth : MonoBehaviour, IHealth
     {
         get => this._health;
     }
+    public AudioSource AudioS { get => audioS; private set => audioS = value; }
 }

@@ -16,6 +16,9 @@ public class BossMove : PlayerInput
     [Header("Movement Settings")]
     [SerializeField] private float speed;
     private Rigidbody2D rig;
+
+    //[Header("Sound Settings")]
+    //[SerializeField] private AudioClip shootSound;
     void Start()
     {
         shootInputName = GetShootInput(playerType);
@@ -36,6 +39,7 @@ public class BossMove : PlayerInput
 
     void Shoot()
     {
+        //gameObject.GetComponent<BossHealth>().AudioS.PlayOneShot(shootSound);
         tirinho.GetComponent<Tirinho>().playerShoot = false;
         Instantiate(tirinho, shootPos1.position, shootPos1.rotation);
         Instantiate(tirinho, shootPos2.position, shootPos2.rotation);

@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -13,7 +15,15 @@ public class EnemyMovement : MonoBehaviour
 
 	private bool canSpawnP_up;
 	private GameObject powerUp;
-	public bool CanSpawnP_up
+
+	[SerializeField] private AudioClip deathSound;
+	private AudioSource audioS;
+
+    private void Start()
+    {
+		audioS = GetComponent<AudioSource>();
+    }
+    public bool CanSpawnP_up
     {
 		get => canSpawnP_up;
 		set => canSpawnP_up = value;
@@ -74,10 +84,20 @@ public class EnemyMovement : MonoBehaviour
             }
         }
     }
+	public IEnumerator OnDeathSound()
+    {
+		
+		audioS.PlayOneShot(deathSound);
+		GetComponent<SpriteRenderer>().enabled = false;
+		GetComponent<BoxCollider2D>().enabled = false;
+		yield return new WaitForSeconds(2f);
+		Destroy(gameObject);
+    }
+
     /* melhor usar Properties que variaveis publicas*/
     public Transform FirePosition 
 	{ get { return firePos; } }
 
-
+	
 }
 

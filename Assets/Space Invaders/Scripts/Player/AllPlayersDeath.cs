@@ -6,13 +6,22 @@ public class AllPlayersDeath : MonoBehaviour
 {    
     public delegate void PlayerDeath();
     public static PlayerDeath allPlayerDied;
+    [Header("Players References")]
+    [SerializeField] private GameObject player_01;
+    [SerializeField] private GameObject player_02;
+    [SerializeField] private GameObject player_03;
 
-    public GameObject player_01, player_02, player_03;
+    [Header("UI Settings")]
     [SerializeField] private GameObject playerLosePanel;
 
+    [Header("AudioSettings")]
+    [SerializeField] private AudioClip victorySound;
+    [SerializeField] private AudioClip deathSound;
+    private AudioSource audioS;
     private void Start()
     {
         allPlayerDied = All_Dead;
+        audioS = GetComponent<AudioSource>();
     }
     //void setup(){
 
@@ -24,11 +33,13 @@ public class AllPlayersDeath : MonoBehaviour
 
     void All_Dead()
     {
+        audioS.PlayOneShot(deathSound);
         if(player_01.activeSelf == false && player_02.activeSelf == false && player_03.activeSelf == false)
         {
             Debug.Log("Boss venceu");
             playerLosePanel.SetActive(true);
             Time.timeScale = 0;
+            audioS.PlayOneShot(victorySound);
             allPlayerDied -= All_Dead;
         }
     }
