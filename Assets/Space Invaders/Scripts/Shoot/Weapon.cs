@@ -35,12 +35,14 @@ public class Weapon : PlayerInput
         //gameObject.GetComponent<PlayerHealth>().AudioS.PlayOneShot(shootSound);
 	}
 
-    public IEnumerator SetFireRate(float timeEffect)
+    public IEnumerator SetFireRate(float effect)
     {
-        fireRate /= 2;
-        gameObject.GetComponent<PlayerMovement>().Speed *=  1.5f;
-        yield return new WaitForSeconds(timeEffect);
-        fireRate *= 2;
-        gameObject.GetComponent<PlayerMovement>().Speed /= 1.5f;
+        fireRate /= effect;
+        gameObject.GetComponent<PlayerMovement>().Speed *= effect;
+        yield return new WaitForSeconds(5f);
+        fireRate *= effect;
+        gameObject.GetComponent<PlayerMovement>().Speed /= effect;
     }
+
+    
 }

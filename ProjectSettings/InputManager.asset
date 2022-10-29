@@ -345,7 +345,7 @@ InputManager:
     m_Name: ShootSI4
     descriptiveName: Shoot in Space Invaders (Player4)
     descriptiveNegativeName: 
-    negativeButton: 
+    negativeButton: down
     positiveButton: up
     altNegativeButton: 
     altPositiveButton: 

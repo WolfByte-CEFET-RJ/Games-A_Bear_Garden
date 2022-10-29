@@ -6,12 +6,16 @@ public class BossMove : PlayerInput
 {
     [Header("Shoot Settings")]
     [SerializeField] private GameObject tirinho;
+    [SerializeField] private GameObject specialShoot;
     [SerializeField] private Transform shootPos1;
     [SerializeField] private Transform shootPos2;
+    [SerializeField] private Transform shootPosS;
     [SerializeField] private float fireRate;
+    [SerializeField] private float specialFireRate;
 
     private string shootInputName;
     private float cronometer;
+    private float cronometerS;
 
     [Header("Movement Settings")]
     [SerializeField] private float speed;
@@ -29,12 +33,20 @@ public class BossMove : PlayerInput
     void Update()
     {
         cronometer += Time.deltaTime;
-
-        if (Input.GetButton(shootInputName) && cronometer >= fireRate)
+        float shootType = Input.GetAxisRaw(shootInputName);
+        if (shootType == 1 && cronometer >= fireRate)
         {
             Shoot();
             cronometer = 0f;
         }
+        if(cronometerS <= specialFireRate)
+            cronometerS += Time.deltaTime;
+
+        if(shootType == -1 && cronometerS >= specialFireRate)
+        {
+            SpecialShoot();
+            cronometerS = 0;
+        }       
     }
 
     void Shoot()
@@ -43,6 +55,11 @@ public class BossMove : PlayerInput
         tirinho.GetComponent<Tirinho>().playerShoot = false;
         Instantiate(tirinho, shootPos1.position, shootPos1.rotation);
         Instantiate(tirinho, shootPos2.position, shootPos2.rotation);
+    }
+
+    void SpecialShoot()
+    {
+        Instantiate(specialShoot, shootPosS.position, shootPosS.rotation);
     }
 
     private void FixedUpdate()

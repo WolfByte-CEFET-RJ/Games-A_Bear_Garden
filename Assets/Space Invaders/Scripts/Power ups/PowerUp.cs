@@ -36,7 +36,7 @@ public class PowerUp : MonoBehaviour
             }
             else if(type == 'S')
             {
-                col.GetComponent<Weapon>().StartCoroutine(col.GetComponent<Weapon>().SetFireRate(5f));
+                col.GetComponent<Weapon>().StartCoroutine(col.GetComponent<Weapon>().SetFireRate(1.5f));
             }
         }
     }
