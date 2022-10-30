@@ -11,12 +11,7 @@ public class EnemySpawner : MonoBehaviour
 
     private float cronometer;
     private bool effectCreated = false;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         cronometer += Time.deltaTime;

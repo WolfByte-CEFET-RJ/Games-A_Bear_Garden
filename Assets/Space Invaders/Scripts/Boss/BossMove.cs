@@ -46,7 +46,12 @@ public class BossMove : PlayerInput
         {
             SpecialShoot();
             cronometerS = 0;
-        }       
+        }
+
+        if (CanvasController.ShootUI != null)
+        {
+            CanvasController.ShootUI(specialFireRate - cronometerS, specialFireRate);
+        }
     }
 
     void Shoot()
