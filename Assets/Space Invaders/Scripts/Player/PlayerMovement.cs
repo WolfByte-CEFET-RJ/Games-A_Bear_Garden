@@ -9,7 +9,11 @@ public class PlayerMovement : PlayerInput
 
     [SerializeField] private Transform maxPosX;
     [SerializeField] private Transform minPosX;
+
+    private bool onPowerUp;
     public float Speed { get => speed; set => speed = value; }
+    public bool OnPowerUp { get => onPowerUp; set => onPowerUp = value; }
+
     private void Start()
     {
         initialSpeed = Speed;
@@ -21,7 +25,7 @@ public class PlayerMovement : PlayerInput
 
         if ((transform.position.x <= minPosX.position.x && move < 0) || (transform.position.x >= maxPosX.position.x && move > 0)) //**   
             Speed = 0;     
-        else
+        else if(!OnPowerUp)
             Speed = initialSpeed;
     }
 

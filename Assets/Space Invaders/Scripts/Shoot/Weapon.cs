@@ -38,8 +38,10 @@ public class Weapon : PlayerInput
     public IEnumerator SetFireRate(float effect)
     {
         fireRate /= effect;
+        gameObject.GetComponent<PlayerMovement>().OnPowerUp = true;
         gameObject.GetComponent<PlayerMovement>().Speed *= effect;
         yield return new WaitForSeconds(5f);
+        gameObject.GetComponent<PlayerMovement>().OnPowerUp = false;
         fireRate *= effect;
         gameObject.GetComponent<PlayerMovement>().Speed /= effect;
     }
