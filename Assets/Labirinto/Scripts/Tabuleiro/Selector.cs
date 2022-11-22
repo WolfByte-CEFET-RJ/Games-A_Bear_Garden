@@ -24,10 +24,14 @@ public class Selector : MonoBehaviour
         {
             Debug.Log("O selector entrou em colisao com a trapVIlao");
 <<<<<<< HEAD
+<<<<<<< HEAD
             //MoveSelectionState.EnableSpawn = false;
 =======
             MoveSelectionState.EnableSpawn = false;
 >>>>>>> parent of ea90abd (update Comentando os codigos)
+=======
+           // MoveSelectionState.EnableSpawn = false;
+>>>>>>> parent of 5cd038f (update Corrigindo detalhes relacionado ao mecanismo de colisao dos blocos e trap Vilao)
         }
 
        
@@ -38,10 +42,14 @@ public class Selector : MonoBehaviour
         {
             Debug.Log("O selector está colidindo com a trapVilao");
 <<<<<<< HEAD
+<<<<<<< HEAD
             //MoveSelectionState.EnableSpawn = false;
 =======
             MoveSelectionState.EnableSpawn = false;
 >>>>>>> parent of ea90abd (update Comentando os codigos)
+=======
+           // MoveSelectionState.EnableSpawn = false;
+>>>>>>> parent of 5cd038f (update Corrigindo detalhes relacionado ao mecanismo de colisao dos blocos e trap Vilao)
         }
        
     }
@@ -51,48 +59,64 @@ public class Selector : MonoBehaviour
         {
             Debug.Log("O selector não está colidindo com a trapVilao");
 <<<<<<< HEAD
+<<<<<<< HEAD
             //MoveSelectionState.EnableSpawn = true;
 =======
             MoveSelectionState.EnableSpawn = true;
 >>>>>>> parent of ea90abd (update Comentando os codigos)
+=======
+           // MoveSelectionState.EnableSpawn = true;
+>>>>>>> parent of 5cd038f (update Corrigindo detalhes relacionado ao mecanismo de colisao dos blocos e trap Vilao)
         }
 
         
     }
 
     private void OnTriggerEnter2D(Collider2D col) {
-        if(col.CompareTag("BlockTrigger"))
+        if(col.CompareTag("Block"))
         {
             Debug.Log("Seletor colidiu com o bloco");
+<<<<<<< HEAD
 <<<<<<< Updated upstream
           // MoveSelectionState.EnableSpawnBlock = false;
 =======
             //MoveSelectionState.EnableSpawnBlock = false;
 >>>>>>> Stashed changes
+=======
+           // MoveSelectionState.EnableSpawnBlock = false;
+>>>>>>> parent of 5cd038f (update Corrigindo detalhes relacionado ao mecanismo de colisao dos blocos e trap Vilao)
         }
     }
 
      private void OnTriggerStay2D(Collider2D col) {
-        if(col.CompareTag("BlockTrigger"))
+        if(col.CompareTag("Block"))
         {
             Debug.Log("Seletor colidindo com o bloco");
+<<<<<<< HEAD
 <<<<<<< Updated upstream
           // MoveSelectionState.EnableSpawnBlock = false;
 =======
             //MoveSelectionState.EnableSpawnBlock = false;
 >>>>>>> Stashed changes
+=======
+           // MoveSelectionState.EnableSpawnBlock = false;
+>>>>>>> parent of 5cd038f (update Corrigindo detalhes relacionado ao mecanismo de colisao dos blocos e trap Vilao)
         }
     }
 
      private void OnTriggerExit2D(Collider2D col) {
-        if(col.CompareTag("BlockTrigger"))
+        if(col.CompareTag("Block"))
         {
             Debug.Log("Seletor saiu do bloco");
+<<<<<<< HEAD
 <<<<<<< Updated upstream
           // MoveSelectionState.EnableSpawnBlock = true;
 =======
             //MoveSelectionState.EnableSpawnBlock = true;
 >>>>>>> Stashed changes
+=======
+           // MoveSelectionState.EnableSpawnBlock = true;
+>>>>>>> parent of 5cd038f (update Corrigindo detalhes relacionado ao mecanismo de colisao dos blocos e trap Vilao)
         }
     }
 

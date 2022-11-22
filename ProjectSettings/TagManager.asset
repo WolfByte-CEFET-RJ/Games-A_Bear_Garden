@@ -6,8 +6,7 @@ TagManager:
   tags:
   - Plataforma
   - TrapVilao
-  - BlockTrigger
-  - BlockCollider
+  - Block
   layers:
   - Default
   - TransparentFX
