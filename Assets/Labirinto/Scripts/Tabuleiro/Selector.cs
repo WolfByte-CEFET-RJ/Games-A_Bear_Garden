@@ -22,7 +22,7 @@ public class Selector : MonoBehaviour
         if(col.gameObject.tag == "TrapVilao")
         {
             Debug.Log("O selector entrou em colisao com a trapVIlao");
-           // MoveSelectionState.EnableSpawn = false;
+            //MoveSelectionState.EnableSpawn = false;
         }
 
        
@@ -32,7 +32,7 @@ public class Selector : MonoBehaviour
         if(col.gameObject.tag == "TrapVilao")
         {
             Debug.Log("O selector está colidindo com a trapVilao");
-           // MoveSelectionState.EnableSpawn = false;
+            //MoveSelectionState.EnableSpawn = false;
         }
        
     }
@@ -41,7 +41,7 @@ public class Selector : MonoBehaviour
         if(col.gameObject.tag == "TrapVilao")
         {
             Debug.Log("O selector não está colidindo com a trapVilao");
-           // MoveSelectionState.EnableSpawn = true;
+            //MoveSelectionState.EnableSpawn = true;
         }
 
         
@@ -51,7 +51,11 @@ public class Selector : MonoBehaviour
         if(col.CompareTag("BlockTrigger"))
         {
             Debug.Log("Seletor colidiu com o bloco");
+<<<<<<< Updated upstream
           // MoveSelectionState.EnableSpawnBlock = false;
+=======
+            //MoveSelectionState.EnableSpawnBlock = false;
+>>>>>>> Stashed changes
         }
     }
 
@@ -59,7 +63,11 @@ public class Selector : MonoBehaviour
         if(col.CompareTag("BlockTrigger"))
         {
             Debug.Log("Seletor colidindo com o bloco");
+<<<<<<< Updated upstream
           // MoveSelectionState.EnableSpawnBlock = false;
+=======
+            //MoveSelectionState.EnableSpawnBlock = false;
+>>>>>>> Stashed changes
         }
     }
 
@@ -67,7 +75,11 @@ public class Selector : MonoBehaviour
         if(col.CompareTag("BlockTrigger"))
         {
             Debug.Log("Seletor saiu do bloco");
+<<<<<<< Updated upstream
           // MoveSelectionState.EnableSpawnBlock = true;
+=======
+            //MoveSelectionState.EnableSpawnBlock = true;
+>>>>>>> Stashed changes
         }
     }
 
