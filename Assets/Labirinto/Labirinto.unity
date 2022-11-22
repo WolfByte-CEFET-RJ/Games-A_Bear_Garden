@@ -1777,7 +1777,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caff186144ebb9146af27933bd34bd3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   transformSelector: {fileID: 553319925}
+=======
+  transformSelector: {fileID: 0}
+>>>>>>> Stashed changes
   spriteRenderer: {fileID: 0}
 --- !u!4 &553319925
 Transform:
@@ -2541,7 +2545,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitPrefab: {fileID: 2167098474695380184, guid: c45d67e514438e24290dce72d27d9690, type: 3}
   _trapV: {fileID: 2771811701160672058, guid: c680304650516454f8cc5e2639103283, type: 3}
+<<<<<<< Updated upstream
   block: {fileID: 7700054736577191341, guid: cf84ff1a4e089e444aa48db7917eef1a, type: 3}
+=======
+  block: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!4 &764882072 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8566673279068610178, guid: 4fc797185012daa49ba72766e3c5ce76, type: 3}
