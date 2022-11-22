@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class MoveSelectionState : State
 {
-<<<<<<< HEAD
 <<<<<<< Updated upstream
     // ESTA VARIAVEL EnableSpawn E A CONDICAO DO OnFire ESTARÁ NESSE CODIGO TEMPORARIAMENTE ATÉ SER CRIADO UM ESTADO SOMENTE PARA SPAWNAR TRAP, QUE POSSA SER SELECIONADO NA HOLD BAR, SO PECO PARA NAO APAGAREM, DEIXEM COMENTADO TMJ!
    public static bool EnableSpawn{get; set;} // Eduardo --> Variavel que irá permitir a spawn da trap ou não
     //public static bool EnableSpawnBlock{get; set;} // Eduardo --> Variavel que irá permitir a spawn do Block ou não
-=======
->>>>>>> parent of 97a30b4 (update Criacao de spawnar trap dentro da maquina de estados com todos os detalhes corretos)
     public override void Enter()
 =======
    // ESTA VARIAVEL EnableSpawn E A CONDICAO DO OnFire ESTARÁ NESSE CODIGO TEMPORARIAMENTE ATÉ SER CRIADO UM ESTADO SOMENTE PARA SPAWNAR TRAP, QUE POSSA SER SELECIONADO NA HOLD BAR, SO PECO PARA NAO APAGAREM, DEIXEM COMENTADO TMJ!
@@ -20,7 +17,6 @@ public class MoveSelectionState : State
 >>>>>>> Stashed changes
    {
 <<<<<<< HEAD
-<<<<<<< HEAD
       base.Enter();      
       //EnableSpawn = true;
 =======
@@ -28,9 +24,6 @@ public class MoveSelectionState : State
       EnableSpawn = true;
 >>>>>>> parent of ea90abd (update Comentando os codigos)
       //EnableSpawnBlock = true;
-=======
-      base.Enter();
->>>>>>> parent of 97a30b4 (update Criacao de spawnar trap dentro da maquina de estados com todos os detalhes corretos)
       inputs.OnMove+=OnMoveTileSelector;
       inputs.OnFire+=OnFire;
    }
@@ -45,7 +38,6 @@ public class MoveSelectionState : State
       int button = (int)args;
       if(button==1)
       {
-<<<<<<< HEAD
        // machine.ChangeTo<MoveSequenceState>();
         
         if(Selector.instance.spriteRenderer.sortingOrder == 300 && EnableSpawn == true) // Eduardo --> Se o selector está na ordem de renderizacao do andar 01 e se o seletor nao estiver colidindo com uma trap, é possivel inicializar o turno de spawnar trap na posicao onde o selector está, esse código esta alocado temporariamente 
@@ -58,10 +50,6 @@ public class MoveSelectionState : State
            machine.ChangeTo<PathBlockedState>();
         }*/
         
-=======
-        machine.ChangeTo<MoveSequenceState>();
-        //machine.ChangeTo<TurnoDoVilao>();
->>>>>>> parent of 97a30b4 (update Criacao de spawnar trap dentro da maquina de estados com todos os detalhes corretos)
       }
       else if(button==2)
       {
