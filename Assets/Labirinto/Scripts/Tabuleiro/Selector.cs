@@ -25,6 +25,7 @@ public class Selector : MonoBehaviour
             Debug.Log("O selector entrou em colisao com a trapVIlao");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             //MoveSelectionState.EnableSpawn = false;
 =======
             MoveSelectionState.EnableSpawn = false;
@@ -32,6 +33,9 @@ public class Selector : MonoBehaviour
 =======
            // MoveSelectionState.EnableSpawn = false;
 >>>>>>> parent of 5cd038f (update Corrigindo detalhes relacionado ao mecanismo de colisao dos blocos e trap Vilao)
+=======
+            MoveSelectionState.EnableSpawn = false;
+>>>>>>> parent of ea90abd (update Comentando os codigos)
         }
 
        
@@ -43,6 +47,7 @@ public class Selector : MonoBehaviour
             Debug.Log("O selector está colidindo com a trapVilao");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             //MoveSelectionState.EnableSpawn = false;
 =======
             MoveSelectionState.EnableSpawn = false;
@@ -50,6 +55,9 @@ public class Selector : MonoBehaviour
 =======
            // MoveSelectionState.EnableSpawn = false;
 >>>>>>> parent of 5cd038f (update Corrigindo detalhes relacionado ao mecanismo de colisao dos blocos e trap Vilao)
+=======
+            MoveSelectionState.EnableSpawn = false;
+>>>>>>> parent of ea90abd (update Comentando os codigos)
         }
        
     }
@@ -60,6 +68,7 @@ public class Selector : MonoBehaviour
             Debug.Log("O selector não está colidindo com a trapVilao");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             //MoveSelectionState.EnableSpawn = true;
 =======
             MoveSelectionState.EnableSpawn = true;
@@ -67,6 +76,9 @@ public class Selector : MonoBehaviour
 =======
            // MoveSelectionState.EnableSpawn = true;
 >>>>>>> parent of 5cd038f (update Corrigindo detalhes relacionado ao mecanismo de colisao dos blocos e trap Vilao)
+=======
+            MoveSelectionState.EnableSpawn = true;
+>>>>>>> parent of ea90abd (update Comentando os codigos)
         }
 
         
