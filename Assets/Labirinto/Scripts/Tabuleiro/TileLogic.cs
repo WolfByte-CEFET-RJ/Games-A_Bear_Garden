@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TileLogic // Eduardo--> A classse TileLogic representa um objeto Tile e suas respectivas informacoes: cellPos, worldPos e floor
+public class TileLogic
 {
     public Vector3Int pos; //Posição de Tabuleiro
     

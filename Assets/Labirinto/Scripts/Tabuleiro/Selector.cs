@@ -16,6 +16,7 @@ public class Selector : MonoBehaviour
         instance = this;
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
+<<<<<<< HEAD
 
     //Eduardo --> O selector tem 2 mascaras de colisao, uma delas usa a colisao fisica normal, e a outra se colide com o Trigger(Uma está servindo para verificar um caso de colisao diferente)
     private void OnCollisionEnter2D(Collision2D col) {
@@ -96,4 +97,6 @@ public class Selector : MonoBehaviour
     }
 
 
+=======
+>>>>>>> parent of 97a30b4 (update Criacao de spawnar trap dentro da maquina de estados com todos os detalhes corretos)
 }
