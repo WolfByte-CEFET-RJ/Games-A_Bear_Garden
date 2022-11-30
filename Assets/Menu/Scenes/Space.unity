@@ -341,6 +341,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pacotinho
       objectReference: {fileID: 0}
+    - target: {fileID: 4067986850246822005, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1633962281}
+    - target: {fileID: 4067986850246822005, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
 --- !u!1 &1633962279
@@ -573,8 +581,8 @@ Canvas:
   m_GameObject: {fileID: 1797310260}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1633962281}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

@@ -26,21 +26,33 @@ public class Mute : MonoBehaviour {
         AudioListener.pause = muted;
     }
 
+    public void FixedUpdate()
+    {
+        if (muted == true)
+        {
+            AudioListener.pause = true;
+        }
+        else
+        {
+            AudioListener.pause = false;
+        }
+    }
+
     public void OnButtonPress() {
         if (muted == false)
         {
             muted = true;
-            AudioListener.pause = true;
-            //AudioListener.volume = 0.0001f; - Natty
+            //AudioListener.pause = true;
+            //AudioListener.volume = 0.0001f; //Natty
         }
         else
         {
             muted = false;
-            AudioListener.pause = false;
-            //AudioListener.volume = 1f; - Natty
+            //AudioListener.pause = false;
+            //AudioListener.volume = 1f;  //Natty
         }
         UpdateButtonIcon();
-    }
+    } 
 
     private void UpdateButtonIcon() {
         if(muted == false)

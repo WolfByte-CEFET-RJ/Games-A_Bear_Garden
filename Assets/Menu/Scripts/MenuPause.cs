@@ -52,6 +52,7 @@ public class MenuPause : MonoBehaviour
             Time.timeScale = 1;
             //_Canvas.SetActive(true);
             Debug.Log("Retomou Fase!");
+            RetomarFase();
         }
     }
 
