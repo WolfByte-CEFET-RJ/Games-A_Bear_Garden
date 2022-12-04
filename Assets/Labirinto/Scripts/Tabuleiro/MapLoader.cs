@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+
 public class MapLoader : MonoBehaviour
 {
     public Unit unitPrefab;
@@ -15,6 +16,8 @@ public class MapLoader : MonoBehaviour
     //
     public static MapLoader instance;
     GameObject holder;
+    public List<Aliança> alianças;
+
     void Awake()
     {
         instance = this;
@@ -24,18 +27,30 @@ public class MapLoader : MonoBehaviour
     void Start()
     {
         holder.transform.parent = Tabuleiro.instance.transform;
+        InitializeAlianças();
     }
-    public void CriaUnidades()
+    void InitializeAlianças()
+    {
+        for(int i=0;i<alianças.Count;i++)
+        {
+            alianças[i].units = new List<Unit>();
+        }
+    }
+    public void CriaUnidades()// 
     {
         Unit unit1 = CreateUnit(new Vector3Int(3, 3, 0), "Jogador 1"); // cria uma unidade no local 3,3,0 e add a lista de Unidades
-        Unit unit2 = CreateUnit(new Vector3Int(-1, -1, 0), "Inimigo");
+        Unit unit2 = CreateUnit(new Vector3Int(-1, -1, 0), "Jogador 2");
+        Unit unit3 = CreateUnit(new Vector3Int(-3, -3, 0), "Jogador 3");
         Unit unitV = CreateUnit(new Vector3Int(-6, -6, 0), "Vilao");
         StateMachineController.instance.units.Add(unit1);
         StateMachineController.instance.units.Add(unit2);
+        StateMachineController.instance.units.Add(unit3);
         StateMachineController.instance.units.Add(unitV);
-        unit1.equipes = 0;// define o tipo de unidade a qual ela pertence
-        unit2.equipes = 0;
-        unitV.equipes = 1;
+        unit1.equipe = 0;// define o tipo de unidade a qual ela pertence
+        unit2.equipe = 0;
+        unit3.equipe = 0;
+        unitV.equipe = 1;
+        Debug.Log("Unidades Criadas");
     }
 
     public Unit CreateUnit(Vector3Int pos, string name)
@@ -44,6 +59,12 @@ public class MapLoader : MonoBehaviour
         Unit unit = Instantiate(unitPrefab, t.worldPos, Quaternion.identity, holder.transform);
         unit.tile = t;
         unit.name = name;
+        t.content = unit.gameObject;
+
+        for(int i=0; i<unit.stats.stats.Count; i++)
+        {
+            unit.stats.stats[i].value = Random.Range(1,100);
+        }
         return unit;
     }
 

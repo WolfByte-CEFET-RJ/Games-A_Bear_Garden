@@ -18,6 +18,12 @@ public class StateMachineController : MonoBehaviour
     public Image chooseActionSelection;
     public LugarPainel chooseActionPainel;
     
+    [Header("SeleçãoHabilidadeState")]
+    public List<Image> SeleçaoHabilidadesButtons;
+    public Image SeleçaoHabilidadesSelection;
+    public LugarPainel SeleçaoHabilidadesPainel;
+    public Sprite SeleçaoHabilidadesBloqueada;
+
     void Awake(){
         instance = this;
     }
@@ -49,10 +55,9 @@ public class StateMachineController : MonoBehaviour
         }
 
         _current = value;
-        if(_current != null)
+        if(_current !=null)
             _current.Enter();
 
         busy = false;
     }
-
 }

@@ -29,11 +29,10 @@ public class InputController : MonoBehaviour
         if(h!=0)
         {
             moved.x = GetMoved(ref hCooldown, h);
-            
         }
         else
         {
-            hCooldown = 0;//Reseta o timer depois que para de pressionar o Botão
+            hCooldown = 0;//Reseta o timer depois de parar de pressionar o Botão
         }
 
         if(v!=0)
@@ -42,7 +41,7 @@ public class InputController : MonoBehaviour
         }
         else
         {
-            vCooldown = 0;// Reseta o timer depois que para de pressionar o Botão
+            vCooldown = 0;// Reseta o timer depois de parar de pressionar o Botão
         }
 
         if(moved!=Vector3Int.zero && OnMove!=null)

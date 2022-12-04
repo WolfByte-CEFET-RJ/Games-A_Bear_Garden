@@ -11,7 +11,7 @@ public class FinaldeTurnos : State
         Debug.Log("Final de Turnos");
 
     }
-    IEnumerator AddUnitDelay()
+    IEnumerator AddUnitDelay()// Sistema de Turnos parecido com o final fantasy
     {
         Turnos.unit.chargeTime+=300;
         if(Turnos.hasMoved)
@@ -23,7 +23,7 @@ public class FinaldeTurnos : State
         Turnos.hasActed = Turnos.hasMoved = false;
         machine.units.Remove(Turnos.unit);// Remove a Unit da primeira colocação da Lista
         machine.units.Add(Turnos.unit);// Adiciona a Unit para a Ultima da lista de units
-        yield return new WaitForSeconds(0.8f);// Tempo entre os Turnos dos Jogadores.
+        yield return new WaitForSeconds(0.5f);// Tempo entre os Turnos dos Jogadores.
         machine.ChangeTo<ComeçodeTurnos>();
     }
 }

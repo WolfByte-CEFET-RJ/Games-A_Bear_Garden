@@ -10,8 +10,8 @@ public class Floor : MonoBehaviour
     public int order {get{return tilemapRenderer.sortingOrder;}}// Classifica a ordem dos Andares
    
     public int contentOrder;//Ordem das casas
-    public Vector3Int minimoXY;
-    public Vector3Int maximoXY;
+    public Vector3Int minimoXY; //  
+    public Vector3Int maximoXY; // Limites do Tabuleiro
     public Tilemap tilemap;
 
     void Awake()// Primeira Função antes do Start

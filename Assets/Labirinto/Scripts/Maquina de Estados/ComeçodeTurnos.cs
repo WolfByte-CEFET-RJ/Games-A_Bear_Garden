@@ -24,7 +24,7 @@ public class ComeçodeTurnos : State
     {
         for(int i=0; i<machine.units.Count-1; i++)//irá para no penultimo da lista de units
         {
-            if(machine.units[i].chargeTime== machine.units[i+1].chargeTime)
+            if(machine.units[i].chargeTime==machine.units[i+1].chargeTime)
             {
                 machine.units[i+1].chargeTime+=1;
             }

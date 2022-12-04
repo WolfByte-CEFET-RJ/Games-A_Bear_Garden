@@ -5,44 +5,44 @@ using UnityEngine.UI;
 
 public class ChooseActionState : State
 {
-    int index;
     Text txtInicioTurno;
     GameObject textoTurno;
 
     public override void Enter()
     {
-        MoveSelector(Turnos.unit.tile);
+        MoveSelector(Turnos.unit.tile);// Seletor das casa do Tabuleiro
         base.Enter();
         
         textoTurno = GameObject.Find("TurnoVilao"); //
         txtInicioTurno = textoTurno.GetComponent<Text>();   //
         
         index = 0;// posição do Seletor de Ações no tabuleiro.
-        ChangeUISelector();// Seletor da interface
+        currentUISelector = machine.chooseActionSelection;
+        ChangeUISelector(machine.chooseActionButtons);// Seletor da interface
         CheckAction();
         inputs.OnMove+=OnMove;
         inputs.OnFire+=OnFire;
-        machine.chooseActionPainel.MoveTo("Show"); // Move o painel para a posição "Show" 54 e -50.            
+        machine.chooseActionPainel.MoveTo("Show"); // Move o painel para a posição "Show" 0 e -50.            
     }
     public override void Exit()
     {
         base.Exit();
         inputs.OnMove-=OnMove;
         inputs.OnFire-=OnFire;
-        machine.chooseActionPainel.MoveTo("Hide"); // Move o painel para a posição "Hide" 54 e 50.
+        machine.chooseActionPainel.MoveTo("Hide"); // Move o painel para a posição "Hide" 0 e 50.
     }
-    void OnMove(object sender, object args)
+    void OnMove(object sender, object args)// Movimentação do Seletor ao final até o ponto inicial
     {
         Vector3Int button = (Vector3Int)args;
         if(button == Vector3Int.left)
         {
             index--;
-            ChangeUISelector();// Seletor da interface
+            ChangeUISelector(machine.chooseActionButtons);// Seletor da interface
         }
         else if(button == Vector3Int.right)
         {
             index++;
-            ChangeUISelector();// Seletor da interface
+            ChangeUISelector(machine.chooseActionButtons);// Seletor da interface
         }
     }
     void OnFire(object sender, object args)
@@ -51,26 +51,11 @@ public class ChooseActionState : State
         if(button==1)
         {
             ActionButtons();
-
         }
         else if(button==2)
         {
             machine.ChangeTo<RoamState>();
         }
-    }
-
-    void ChangeUISelector()// Seletor da interface
-    {
-        if(index==-1)
-        {
-            index = machine.chooseActionButtons.Count-1;// Seletor de Ações no tabuleiro apertado para esquerda, volta para o último item.
-        }
-        else if(index==machine.chooseActionButtons.Count)
-        {
-            index = 0;// Seletor de Ações no tabuleiro apertado para direita, volta para o primeiro item.
-        }
-
-        machine.chooseActionSelection.transform.localPosition = machine.chooseActionButtons[index].transform.localPosition;
     }
 
     void ActionButtons()
@@ -82,12 +67,11 @@ public class ChooseActionState : State
             {
                 case 0:
                 if(!Turnos.hasMoved)
-                {
                     machine.ChangeTo<MoveSelectionState>();
-                }
                     break;
                 case 1:
-                    //machine.ChangeTo<ActionSelectState>();
+                if(!Turnos.hasActed)
+                    machine.ChangeTo<SeleçaoHabilidadeState>();
                     break;
                 case 2:
                     //machine.ChangeTo<ItemSelectState>();
@@ -115,7 +99,7 @@ public class ChooseActionState : State
         }
     }
 
-    void TurnoVilao(){
+    /*void TurnoVilao(){ // Não precisa criar um turno proprio para o vilão,  pois ele ja esta na lista de unidade na contagem de turnos
         machine.ChangeTo<TurnoDoVilao>();
-    }
+    }*/
 }

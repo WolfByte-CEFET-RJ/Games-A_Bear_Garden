@@ -33,7 +33,7 @@ public class RoamState : State
          machine.ChangeTo<ChooseActionState>();
       }
    }
-   void CheckNullPosition()
+   void CheckNullPosition()// faz a checagem do seletor no tabuleiro
    {
       if(Selector.instance.tile==null)
       {

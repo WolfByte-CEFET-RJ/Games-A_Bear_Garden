@@ -16,7 +16,7 @@ public class Selector : MonoBehaviour
         instance = this;
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
-
+/*
     //Eduardo --> O selector tem 2 mascaras de colisao, uma delas usa a colisao fisica normal, e a outra se colide com o Trigger(Uma está servindo para verificar um caso de colisao diferente)
     private void OnCollisionEnter2D(Collision2D col) {
         if(col.gameObject.tag == "TrapVilao")
@@ -70,6 +70,6 @@ public class Selector : MonoBehaviour
           // MoveSelectionState.EnableSpawnBlock = true;
         }
     }
-
+*/
 
 }

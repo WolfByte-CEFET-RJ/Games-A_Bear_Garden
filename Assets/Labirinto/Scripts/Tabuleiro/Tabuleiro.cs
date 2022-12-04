@@ -43,7 +43,7 @@ public class Tabuleiro : MonoBehaviour
 
     public void CreateTile(Vector3Int pos, Floor floor)
     {
-        Vector3 worldPos = grid.CellToWorld(pos);
+        Vector3 worldPos = grid.CellToWorld(pos);// posição do tile no Tabuleiro
         worldPos.y+= (floor.tilemap.tileAnchor.y/2)-0.5f;
         TileLogic tileLogic = new TileLogic(pos, worldPos, floor);
         tiles.Add(pos, tileLogic);
@@ -73,7 +73,7 @@ public class Tabuleiro : MonoBehaviour
     {
         if(floor.tilemap.HasTile(NEPosition))
         {
-            t.contentOrder = floor.order;// Ordena o tile do andar do personagem
+            t.contentOrder = floor.order;// Ordena o tile ao andar do personagem
         }
     }
     public static TileLogic GetTile(Vector3Int pos)

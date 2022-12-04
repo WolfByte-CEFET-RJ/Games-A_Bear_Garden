@@ -18,6 +18,8 @@ public class LoadState : State
         MapLoader.instance.CriaUnidades();
         yield return null;
         InitialTurnOrdering();
+        UnitAlianças();
+        yield return null;
 
         StateMachineController.instance.ChangeTo<ComeçodeTurnos>();
     }
@@ -25,7 +27,26 @@ public class LoadState : State
     {
         for(int i=0;i<machine.units.Count; i++)
         {
-            machine.units[i].chargeTime = 100-machine.units[i].GetStat(StatEnum.SPEED);
+            machine.units[i].chargeTime = 100-machine.units[i].GetStat(StatEnum.SPEED);// Controla os turnos de Cada Unidade, Ordem do turno.
+            machine.units[i].ativa = true;
+        }
+    }
+    void UnitAlianças()// Verifica todos as unidades e atribui as alianças
+    {
+        for(int i=0;i<machine.units.Count; i++)
+        {
+            SetUnitAliança(machine.units[i]);
+        }
+    }
+    void SetUnitAliança(Unit unit)
+    {
+        for(int i=0;i<MapLoader.instance.alianças.Count; i++)
+        {
+            if(MapLoader.instance.alianças[i].equipes.Contains(unit.equipe))
+            {
+                MapLoader.instance.alianças[i].units.Add(unit);
+                return;
+            }
         }
     }
 }

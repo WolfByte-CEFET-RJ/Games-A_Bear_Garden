@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class TileLogic // Eduardo--> A classse TileLogic representa um objeto Tile e suas respectivas informacoes: cellPos, worldPos e floor
 {
-    public Vector3Int pos; //Posição de Tabuleiro
+    public Vector3Int pos; //Posição de Tabuleiro(1,1,1) X Y Z
     
     public Vector3 worldPos; // Posição no Mundo na Unity
     public GameObject content; // Objeto que bloqueia a posição do Personagem
-    public Floor floor;
+    public Floor floor; // Andares do Tabuleiro
     public int contentOrder;
 
     //public TileType tileType; // Referencia para se ter vários Tiles como água. montanha... Onde o Personagem não pode se mover
@@ -27,4 +27,3 @@ public class TileLogic // Eduardo--> A classse TileLogic representa um objeto Ti
         return tileLogic;
     }
 }
-
