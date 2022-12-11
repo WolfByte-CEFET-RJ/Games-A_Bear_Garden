@@ -13,6 +13,7 @@ public class PlayerMovement : PlayerInput
     private bool onPowerUp;
     public float Speed { get => speed; set => speed = value; }
     public bool OnPowerUp { get => onPowerUp; set => onPowerUp = value; }
+    public float InitialSpeed { get => initialSpeed; private set => initialSpeed = value; }
 
     private void Start()
     {
