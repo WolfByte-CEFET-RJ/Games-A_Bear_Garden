@@ -10,6 +10,10 @@ public class TileLogic // Eduardo--> A classse TileLogic representa um objeto Ti
     public GameObject content; // Objeto que bloqueia a posição do Personagem
     public Floor floor; // Andares do Tabuleiro
     public int contentOrder;
+    #region pathfinding
+    public TileLogic prev;// verifica a forma mais rapida para chegar a outro Tile
+    public float distancia;// Verifica a distancia para se chegar a esse tile
+    #endregion
 
     //public TileType tileType; // Referencia para se ter vários Tiles como água. montanha... Onde o Personagem não pode se mover
 

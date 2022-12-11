@@ -7,8 +7,16 @@ public class Tabuleiro : MonoBehaviour
     public Dictionary<Vector3Int, TileLogic> tiles;// Dicionário de Posição
     public List<Floor> floors;// Andares do Labirinto
     public static Tabuleiro instance;
-    
+    [HideInInspector]
     public Grid grid;
+    public List<Tile> casaSeleçao;
+    public Vector3Int[] dirs = new Vector3Int[4]
+    {
+        Vector3Int.up,
+        Vector3Int.down,
+        Vector3Int.right,
+        Vector3Int.left
+    };
     
     void Awake()
     {
@@ -24,6 +32,7 @@ public class Tabuleiro : MonoBehaviour
         Debug.Log("Foram criados "+tiles.Count+" tiles");
         ShadowOrdering();
         yield return null;
+        // floors[2].casaSeleçao.SetTile(new Vector3Int(-5,-5,0), casaSeleçao[0]); //teste para verificação de casaSeleção 
     }
     IEnumerator LoadFloors(LoadState loadState)
     {
@@ -81,5 +90,72 @@ public class Tabuleiro : MonoBehaviour
         TileLogic tile = null;
         instance.tiles.TryGetValue(pos, out tile);
         return tile;
+    }
+
+    public void SelecionarTiles(List<TileLogic> tiles, int AliançaIndex)
+    {
+        for(int i=0; i<tiles.Count; i++)
+        {
+            tiles[i].floor.casaSeleçao.SetTile(tiles[i].pos, casaSeleçao[AliançaIndex]);
+        }
+    }
+
+    public void DeselecionarTiles(List<TileLogic> tiles)
+    {
+        for(int i=0; i<tiles.Count; i++)
+        {
+            tiles[i].floor.casaSeleçao.SetTile(tiles[i].pos, null);
+        }
+    }
+
+    public List<TileLogic> Search(TileLogic start)
+    {
+        List<TileLogic> tilesSearch = new List<TileLogic>();
+
+        tilesSearch.Add(start);
+        LimpezaSearch();
+
+        Queue<TileLogic> checkNext = new Queue<TileLogic>();
+        Queue<TileLogic> checkNow = new Queue<TileLogic>();
+
+        start.distancia = 0;
+        checkNow.Enqueue(start);
+
+        while(checkNow.Count>0)
+        {
+            TileLogic t = checkNow.Dequeue();
+            for(int i=0;i<4;i++)
+            {
+                TileLogic next = GetTile(t.pos + dirs[i]);// analiza os 4 Tiles em volta da Unidade
+                if(next == null || next.distancia<=t.distancia+1 || t.distancia+1>3)// verifica se o tile existe e e se o caminho é o melhor para percorrer
+                {
+                    continue;
+                }
+                //Checagem a mais
+                next.distancia = t.distancia+1;
+                next.prev = t;
+                checkNext.Enqueue(next);
+                tilesSearch.Add(next);
+            }
+            if(checkNow.Count == 0)
+            {
+                SwapReference(ref checkNow, ref checkNext);
+            }
+        }
+        return tilesSearch;
+    }
+    void SwapReference(ref Queue<TileLogic> now, ref Queue<TileLogic> next)
+    {
+        Queue<TileLogic>temp = now;
+        now = next;
+        next = temp;
+    }
+    void LimpezaSearch()
+    {
+        foreach(TileLogic t in tiles.Values)
+        {
+            t.prev = null;
+            t.distancia = int.MaxValue;
+        }
     }
 }

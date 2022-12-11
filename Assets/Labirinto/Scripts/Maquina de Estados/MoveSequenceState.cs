@@ -11,8 +11,8 @@ public class MoveSequenceState : State
     }
     IEnumerator MoveSequence()
     {
-        List<TileLogic> path = new List<TileLogic>();// Retorna o caminho que o player andará até a casa escolhida 
-        path.Add(machine.selectedTile);
+        List<TileLogic> path = CreatePath();// Retorna o caminho que o player andará até a casa escolhida 
+        
         
         Movimento movimento = Turnos.unit.GetComponent<Movimento>();
         yield return StartCoroutine(movimento.Move(path));
@@ -20,5 +20,18 @@ public class MoveSequenceState : State
         yield return new WaitForSeconds(0.3f);
         Turnos.hasMoved = true;
         machine.ChangeTo<ChooseActionState>();
+    }
+    List<TileLogic> CreatePath()
+    {
+        List<TileLogic> path = new List<TileLogic>();
+        TileLogic t = machine.selectedTile;
+        while(t!=Turnos.unit.tile)
+        {
+            path.Add(t);
+            t = t.prev;
+        }
+        path.Reverse();
+        return path;
+
     }
 }

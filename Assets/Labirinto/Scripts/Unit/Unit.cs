@@ -6,6 +6,7 @@ public class Unit : MonoBehaviour
     [HideInInspector]
     public Stats stats;
     public int equipe;// classes de vilão e jogadores
+    public int aliança;
     public TileLogic tile;// Onde a unidade consegue identificar onde está.
     
     public int chargeTime;

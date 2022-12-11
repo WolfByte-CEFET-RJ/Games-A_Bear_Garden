@@ -13,11 +13,13 @@ public class Floor : MonoBehaviour
     public Vector3Int minimoXY; //  
     public Vector3Int maximoXY; // Limites do Tabuleiro
     public Tilemap tilemap;
+    public Tilemap casaSeleçao;
 
     void Awake()// Primeira Função antes do Start
     {
         tilemapRenderer = this.transform.GetComponent<TilemapRenderer>();
         tilemap = GetComponent<Tilemap>();
+        casaSeleçao = transform.parent.Find("CasaSeleçao").GetComponent<Tilemap>();
     }
     public List<Vector3Int> LoadTiles()// Somente irá retornar os Tiles existente no Tabuleiro.
     {
