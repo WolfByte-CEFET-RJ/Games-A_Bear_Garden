@@ -9,10 +9,12 @@ public class Weapon : PlayerInput
     private string InputName;
 
     [SerializeField] private float fireRate;
+    private float initialFireRate;
     private float cronometer;
 
     private void Start()
     {
+        initialFireRate = fireRate;
         InputName = GetShootInput(playerType);//Referenciar o nome do Input pelo metodo na classe pai
     }//Mudanca feito pelo fato de que antes, os 4 players usariam o mesmo botao pra atirar
 
@@ -34,16 +36,22 @@ public class Weapon : PlayerInput
         Instantiate(shootObject.gameObject, firePoint.position, firePoint.rotation);
         //gameObject.GetComponent<PlayerHealth>().AudioS.PlayOneShot(shootSound);
 	}
-
+    private int coroutineControl = 0;
     public IEnumerator SetFireRate(float effect)
     {
-        fireRate /= effect;
-        gameObject.GetComponent<PlayerMovement>().OnPowerUp = true;
-        gameObject.GetComponent<PlayerMovement>().Speed *= effect;
+        PlayerMovement player = gameObject.GetComponent<PlayerMovement>();
+        fireRate = (initialFireRate / effect);
+        player.OnPowerUp = true;
+        player.Speed = (effect * player.InitialSpeed);
+        coroutineControl++;
         yield return new WaitForSeconds(5f);
-        gameObject.GetComponent<PlayerMovement>().OnPowerUp = false;
-        fireRate *= effect;
-        gameObject.GetComponent<PlayerMovement>().Speed /= effect;
+        coroutineControl--;
+        if(coroutineControl == 0)
+        {
+            player.OnPowerUp = false;
+            fireRate = initialFireRate;
+            player.Speed =  player.InitialSpeed;
+        }        
     }
 
     
