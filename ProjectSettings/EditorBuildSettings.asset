@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Menu/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Menu/Scenes/FaseTest.unity
+    guid: 5a868cb490250ad4299224b0f7e4ace1
+  - enabled: 1
     path: Assets/Space Invaders/Scenes/Space-Invaders.unity
     guid: c9e91e34c7a8ae344aa4f2a392ae0d93
   m_configObjects: {}
