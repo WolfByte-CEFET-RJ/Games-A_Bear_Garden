@@ -16,6 +16,7 @@ public class BossMove : PlayerInput
     private string shootInputName;
     private float cronometer;
     private float cronometerS;
+    private float xVelocity;
 
     [Header("Movement Settings")]
     [SerializeField] private float speed;
@@ -52,6 +53,8 @@ public class BossMove : PlayerInput
         {
             CanvasController.ShootUI(specialFireRate - cronometerS, specialFireRate);
         }
+
+        xVelocity = GetPlayerInput(playerType);
     }
 
     void Shoot()
@@ -69,6 +72,6 @@ public class BossMove : PlayerInput
 
     private void FixedUpdate()
     {
-       rig.velocity = new Vector2(GetPlayerInput(playerType) * speed, rig.velocity.y);
+       rig.velocity = new Vector2(xVelocity * speed, rig.velocity.y);
     }
 }

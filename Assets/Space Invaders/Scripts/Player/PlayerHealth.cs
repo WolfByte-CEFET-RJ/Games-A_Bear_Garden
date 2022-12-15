@@ -34,6 +34,10 @@ public class PlayerHealth : MonoBehaviour, IHealth
         {
             lifeBar.fillAmount = (float)_health / maxHealth;
             audioS.PlayOneShot(damageSound);
+            if(_health > maxHealth)
+            {
+                _health = maxHealth;
+            }
         } 
         else 
             OnDeath();

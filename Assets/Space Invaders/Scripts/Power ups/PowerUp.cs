@@ -18,6 +18,7 @@ public class PowerUp : MonoBehaviour
         rig = GetComponent<Rigidbody2D>();
         rig.velocity = Vector2.down * speed;
         audioS = GetComponent<AudioSource>();
+        Destroy(gameObject, 6f);
     }
 
     private void OnTriggerEnter2D(Collider2D col)
