@@ -65,7 +65,6 @@ public class MenuPause : MonoBehaviour
         Debug.Log("Retomou Fase!");
     }
 
-
     public void VoltaparaMenu()
     {
         SceneManager.LoadScene("Menu");     //Natty vai para o menu
@@ -74,8 +73,6 @@ public class MenuPause : MonoBehaviour
         //_pauseInstruction.SetActive(false);
         Debug.Log("Voltou para Menu Principal!");
     }
-
-
 
     public void InstrucaoScreen()
     {
