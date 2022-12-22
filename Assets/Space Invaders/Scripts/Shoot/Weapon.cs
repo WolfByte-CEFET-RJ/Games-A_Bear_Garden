@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Weapon : PlayerInput
 {
@@ -12,6 +13,8 @@ public class Weapon : PlayerInput
     private float initialFireRate;
     private float cronometer;
 
+    [SerializeField] private Image shootCharge;
+
     private void Start()
     {
         initialFireRate = fireRate;
@@ -22,8 +25,12 @@ public class Weapon : PlayerInput
     {
         //queria deixar o espaço como trigger 
         //Esse comando também acaba com o problema dos tiros estarem se multiplicando
-        cronometer += Time.deltaTime;
-		if (Input.GetButton(InputName) && cronometer >= fireRate)
+        if(cronometer <= fireRate)
+        {
+            cronometer += Time.deltaTime;
+            shootCharge.fillAmount = cronometer / fireRate;
+        }
+        if (Input.GetButton(InputName) && cronometer >= fireRate)
 		{
             Shoot();
             cronometer = 0f;

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossMove : PlayerInput
 {
@@ -12,6 +13,10 @@ public class BossMove : PlayerInput
     [SerializeField] private Transform shootPosS;
     [SerializeField] private float fireRate;
     [SerializeField] private float specialFireRate;
+
+    [Header("UI Settings")]
+    [SerializeField] private Image shootCharge1;
+    [SerializeField] private Image shootCharge2;
 
     private string shootInputName;
     private float cronometer;
@@ -33,7 +38,12 @@ public class BossMove : PlayerInput
 
     void Update()
     {
-        cronometer += Time.deltaTime;
+        if(cronometer <= fireRate)
+        {
+            cronometer += Time.deltaTime;
+            shootCharge2.fillAmount = shootCharge1.fillAmount = cronometer / fireRate;            
+        }
+
         float shootType = Input.GetAxisRaw(shootInputName);
         if (shootType == 1 && cronometer >= fireRate)
         {
