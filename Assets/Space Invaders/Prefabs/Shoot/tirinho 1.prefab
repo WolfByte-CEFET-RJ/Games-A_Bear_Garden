@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8697640450676126112}
   m_Layer: 0
   m_Name: tirinho 1
-  m_TagString: Tiro
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,3 +243,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+  nerfHitSound: {fileID: 8300000, guid: dad74684704aafb4da786808dbb4dff3, type: 3}

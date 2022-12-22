@@ -39,10 +39,10 @@ public class Weapon : PlayerInput
     private int coroutineControl = 0;
     public IEnumerator SetFireRate(float effect)
     {
-        PlayerMovement player = gameObject.GetComponent<PlayerMovement>();
+        PlayerMovement player = gameObject.GetComponent<PlayerMovement>();        
         fireRate = (initialFireRate / effect);
         player.OnPowerUp = true;
-        player.Speed = (effect * player.InitialSpeed);
+        player.AlteredSpeed = player.Speed = (effect * player.InitialSpeed);
         coroutineControl++;
         yield return new WaitForSeconds(5f);
         coroutineControl--;

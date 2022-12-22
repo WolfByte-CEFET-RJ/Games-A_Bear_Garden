@@ -735,7 +735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fab5c20e7cfbef49b0e32def75e08ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 100
+  _health: 200
   lifeBar: {fileID: 2144791868}
   damageSound: {fileID: 8300000, guid: dad74684704aafb4da786808dbb4dff3, type: 3}
 --- !u!114 &327146162
@@ -2580,7 +2580,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4133,7 +4133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fab5c20e7cfbef49b0e32def75e08ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 100
+  _health: 200
   lifeBar: {fileID: 65711231}
   damageSound: {fileID: 8300000, guid: dad74684704aafb4da786808dbb4dff3, type: 3}
 --- !u!1 &1479604692
@@ -4504,7 +4504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd8f908aada704a4db36ab5bd989f335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 300
+  _health: 550
   LifeBar: {fileID: 667217672}
   bossLosePanel: {fileID: 1028763245}
   hitSound: {fileID: 8300000, guid: dad74684704aafb4da786808dbb4dff3, type: 3}
@@ -5269,7 +5269,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5747,7 +5747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fab5c20e7cfbef49b0e32def75e08ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 100
+  _health: 200
   lifeBar: {fileID: 849646247}
   damageSound: {fileID: 8300000, guid: dad74684704aafb4da786808dbb4dff3, type: 3}
 --- !u!114 &2018891273

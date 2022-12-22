@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tirinho : MonoBehaviour
 {
-
+    [SerializeField] private int damage;
     private float tirinhoSpeed = 20f;
     [SerializeField] private Rigidbody2D rb;
     public bool playerShoot = false;
@@ -57,7 +57,7 @@ public class Tirinho : MonoBehaviour
             IHealth health = other.gameObject.GetComponent<IHealth>();
             if(health != null)
             {
-                health.Damage(10);
+                health.Damage(damage);
             }
         }
 
