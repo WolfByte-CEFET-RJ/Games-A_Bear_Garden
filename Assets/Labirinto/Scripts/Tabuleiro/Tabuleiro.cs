@@ -92,7 +92,7 @@ public class Tabuleiro : MonoBehaviour
         return tile;
     }
 
-    public void SelecionarTiles(List<TileLogic> tiles, int AliançaIndex)
+    public void SelecionarTiles(List<TileLogic> tiles, int AliançaIndex)// Irá fazer a verificação dos Tiles e Colocar a Cor correspondente a Aliança
     {
         for(int i=0; i<tiles.Count; i++)
         {
@@ -100,7 +100,7 @@ public class Tabuleiro : MonoBehaviour
         }
     }
 
-    public void DeselecionarTiles(List<TileLogic> tiles)
+    public void DeselecionarTiles(List<TileLogic> tiles)// Ele irá desfazer a ação ou tarefa anterior
     {
         for(int i=0; i<tiles.Count; i++)
         {
@@ -108,9 +108,10 @@ public class Tabuleiro : MonoBehaviour
         }
     }
 
-    public List<TileLogic> Search(TileLogic start)
+    public List<TileLogic> Search(TileLogic start)//
     {
         List<TileLogic> tilesSearch = new List<TileLogic>();
+        Movimento m = Turnos.unit.GetComponent<Movimento>();// Carrega o Movimento das unidades
 
         tilesSearch.Add(start);
         LimpezaSearch();
@@ -126,8 +127,9 @@ public class Tabuleiro : MonoBehaviour
             TileLogic t = checkNow.Dequeue();
             for(int i=0;i<4;i++)
             {
-                TileLogic next = GetTile(t.pos + dirs[i]);// analiza os 4 Tiles em volta da Unidade
-                if(next == null || next.distancia<=t.distancia+1 || t.distancia+1>3)// verifica se o tile existe e e se o caminho é o melhor para percorrer
+                TileLogic next = GetTile(t.pos + dirs[i]);// analisa os 4 Tiles em volta da Unidade
+                if(next == null || next.distancia<=t.distancia+1 || t.distancia+1>3 || m.ValidacaoMovimento(t, next) )
+                // verifica se o tile existe, se o caminho é o melhor para percorrer e evita Andares mais altos(1 para o 3)
                 {
                     continue;
                 }
@@ -139,18 +141,18 @@ public class Tabuleiro : MonoBehaviour
             }
             if(checkNow.Count == 0)
             {
-                SwapReference(ref checkNow, ref checkNext);
+                SwapReference(ref checkNow, ref checkNext);// Troca as referencia para que ela não sejam perdidas
             }
         }
         return tilesSearch;
     }
-    void SwapReference(ref Queue<TileLogic> now, ref Queue<TileLogic> next)
+    void SwapReference(ref Queue<TileLogic> now, ref Queue<TileLogic> next)// Troca as referencia em uma variável temporária
     {
         Queue<TileLogic>temp = now;
         now = next;
         next = temp;
     }
-    void LimpezaSearch()
+    void LimpezaSearch()// 
     {
         foreach(TileLogic t in tiles.Values)
         {

@@ -50,7 +50,7 @@ public class Movimento : MonoBehaviour
         {
             yield return null;//pula para o proximo frame
         }
-        to.content = this.gameObject;
+        //to.content = this.gameObject;
     }
 
     IEnumerator Jump(TileLogic to)
@@ -76,6 +76,15 @@ public class Movimento : MonoBehaviour
         {
             yield return null;
         }
-        to.content = this.gameObject;
+        //to.content = this.gameObject;
+    }
+    public virtual bool ValidacaoMovimento(TileLogic from, TileLogic to)
+    {
+        if(Mathf.Abs(from.floor.altura-to.floor.altura)>1 || to.content!=null )
+        // verifica a diferença de altura dos Andares 1, 2 ou 3 dos tiles e se existe unidades neles
+        {
+            return true;
+        }
+        return false;
     }
 }

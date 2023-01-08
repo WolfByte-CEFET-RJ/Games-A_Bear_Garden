@@ -13,7 +13,9 @@ public class Floor : MonoBehaviour
     public Vector3Int minimoXY; //  
     public Vector3Int maximoXY; // Limites do Tabuleiro
     public Tilemap tilemap;
+    [HideInInspector]
     public Tilemap casaSeleçao;
+    public int altura;
 
     void Awake()// Primeira Função antes do Start
     {

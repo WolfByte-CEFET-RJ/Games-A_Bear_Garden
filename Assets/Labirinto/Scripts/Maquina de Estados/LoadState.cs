@@ -38,7 +38,7 @@ public class LoadState : State
             SetUnitAliança(machine.units[i]);
         }
     }
-    void SetUnitAliança(Unit unit)
+    void SetUnitAliança(Unit unit)//Atribui a aliança a qual a unidade pertence 
     {
         for(int i=0;i<MapLoader.instance.alianças.Count; i++)
         {

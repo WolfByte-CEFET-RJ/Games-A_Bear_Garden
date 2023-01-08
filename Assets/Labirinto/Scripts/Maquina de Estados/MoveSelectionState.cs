@@ -16,7 +16,7 @@ public class MoveSelectionState : State
       inputs.OnMove+=OnMoveTileSelector;
       inputs.OnFire+=OnFire;
       tiles = Tabuleiro.instance.Search(Turnos.unit.tile);// Pesquisa os Tiles da Unidade
-      tiles.Remove(Turnos.unit.tile);
+      tiles.Remove(Turnos.unit.tile);// Remove os mesmos Tiles da unidade
       Tabuleiro.instance.SelecionarTiles(tiles, Turnos.unit.aliança);//Depois pinta ele com as cores da Aliança
 
    }

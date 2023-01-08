@@ -16,7 +16,9 @@ public class MoveSequenceState : State
         
         Movimento movimento = Turnos.unit.GetComponent<Movimento>();
         yield return StartCoroutine(movimento.Move(path));
+        Turnos.unit.tile.content = null;
         Turnos.unit.tile = machine.selectedTile;
+        Turnos.unit.tile.content = Turnos.unit.gameObject;
         yield return new WaitForSeconds(0.3f);
         Turnos.hasMoved = true;
         machine.ChangeTo<ChooseActionState>();
