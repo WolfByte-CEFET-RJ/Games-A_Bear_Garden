@@ -28,7 +28,7 @@ public class ItemCollision : MonoBehaviour
             }
             
             else if(unit.aliança == 1){   //Rodrigo --> Se o jogador for o vilão...
-                unit.SetStat(StatEnum.MP, 4);    //Rodrigo --> ...aumente 4 no valor da mana   //mudar o número após "+=" para adequar a quantidade de mana ganha
+                unit.SetStat(StatEnum.MP, 4);    //Rodrigo --> ...aumente 4 no valor da mana   //mudar o número após "StatEnum.MP" para adequar a quantidade de mana ganha
             }
         }
     }
