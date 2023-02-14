@@ -127,8 +127,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2b6bfea281ccabb428920a9f8cf61f22, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -358,6 +358,10 @@ PrefabInstance:
       propertyPath: speedI
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 4193907602707122891, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4eed56b0fdf779241a1cfb8b28122d69, type: 3}
     - target: {fileID: 4193907602707122892, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
       propertyPath: m_Size.x
       value: 1.5
@@ -456,6 +460,10 @@ PrefabInstance:
       propertyPath: speedI
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 4193907602707122891, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4eed56b0fdf779241a1cfb8b28122d69, type: 3}
     - target: {fileID: 4193907602707122892, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
       propertyPath: m_Size.x
       value: 1.5
@@ -558,6 +566,10 @@ PrefabInstance:
       propertyPath: speedI
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 4193907602707122891, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4eed56b0fdf779241a1cfb8b28122d69, type: 3}
     - target: {fileID: 4193907602707122892, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
       propertyPath: m_Size.x
       value: 1.5
@@ -656,6 +668,10 @@ PrefabInstance:
       propertyPath: speedI
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 4193907602707122891, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4eed56b0fdf779241a1cfb8b28122d69, type: 3}
     - target: {fileID: 4193907602707122892, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
       propertyPath: m_Size.x
       value: 1.5
@@ -754,6 +770,10 @@ PrefabInstance:
       propertyPath: speedI
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 4193907602707122891, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4eed56b0fdf779241a1cfb8b28122d69, type: 3}
     - target: {fileID: 4193907602707122892, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
       propertyPath: m_Size.x
       value: 1.5
@@ -852,6 +872,10 @@ PrefabInstance:
       propertyPath: speedI
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 4193907602707122891, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4eed56b0fdf779241a1cfb8b28122d69, type: 3}
     - target: {fileID: 4193907602707122892, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
       propertyPath: m_Size.x
       value: 1.5
@@ -950,6 +974,10 @@ PrefabInstance:
       propertyPath: powerUp
       value: 
       objectReference: {fileID: 4584256492935585039, guid: 870a127cdf6ec424aaed836bca471e76, type: 3}
+    - target: {fileID: 4193907602707122891, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4eed56b0fdf779241a1cfb8b28122d69, type: 3}
     - target: {fileID: 4193907602707122891, guid: f334e9a6fc134bd4bab8ce21de0352bd, type: 3}
       propertyPath: canSpawnP_up
       value: 1

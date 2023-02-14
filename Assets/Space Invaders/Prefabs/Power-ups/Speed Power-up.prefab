@@ -175,7 +175,7 @@ MonoBehaviour:
   speed: 3
   life: 50
   type: 83
-  powerUpSound: {fileID: 8300000, guid: 75f003922cc1f0542af9f8ec4e259304, type: 3}
+  powerUpSound: {fileID: 8300000, guid: c72c1564d67d0f5469cd5a806446d6a9, type: 3}
 --- !u!82 &5446460164370501436
 AudioSource:
   m_ObjectHideFlags: 0

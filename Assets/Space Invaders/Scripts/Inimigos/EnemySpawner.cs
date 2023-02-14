@@ -12,11 +12,19 @@ public class EnemySpawner : MonoBehaviour
     private float cronometer;
     private bool effectCreated = false;
 
+    private AudioSource AS;
+    [SerializeField] private AudioClip spawnSound;
+    private void Start()
+    {
+        AS = GetComponent<AudioSource>();
+        cronometer = timeToSpawn - 1f;
+    }
     void Update()
     {
         cronometer += Time.deltaTime;
         if(cronometer >= timeToSpawn - 0.5f && !effectCreated)
         {
+            AS.PlayOneShot(spawnSound);
             CreateEffect();
             effectCreated = true;
         }

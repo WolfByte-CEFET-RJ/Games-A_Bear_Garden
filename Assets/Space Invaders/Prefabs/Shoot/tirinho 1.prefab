@@ -144,7 +144,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 799bf3c8f3b8d704892df6fd472222bb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 76c4af7f821b85f4282f502882b70166, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -243,4 +243,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  nerfHitSound: {fileID: 8300000, guid: dad74684704aafb4da786808dbb4dff3, type: 3}
+  nerfHitSound: {fileID: 8300000, guid: 6b6f3499f30aead4589b8e1eb412d2ce, type: 3}

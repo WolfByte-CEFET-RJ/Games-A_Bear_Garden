@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   rb: {fileID: 1548278244383134003}
-  playerShoot: 0
+  playerShoot: 1
 --- !u!82 &2401411008393980708
 AudioSource:
   m_ObjectHideFlags: 0
@@ -159,9 +159,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 799bf3c8f3b8d704892df6fd472222bb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6eecfb1a50d49434b84519a9999407cf, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
