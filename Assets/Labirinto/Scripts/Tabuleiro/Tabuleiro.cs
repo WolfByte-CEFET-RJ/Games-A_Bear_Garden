@@ -92,11 +92,11 @@ public class Tabuleiro : MonoBehaviour
         return tile;
     }
 
-    public void SelecionarTiles(List<TileLogic> tiles, int AliançaIndex)// Irá fazer a verificação dos Tiles e Colocar a Cor correspondente a Aliança
+    public void SelecionarTiles(List<TileLogic> tiles, int AliancaIndex)// Irá fazer a verificação dos Tiles e Colocar a Cor correspondente a Aliança
     {
         for(int i=0; i<tiles.Count; i++)
         {
-            tiles[i].floor.casaSeleçao.SetTile(tiles[i].pos, casaSeleçao[AliançaIndex]);
+            tiles[i].floor.casaSeleçao.SetTile(tiles[i].pos, casaSeleçao[AliancaIndex]);
         }
     }
 

@@ -14,11 +14,17 @@ public class LoadState : State
         yield return  StartCoroutine(Tabuleiro.instance.InitSequence(this));
         Debug.Log("Entrou no LoadState");
         yield return null; // Continua o carregamento do labirinto no proximo frame
-
+        yield return StartCoroutine(LoadAnimacoes());
+        yield return null;
         MapLoader.instance.CriaUnidades();
         yield return null;
         InitialTurnOrdering();
-        UnitAlianças();
+        yield return null;
+        UnitAliancas();
+        yield return null;
+        List<Vector3Int> bloqueados = Bloqueados.instance.GetTilesBloqueados();
+        yield return null;
+        SetBloqueados(bloqueados);
         yield return null;
 
         StateMachineController.instance.ChangeTo<ComeçodeTurnos>();
@@ -31,23 +37,39 @@ public class LoadState : State
             machine.units[i].ativa = true;
         }
     }
-    void UnitAlianças()// Verifica todos as unidades e atribui as alianças
+    void UnitAliancas()// Verifica todos as unidades e atribui as alianças
     {
         for(int i=0;i<machine.units.Count; i++)
         {
-            SetUnitAliança(machine.units[i]);
+            SetUnitAlianca(machine.units[i]);
         }
     }
-    void SetUnitAliança(Unit unit)//Atribui a aliança a qual a unidade pertence 
+    void SetUnitAlianca(Unit unit)//Atribui a aliança a qual a unidade pertence 
     {
-        for(int i=0;i<MapLoader.instance.alianças.Count; i++)
+        for(int i=0;i<MapLoader.instance.aliancas.Count; i++)
         {
-            if(MapLoader.instance.alianças[i].equipes.Contains(unit.equipe))
+            if(MapLoader.instance.aliancas[i].equipes.Contains(unit.equipe))
             {
-                MapLoader.instance.alianças[i].units.Add(unit);
-                unit.aliança = i;
+                MapLoader.instance.aliancas[i].units.Add(unit);
+                unit.alianca = i;
                 return;
             }
+        }
+    }
+    void SetBloqueados(List<Vector3Int> bloqueados)
+    {
+        foreach(Vector3Int pos in bloqueados)
+        {
+            TileLogic t = Tabuleiro.GetTile(pos);
+            t.content = Bloqueados.instance.gameObject;
+        }
+    }
+    IEnumerator LoadAnimacoes()
+    {
+        SpriteLoader[] loaders = SpriteLoader.holder.GetComponentsInChildren<SpriteLoader>();
+        foreach(SpriteLoader loader in loaders)
+        {
+            yield return loader.Load();
         }
     }
 }

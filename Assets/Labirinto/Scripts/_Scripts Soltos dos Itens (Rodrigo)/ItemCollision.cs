@@ -22,12 +22,12 @@ public class ItemCollision : MonoBehaviour
         
         if(col.CompareTag("Item")){      //Rodrigo --> if para checar se o jogador coletou (colidiu com) o item
 
-            if(unit.aliança == 0){   //Rodrigo --> se o jogador for um dos heróis...
+            if(unit.alianca == 0){   //Rodrigo --> se o jogador for um dos heróis...
                 canAbility = true;      //Rodrigo --> ...variável da habilidade se ativa
                 //_canAbility++;
             }
             
-            else if(unit.aliança == 1){   //Rodrigo --> Se o jogador for o vilão...
+            else if(unit.alianca == 1){   //Rodrigo --> Se o jogador for o vilão...
                 unit.SetStat(StatEnum.MP, 4);    //Rodrigo --> ...aumente 4 no valor da mana   //mudar o número após "+=" para adequar a quantidade de mana ganha
             }
         }
