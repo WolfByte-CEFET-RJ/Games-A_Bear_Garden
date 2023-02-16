@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Aliança 
+public class Alianca 
 {
     public List<int> equipes;
     public List<Unit> units;

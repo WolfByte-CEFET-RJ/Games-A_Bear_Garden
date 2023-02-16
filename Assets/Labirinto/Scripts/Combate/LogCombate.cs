@@ -22,22 +22,22 @@ public static class LogCombate
     }
     public static bool IsOver()
     {
-        int ativaAlianças = 0;
-        for(int i=0;i<MapLoader.instance.alianças.Count;i++)// Retorna se existe unidades vivas nas alianças
+        int ativaAliancas = 0;
+        for(int i=0;i<MapLoader.instance.aliancas.Count;i++)// Retorna se existe unidades vivas nas alianças
         {
-            ativaAlianças+= CheckAliança(MapLoader.instance.alianças[i]);
+            ativaAliancas+= CheckAlianca(MapLoader.instance.aliancas[i]);
         }
-        if(ativaAlianças>1)
+        if(ativaAliancas>1)
         {
             return false;
         }
         return true;
     }
-    static int CheckAliança(Aliança aliança)// contabiliza as unidades da aliança e verifica se estao vivas
+    static int CheckAlianca(Alianca alianca)// contabiliza as unidades da aliança e verifica se estao vivas
     {
-        for(int i=0;i<aliança.units.Count;i++)
+        for(int i=0;i<alianca.units.Count;i++)
         {
-            Unit currentUnit = aliança.units[i];
+            Unit currentUnit = alianca.units[i];
             if(currentUnit.ativa)
             {
                 return 1;

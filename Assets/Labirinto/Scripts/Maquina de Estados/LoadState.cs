@@ -40,11 +40,11 @@ public class LoadState : State
     }
     void SetUnitAliança(Unit unit)//Atribui a aliança a qual a unidade pertence 
     {
-        for(int i=0;i<MapLoader.instance.alianças.Count; i++)
+        for(int i=0;i<MapLoader.instance.aliancas.Count; i++)
         {
-            if(MapLoader.instance.alianças[i].equipes.Contains(unit.equipe))
+            if(MapLoader.instance.aliancas[i].equipes.Contains(unit.equipe))
             {
-                MapLoader.instance.alianças[i].units.Add(unit);
+                MapLoader.instance.aliancas[i].units.Add(unit);
                 unit.alianca = i;
                 return;
             }

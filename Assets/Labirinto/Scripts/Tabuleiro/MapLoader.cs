@@ -16,7 +16,7 @@ public class MapLoader : MonoBehaviour
     //
     public static MapLoader instance;
     GameObject holder;
-    public List<Aliança> alianças;
+    public List<Alianca> aliancas;
 
     void Awake()
     {
@@ -27,13 +27,13 @@ public class MapLoader : MonoBehaviour
     void Start()
     {
         holder.transform.parent = Tabuleiro.instance.transform;
-        InitializeAlianças();
+        InitializeAliancas();
     }
-    void InitializeAlianças()
+    void InitializeAliancas()
     {
-        for(int i=0;i<alianças.Count;i++)
+        for(int i=0;i<aliancas.Count;i++)
         {
-            alianças[i].units = new List<Unit>();
+            aliancas[i].units = new List<Unit>();
         }
     }
     public void CriaUnidades()// 
