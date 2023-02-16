@@ -45,7 +45,7 @@ public class LoadState : State
             if(MapLoader.instance.alianças[i].equipes.Contains(unit.equipe))
             {
                 MapLoader.instance.alianças[i].units.Add(unit);
-                unit.aliança = i;
+                unit.alianca = i;
                 return;
             }
         }
