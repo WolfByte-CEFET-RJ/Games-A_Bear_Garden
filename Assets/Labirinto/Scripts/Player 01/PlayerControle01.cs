@@ -26,7 +26,7 @@ public class PlayerControle01 : MonoBehaviour
         // anim.SetFloat("Horizontal",movement.x);
        // anim.SetFloat("Vertical",movement.y);
        // anim.SetFloat("Velocidade",movement.magnitude);
-
+    
        transform.position = transform.position + movement * Velocidade * Time.deltaTime;
     }
    

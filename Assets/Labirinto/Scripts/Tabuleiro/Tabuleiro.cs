@@ -56,6 +56,7 @@ public class Tabuleiro : MonoBehaviour
         worldPos.y+= (floor.tilemap.tileAnchor.y/2)-0.5f;
         TileLogic tileLogic = new TileLogic(pos, worldPos, floor);
         tiles.Add(pos, tileLogic);
+        
     }
 
     void ShadowOrdering()
