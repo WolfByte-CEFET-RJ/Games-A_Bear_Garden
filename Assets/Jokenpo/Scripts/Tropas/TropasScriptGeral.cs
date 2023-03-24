@@ -14,6 +14,17 @@ public class TropasScriptGeral : MonoBehaviour
     [HideInInspector]
     public float speed;
 
+    [Header("Sounds Config")]
+    [SerializeField] private AudioClip[] attacks;
+    private AudioClip actualAttack;
+    private AudioSource AS;
+    /*  Joel ---> Cola para a logica do som do ataque da tropa
+    attacks[0] -> Comum
+    attacks[1] -> papel
+    attacks[2] -> pedra
+    attacks[3] -> tesoura
+    */
+
     void Awake()    //Rodrigo --> inicialização dos stats da tropa 
     {
         if(this.gameObject.tag == "TropaBasica")
@@ -22,6 +33,7 @@ public class TropasScriptGeral : MonoBehaviour
             vida = _stats.trp_vida;
             ataque = _stats.trp_atk;
             speed = _stats.trp_spd;
+            actualAttack = attacks[0];
         }
         else if(this.gameObject.tag == "SupertropaPapel")
         {
@@ -29,6 +41,7 @@ public class TropasScriptGeral : MonoBehaviour
             vida = _stats.trp_vida;
             ataque = _stats.trp_atk;
             speed = _stats.trp_spd;
+            actualAttack = attacks[1];
         }
         else if(this.gameObject.tag == "SupertropaPedra")
         {
@@ -36,6 +49,7 @@ public class TropasScriptGeral : MonoBehaviour
             vida = _stats.trp_vida;
             ataque = _stats.trp_atk;
             speed = _stats.trp_spd;
+            actualAttack = attacks[2];
         }
         else if(this.gameObject.tag == "SupertropaTesoura")
         {
@@ -43,8 +57,9 @@ public class TropasScriptGeral : MonoBehaviour
             vida = _stats.trp_vida;
             ataque = _stats.trp_atk;
             speed = _stats.trp_spd;
+            actualAttack = attacks[3];
         }
-        
+        AS = GetComponent<AudioSource>();
 
     }
 
@@ -55,10 +70,7 @@ public class TropasScriptGeral : MonoBehaviour
     
     void FixedUpdate()
     {
-        if(vida == 0)
-        {
-            Destroy(gameObject);
-        }
+        
         
     }
 
@@ -73,6 +85,18 @@ public class TropasScriptGeral : MonoBehaviour
         if(other.gameObject.tag == "baseAmiga" || other.gameObject.tag == "baseInimiga")
         {
             vida = 0;
+            StartCoroutine(Death());
         }
     }
+
+    IEnumerator Death()//Joel--->Redefinicao da morte de uma tropa, pra conseguir executar o som de ataque
+    {
+        AS.PlayOneShot(actualAttack);
+        //gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        yield return new WaitForSeconds(actualAttack.length);//*+*
+        Destroy(gameObject);
+    }
 }
+
+//*+*Destruir a tropa apenas no fim do som de ataque. Se preciso apos implementar as animacoes,
+//Substituir esse parametro pela duracao da animacao do ataque

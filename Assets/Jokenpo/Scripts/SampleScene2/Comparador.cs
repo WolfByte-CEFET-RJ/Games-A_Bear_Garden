@@ -8,6 +8,13 @@ public class Comparador : MonoBehaviour
     private JogadaTecla jogTc;
     public int j = 0;
 
+    private AudioSource AS;
+    [SerializeField] private AudioClip tieRound;
+
+    private void Start()
+    {
+        AS = GetComponent<AudioSource>();
+    }
     void Update()
     {
         if (jogTc.Respostas)    //Rodrigo --> caso ambos os players tenham jogado...
@@ -38,7 +45,11 @@ public class Comparador : MonoBehaviour
         else if (jogTc.p1 == 3 & jogTc.p2 == 1)
             Debug.Log("Vitória do Vilão!");
         else //if (jogTc.p1 == jogTc.p2)
+        {
             Debug.Log("Empate!");
+            AS.PlayOneShot(tieRound);
+        }
+            
 
         jogTc.Resp1 = false;    //Rodrigo --> reset da variável resp1
         jogTc.Resp2 = false;    //Rodrigo --> reset da variável resp2

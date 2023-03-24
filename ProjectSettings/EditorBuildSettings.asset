@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Jokenpo/Scenes/TesteFelipe.unity
     guid: fdbe6dc4d5f19df4d9b47087f79a0e1e
+  - enabled: 0
+    path: Assets/Jokenpo/Scenes/2_SampleScene.unity
+    guid: eef42ea1015d9fa489a50ac0f02b0899
   m_configObjects: {}
