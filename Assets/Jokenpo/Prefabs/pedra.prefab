@@ -97,7 +97,6 @@ GameObject:
   - component: {fileID: 7770659065726038004}
   - component: {fileID: 7489686474592128173}
   - component: {fileID: 6299258178690956620}
-  - component: {fileID: 3132978855221005197}
   - component: {fileID: 2660137769482184959}
   m_Layer: 0
   m_Name: pedra
@@ -272,30 +271,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 175a5931bebf272468e69a3de6f31f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stats: {fileID: 3132978855221005197}
+  _stats: {fileID: 0}
   vida: 0
   ataque: 0
   speed: 0
-  attacks:
-  - {fileID: 8300000, guid: c06bc8caf6104704bb98937822e5747c, type: 3}
-  - {fileID: 8300000, guid: c769e03605ca1e749b0e5917b8099c06, type: 3}
-  - {fileID: 8300000, guid: 8fdeb3e1be80cac43b8a4165a32f8325, type: 3}
-  - {fileID: 8300000, guid: f16af1c9971005c4ca926cfa0484f074, type: 3}
---- !u!114 &3132978855221005197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7770659065726038005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5138c322c95e7414e91deacfd63ec64e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trp_vida: 1
-  trp_atk: 1
-  trp_spd: 0.05
 --- !u!82 &2660137769482184959
 AudioSource:
   m_ObjectHideFlags: 0

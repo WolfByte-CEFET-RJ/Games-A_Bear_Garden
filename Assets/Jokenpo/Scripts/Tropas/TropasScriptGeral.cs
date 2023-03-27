@@ -5,7 +5,6 @@ using UnityEngine;
 public class TropasScriptGeral : MonoBehaviour
 {
     //Script para gerenciar todas as funções das tropas (também relacionada com os scripts de movimento porém, )
-    [SerializeField]
     private TropasStats _stats;
     [HideInInspector]
     public float vida;
@@ -14,26 +13,27 @@ public class TropasScriptGeral : MonoBehaviour
     [HideInInspector]
     public float speed;
 
-    [Header("Sounds Config")]
-    [SerializeField] private AudioClip[] attacks;
     private AudioClip actualAttack;
     private AudioSource AS;
     /*  Joel ---> Cola para a logica do som do ataque da tropa
-    attacks[0] -> Comum
-    attacks[1] -> papel
-    attacks[2] -> pedra
-    attacks[3] -> tesoura
+    GetSFX(0) -> Comum
+    GetSFX(1) -> papel
+    GetSFX(2) -> pedra
+    GetSFX(3) -> tesoura
     */
 
     void Awake()    //Rodrigo --> inicialização dos stats da tropa 
     {
+        _stats = FindObjectOfType<vidaBase>().GetComponent<TropasStats>();//Joel ---> Refatoracao do sistema envolvendo esse script: Em vez de todas as tropas possuirem e acessarem ele de si mesmas,
+        //agora esse script estara apenas nas bases, e por esse comando, todas as tropas poderao acessar de la. O primeiro Find e pra garantir de que estou olhando para uma base, procurando um obj com 
+        //VidaBase anexado. Depois, a partir desse obj, pego o script TropasStats dele.
         if(this.gameObject.tag == "TropaBasica")
         {
             _stats.TropaComum();
             vida = _stats.trp_vida;
             ataque = _stats.trp_atk;
             speed = _stats.trp_spd;
-            actualAttack = attacks[0];
+            actualAttack = _stats.GetSFX(0);
         }
         else if(this.gameObject.tag == "SupertropaPapel")
         {
@@ -41,7 +41,7 @@ public class TropasScriptGeral : MonoBehaviour
             vida = _stats.trp_vida;
             ataque = _stats.trp_atk;
             speed = _stats.trp_spd;
-            actualAttack = attacks[1];
+            actualAttack = _stats.GetSFX(1);
         }
         else if(this.gameObject.tag == "SupertropaPedra")
         {
@@ -49,7 +49,7 @@ public class TropasScriptGeral : MonoBehaviour
             vida = _stats.trp_vida;
             ataque = _stats.trp_atk;
             speed = _stats.trp_spd;
-            actualAttack = attacks[2];
+            actualAttack = actualAttack = _stats.GetSFX(2);
         }
         else if(this.gameObject.tag == "SupertropaTesoura")
         {
@@ -57,15 +57,10 @@ public class TropasScriptGeral : MonoBehaviour
             vida = _stats.trp_vida;
             ataque = _stats.trp_atk;
             speed = _stats.trp_spd;
-            actualAttack = attacks[3];
+            actualAttack = actualAttack = _stats.GetSFX(3);
         }
         AS = GetComponent<AudioSource>();
 
-    }
-
-    void Start()
-    {
-        //nothing
     }
     
     void FixedUpdate()

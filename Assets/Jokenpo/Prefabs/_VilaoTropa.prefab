@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -5815008384461363582}
   - component: {fileID: 7958844923284186612}
   - component: {fileID: 6330568518736944889}
-  - component: {fileID: -9172373349846372221}
   - component: {fileID: -5531874705598839432}
   m_Layer: 0
   m_Name: _VilaoTropa
@@ -151,30 +150,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 175a5931bebf272468e69a3de6f31f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stats: {fileID: -9172373349846372221}
+  _stats: {fileID: 0}
   vida: 0
   ataque: 0
   speed: 0
-  attacks:
-  - {fileID: 8300000, guid: c06bc8caf6104704bb98937822e5747c, type: 3}
-  - {fileID: 8300000, guid: c769e03605ca1e749b0e5917b8099c06, type: 3}
-  - {fileID: 8300000, guid: 8fdeb3e1be80cac43b8a4165a32f8325, type: 3}
-  - {fileID: 8300000, guid: f16af1c9971005c4ca926cfa0484f074, type: 3}
---- !u!114 &-9172373349846372221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8412294873685160715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5138c322c95e7414e91deacfd63ec64e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trp_vida: 0
-  trp_atk: 0
-  trp_spd: 0
 --- !u!82 &-5531874705598839432
 AudioSource:
   m_ObjectHideFlags: 0

@@ -11,6 +11,8 @@ public class TropasStats : MonoBehaviour
     public float trp_atk;
     [HideInInspector]
     public float trp_spd;
+    [Header("Sounds Config")]
+    [SerializeField] private AudioClip[] attacks;
 
     //Rodrigo --> Variáveis para tropas comuns com seus valores definidos
     public void TropaComum()
@@ -40,5 +42,10 @@ public class TropasStats : MonoBehaviour
         trp_vida = 4;
         trp_atk = 4;
         trp_spd = 0.05f;
+    }
+
+    public AudioClip GetSFX(int index)
+    {
+        return attacks[index];
     }
 }

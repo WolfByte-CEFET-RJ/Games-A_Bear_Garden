@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -3274817328707402383}
   - component: {fileID: -8517386938468989704}
   - component: {fileID: 5534632650179151445}
-  - component: {fileID: 4746815052322353796}
   - component: {fileID: -1498091297127427992}
   m_Layer: 0
   m_Name: _PlayerTropa
@@ -151,30 +150,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 175a5931bebf272468e69a3de6f31f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stats: {fileID: 4746815052322353796}
+  _stats: {fileID: 0}
   vida: 0
   ataque: 0
   speed: 0
-  attacks:
-  - {fileID: 8300000, guid: c06bc8caf6104704bb98937822e5747c, type: 3}
-  - {fileID: 8300000, guid: c769e03605ca1e749b0e5917b8099c06, type: 3}
-  - {fileID: 8300000, guid: 8fdeb3e1be80cac43b8a4165a32f8325, type: 3}
-  - {fileID: 8300000, guid: f16af1c9971005c4ca926cfa0484f074, type: 3}
---- !u!114 &4746815052322353796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5066651107832431020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5138c322c95e7414e91deacfd63ec64e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trp_vida: 0
-  trp_atk: 0
-  trp_spd: 0
 --- !u!82 &-1498091297127427992
 AudioSource:
   m_ObjectHideFlags: 0
