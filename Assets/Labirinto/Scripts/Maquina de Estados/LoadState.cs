@@ -22,9 +22,9 @@ public class LoadState : State
         yield return null;
         UnitAliancas();
         yield return null;
-        List<Vector3Int> bloqueados = Bloqueados.instance.GetTilesBloqueados();
+        //List<Vector3Int> bloqueados = Bloqueados.instance.GetTilesBloqueados();
         yield return null;
-        SetBloqueados(bloqueados);
+        //SetBloqueados(bloqueados);
         yield return null;
 
         StateMachineController.instance.ChangeTo<ComeçodeTurnos>();
@@ -56,14 +56,14 @@ public class LoadState : State
             }
         }
     }
-    void SetBloqueados(List<Vector3Int> bloqueados)
-    {
-        foreach(Vector3Int pos in bloqueados)
-        {
-            TileLogic t = Tabuleiro.GetTile(pos);
-            t.content = Bloqueados.instance.gameObject;
-        }
-    }
+    // void SetBloqueados(List<Vector3Int> bloqueados)
+    // {
+    //     foreach(Vector3Int pos in bloqueados)
+    //     {
+    //         TileLogic t = Tabuleiro.GetTile(pos);
+    //         t.content = Bloqueados.instance.gameObject;
+    //     }
+    //}
     IEnumerator LoadAnimacoes()
     {
         SpriteLoader[] loaders = SpriteLoader.holder.GetComponentsInChildren<SpriteLoader>();

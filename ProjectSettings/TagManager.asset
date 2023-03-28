@@ -8,6 +8,7 @@ TagManager:
   - TrapVilao
   - BlockTrigger
   - BlockCollider
+  - Unit
   layers:
   - Default
   - TransparentFX

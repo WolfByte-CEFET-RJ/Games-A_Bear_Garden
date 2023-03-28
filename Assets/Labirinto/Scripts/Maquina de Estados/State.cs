@@ -17,7 +17,7 @@ public class State : MonoBehaviour
     {  
     }
 
-    protected void OnMoveTileSelector(object sender, object args)
+    protected void  OnMoveTileSelector(object sender, object args)
     {
         Vector3Int input = (Vector3Int)args;
         TileLogic t = Tabuleiro.GetTile(Selector.instance.position + input);

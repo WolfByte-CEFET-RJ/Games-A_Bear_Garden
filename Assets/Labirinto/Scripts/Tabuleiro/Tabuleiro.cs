@@ -36,24 +36,24 @@ public class Tabuleiro : MonoBehaviour
     }
     IEnumerator LoadFloors(LoadState loadState)
     {
-        for(int i=0; i<floors.Count; i++)
-        {
-            List<Vector3Int> floorTiles = floors[i].LoadTiles();
+        //for(int i=0; i<floors.Count; i++)
+        //{
+            List<Vector3Int> floorTiles = floors[0].LoadTiles();
             yield return null;// Continua o carregamento do labirinto no proximo frame
             for(int j=0; j<floorTiles.Count; j++)
             {
                 if(!tiles.ContainsKey(floorTiles[j]))
                 {
-                    CreateTile(floorTiles[j], floors[i]);// Posição e andar do Tile.
+                    CreateTile(floorTiles[j], floors[0]);// Posição e andar do Tile.
                 }
             }
-        }
+        //}
     }
 
     public void CreateTile(Vector3Int pos, Floor floor)
     {
         Vector3 worldPos = grid.CellToWorld(pos);// posição do tile no Tabuleiro
-        worldPos.y+= (floor.tilemap.tileAnchor.y/2)-0.5f;
+        worldPos.y += 0.25f;
         TileLogic tileLogic = new TileLogic(pos, worldPos, floor);
         tiles.Add(pos, tileLogic);
         
