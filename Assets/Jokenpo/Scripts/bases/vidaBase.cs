@@ -8,9 +8,13 @@ public class vidaBase : MonoBehaviour
 {
     
     public Slider barraVida;                                            //Acessa a barra de vida na tela
-    private float dano, vida;                                           // dano = dano dos objetos, vida = vida do player
+    private float vida;                                           // dano = dano dos objetos, vida = vida do player
     [SerializeField]
     private TropasStats _stats;
+
+    [SerializeField] private bool isPlayer;
+
+    public float Vida { get => vida; private set => vida = value; }
 
     void Start()
     {
@@ -58,7 +62,13 @@ public class vidaBase : MonoBehaviour
             //Debug.Log("dano sofrido: " + dano);
             //Debug.Log("vida da base: " + vida);
         }
-
+        if(vida <= 0)
+        {
+            if (isPlayer)
+                VictoryControl.instance.PlayerVictory();
+            else
+                VictoryControl.instance.BossVictory();
+        }
         /*      VERSÃO DO FELIPE
         void OnCollisionEnter2D(Collision2D col){
             if(col.gameObject.CompareTag("TropaBasica")){

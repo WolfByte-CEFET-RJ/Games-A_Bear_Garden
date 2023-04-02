@@ -11,6 +11,8 @@ public class TrocaDeCena : MonoBehaviour
     public int tempoTotal, condicao;
     [SerializeField]
     private Text tempoTxt;
+    [SerializeField] private vidaBase playerBase;
+    [SerializeField] private vidaBase bossBase;
     
     void Start()
     {
@@ -31,13 +33,16 @@ public class TrocaDeCena : MonoBehaviour
         }
 
         if(tempoTotal == 0)
-            TrocaCena();
+        {
+            tempoTotal = VictoryControl.instance.TimeOverVictory(playerBase.Vida, bossBase.Vida);
+        }
+            
 
 
     }
 
     void TrocaCena()
     {
-            SceneManager.LoadScene("TesteFelipe");
+            //SceneManager.LoadScene("TesteFelipe");
     }
 }
