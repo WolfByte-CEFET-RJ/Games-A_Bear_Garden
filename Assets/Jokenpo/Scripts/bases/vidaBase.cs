@@ -19,7 +19,7 @@ public class vidaBase : MonoBehaviour
 
     void Start()
     {
-        vidaMax = vida = 40f;                                                    // Inicia com a vida cheia
+        vidaMax = vida = 45f;                                                    // Inicia com a vida cheia
         // ^ "100" trocado para "100f" pois os ataques (trabalhados no futuro) são float, portanto, a variável também é [Rodrigo]
         barraVida.value = 1;                                         // Atribui o valor inicial da vida para a barra na tela
     }

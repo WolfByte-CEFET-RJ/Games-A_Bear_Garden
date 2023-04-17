@@ -68,7 +68,7 @@ public class TropasScriptGeral : MonoBehaviour
         
         
     }
-
+    private bool created = false;
     void OnCollisionEnter2D(Collision2D other)      //Rodrigo --> Detecta a colisão com uma tropa qualquer e destrói esta tropa (esquema de vidas para  o futuro) + vida vai a 0 após colidir com uma base
     {
         if(other.gameObject.tag == "TropaBasica" || other.gameObject.tag == "SupertropaPapel" || other.gameObject.tag == "SupertropaPedra" || other.gameObject.tag == "SupertropaTesoura")
@@ -82,11 +82,17 @@ public class TropasScriptGeral : MonoBehaviour
             vida = 0;
             StartCoroutine(Death());
         }
+        if(this.gameObject.tag == "TropaBasica" && !created && (other.gameObject.tag == "SupertropaPapel" || other.gameObject.tag == "SupertropaPedra" || other.gameObject.tag == "SupertropaTesoura"))
+        {
+            transform.position -= Vector3.right * 1.5f;
+            created = true;
+        }
     }
 
     IEnumerator Death()//Joel--->Redefinicao da morte de uma tropa, pra conseguir executar o som de ataque
     {
         AS.PlayOneShot(actualAttack);
+        created = true;
         //gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         yield return new WaitForSeconds(actualAttack.length);//*+*
         Destroy(gameObject);

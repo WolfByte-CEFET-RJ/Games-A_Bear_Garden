@@ -12,8 +12,10 @@ public class VictoryControl : MonoBehaviour
     private AudioSource thisPlayer;
     [SerializeField] private AudioClip heroVicTheme;
     [SerializeField] private AudioClip bossVicTheme;
+    [SerializeField] private AudioClip tieTheme;
     private bool acabou = false;
-
+    [Header("TieExceptions")]
+    [SerializeField]private GameObject tieTxt;
 
     public static VictoryControl instance;
     private void Awake()
@@ -55,26 +57,29 @@ public class VictoryControl : MonoBehaviour
     {
         if(player > boss && !acabou)
         {
+            acabou = true;
             playerVicPanel.SetActive(true);
             bgmPlayer.volume = 0;
             thisPlayer.PlayOneShot(heroVicTheme);
-            StartCoroutine(ReturnPlayBGM());
-            acabou = true;
+            StartCoroutine(ReturnPlayBGM());           
             return 0;
         }
         else if(boss > player && ! acabou)
         {
+            acabou = true;
             bossVicPanel.SetActive(true);
             bgmPlayer.volume = 0;
             thisPlayer.PlayOneShot(bossVicTheme);
-            StartCoroutine(ReturnPlayBGM());
-            acabou = true;
+            StartCoroutine(ReturnPlayBGM());           
             return 0;
         }        
-        else
+        else 
         {
-            Debug.Log("Mais 10 segundos pra desempatar");
-            return 10;
+
+                Debug.Log("Mais 10 segundos pra desempatar");
+                StartCoroutine(Tie());
+                return 10;
+                      
         }
     }
     private IEnumerator ReturnPlayBGM()
@@ -83,5 +88,15 @@ public class VictoryControl : MonoBehaviour
         bgmPlayer.volume = 1;
         thisPlayer.volume = 0;
         Time.timeScale = 0;
+    }
+    private IEnumerator Tie()
+    {
+        if(!acabou)
+        {
+            tieTxt.SetActive(true);
+            thisPlayer.PlayOneShot(tieTheme);
+            yield return new WaitForSeconds(2f);
+            tieTxt.SetActive(false);
+        }     
     }
 }
