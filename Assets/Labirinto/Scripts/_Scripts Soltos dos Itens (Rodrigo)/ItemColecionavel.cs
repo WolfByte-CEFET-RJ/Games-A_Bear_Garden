@@ -7,13 +7,20 @@ public class ItemColecionavel : MonoBehaviour
     PlayerScriptGeral _player;   //Rodrigo --> Variável para dialogar com o script de monitoramento do jogador que efetuar a colisão (especificamente a equipe dele)
     bool condition = true;      //Rodrigo --> Variável para restringir o aumento de mana a uma vez
 
-    // Start is called before the first frame update    
+    
+    void Update()
+    {
+        // Debug.Log("Variavel Turnos.hasMoved: " + Turnos.hasMoved);
+    }
+
+
     private void OnTriggerStay2D(Collider2D col) {
         if(col.gameObject.tag == "Unit")// se o item colecionavel colidir com uma unidade e essa unidade estiver com a velocidade 0, executará um código
         {
             _player = col.gameObject.GetComponent<PlayerScriptGeral>(); //Rodrigo --> Identifica o jogador durante a colisão        
 
-            Debug.Log("Velocidade Unit: "+ col.gameObject.GetComponent<Rigidbody2D>().velocity);
+           // Debug.Log("Velocidade Unit: "+ col.gameObject.GetComponent<Rigidbody2D>().velocity);
+            
             
             if(Turnos.hasMoved == true)
             {

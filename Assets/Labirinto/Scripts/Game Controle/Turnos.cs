@@ -9,5 +9,7 @@ public static class Turnos
    public static List<TileLogic> targets;
    public static bool hasActed;// Esta ativo
    public static bool hasMoved;// Esta se movendo
+   
+   public static bool hasEnabledSpawnTrapVilao; // ja foi spawnado a trap vilao: true
 
 }

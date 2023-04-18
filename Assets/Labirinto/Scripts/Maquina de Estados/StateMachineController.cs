@@ -14,8 +14,8 @@ public class StateMachineController : MonoBehaviour
     public List<Unit> units; // lista de unidades que podem ser selecionadas
 
     [Header("ChooseActionState")]
-    public List<Image> chooseActionButtons;
-    public Image chooseActionSelection;
+    public List<Image> chooseActionButtons; // lista de botoes no painel para selecionar: Andar, atacar, trap e Passar a vez
+    public Image chooseActionSelection; // acao selecionada no painel
     public LugarPainel chooseActionPainel;
     
     [Header("SeleçãoHabilidadeState")]

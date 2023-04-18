@@ -21,6 +21,7 @@ public class FinaldeTurnos : State
         Turnos.unit.chargeTime-=Turnos.unit.GetStat(StatEnum.SPEED);
 
         Turnos.hasActed = Turnos.hasMoved = false;
+        Turnos.hasEnabledSpawnTrapVilao = false;
         machine.units.Remove(Turnos.unit);// Remove a Unit da primeira colocação da Lista
         machine.units.Add(Turnos.unit);// Adiciona a Unit para a Ultima da lista de units
         yield return new WaitForSeconds(0.5f);// Tempo entre os Turnos dos Jogadores.

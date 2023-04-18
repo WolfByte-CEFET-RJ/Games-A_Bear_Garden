@@ -1,10 +1,10 @@
- using System.Collections;
+  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Tilemaps;
 
-public class TurnoDoVilao : State
+public class TrapVilaoState : State
 {
     [SerializeField] Tilemap tiles; // Conjuntos de tiles(TileMap)
     //[SerializeField] GameObject trapVilao; // Prefab da armadilha do vilao
@@ -34,7 +34,7 @@ public class TurnoDoVilao : State
     public override void Enter()
     {
         base.Enter();
-        StartCoroutine(PlaceTrap()); //Eduardo --> Ao estado ser iniciado, é inicializado a corrotina de spawnar a trap do vilao
+        StartCoroutine(PlaceTrap()); //Eduardo --> Ao estado ser iniciado  , é inicializado a corrotina de spawnar a trap do vilao
     }
 
     
@@ -53,7 +53,8 @@ public class TurnoDoVilao : State
         idArmadilha++; // Eduardo --> sempre que uma armadilha for criada, o id vai ser aumentado para que caso ocorra de ser criado uma nova armadilha, essa outra armadilha criada ser identificada por outro número
         if(Selector.instance.spriteRenderer.sortingOrder == 300 ) // Eduardo --> Se o selector está na ordem de renderizacao do andar 01...
         {
-            Armadilha _trap = Instantiate(trapV, new Vector3(t.worldPos.x,t.worldPos.y+0.5f,t.worldPos.z), Quaternion.identity, holder.transform);    //Rodrigo e Eduardo --> armadilha instanciada e atribuída a "_trap" do tipo Armadilha, o new Vector3 da posicao da armadilha instanciada é utilizada para spawna-la na posicao correta no andar 1
+            Armadilha _trap = Instantiate(trapV, new Vector3(t.worldPos.x,t.worldPos.y,t.worldPos.z), Quaternion.identity, holder.transform);    //Rodrigo e Eduardo --> armadilha instanciada e atribuída a "_trap" do tipo Armadilha, o new Vector3 da posicao da armadilha instanciada é utilizada para spawna-la na posicao correta no andar 1
+            Turnos.hasEnabledSpawnTrapVilao = true;
             _trap.tile = t; //Rodrigo --> o tile que ela está
             _trap.name = name;  //Rodrigo --> o nome do Objeto
             return _trap; // Eduardo --> retorna o objeto trap para conseguir acessar as informacoes do mesmo

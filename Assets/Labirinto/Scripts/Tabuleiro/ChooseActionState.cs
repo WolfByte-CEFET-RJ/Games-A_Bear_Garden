@@ -31,6 +31,15 @@ public class ChooseActionState : State
         inputs.OnFire-=OnFire;
         machine.chooseActionPainel.MoveTo("Hide"); // Move o painel para a posição "Hide" 0 e 50.
     }
+
+    private void Update()
+    {
+        if(Turnos.unit.name != "Vilao")
+        {
+            PaintButton(machine.chooseActionButtons[2], true);
+        }
+    }
+
     void OnMove(object sender, object args)// Movimentação do Seletor ao final até o ponto inicial
     {
         Vector3Int button = (Vector3Int)args;
@@ -74,7 +83,12 @@ public class ChooseActionState : State
                     machine.ChangeTo<SeleçaoHabilidadeState>();
                     break;
                 case 2:
-                    //machine.ChangeTo<ItemSelectState>();
+
+                    if(Turnos.unit.name == "Vilao" && Turnos.hasEnabledSpawnTrapVilao == false)
+                    {
+                        machine.ChangeTo<VilaoStateController>();
+                    }
+                    
                     break;
                 case 3:
                     machine.ChangeTo<FinaldeTurnos>();
@@ -85,7 +99,7 @@ public class ChooseActionState : State
     {
         PaintButton(machine.chooseActionButtons[0], Turnos.hasMoved);
         PaintButton(machine.chooseActionButtons[1], Turnos.hasActed);// Cor Skills
-        PaintButton(machine.chooseActionButtons[2], Turnos.hasActed);// Cor Item 
+        PaintButton(machine.chooseActionButtons[2], Turnos.hasEnabledSpawnTrapVilao);// Cor Spawn Trap Vilao
     }
     void PaintButton(Image image, bool check)// Seletor da interface irá trocar de Cor se Ele se Mover para Cinza, Senão continuará Branco
     {
@@ -99,7 +113,5 @@ public class ChooseActionState : State
         }
     }
 
-    /*void TurnoVilao(){ // Não precisa criar um turno proprio para o vilão,  pois ele ja esta na lista de unidade na contagem de turnos
-        machine.ChangeTo<TurnoDoVilao>();
-    }*/
+    
 }
