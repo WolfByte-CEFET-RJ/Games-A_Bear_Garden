@@ -1784,6 +1784,9 @@ MonoBehaviour:
   jogo: 0
   tempTxt: {fileID: 153677216}
   jogadaTxt: {fileID: 1991392670}
+  red: {r: 0.79215693, g: 0.46274513, b: 0.45098042, a: 1}
+  yellow: {r: 0.97647065, g: 0.75294125, b: 0.25490198, a: 1}
+  green: {r: 0.54509807, g: 0.69803923, b: 0.5137255, a: 1}
 --- !u!114 &811841662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3262,6 +3265,7 @@ MonoBehaviour:
   bossVicTheme: {fileID: 8300000, guid: 59e48f71b78bacf4fa45730b07e29c92, type: 3}
   tieTheme: {fileID: 8300000, guid: 59d142ea46e715d4a968cc0dfebbc155, type: 3}
   tieTxt: {fileID: 1779560866}
+  timeTxt: {fileID: 153677215}
 --- !u!4 &1693818944
 Transform:
   m_ObjectHideFlags: 0
@@ -3687,8 +3691,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.27, y: 2.84}
-  m_SizeDelta: {x: 318.95, y: 94.71}
+  m_AnchoredPosition: {x: 5.1167, y: 2.84}
+  m_SizeDelta: {x: 95.4425, y: 94.71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1991392670
 MonoBehaviour:

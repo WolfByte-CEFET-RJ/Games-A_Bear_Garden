@@ -15,7 +15,10 @@ public class TempoJokenpo : MonoBehaviour
     [HideInInspector]
     public bool jogo = false;   //Rodrigo --> Variável jogo precisa ser pública para ser utiliizada em outros scritps, "[HideInInspector]" utilizado para escondê-la como se fosse privada
     public Text tempTxt, jogadaTxt;
-
+    [Header("ColorConfig")]
+    [SerializeField] private Color red;
+    [SerializeField] private Color yellow;
+    [SerializeField] private Color green;
 
     void Awake()
     {
@@ -41,6 +44,7 @@ public class TempoJokenpo : MonoBehaviour
         if(condicao != tempoLoop)   //Rodrigo --> if para verificar a mudança de 1 segundo no tempo e adicionar 1 unidade à tempoInt
         {
             tempoInt += 1;
+            ChangeTxtColor();
             condicao = tempoLoop;
         }
 
@@ -62,6 +66,22 @@ public class TempoJokenpo : MonoBehaviour
         {
             jogo = false;
             j = 0;
+        }
+    }
+
+    void ChangeTxtColor()
+    {       
+        if(tempoLoop < 3)
+        {
+            jogadaTxt.color = red;
+        }
+        else if(tempoLoop <= 4)
+        {
+            jogadaTxt.color = yellow;
+        }
+        else
+        {
+            jogadaTxt.color = green;
         }
     }
 }

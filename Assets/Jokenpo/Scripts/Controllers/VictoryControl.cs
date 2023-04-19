@@ -7,6 +7,7 @@ public class VictoryControl : MonoBehaviour
     [Header("VictoryPanels")]
     [SerializeField] private GameObject playerVicPanel;
     [SerializeField] private GameObject bossVicPanel;
+    
     [Header("AudioConfigs")]
     [SerializeField] private AudioSource bgmPlayer;
     private AudioSource thisPlayer;
@@ -16,6 +17,8 @@ public class VictoryControl : MonoBehaviour
     private bool acabou = false;
     [Header("TieExceptions")]
     [SerializeField]private GameObject tieTxt;
+    [Header("OtherConfigs")]
+    [SerializeField] private Transform timeTxt;
 
     public static VictoryControl instance;
     private void Awake()
@@ -33,7 +36,8 @@ public class VictoryControl : MonoBehaviour
             bgmPlayer.volume = 0;
             thisPlayer.PlayOneShot(heroVicTheme);
             StartCoroutine(ReturnPlayBGM());
-            acabou = true;
+            timeTxt.position = new Vector3(0, 0, -500);//Desaparecer com o texto do tempo apos a vitoria de alguem. Poderia ter feito tirando
+            acabou = true;                             // o alpha do texto, mas aí teria que importar a biblioteca da UI só pra uma mecanica
         }
         
         //Time.timeScale = 0;
@@ -47,6 +51,7 @@ public class VictoryControl : MonoBehaviour
             bgmPlayer.volume = 0;
             thisPlayer.PlayOneShot(bossVicTheme);
             StartCoroutine(ReturnPlayBGM());
+            timeTxt.position = new Vector3(0, 0, -500);
             acabou = true;
         }
         
@@ -58,6 +63,7 @@ public class VictoryControl : MonoBehaviour
         if(player > boss && !acabou)
         {
             acabou = true;
+            timeTxt.position = new Vector3(0, 0, -500);
             playerVicPanel.SetActive(true);
             bgmPlayer.volume = 0;
             thisPlayer.PlayOneShot(heroVicTheme);
@@ -67,6 +73,7 @@ public class VictoryControl : MonoBehaviour
         else if(boss > player && ! acabou)
         {
             acabou = true;
+            timeTxt.position = new Vector3(0, 0, -500);
             bossVicPanel.SetActive(true);
             bgmPlayer.volume = 0;
             thisPlayer.PlayOneShot(bossVicTheme);
