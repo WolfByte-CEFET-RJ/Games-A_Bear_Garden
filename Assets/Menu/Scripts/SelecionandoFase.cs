@@ -36,10 +36,27 @@ public class SelecionandoFase : MonoBehaviour
         _navesText.text = " ";
     }
 
-
+private int faseAtual = 1;
     public void Update() 
     {
         VerificaLista();
+        if (Input.GetKeyDown(KeyCode.Space)){
+        switch (faseAtual)
+            {
+                case 1:
+                    Fase2();
+                    faseAtual = 2;
+                    break;
+                case 2:
+                    Fase3();
+                    faseAtual = 3;
+                    break;
+                
+            }
+        }
+       // if (Input.GetKeyDown(KeyCode.W)){
+         //   Fase3();
+       // }
     }
 
 
