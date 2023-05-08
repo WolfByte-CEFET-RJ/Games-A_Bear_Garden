@@ -39,16 +39,16 @@ public class MapLoader : MonoBehaviour
     public void CriaUnidades()// 
     {
         Unit unit1 = CreateUnit(new Vector3Int(2, -4, 0), "Jogador 1"); // cria uma unidade no local 3,3,0 e add a lista de Unidades
-        //Unit unit2 = CreateUnit(new Vector3Int(-12, 0, 0), "Jogador 2");
-        //Unit unit3 = CreateUnit(new Vector3Int(-12, 1, 0), "Jogador 3");
+        Unit unit2 = CreateUnit(new Vector3Int(3, -4, 0), "Jogador 2");
+        Unit unit3 = CreateUnit(new Vector3Int(5, -1, 0), "Jogador 3");
         Unit unitV = CreateUnit(new Vector3Int(5, -2, 0), "Vilao");
-        StateMachineController.instance.units.Add(unit1);
-        //StateMachineController.instance.units.Add(unit2);
-       // StateMachineController.instance.units.Add(unit3);
         StateMachineController.instance.units.Add(unitV);
+        StateMachineController.instance.units.Add(unit1);
+        StateMachineController.instance.units.Add(unit2);
+        StateMachineController.instance.units.Add(unit3);
         unit1.equipe = 0;// define o tipo de unidade a qual ela pertence
-        //unit2.equipe = 0;
-        //unit3.equipe = 0;
+        unit2.equipe = 0;
+        unit3.equipe = 0;
         unitV.equipe = 1;
         Debug.Log("Unidades Criadas");
     }
