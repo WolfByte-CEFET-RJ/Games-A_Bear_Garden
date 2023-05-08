@@ -11,7 +11,7 @@ public class PlayerScriptGeral : MonoBehaviour
     public int ataque;  //Rodrigo --> Variável do ataque do player
     [HideInInspector]
     public int mana;   //Rodrigo --> Variável de mana do player
-    [HideInInspector]
+    //[HideInInspector]
     public char equipe; //Rodrigo --> Variável tipo char para diferenciar as equipes
     /*dinâmica das equipes: '0' - vilão
                             '1' - herói*/
@@ -21,6 +21,10 @@ public class PlayerScriptGeral : MonoBehaviour
         _stats = GameObject.Find("BancoDeStats").GetComponent<PlayerStats>();  //Rodrigo --> utilizando o Find para encontrar o script "PlayerStats" do objeto "BancoDeStats"*
         //*empty object destinado a guardar o script de stats em um só lugar ao invés de em cada player
 
+
+    }
+
+    void Start(){
         //Rodrigo --> captando os valores iniciais
         if(GameObject.Find("Vilao") == this.gameObject)  //Rodrigo --> se o player for o vilão
         {
@@ -35,10 +39,7 @@ public class PlayerScriptGeral : MonoBehaviour
             ataque = _stats.StatAtkHeroi(ataque);
             mana = 0;
             equipe = '1';
-        }        
-    }
-
-    void Start(){
+        }
     }
 
     //ADICIONAR AQUI NO FUTURO: player some quando morre, limite de mana dos heróis
