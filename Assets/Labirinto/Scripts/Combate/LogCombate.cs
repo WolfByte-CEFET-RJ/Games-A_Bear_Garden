@@ -4,6 +4,23 @@ using UnityEngine;
 
 public static class LogCombate
 {
+    /*
+    int P = h (1, 2, 3, 4)  //descobrir qual player na maq estado
+    if (P == 1){
+        PlayerScriptGeral var = GameObject.Find("Jogador 1").GetComponent<PlayerScriptGeral>();
+    }
+    else if (P == 4)
+        "vilão"
+
+    if (atacando.equipe != var.equipe){
+        script de ataque
+    }
+    else{
+        mensagem de erro
+    }
+
+    */
+
     public static void CheckAtiva()
     {
         foreach(Unit u in StateMachineController.instance.units)
