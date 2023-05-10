@@ -9,6 +9,7 @@ TagManager:
   - BlockTrigger
   - BlockCollider
   - Unit
+  - Habilidade Ataque
   layers:
   - Default
   - TransparentFX

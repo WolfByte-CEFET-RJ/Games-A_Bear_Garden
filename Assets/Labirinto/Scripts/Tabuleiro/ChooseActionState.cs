@@ -80,7 +80,7 @@ public class ChooseActionState : State
                     break;
                 case 1:
                 if(!Turnos.hasActed)
-                    machine.ChangeTo<SeleçaoHabilidadeState>();
+                    machine.ChangeTo<HabilidadeTargetSate>();
                     break;
                 case 2:
 

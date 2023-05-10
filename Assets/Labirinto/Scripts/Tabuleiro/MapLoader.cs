@@ -29,7 +29,7 @@ public class MapLoader : MonoBehaviour
         holder.transform.parent = Tabuleiro.instance.transform;
         InitializeAliancas();
     }
-    void InitializeAliancas()
+    void InitializeAliancas() 
     {
         for(int i=0;i<aliancas.Count;i++)
         {

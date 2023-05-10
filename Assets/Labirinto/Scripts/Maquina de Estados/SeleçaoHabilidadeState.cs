@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class SeleçaoHabilidadeState : State
 {
-    List<Habilidade> habilidades;
+
+    //ESSA CLASSE NÃO ESTÁ SENDO MAIS UTILIZADA NA MAQUINA DE ESTADOS
+
+    [SerializeField] Habilidade habilidadeSelected;
 
     public override void Enter()
     {
@@ -55,32 +58,16 @@ public class SeleçaoHabilidadeState : State
 
     void CheckHabilidades()
     {
-        Transform LivroHabilidade = Turnos.unit.transform.Find("LivroHabilidades");
-        habilidades = new List<Habilidade>();
-        habilidades.AddRange(LivroHabilidade.GetComponentsInChildren<Habilidade>());
-        
-        for(int i=0;i<5;i++)
-        {
-            if(i<habilidades.Count)
-            {
-                machine.SeleçaoHabilidadesButtons[i].sprite = habilidades[i].icon;
-            }
-            else
-            {
-               machine.SeleçaoHabilidadesButtons[i].sprite = machine.SeleçaoHabilidadesBloqueada;
-            }
-        }
+        GameObject habilidadeObject = GameObject.FindGameObjectWithTag("Habilidade Vilao");
+                   habilidadeSelected = habilidadeObject.GetComponent<Habilidade>();
     }
     void ActionButtons()
     {
-        if(index>=habilidades.Count)
+       
+        if(habilidadeSelected.EstaUsando())
         {
-            return;
-        }
-        if(habilidades[index].EstaUsando())
-        {
-            Debug.Log("Usando "+habilidades[index].name);
-            Turnos.habilidade = habilidades[index];
+            Debug.Log("Usando "+habilidadeSelected.name);
+            Turnos.habilidade = habilidadeSelected;
             machine.ChangeTo<HabilidadeTargetSate>();
         }
     }

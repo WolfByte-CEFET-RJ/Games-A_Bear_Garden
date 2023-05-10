@@ -11,8 +11,6 @@ public class MoveSelectionState : State
    public override void Enter()
    {
       base.Enter();
-      //EnableSpawn = true;
-      //EnableSpawnBlock = true;
       inputs.OnMove+=OnMoveTileSelector;
       inputs.OnFire+=OnFire;
       tiles = Tabuleiro.instance.Search(Turnos.unit.tile);// Pesquisa os Tiles da Unidade
@@ -36,17 +34,6 @@ public class MoveSelectionState : State
          {
             machine.ChangeTo<MoveSequenceState>();
          }
-        
-        /*if(Selector.instance.spriteRenderer.sortingOrder == 300 && EnableSpawn == true) // Eduardo --> Se o selector está na ordem de renderizacao do andar 01 e se o seletor nao estiver colidindo com uma trap, é possivel inicializar o turno de spawnar trap na posicao onde o selector está, esse código esta alocado temporariamente 
-        {
-           machine.ChangeTo<TurnoDoVilao>();
-        }*/
-
-        /*if(Selector.instance.spriteRenderer.sortingOrder == 300 && EnableSpawnBlock == true) // Eduardo --> Se o selector está na ordem de renderizacao do andar 01 e se o seletor nao estiver colidindo com um bloco, é possivel inicializar o turno de spawnar bloco na posicao onde o selector está, esse código esta alocado temporariamente 
-        {
-           machine.ChangeTo<PathBlockedState>();
-        }*/
-        
       }
       else if(button==2)
       {
