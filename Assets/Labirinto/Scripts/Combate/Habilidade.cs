@@ -9,7 +9,7 @@ public class Habilidade : MonoBehaviour
     public Sprite icon;
     public bool EstaUsando()
     {
-        if(Turnos.unit.GetStat(StatEnum.MP)>=custoMana)
+        if(Turnos.unit.GetStat(StatEnum.MP)>=custoMana) //só usa a habilidade se houver mana para usar
             return true;
         return false;
     }
@@ -28,12 +28,12 @@ public class Habilidade : MonoBehaviour
     }
     public List<TileLogic> GetTargets()
     {
-        List<TileLogic> targets = new List<TileLogic>();
+        List<TileLogic> targets = new List<TileLogic>(); //seleciona o alvo
 
         targets.Add(StateMachineController.instance.selectedTile);
         return targets;
     }
-    public void Efeito()
+    public void Efeito() //variavel de ataque
     {
         FilterContent();
 
@@ -43,12 +43,12 @@ public class Habilidade : MonoBehaviour
             if(unit!=null)
             {
                 Debug.LogFormat("{0} estava com {1} HP, foi atingido por {2} e ficou com {3} ", unit, unit.GetStat(StatEnum.HP), -damage, unit.GetStat(StatEnum.HP)-damage);
-                unit.SetStat(StatEnum.HP, -damage);
+                unit.SetStat(StatEnum.HP, -damage); //se atacar, da o dano e retorna com o hp tirado
             }
         }
     }
     void FilterContent()
     {
-        Turnos.targets.RemoveAll((x)=>x.content == null);
+        Turnos.targets.RemoveAll((x)=>x.content == null); //passa o turno
     }
 }
