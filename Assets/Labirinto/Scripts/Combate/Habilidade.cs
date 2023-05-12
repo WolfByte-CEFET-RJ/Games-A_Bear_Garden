@@ -42,7 +42,7 @@ public class Habilidade : MonoBehaviour
             Unit unit = Turnos.targets[i].content.GetComponent<Unit>(); //atacado
             if(Turnos.unit.equipe /* atacando */ == unit.equipe /* atacado */)
                 Debug.Log("A equipe é a mesma!");
-            if(unit!=null)
+                else
             {
                 Debug.LogFormat("{0} estava com {1} HP, foi atingido por {2} e ficou com {3} ", unit, unit.GetStat(StatEnum.HP), -damage, unit.GetStat(StatEnum.HP)-damage);
                 unit.SetStat(StatEnum.HP, -damage); //se atacar, da o dano e retorna com o hp tirado

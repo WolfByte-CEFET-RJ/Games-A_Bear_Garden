@@ -4,19 +4,6 @@ using UnityEngine;
 
 public static class LogCombate
 {
-/*
-    public static void VerificarEquipe(Unit unit, int equipe, Habilidade habilidade)
-    {
-    if(unit.equipe != equipe)
-    {
-        habilidade.Efeito();
-    }
-    else
-    {
-        Debug.Log("Não pode atacar jogador da mesma equipe.");
-    }
-    }
-*/
     public static void CheckAtiva()
     {
         foreach(Unit u in StateMachineController.instance.units)
