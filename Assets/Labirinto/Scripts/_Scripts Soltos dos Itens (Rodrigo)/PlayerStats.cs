@@ -9,6 +9,8 @@ public class PlayerStats : MonoBehaviour
     public int _vidaVilao = 9, _vidaHeroi = 4;  //Rodrigo --> Vidas diferentes para manter a vantagem do vilão
     [HideInInspector]
     public int _atkVilao = 2, _atkHeroi = 1;  //Rodrigo --> Ataques diferentes para manter a vantagem do vilão
+    
+    //[HideInInspector] public int _turnos;
 
     //Rodrigo --> Definindo o valor dos stats dos jogadores...
     
@@ -38,4 +40,25 @@ public class PlayerStats : MonoBehaviour
         hp = _vidaVilao; //Vilão tem 9 de vida [Rodrigo]
         return hp;
     }
+
+    /*public int TurnoP1(){   //dá a primeira posição ao jogador 1
+        _turnos = 1;
+        return _turno;
+    }
+
+    public int TurnoP2(){   //dá a segunda posição ao jogador 2
+        _turnos = 2;
+        return _turno;
+    }*/
+
+    /*
+    public int TurnoP3(){   //dá a segunda posição ao jogador 2
+        _turnos = 3;
+        return _turno;
+    }
+
+    public int TurnoVilao(){   //dá a segunda posição ao jogador 2
+        _turnos = 4;
+        return _turno;
+    }*/
 }
