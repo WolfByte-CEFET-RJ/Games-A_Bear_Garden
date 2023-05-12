@@ -28,7 +28,17 @@ public class HabilidadeTargetSate : State
         {  
             if(Turnos.habilidade.ValidaçaoTarget() && habilidadeSelected.EstaUsando())
             {
-                machine.ChangeTo<PerformaceHabilidadeState>();
+                Turnos.targets = Turnos.habilidade.GetTargets(); // pego os targets selecionados
+
+                for(int i =0;i<Turnos.targets.Count; i++) // faco uma iteracao entre todos os targets na lista
+                {
+                    Unit unit = Turnos.targets[i].content.GetComponent<Unit>(); //atacado // pego a unit na qual esta posicionada no target selecionado
+
+                    if(Turnos.unit.equipe /* atacando */ != unit.equipe /* atacado */ && unit!= null) // verifico se a unit do target selecionado (a atacada) é de uma equipe diferente da unit do turno (a atacante) e se existe alguma unit sendo atacada
+                    {
+                        machine.ChangeTo<PerformaceHabilidadeState>(); // mudo para o estado de tirar dano, caso essa condicao n for atendida o jogo continuará no estado HabilidadeTargetSate, até essa condicao for atendida ou for clicado o botao da direita e voltar ao ChooseActionState
+                    }
+                }
             }
         }
         else if(button==2)

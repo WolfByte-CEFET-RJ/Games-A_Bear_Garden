@@ -33,20 +33,15 @@ public class Habilidade : MonoBehaviour
         targets.Add(StateMachineController.instance.selectedTile);
         return targets;
     }
-    public void Efeito() //variavel de ataque
+    public void Efeito() //metodo de ataque
     {
         FilterContent();
 
         for(int i =0;i<Turnos.targets.Count; i++)
         {
             Unit unit = Turnos.targets[i].content.GetComponent<Unit>(); //atacado
-            if(Turnos.unit.equipe /* atacando */ == unit.equipe /* atacado */)
-                Debug.Log("A equipe é a mesma!");
-                else
-            {
-                Debug.LogFormat("{0} estava com {1} HP, foi atingido por {2} e ficou com {3} ", unit, unit.GetStat(StatEnum.HP), -damage, unit.GetStat(StatEnum.HP)-damage);
-                unit.SetStat(StatEnum.HP, -damage); //se atacar, da o dano e retorna com o hp tirado
-            }
+            Debug.LogFormat("{0} estava com {1} HP, foi atingido por {2} e ficou com {3} ", unit, unit.GetStat(StatEnum.HP), -damage, unit.GetStat(StatEnum.HP)-damage); 
+            unit.SetStat(StatEnum.HP, -damage); //se atacar, da o dano e retorna com o hp tirado
         }
     }
     void FilterContent()

@@ -42,10 +42,11 @@ public class MapLoader : MonoBehaviour
         Unit unit2 = CreateUnit(new Vector3Int(3, -4, 0), "Jogador 2");
         Unit unit3 = CreateUnit(new Vector3Int(5, -1, 0), "Jogador 3");
         Unit unitV = CreateUnit(new Vector3Int(5, -2, 0), "Vilao");
-        StateMachineController.instance.units.Add(unitV);
-        StateMachineController.instance.units.Add(unit1);
-        StateMachineController.instance.units.Add(unit2);
-        StateMachineController.instance.units.Add(unit3);
+        StateMachineController.instance.units.Add(unitV); // indice 0 na lista units
+        StateMachineController.instance.units.Add(unit1); // indice 1 na lista
+        StateMachineController.instance.units.Add(unit2); // indice 2 na lista
+        StateMachineController.instance.units.Add(unit3); // indice 3 na lista
+        
         unit1.equipe = 0;// define o tipo de unidade a qual ela pertence
         unit2.equipe = 0;
         unit3.equipe = 0;

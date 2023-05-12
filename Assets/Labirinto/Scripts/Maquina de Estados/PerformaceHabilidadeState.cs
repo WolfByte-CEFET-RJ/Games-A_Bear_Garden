@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PerformaceHabilidadeState : State
 {
+    
     public override void Enter()
     {
         base.Enter();
@@ -12,21 +13,14 @@ public class PerformaceHabilidadeState : State
     }
     IEnumerator PerformaceHabilidadeSequencia()
     {
-        yield return null;
-        Turnos.targets = Turnos.habilidade.GetTargets();
+        
         yield return null;
         Turnos.habilidade.Efeito();
         yield return null;
-
         LogCombate.CheckAtiva();
         yield return new WaitForSeconds(1.5f);
-        if(LogCombate.IsOver())
-        {
-            Debug.Log("Acabou o combate");
-        }
-        else
-        {
-            machine.ChangeTo<FinaldeTurnos>();
-        }
+        machine.ChangeTo<FinaldeTurnos>();
+        
+        yield return null;
     }
 }
