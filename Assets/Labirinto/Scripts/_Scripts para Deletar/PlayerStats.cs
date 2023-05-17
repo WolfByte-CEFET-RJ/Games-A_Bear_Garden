@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {  
+    /*
     //Rodrigo --> Script para armazenar e disponibilizar stats de cada jogador
     [HideInInspector]
     public int _vidaVilao = 9, _vidaHeroi = 4;  //Rodrigo --> Vidas diferentes para manter a vantagem do vilão

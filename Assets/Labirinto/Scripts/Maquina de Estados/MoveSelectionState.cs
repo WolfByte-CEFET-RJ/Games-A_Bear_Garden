@@ -15,7 +15,12 @@ public class MoveSelectionState : State
       inputs.OnFire+=OnFire;
       tiles = Tabuleiro.instance.Search(Turnos.unit.tile);// Pesquisa os Tiles da Unidade
       tiles.Remove(Turnos.unit.tile);// Remove os mesmos Tiles da unidade
-      Tabuleiro.instance.SelecionarTiles(tiles, Turnos.unit.alianca);//Depois pinta ele com as cores da Aliança
+      
+      //Rodrigo --> if para pintar os tiles de acordo com a aliança, utilizado para manter o tipo char na variável 'equipe'
+      if(Turnos.unit.equipe == '0') //Rodrigo --> se for vilão
+         Tabuleiro.instance.SelecionarTiles(tiles, 1);   //Depois pinta ele com as cores da Aliança
+      else if (Turnos.unit.equipe == '1') //Rodrigo --> se for herói
+         Tabuleiro.instance.SelecionarTiles(tiles, 0);   //Depois pinta ele com as cores da Aliança
 
    }
    public override void Exit()

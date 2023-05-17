@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ItemColecionavel : MonoBehaviour
 {
-    PlayerScriptGeral _player;   //Rodrigo --> Variável para dialogar com o script de monitoramento do jogador que efetuar a colisão (especificamente a equipe dele)
     bool condition = true;      //Rodrigo --> Variável para restringir o aumento de mana a uma vez
 
     
@@ -17,24 +16,22 @@ public class ItemColecionavel : MonoBehaviour
     private void OnTriggerStay2D(Collider2D col) {
         if(col.gameObject.tag == "Unit")// se o item colecionavel colidir com uma unidade e essa unidade estiver com a velocidade 0, executará um código
         {
-            _player = col.gameObject.GetComponent<PlayerScriptGeral>(); //Rodrigo --> Identifica o jogador durante a colisão        
-
            // Debug.Log("Velocidade Unit: "+ col.gameObject.GetComponent<Rigidbody2D>().velocity);
             
             
             if(Turnos.hasMoved == true)
             {
-                if(_player.equipe == '0'){  //Rodrigo --> Adiciona 20 de mana se for o vilão
+                if(Turnos.unit.equipe == '0'){  //Rodrigo --> Adiciona 20 de mana se for o vilão
                     while(condition)
                     {
-                        _player.mana += 20;
+                        Turnos.unit.mana += 20;
                         condition = false;
                     }
                 }
-                else if(_player.equipe == '1'){ //Rodrigo --> Adiciona 10 de mana se for o herói
+                else if(Turnos.unit.equipe == '1'){ //Rodrigo --> Adiciona 10 de mana se for o herói
                     while(condition)
                     {
-                        _player.mana += 10;
+                        Turnos.unit.mana += 10;
                         condition = false;
                     }                
                 }

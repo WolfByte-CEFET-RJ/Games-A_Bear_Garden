@@ -46,7 +46,8 @@ public class LoadState : State
     }
     void SetUnitAlianca(Unit unit)//Atribui a aliança a qual a unidade pertence 
     {
-        for(int i=0;i<MapLoader.instance.aliancas.Count; i++)
+        //Rodrigo --> Possivelmente remover, não encontrei ainda onde isso interfere no jogo se é que interfere
+        /*for(int i=0;i<MapLoader.instance.aliancas.Count; i++)
         {
             if(MapLoader.instance.aliancas[i].equipes.Contains(unit.equipe))
             {
@@ -54,7 +55,7 @@ public class LoadState : State
                 unit.alianca = i;
                 return;
             }
-        }
+        }*/
     }
     // void SetBloqueados(List<Vector3Int> bloqueados)
     // {

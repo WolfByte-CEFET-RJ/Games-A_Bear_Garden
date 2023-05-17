@@ -43,15 +43,32 @@ public class MapLoader : MonoBehaviour
         Unit unit3 = CreateUnit(new Vector3Int(5, -1, 0), "Jogador 3");
         Unit unitV = CreateUnit(new Vector3Int(5, -2, 0), "Vilao");
         StateMachineController.instance.units.Add(unitV); // indice 0 na lista units
+        AtribuiValores(unitV, '0');
         StateMachineController.instance.units.Add(unit1); // indice 1 na lista
+        AtribuiValores(unit1, '1');
         StateMachineController.instance.units.Add(unit2); // indice 2 na lista
+        AtribuiValores(unit2, '1');
         StateMachineController.instance.units.Add(unit3); // indice 3 na lista
-        
-        unit1.equipe = 0;// define o tipo de unidade a qual ela pertence
-        unit2.equipe = 0;
-        unit3.equipe = 0;
-        unitV.equipe = 1;
+        AtribuiValores(unit3, '1');
+
         Debug.Log("Unidades Criadas");
+    }
+
+    public void AtribuiValores(Unit _unidade, char _classe){
+        //Rodrigo --> Método utilizado para atribuir os valores de equipe, ataque e vida às unidades dependendo se suas "classes" (herói ou vilão)
+        if (_classe == '1'){
+        //Rodrigo --> é um herói
+        _unidade.equipe = '1';
+        _unidade.atk = 1;
+        _unidade.hp = 4;
+        }
+        else if (_classe == '0'){
+        //Rodrigo --> é um vilão
+        _unidade.equipe = '0';
+        _unidade.atk = 2;
+        _unidade.hp = 9;
+        }
+
     }
 
     public Unit CreateUnit(Vector3Int pos, string name)
