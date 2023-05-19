@@ -37,7 +37,8 @@ public class ItemColecionavel : MonoBehaviour
                 }
                 //Debug.Log("COLIDIUU");
                 Destroy(this.gameObject);
-                SpawnerItem.CanSpawn = true;
+                SpawnerItem.Instance.CanSpawn = true;
+                SpawnerItem.Instance.listPosTileCalice.Remove(gameObject.transform.position);
             }            
         }
     }
