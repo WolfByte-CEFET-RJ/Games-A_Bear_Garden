@@ -14,6 +14,7 @@ public class EnemyMovement : MonoBehaviour
 	[SerializeField] private Transform firePos;
 
 	private bool canSpawnP_up;
+	private bool canChangeSize = true;
 	private GameObject powerUp;
 
 	[SerializeField] private AudioClip deathSound;
@@ -74,13 +75,15 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Border"))
+        if(collision.CompareTag("Border") && canChangeSize)
         {
 			Debug.Log("Encostou");
+			canChangeSize = false;
 			EnemyFatherMove father = GetComponentInParent<EnemyFatherMove>();
 			if(father != null)
             {
 				father.StartCoroutine(father.ChangeSize());
+				StartCoroutine(ChangeBoolean());
             }
         }
     }
@@ -93,6 +96,11 @@ public class EnemyMovement : MonoBehaviour
 		yield return new WaitForSeconds(2f);
 		Destroy(gameObject);
     }
+	public IEnumerator ChangeBoolean()
+    {
+		yield return new WaitForSeconds(1f);
+		canChangeSize = true;//Tava dando alguns bugs dos inimigos ficarem indo multiplas vezes pra baixo, entao garanti com esse bool
+    }//que ele so muda de lado apos 1 seg de uma colisao
 
     /* melhor usar Properties que variaveis publicas*/
     public Transform FirePosition 
