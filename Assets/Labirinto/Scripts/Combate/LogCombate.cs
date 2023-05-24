@@ -4,11 +4,12 @@ using UnityEngine;
 
 public static class LogCombate
 {
-    public static void CheckAtiva()
+    //          REMOVER ?
+    /*public static void CheckAtiva()
     {
         foreach(Unit u in StateMachineController.instance.units)
         {
-            if(u.GetStat(StatEnum.HP)<=0)
+            if(u.GetStat(StatEnum.HP)<=0)//
             {
                 u.ativa= false;//Unidade morreu
                 Debug.Log("Unidade Morta");
@@ -44,5 +45,5 @@ public static class LogCombate
             }
         }
         return 0;
-    }
+    }*/
 }

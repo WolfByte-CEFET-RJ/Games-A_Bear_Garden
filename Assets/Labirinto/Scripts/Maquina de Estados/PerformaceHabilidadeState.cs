@@ -17,7 +17,7 @@ public class PerformaceHabilidadeState : State
         yield return null;
         Turnos.habilidade.Efeito();
         yield return null;
-        LogCombate.CheckAtiva();
+        //LogCombate.CheckAtiva();
         yield return new WaitForSeconds(1.5f);
         machine.ChangeTo<FinaldeTurnos>();
         

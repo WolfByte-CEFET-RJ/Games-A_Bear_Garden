@@ -33,8 +33,9 @@ public class LoadState : State
     {
         for(int i=0;i<machine.units.Count; i++)
         {
-            machine.units[i].chargeTime = 100-machine.units[i].GetStat(StatEnum.SPEED);// Controla os turnos de Cada Unidade, Ordem do turno.
-            machine.units[i].ativa = true;
+            //      REMOVER ?
+            //machine.units[i].chargeTime = 100-machine.units[i].GetStat(StatEnum.SPEED);// Controla os turnos de Cada Unidade, Ordem do turno.
+            //machine.units[i].ativa = true;
         }
     }
     void UnitAliancas()// Verifica todos as unidades e atribui as alianças

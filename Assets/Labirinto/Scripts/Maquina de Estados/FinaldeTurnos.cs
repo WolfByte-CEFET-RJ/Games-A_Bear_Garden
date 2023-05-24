@@ -13,12 +13,13 @@ public class FinaldeTurnos : State
     }
     IEnumerator AddUnitDelay()// Sistema de Turnos parecido com o final fantasy
     {
-        Turnos.unit.chargeTime+=300;
+        //      REMOVER ?
+        /*Turnos.unit.chargeTime+=300;
         if(Turnos.hasMoved)
             Turnos.unit.chargeTime+=100;
         if(Turnos.hasActed)
             Turnos.unit.chargeTime+=100;
-        Turnos.unit.chargeTime-=Turnos.unit.GetStat(StatEnum.SPEED);
+        Turnos.unit.chargeTime-=Turnos.unit.GetStat(StatEnum.SPEED);*/
 
         Turnos.hasActed = Turnos.hasMoved = false;
         Turnos.hasEnabledSpawnTrapVilao = false;

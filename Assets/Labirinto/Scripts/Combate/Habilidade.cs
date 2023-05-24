@@ -5,11 +5,12 @@ using UnityEngine;
 public class Habilidade : MonoBehaviour
 {
     public int damage;
-    public int custoMana;
+    public int custoMana = 10;  //Rodrigo --> custo da habilidade
     public Sprite icon;
     public bool EstaUsando()
     {
-        if(Turnos.unit.GetStat(StatEnum.MP)>=custoMana) //só usa a habilidade se houver mana para usar
+        int _cond = Turnos.unit.mana - custoMana;   //Rodrigo --> variável da condição do uso da habilidade
+        if( _cond >= 0 ) //se tiver mana o suficiente
             return true;
         return false;
     }
@@ -40,8 +41,10 @@ public class Habilidade : MonoBehaviour
         for(int i =0;i<Turnos.targets.Count; i++)
         {
             Unit unit = Turnos.targets[i].content.GetComponent<Unit>(); //atacado
-            Debug.LogFormat("{0} estava com {1} HP, foi atingido por {2} e ficou com {3} ", unit, unit.GetStat(StatEnum.HP), -damage, unit.GetStat(StatEnum.HP)-damage); 
-            unit.SetStat(StatEnum.HP, -damage); //se atacar, da o dano e retorna com o hp tirado
+            Debug.LogFormat("{0} estava com {1} HP, foi atingido por {2} e ficou com {3} ", unit, unit.hp, -Turnos.unit.atk, (unit.hp-Turnos.unit.atk)); 
+            //unit.SetStat(StatEnum.HP, -damage); //se atacar, da o dano e retorna com o hp tirado
+            unit.hp -= Turnos.unit.atk;
+            Turnos.unit.mana -= custoMana;
         }
     }
     void FilterContent()
