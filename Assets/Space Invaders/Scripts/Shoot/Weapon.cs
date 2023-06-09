@@ -51,14 +51,19 @@ public class Weapon : PlayerInput
         player.OnPowerUp = true;
         player.AlteredSpeed = player.Speed = (effect * player.InitialSpeed);
         coroutineControl++;
+        if (effect > 1)//Poder de velocidade
+            player.gameObject.GetComponent<SpriteRenderer>().color = Color.cyan;
+        else//Tiro especial
+            player.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
         yield return new WaitForSeconds(5f);
         coroutineControl--;
-        if(coroutineControl == 0)
+        if (coroutineControl == 0)
         {
             player.OnPowerUp = false;
             fireRate = initialFireRate;
             player.Speed =  player.InitialSpeed;
-        }        
+            player.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+        }
     }
 
     

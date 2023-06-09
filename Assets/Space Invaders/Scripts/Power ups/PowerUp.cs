@@ -7,7 +7,7 @@ public class PowerUp : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private int life;
 
-    [SerializeField] private char type;
+    [SerializeField] private byte type;
 
     private Rigidbody2D rig;
 
@@ -26,7 +26,7 @@ public class PowerUp : MonoBehaviour
         if(col.CompareTag("Player"))
         {
             OnPowerUpSound();
-            if(type == 'L')
+            if(type == 0)
             {
                 //Debug.Log("Aumentar vida");
                 IHealth effect = col.gameObject.GetComponent<IHealth>();
@@ -35,7 +35,7 @@ public class PowerUp : MonoBehaviour
                     effect.Damage(-life); //Achei mais proveitoso usar o Damage(int) do IHealth do que criar outro metodo na interface 
                 }//Apenas para aumentar a vida
             }
-            else if(type == 'S')
+            else if(type == 1)
             {
                 col.GetComponent<Weapon>().StartCoroutine(col.GetComponent<Weapon>().SetFireRate(1.5f));
             }
@@ -44,7 +44,7 @@ public class PowerUp : MonoBehaviour
 
     void OnPowerUpSound()
     {
-        GetComponent<PolygonCollider2D>().enabled = false;//Desativei esses 2 componentes para dar uma impressao de que eles sumiram da tela, para
+        GetComponent<CircleCollider2D>().enabled = false;//Desativei esses 2 componentes para dar uma impressao de que eles sumiram da tela, para
         GetComponent<SpriteRenderer>().enabled = false; //Manter o Audio Source ativado ate o fim do Sfx do power up. Quando eu so destruia o obj,
         audioS.PlayOneShot(powerUpSound);//Nao dava tempo do som ir ate o final
         Destroy(gameObject, powerUpSound.length);
