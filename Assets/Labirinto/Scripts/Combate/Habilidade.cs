@@ -10,9 +10,9 @@ public class Habilidade : MonoBehaviour
     public bool EstaUsando()
     {
         int _cond = Turnos.unit.mana - custoMana;   //Rodrigo --> variável da condição do uso da habilidade
-        
-        if( _cond >= 0 ) return true; //se tiver mana o suficiente
-        else return false;
+        if( _cond >= 0 ) //se tiver mana o suficiente
+            return true;
+        return false;
     }
     public bool ValidaçaoTarget()
     {
@@ -21,9 +21,11 @@ public class Habilidade : MonoBehaviour
         {
             unit = StateMachineController.instance.selectedTile.content.GetComponent<Unit>();
         }
-        
-        if(unit!=null) return true;
-        else return false;
+        if(unit!=null)
+        {
+            return true;
+        }
+        return false;
     }
     public List<TileLogic> GetTargets()
     {

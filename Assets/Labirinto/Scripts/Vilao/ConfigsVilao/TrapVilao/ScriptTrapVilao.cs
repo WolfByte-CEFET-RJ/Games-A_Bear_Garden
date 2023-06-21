@@ -14,9 +14,8 @@ public class ScriptTrapVilao : MonoBehaviour
             if(col.gameObject.name != "Vilao" /*&& Turnos.hasMoved == true*/) // Condicao para que o vilao nao tome dano ao pisar na trap, a outra condicao comentada é a respeito de que o player so tome dano caso pare no mesmo tile da trap, preferi comentar pois nao acho essa a melhor ideia
             {
                 //Fazer com que os players tomem dano
-                Turnos.unit.hp -= 1;    //Rodrigo --> tira 1 de vida dos heróis
-                Destroy(gameObject); // Destruindo a trap
 
+                Destroy(gameObject); // Destruindo a trap
             }
        }
        

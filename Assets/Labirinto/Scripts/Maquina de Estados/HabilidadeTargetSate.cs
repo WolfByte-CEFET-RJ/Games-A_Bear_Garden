@@ -25,12 +25,8 @@ public class HabilidadeTargetSate : State
    {
         int button = (int)args;
         if(button==1)
-        {
-            if(!(habilidadeSelected.EstaUsando()))  //Rodrigo --> não faz nada caso o player não tenha mana
-                Debug.Log("Você não tem mana o suficiente!");   //Rodrigo --> fazer em UI
-            else if(!(Turnos.habilidade.ValidaçaoTarget())) //Rodrigo --> não faz nada caso o player não tenha selecionado um alvo
-                Debug.Log("Por favor, selecione um alvo."); //Rodrigo --> fazer em UI
-            else if(Turnos.habilidade.ValidaçaoTarget() && habilidadeSelected.EstaUsando())
+        {  
+            if(Turnos.habilidade.ValidaçaoTarget() && habilidadeSelected.EstaUsando())
             {
                 Turnos.targets = Turnos.habilidade.GetTargets(); // pego os targets selecionados
 
@@ -38,7 +34,7 @@ public class HabilidadeTargetSate : State
                 {
                     Unit unit = Turnos.targets[i].content.GetComponent<Unit>(); //atacado // pego a unit na qual esta posicionada no target selecionado
 
-                    if(Turnos.unit.equipe /* atacando */ != unit.equipe /* atacado */) // verifico se a unit do target selecionado (a atacada) é de uma equipe diferente da unit do turno (a atacante) e se existe alguma unit sendo atacada
+                    if(Turnos.unit.equipe /* atacando */ != unit.equipe /* atacado */ && unit!= null) // verifico se a unit do target selecionado (a atacada) é de uma equipe diferente da unit do turno (a atacante) e se existe alguma unit sendo atacada
                     {
                         machine.ChangeTo<PerformaceHabilidadeState>(); // mudo para o estado de tirar dano, caso essa condicao n for atendida o jogo continuará no estado HabilidadeTargetSate, até essa condicao for atendida ou for clicado o botao da direita e voltar ao ChooseActionState
                     }
