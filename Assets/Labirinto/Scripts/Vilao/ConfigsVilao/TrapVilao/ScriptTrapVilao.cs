@@ -16,6 +16,8 @@ public class ScriptTrapVilao : MonoBehaviour
                 //Fazer com que os players tomem dano
 
                 Turnos.unit.hp -= 1;    //Rodrigo --> tira 1 de vida dos heróis
+                UiPlayers.target = col.gameObject.GetComponent<Unit>();
+                Debug.Log("Vida do jogador: " + Turnos.unit.hp);
                 Destroy(gameObject); // Destruindo a trap
 
             }

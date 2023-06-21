@@ -60,12 +60,14 @@ public class MapLoader : MonoBehaviour
         //Rodrigo --> é um herói
         _unidade.equipe = '1';
         _unidade.atk = 1;
+        _unidade.mana = 1;
         _unidade.hp = 4;
         }
         else if (_classe == '0'){
         //Rodrigo --> é um vilão
         _unidade.equipe = '0';
         _unidade.atk = 2;
+        _unidade.mana = 2;
         _unidade.hp = 9;
         }
 
