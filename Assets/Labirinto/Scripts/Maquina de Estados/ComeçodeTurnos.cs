@@ -4,32 +4,32 @@ using UnityEngine;
 
 public class ComeçodeTurnos : State
 {
-   public override void Enter()
+    // public bool _unidadeMorta = false;
+
+    public override void Enter()
     {
         base.Enter();
         StartCoroutine(SelectUnit());
         Debug.Log("Começo de Turnos");
 
     }
+    
     IEnumerator SelectUnit()
     {
         //BreakDraw();// Garante que os Turnos das Unit não sejam os mesmos. 
         //machine.units.Sort((x, y)=>x.chargeTime.CompareTo(y.chargeTime));
         Turnos.unit = machine.units[0];// Unit está em primeiro da lista de units
+        
+        if(Turnos.unit.hp <= 0){    //Rodrigo --> se o player tiver 0 de vida ou menos...
+            yield return null;
+            machine.ChangeTo<FinaldeTurnos>();  //Rodrigo --> vai direto para o final do turno;
+        }
+        else{   //Rodrigo --> caso contrário...
+            yield return null;
+            machine.ChangeTo<ChooseActionState>();
+        }
 
-        yield return null;
-        machine.ChangeTo<ChooseActionState>();
     }
     
-    /*void BreakDraw()
-    {
-        for(int i=0; i<machine.units.Count-1; i++)//irá para no penultimo da lista de units
-        {
-            if(machine.units[i].chargeTime==machine.units[i+1].chargeTime)
-            {
-                machine.units[i+ 1].chargeTime+=1;
-            }
-        } 
-    }*/
 }
 

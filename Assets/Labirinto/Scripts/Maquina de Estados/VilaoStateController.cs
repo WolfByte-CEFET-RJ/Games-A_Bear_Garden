@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class VilaoStateController : State
 {
-    List<TileLogic> tiles;
-    // ESTA VARIAVEL EnableSpawn E A CONDICAO DO OnFire ESTARÁ NESSE CODIGO TEMPORARIAMENTE ATÉ SER CRIADO UM ESTADO SOMENTE PARA SPAWNAR TRAP, QUE POSSA SER SELECIONADO NA HOLD BAR, SO PECO PARA NAO APAGAREM, DEIXEM COMENTADO TMJ!
-    public static bool EnableSpawn{get; set;} // Eduardo --> Variavel que irá permitir a spawn da trap ou não
+   List<TileLogic> tiles;
+   public int custoMana = 10;  //Rodrigo --> custo da habilidade
+   // ESTA VARIAVEL EnableSpawn E A CONDICAO DO OnFire ESTARÁ NESSE CODIGO TEMPORARIAMENTE ATÉ SER CRIADO UM ESTADO SOMENTE PARA SPAWNAR TRAP, QUE POSSA SER SELECIONADO NA HOLD BAR, SO PECO PARA NAO APAGAREM, DEIXEM COMENTADO TMJ!
+   public static bool EnableSpawn{get; set;} // Eduardo --> Variavel que irá permitir a spawn da trap ou não
 
    public override void Enter()
    {
@@ -29,11 +30,16 @@ public class VilaoStateController : State
       if(button==1)
       {  
          
-        
-        if(Selector.instance.spriteRenderer.sortingOrder == 300 && EnableSpawn == true) // Eduardo --> Se o selector está na ordem de renderizacao do andar 01 e se o seletor nao estiver colidindo com uma trap, é possivel inicializar o turno de spawnar trap na posicao onde o selector está, esse código esta alocado temporariamente 
-        {
-           machine.ChangeTo<TrapVilaoState>();
-        }
+         if(!(ValidaTarget())){  //Rodrigo --> impede que o vilão ponha uma trap diretamente em cima de um player
+            if(Selector.instance.spriteRenderer.sortingOrder == 300 && EnableSpawn == true) // Eduardo --> Se o selector está na ordem de renderizacao do andar 01 e se o seletor nao estiver colidindo com uma trap, é possivel inicializar o turno de spawnar trap na posicao onde o selector está, esse código esta alocado temporariamente 
+            {
+               if(TemMana()) machine.ChangeTo<TrapVilaoState>();
+               else
+                  Debug.Log("Você não tem mana o suficiente.");   //Rodrigo --> fazer em UI
+            }
+         }
+         else
+            Debug.Log("Escolha um tile não ocupado"); //Rodrigo --> fazer em UI
 
         /*if(Selector.instance.spriteRenderer.sortingOrder == 300 && EnableSpawnBlock == true) // Eduardo --> Se o selector está na ordem de renderizacao do andar 01 e se o seletor nao estiver colidindo com um bloco, é possivel inicializar o turno de spawnar bloco na posicao onde o selector está, esse código esta alocado temporariamente 
         {
@@ -45,5 +51,25 @@ public class VilaoStateController : State
       {
          machine.ChangeTo<ChooseActionState>();
       }
+
+   bool TemMana() //Rodrigo --> método para checar se o vilão tem mana para usar na trap
+   {
+      int _cond = Turnos.unit.mana - custoMana;   //Rodrigo --> variável da condição do uso da habilidade
+ 
+      if( _cond >= 0 ) return true; //se tiver mana o suficiente
+      else return false;
+   }
+
+   bool ValidaTarget()
+   {
+      Unit unit = null;
+      if(StateMachineController.instance.selectedTile.content!=null)
+      {
+         unit = StateMachineController.instance.selectedTile.content.GetComponent<Unit>();
+      }
+        
+      if(unit!=null) return true;
+      else return false;
+   }
    }
 }

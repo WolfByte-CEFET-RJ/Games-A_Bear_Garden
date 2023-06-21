@@ -43,6 +43,7 @@ public class TrapVilaoState : State
     {
         Armadilha trap = CreateTrap("armadilha "+ idArmadilha.ToString());  //Rodrigo --> chamando o método "CreateTrap" passando o nome da armadilha (utiilzado pelo holder)
         yield return null;
+        Turnos.unit.mana -= 10; //Rodrigo --> após a ação, decrementa mana do vilão (rimou)
         machine.ChangeTo<ChooseActionState>();
     }
 
