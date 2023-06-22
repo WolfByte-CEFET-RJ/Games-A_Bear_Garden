@@ -15,6 +15,7 @@ public class MoveSequenceState : State
         
         
         Movimento movimento = Turnos.unit.GetComponent<Movimento>();
+        movimento.PlayWalkSound();
         yield return StartCoroutine(movimento.Move(path));
         Turnos.unit.tile.content = null;
         Turnos.unit.tile = machine.selectedTile;
@@ -22,6 +23,7 @@ public class MoveSequenceState : State
         yield return new WaitForSeconds(0.3f);
         Turnos.hasMoved = true;
         machine.ChangeTo<ChooseActionState>();
+        movimento.StopSound();
     }
     List<TileLogic> CreatePath()
     {

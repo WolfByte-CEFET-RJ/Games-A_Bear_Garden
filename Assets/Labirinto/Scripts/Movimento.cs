@@ -12,19 +12,39 @@ public class Movimento : MonoBehaviour
     SpriteRenderer SR;
     Transform jumper;
     TileLogic tileAtual;
+    private AudioSource AS;
 
+    [SerializeField] private AudioClip playerWalkSfx;
+    [SerializeField] private AudioClip bossWalkSfx;
     void Awake()
     {
         jumper = transform.Find("Jumper");
         SR = GetComponentInChildren<SpriteRenderer>();
+        AS = GetComponent<AudioSource>();
+    }
+    private void Start()
+    {
+        if (gameObject.name.StartsWith("Jogador"))//Joel-->Atribuir o clipe que sera tocado de acordo com o nome do objeto        
+            AS.clip = playerWalkSfx;
+        
+        else if (gameObject.name.StartsWith("Vilao"))       
+            AS.clip = bossWalkSfx;     
     }
 
+    public void PlayWalkSound()//Tocar o clipe a partir do MoveSequenceState, porque se fosse daqui, ele ficaria resetando varias vezes
+    {
+        AS.Play();
+    }
+    public void StopSound()
+    {
+        AS.Stop();
+    }
     public IEnumerator Move(List<TileLogic> path)// Divide a função ou tarefa em vários frames
     {
        tileAtual = Turnos.unit.tile;
        tileAtual.content = null;
-
-       for (int i = 0; i < path.Count; i++)
+      
+        for (int i = 0; i < path.Count; i++)
         {
            TileLogic to = path[i];
             if(tileAtual.floor!=to.floor)
@@ -33,11 +53,11 @@ public class Movimento : MonoBehaviour
             }
             else
             {
+                //Debug.Log("Tocar passos");               
                 yield return StartCoroutine(Walk(to));// Espera o fim da animação (Walk)
             }
         }
     }
-
     IEnumerator Walk(TileLogic to)
     {
         int id = LeanTween.move(transform.gameObject,to.worldPos, MoveSpeed).id;// cria um ID único enquanto esta se movendo(pega a posição desse objeto e o leva para a posição final em X tempo )
