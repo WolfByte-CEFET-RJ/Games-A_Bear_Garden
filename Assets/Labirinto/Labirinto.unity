@@ -10206,6 +10206,7 @@ MonoBehaviour:
   selectExitOption: {fileID: 8300000, guid: ab7f0a99868623c4d8b9fd4440fae60d, type: 3}
   enterPlayerTurn: {fileID: 8300000, guid: 96289f44b91602a43baf2255551aa7fc, type: 3}
   enterBossTurn: {fileID: 8300000, guid: 2885a62d8939b7d418a8b29e485ab6c1, type: 3}
+  deathAnim: {fileID: 1433382268}
 --- !u!82 &1053240110
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12143,7 +12144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d9d4c5db29f4b448ad520a6afcf814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Anim: {fileID: 0}
 --- !u!1 &1508839845
 GameObject:
   m_ObjectHideFlags: 0

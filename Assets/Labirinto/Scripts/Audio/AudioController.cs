@@ -8,21 +8,24 @@ public class AudioController : MonoBehaviour
     public static Action NavigateSound;
     public static Action<int> SelectSound;
     public static Action<string> EnterSound;
+    public static Action<int> DeathSound;
 
     private AudioSource AS;
-
+    [Header("Clips")]
     [SerializeField] private AudioClip navigateOption;
     [SerializeField] private AudioClip selectOption;
     [SerializeField] private AudioClip selectExitOption;
     [SerializeField] private AudioClip enterPlayerTurn;
     [SerializeField] private AudioClip enterBossTurn;
-
+    [Header("Other Configs")]
+    [SerializeField] private Animator deathAnim;
     // Start is called before the first frame update
     private void OnEnable()
     {
         NavigateSound += PlayNavigateSound;
         SelectSound += PlaySelectSound;
         EnterSound += PlayEnterSound;
+        DeathSound += PlayDeathSound;
     }
     private void Start()
     {
@@ -49,11 +52,20 @@ public class AudioController : MonoBehaviour
         else
             Debug.LogError("Nome nao encontrado!");
     }
+    private void PlayDeathSound(int type)
+    {
+        if(type == 0)
+            deathAnim.Play("PlayerDeathAudio");
+        else
+            deathAnim.Play("BossDeathAudio");
+    }
     #endregion
     private void OnDisable()
     {
         NavigateSound -= PlayNavigateSound;
         SelectSound -= PlaySelectSound;
         EnterSound -= PlayEnterSound;
+        DeathSound -= PlayDeathSound;
+
     }
 }
