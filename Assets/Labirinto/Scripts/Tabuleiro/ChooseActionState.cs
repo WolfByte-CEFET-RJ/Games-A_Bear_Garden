@@ -15,7 +15,7 @@ public class ChooseActionState : State
         
         textoTurno = GameObject.Find("TurnoVilao"); //
         txtInicioTurno = textoTurno.GetComponent<Text>();   //
-        
+        AudioController.EnterSound(Turnos.unit.name);
         index = 0;// posição do Seletor de Ações no tabuleiro.
         currentUISelector = machine.chooseActionSelection;
         ChangeUISelector(machine.chooseActionButtons);// Seletor da interface
@@ -29,6 +29,7 @@ public class ChooseActionState : State
         base.Exit();
         inputs.OnMove-=OnMove;
         inputs.OnFire-=OnFire;
+        AudioController.SelectSound(index);
         machine.chooseActionPainel.MoveTo("Hide"); // Move o painel para a posição "Hide" 0 e 50.
     }
 
@@ -43,6 +44,7 @@ public class ChooseActionState : State
     void OnMove(object sender, object args)// Movimentação do Seletor ao final até o ponto inicial
     {
         Vector3Int button = (Vector3Int)args;
+        AudioController.NavigateSound();
         if(button == Vector3Int.left)
         {
             index--;
@@ -71,7 +73,7 @@ public class ChooseActionState : State
     {
         Debug.Log(index);
             txtInicioTurno.text = "";
-
+        
             switch(index)
             {
                 case 0:

@@ -27,7 +27,7 @@ public class InputController : MonoBehaviour
 
         Vector3Int moved = new Vector3Int(0, 0, 0);
         if(h!=0)
-        {
+        {           
             moved.x = GetMoved(ref hCooldown, h);
         }
         else
