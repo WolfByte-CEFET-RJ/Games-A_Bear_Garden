@@ -15,6 +15,7 @@ public class PerformaceHabilidadeState : State
     {
         
         yield return null;
+        AudioController.AttackSound(Turnos.unit.name);
         Turnos.habilidade.Efeito();
         yield return null;
         //LogCombate.CheckAtiva();

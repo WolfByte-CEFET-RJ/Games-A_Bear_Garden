@@ -21,6 +21,8 @@ public class ItemColecionavel : MonoBehaviour
             
             if(Turnos.hasMoved == true)
             {
+                Debug.Log("Pegou mana");
+                AudioController.ManaSound();
                 if(Turnos.unit.equipe == '0'){  //Rodrigo --> Adiciona 20 de mana se for o vilão
                     while(condition)
                     {

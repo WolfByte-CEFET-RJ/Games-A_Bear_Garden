@@ -10206,6 +10206,17 @@ MonoBehaviour:
   selectExitOption: {fileID: 8300000, guid: ab7f0a99868623c4d8b9fd4440fae60d, type: 3}
   enterPlayerTurn: {fileID: 8300000, guid: 96289f44b91602a43baf2255551aa7fc, type: 3}
   enterBossTurn: {fileID: 8300000, guid: 2885a62d8939b7d418a8b29e485ab6c1, type: 3}
+  attacks:
+  - {fileID: 8300000, guid: b3baa1a7238614c4cb2a67c8bf8f3ef1, type: 3}
+  - {fileID: 8300000, guid: b33c5083759ed7749b5ecb2f2ca87240, type: 3}
+  - {fileID: 8300000, guid: b3944430cd9530c4dbcccd5f47bf9c0b, type: 3}
+  - {fileID: 8300000, guid: f54c1b84c73ed6c4bb8ff69501635509, type: 3}
+  damages:
+  - {fileID: 8300000, guid: 7a04799c31bbea84d86fa096b78126ec, type: 3}
+  - {fileID: 8300000, guid: dc656bdfa7045eb4db44408212cf78b7, type: 3}
+  putTrap: {fileID: 8300000, guid: 2c088f6357b610e41948bd53a4bc9c06, type: 3}
+  activeTrap: {fileID: 8300000, guid: 1e89407d089e8d34ca0c127b04326b16, type: 3}
+  mana: {fileID: 8300000, guid: 80191654484beb84c816afb4f1dc39ec, type: 3}
   deathAnim: {fileID: 1433382268}
 --- !u!82 &1053240110
 AudioSource:
