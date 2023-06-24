@@ -9,6 +9,7 @@ public class State : MonoBehaviour
     protected Image currentUISelector;
     protected InputController inputs{get{return InputController.instance;}}// Redirecionador de Funçoes para o input
     protected StateMachineController machine{get{return StateMachineController.instance;}}// Redirecionador de Funçoes para o Machine
+
     public virtual void Enter()// Função que será chamada quando o estado for ativado
     {  
     }
@@ -37,7 +38,8 @@ public class State : MonoBehaviour
         Selector.instance.tile = t;
         Selector.instance.spriteRenderer.sortingOrder = t.contentOrder;
         Selector.instance.transform.position = t.worldPos;
-        machine.selectedTile = t;
+        machine.selectedTile = t;        
+        AudioController.NavigateSound();
     }
     protected void ChangeUISelector(List<Image> buttons)// Seletor da interface
     {

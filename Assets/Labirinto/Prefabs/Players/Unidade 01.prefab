@@ -52,8 +52,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: []
-  playerWalkSfx: {fileID: 8300000, guid: 0504d7b3a5835db438a4b94dc5b6baea, type: 3}
-  bossWalkSfx: {fileID: 8300000, guid: 2f9d034593ed1ba4e9cedefcb080206b, type: 3}
+  playerWalkSfx: {fileID: 8300000, guid: 806e72588c03ab744a884278526afa7f, type: 3}
+  bossWalkSfx: {fileID: 8300000, guid: 9f764d1a40cd4a64fbd67b4cf04a8be3, type: 3}
 --- !u!114 &2167098474695380184
 MonoBehaviour:
   m_ObjectHideFlags: 0

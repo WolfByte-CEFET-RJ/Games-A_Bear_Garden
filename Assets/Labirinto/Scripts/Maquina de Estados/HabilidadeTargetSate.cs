@@ -27,9 +27,15 @@ public class HabilidadeTargetSate : State
         if(button==1)
         {
             if(!(habilidadeSelected.EstaUsando()))  //Rodrigo --> não faz nada caso o player não tenha mana
+            {
                 Debug.Log("Você não tem mana o suficiente!");   //Rodrigo --> fazer em UI
+                AudioController.SelectSound(5);
+            }               
             else if(!(Turnos.habilidade.ValidaçaoTarget())) //Rodrigo --> não faz nada caso o player não tenha selecionado um alvo
+            {
                 Debug.Log("Por favor, selecione um alvo."); //Rodrigo --> fazer em UI
+                AudioController.SelectSound(5);
+            }
             else if(Turnos.habilidade.ValidaçaoTarget() && habilidadeSelected.EstaUsando())
             {
                 Turnos.targets = Turnos.habilidade.GetTargets(); // pego os targets selecionados

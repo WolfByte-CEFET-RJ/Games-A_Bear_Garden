@@ -20,6 +20,7 @@ public class AudioController : MonoBehaviour
     [SerializeField] private AudioClip navigateOption;
     [SerializeField] private AudioClip selectOption;
     [SerializeField] private AudioClip selectExitOption;
+    [SerializeField] private AudioClip privateOption;
     [SerializeField] private AudioClip enterPlayerTurn;
     [SerializeField] private AudioClip enterBossTurn;
     [Header("AttackClips")]
@@ -56,8 +57,10 @@ public class AudioController : MonoBehaviour
     {
         if (audio == 3)//Se for a opcao passar turno
             AS.PlayOneShot(selectExitOption); //Tocar efeito sonoro diferente      
-        else//Senao
+        else if (audio <= 2)//Senao
             AS.PlayOneShot(selectOption);//Tocar a opcao comum de selecao
+        else
+            AS.PlayOneShot(privateOption);
     }
     private void PlayEnterSound(string unitName)
     {

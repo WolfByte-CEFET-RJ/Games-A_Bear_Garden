@@ -10,6 +10,8 @@ public class ChooseActionState : State
 
     public override void Enter()
     {
+        if (Turnos.unit == null)
+            return;
         MoveSelector(Turnos.unit.tile);// Seletor das casa do Tabuleiro
         base.Enter();
         
@@ -26,6 +28,8 @@ public class ChooseActionState : State
     }
     public override void Exit()
     {
+        if (Turnos.unit == null)
+            return;
         base.Exit();
         inputs.OnMove-=OnMove;
         inputs.OnFire-=OnFire;
@@ -35,7 +39,9 @@ public class ChooseActionState : State
 
     private void Update()
     {
-        if(Turnos.unit.name != "Vilao")
+        if (Turnos.unit == null)
+            return;
+        if (Turnos.unit.name != "Vilao")
         {
             PaintButton(machine.chooseActionButtons[2], true);
         }
