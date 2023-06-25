@@ -8,14 +8,17 @@ public class Barrier : MonoBehaviour, IHealth
     private int initialStruct;
     public int health => structure;
 
-    private SpriteRenderer sprite;
+    private SpriteRenderer sprt;
     [SerializeField] private AudioClip deathSound;
-    [SerializeField] private AudioClip hitSound;   
+    [SerializeField] private AudioClip hitSound;
+
+    [SerializeField] private Sprite halfLifeSprite;
+    [SerializeField] private Sprite lessLifeSprite;
     private AudioSource audioS;
 
     void Start()
     {
-        sprite = GetComponent<SpriteRenderer>();
+        sprt = GetComponent<SpriteRenderer>();
         initialStruct = structure;
         audioS = GetComponent<AudioSource>();
     }
@@ -26,7 +29,11 @@ public class Barrier : MonoBehaviour, IHealth
         {
             audioS.PlayOneShot(hitSound);
             float actualColorValue = (float)structure / initialStruct;
-            sprite.color = new Color(actualColorValue, actualColorValue, actualColorValue, 1);
+            sprt.color = new Color(actualColorValue, actualColorValue, actualColorValue, 1);
+            if (actualColorValue <= 0.333f)
+                sprt.sprite = lessLifeSprite;
+            else if (actualColorValue <= 0.6777f)
+                sprt.sprite = halfLifeSprite;
         }
         else
         {
