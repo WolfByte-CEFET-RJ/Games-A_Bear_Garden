@@ -8,7 +8,8 @@ public class TrocaDeCena : MonoBehaviour
 {
     [SerializeField]
     private TempoJokenpo tmpjkp;
-    public int tempoTotal, condicao;
+    public int condicao;
+    private float tempoTotal;
     [SerializeField]
     private Text tempoTxt;
     [SerializeField] private vidaBase playerBase;
@@ -23,16 +24,17 @@ public class TrocaDeCena : MonoBehaviour
     // se a variável de tempo for 0 -> troca de cena
     void Update()
     {
-        tempoTxt.text = tempoTotal.ToString();
+        tempoTotal -= Time.deltaTime;
+        tempoTxt.text = tempoTotal.ToString("F0");
 
         
-        if(condicao != tmpjkp.tempoInt)
-        {
-            tempoTotal -= 1;
-            condicao += 1;
-        }
+        //if(condicao != tmpjkp.tempoInt)
+        //{
+           // tempoTotal -= 1;
+         //   condicao += 1;
+        //}
 
-        if(tempoTotal == 0)
+        if(tempoTotal <= 0)
         {
             tempoTotal = VictoryControl.instance.TimeOverVictory(playerBase.Vida, bossBase.Vida);
         }
