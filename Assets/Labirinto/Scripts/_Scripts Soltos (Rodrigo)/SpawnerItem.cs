@@ -98,4 +98,16 @@ public class SpawnerItem : MonoBehaviour
         Instantiate(itemColetavel,new Vector3(worldPos.x, worldPos.y+0.25f, worldPos.z),Quaternion.identity); 
         yield return null;
     }
+
+    bool ValidaTarget()
+    {
+        Unit unit = null;
+        if(StateMachineController.instance.selectedTile.content!=null)
+        {
+            unit = StateMachineController.instance.selectedTile.content.GetComponent<Unit>();
+        }
+        
+        if(unit!=null) return true;
+        else return false;
+    }
 }

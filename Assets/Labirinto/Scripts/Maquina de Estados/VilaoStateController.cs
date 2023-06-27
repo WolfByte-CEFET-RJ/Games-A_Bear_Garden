@@ -51,6 +51,7 @@ public class VilaoStateController : State
       {
          machine.ChangeTo<ChooseActionState>();
       }
+   }
 
    bool TemMana() //Rodrigo --> método para checar se o vilão tem mana para usar na trap
    {
@@ -70,6 +71,5 @@ public class VilaoStateController : State
         
       if(unit!=null) return true;
       else return false;
-   }
    }
 }

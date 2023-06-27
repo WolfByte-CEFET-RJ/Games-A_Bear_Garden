@@ -38,10 +38,10 @@ public class MapLoader : MonoBehaviour
     }
     public void CriaUnidades()// 
     {
-        Unit unit1 = CreateUnit(new Vector3Int(2, -4, 0), "Jogador 1"); // cria uma unidade no local 3,3,0 e add a lista de Unidades
-        Unit unit2 = CreateUnit(new Vector3Int(3, -4, 0), "Jogador 2");
-        Unit unit3 = CreateUnit(new Vector3Int(5, -1, 0), "Jogador 3");
-        Unit unitV = CreateUnit(new Vector3Int(5, -2, 0), "Vilao");
+        Unit unit1 = CreateUnit(new Vector3Int(-3, 1, 0), "Jogador 1"); // cria uma unidade no local 3,3,0 e add a lista de Unidades
+        Unit unit2 = CreateUnit(new Vector3Int(-4, 1, 0), "Jogador 2");
+        Unit unit3 = CreateUnit(new Vector3Int(-4, 0, 0), "Jogador 3");
+        Unit unitV = CreateUnit(new Vector3Int(-3, 0, 0), "Vilao");
         StateMachineController.instance.units.Add(unitV); // indice 0 na lista units
         AtribuiValores(unitV, '0');
         StateMachineController.instance.units.Add(unit1); // indice 1 na lista
@@ -60,15 +60,15 @@ public class MapLoader : MonoBehaviour
         //Rodrigo --> é um herói
         _unidade.equipe = '1';
         _unidade.atk = 1;
-        _unidade.mana = 1;
+        _unidade.mana = 0;
         _unidade.hp = 4;
         }
         else if (_classe == '0'){
         //Rodrigo --> é um vilão
         _unidade.equipe = '0';
         _unidade.atk = 2;
-        _unidade.mana = 2;
-        _unidade.hp = 9;
+        _unidade.mana = 0;
+        _unidade.hp = 5;
         }
 
     }

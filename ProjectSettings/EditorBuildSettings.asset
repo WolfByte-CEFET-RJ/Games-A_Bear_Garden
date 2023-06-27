@@ -9,7 +9,10 @@ EditorBuildSettings:
     path: Assets/Menu/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Labirinto/Labirinto.unity
+    path: Assets/Labirinto/Scenes/Labirinto.unity
     guid: 2b5ef2c878f2c6e4fbcad3adec465d84
+  - enabled: 1
+    path: Assets/Labirinto/Scenes/FinalDoJogo.unity
+    guid: 5b45aea64e4e3c24cbcda762db8bfeb4
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: a3c1eb1b3f85573459168f69dc8a8b5c, type: 2}

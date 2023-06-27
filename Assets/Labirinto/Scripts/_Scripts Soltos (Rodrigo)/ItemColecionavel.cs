@@ -28,6 +28,8 @@ public class ItemColecionavel : MonoBehaviour
                     {
                         Turnos.unit.mana += 20;
                         condition = false;
+
+                        if(Turnos.unit.mana > 20) Turnos.unit.mana = 20;    //restringe a mana máxima a 20
                     }
                 }
                 else if(Turnos.unit.equipe == '1'){ //Rodrigo --> Adiciona 10 de mana se for o herói
@@ -35,6 +37,8 @@ public class ItemColecionavel : MonoBehaviour
                     {
                         Turnos.unit.mana += 10;
                         condition = false;
+
+                        if(Turnos.unit.mana > 20) Turnos.unit.mana = 20;    //restringe a mana máxima a 20
                     }                
                 }
                 //Debug.Log("COLIDIUU");
