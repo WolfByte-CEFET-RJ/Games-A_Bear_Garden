@@ -14,6 +14,8 @@ public class vidaBase : MonoBehaviour
     private TropasStats _stats;
 
     [SerializeField] private bool isPlayer;
+    private Animator anim;
+    [SerializeField] private Animator personAnim;
 
     public float Vida { get => vida; private set => vida = value; }
 
@@ -22,6 +24,7 @@ public class vidaBase : MonoBehaviour
         vidaMax = vida = 45f;                                                    // Inicia com a vida cheia
         // ^ "100" trocado para "100f" pois os ataques (trabalhados no futuro) são float, portanto, a variável também é [Rodrigo]
         barraVida.value = 1;                                         // Atribui o valor inicial da vida para a barra na tela
+        anim = GetComponent<Animator>();
     }
 
    //void Update()
@@ -65,10 +68,19 @@ public class vidaBase : MonoBehaviour
         }
         if(vida <= 0)
         {
+            personAnim.SetTrigger("die");
             if (isPlayer)
+            {
                 VictoryControl.instance.PlayerVictory();
+                if(gameObject.tag == "baseAmiga")
+                    anim.Play("TorreVilaoCaindo");
+            }               
             else
+            {
                 VictoryControl.instance.BossVictory();
+                if (gameObject.tag == "baseInimiga")
+                    anim.Play("TorreHeroiCaindo");
+            }                
         }
         /*      VERSÃO DO FELIPE
         void OnCollisionEnter2D(Collision2D col){

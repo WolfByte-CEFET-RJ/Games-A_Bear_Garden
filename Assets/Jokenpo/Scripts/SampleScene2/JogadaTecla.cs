@@ -13,8 +13,8 @@ public class JogadaTecla : MonoBehaviour
     public bool Resp2 { get{return this.resp2;} set { resp2 = value; } } 
     public bool Respostas { get{return this.respostas;}set { respostas = value; } }
     public GameObject playerJogou, vilaoJogou; //Daniel --> GameObjects dos popups para mostrar quem fez a jogada na tela    
-    [SerializeField] private GameObject playerBox, bossBox;
-
+    
+    //private int playerPlay, bossPlay;
     private static bool woPlayer = false, woVilao = false;
     [Header("Sounds Config")]
     private AudioSource AS;
@@ -167,17 +167,17 @@ public class JogadaTecla : MonoBehaviour
 
     void checaJogada() //Daniel --> Verifica quem fez a jogada para mostrar na tela
     {
-        if(resp1) StartCoroutine(tempoPopuP(playerJogou, playerBox));
-        if(resp2) StartCoroutine(tempoPopuP(vilaoJogou, bossBox));
+        if(resp1) StartCoroutine(tempoPopuP(playerJogou));
+        if(resp2) StartCoroutine(tempoPopuP(vilaoJogou));
     }
 
-    public IEnumerator tempoPopuP(GameObject x, GameObject x2) //Daniel --> Indicar quem ganhou na tela e 1,5 segundos depois tirar.
+    public IEnumerator tempoPopuP(GameObject x) //Daniel --> Indicar quem ganhou na tela e 1,5 segundos depois tirar.
     {
         x.SetActive(true);
-        x2.SetActive(true);
+        //x2.SetActive(true);      
         yield return new WaitForSeconds(1.5f); //Altere esse valor para mudar os segundos.
         x.SetActive(false);
-        x2.SetActive(false);
+        //x2.SetActive(false);
     }
 
     /*  minha cola, ignorem

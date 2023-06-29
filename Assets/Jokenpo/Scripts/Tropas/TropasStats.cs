@@ -26,7 +26,7 @@ public class TropasStats : MonoBehaviour
     public void Pedra()
     {
         trp_vida = 6;
-        trp_atk = 2;
+        trp_atk = 3;
         trp_spd = 0.05f;
     }
 

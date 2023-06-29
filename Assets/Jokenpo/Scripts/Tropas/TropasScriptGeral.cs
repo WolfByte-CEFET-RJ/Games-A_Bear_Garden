@@ -15,6 +15,7 @@ public class TropasScriptGeral : MonoBehaviour
 
     private AudioClip actualAttack;
     private AudioSource AS;
+    private Animator anim;
     /*  Joel ---> Cola para a logica do som do ataque da tropa
     GetSFX(0) -> Comum
     GetSFX(1) -> papel
@@ -25,6 +26,7 @@ public class TropasScriptGeral : MonoBehaviour
     void Awake()    //Rodrigo --> inicialização dos stats da tropa 
     {
         _stats = FindObjectOfType<vidaBase>().GetComponent<TropasStats>();//Joel ---> Refatoracao do sistema envolvendo esse script: Em vez de todas as tropas possuirem e acessarem ele de si mesmas,
+        anim = GetComponent<Animator>();
         //agora esse script estara apenas nas bases, e por esse comando, todas as tropas poderao acessar de la. O primeiro Find e pra garantir de que estou olhando para uma base, procurando um obj com 
         //VidaBase anexado. Depois, a partir desse obj, pego o script TropasStats dele.
         if(this.gameObject.tag == "TropaBasica")
@@ -80,6 +82,12 @@ public class TropasScriptGeral : MonoBehaviour
         if(other.gameObject.tag == "baseAmiga" || other.gameObject.tag == "baseInimiga")
         {
             vida = 0;
+            if (gameObject.name.StartsWith("papel"))
+                anim.Play("PapelAtaque");
+            else if (gameObject.name.StartsWith("pedra"))
+                anim.Play("PedraAtaque");
+            else if(gameObject.name.StartsWith("tesoura"))
+                anim.Play("TesouraAtaque");
             StartCoroutine(Death());
         }
         if(this.gameObject.tag == "TropaBasica" && !created && (other.gameObject.tag == "SupertropaPapel" || other.gameObject.tag == "SupertropaPedra" || other.gameObject.tag == "SupertropaTesoura"))

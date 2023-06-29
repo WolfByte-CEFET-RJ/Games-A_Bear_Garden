@@ -18,6 +18,9 @@ public class TeclaResposta : MonoBehaviour
     private float temporizador;
     private JogadaTecla jogTc;
 
+    [SerializeField] private GameObject playerMaskBox;
+    [SerializeField] private GameObject bossMaskBox;
+
     void Start()
     {
         spawnPlayer = GameObject.FindGameObjectWithTag("spawnPlayer");
@@ -94,10 +97,10 @@ public class TeclaResposta : MonoBehaviour
 
     public IEnumerator resultado(string situacao)
     {
-        //Daniel --> Corrotina para mostrar a situa��o na tela e depois de 2 segundos limpar.
+        //Daniel --> Corrotina para mostrar a situacao na tela e depois de 2 segundos limpar.        
         resultadoText.text = situacao;
         yield return new WaitForSeconds(2f); //Altere esse valor para mudar os segundos.
-        resultadoText.text = "";
+        resultadoText.text = "";       
     }
 
     void playerWin(int spawnIndex) //Daniel --> Spawnar tropas do player de acordo com resultado da partida caso ele ganhe
