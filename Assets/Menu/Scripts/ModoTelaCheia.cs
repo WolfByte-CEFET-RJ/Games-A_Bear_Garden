@@ -6,9 +6,8 @@ using UnityEngine.UI;
 
 public class ModoTelaCheia : MonoBehaviour
 {
-    private int _modoTelaCheia = 0;
+    private int _modoTelaCheia;
     public Text _txtTela;
-
 
     void Start()
     {
@@ -55,6 +54,6 @@ public class ModoTelaCheia : MonoBehaviour
             _txtTela.text = "Ligado";
         }
         PlayerPrefs.SetInt("_modoTelaCheia", _modoTelaCheia);
-        _modoTelaCheia = PlayerPrefs.GetInt("_modoTeleCheia");
+        _modoTelaCheia = PlayerPrefs.GetInt("_modoTelaCheia");
     }
 }

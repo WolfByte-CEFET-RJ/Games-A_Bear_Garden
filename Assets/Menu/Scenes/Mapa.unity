@@ -1435,7 +1435,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &450268512
 Transform:
   m_ObjectHideFlags: 0
@@ -6833,6 +6833,88 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0.32599998
       objectReference: {fileID: 0}
+    - target: {fileID: 6440069947412045117, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069947412045122, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 836.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069947412045122, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 434.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069947412045122, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069947412045122, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -52.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069947412045123, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_Text
+      value: "Desafio de Naves:\r\nPrepare-se para uma intensa batalha de armas entre
+        o chefe e os her\xF3is! Seu objetivo \xE9 atirar impiedosamente em seus inimigos
+        e sobreviver para ganhar esse minijogo ca\xF3tico! Quem ser\xE1 o \xFAltimo
+        em p\xE9?\r\n\r\nControles:\r\nHer\xF3is:\r\nJogador 1: A e D para se mover,
+        W para atirar.\r\nJogador 2: F e H para se mover, T para atirar. \r\nJogador
+        3: J e L para se mover, I para atirar. \r\n\r\nVil\xE3o:\r\nSetas laterais
+        para se mover, Seta para cima para tiro comum, Seta para baixo para tiro
+        especial."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069947992951624, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 836.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069947992951624, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 434.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069947992951624, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069947992951624, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -52.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069947992951625, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_Text
+      value: "Desafio do Labirinto:\nObjetivo:\r\nBem-vindo \xE0 Ilha das Confus\xF5es!
+        Os her\xF3is devem encontrar power-ups no labirinto e derrotar o terr\xEDvel
+        vil\xE3o antes que ele os ven\xE7a!\r\n\r\nControles:\r\nHer\xF3is:\r\nMovimento:
+        escolha a dire\xE7\xE3o a seguir.\r\nA\xE7\xE3o: use os power-ups para atacar
+        o chefe!\r\nTerceira escolha: indispon\xEDvel.\r\nQuarta escolha: passe o
+        turno!\r\nVil\xE3o:\r\nMovimento: selecione o local para ir!\r\nA\xE7\xE3o:
+        ataque os her\xF3is com power-ups!\r\nTerceira escolha: coloque armadilhas
+        para atrapalhar os her\xF3is!\r\nQuarta escolha: passe o turno!\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069947992951627, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069948020460509, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 836.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069948020460509, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 434.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069948020460509, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069948020460509, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -52.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069948020460510, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6440069948442100635, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -6864,6 +6946,62 @@ PrefabInstance:
     - target: {fileID: 6440069948442100635, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069948845156285, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069948845156288, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 836.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069948845156288, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 434.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069948845156288, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069948845156288, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -52.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069948845156290, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_Text
+      value: "Desafio de Jokenpo:\nObjetivo:\r\nAh, o cl\xE1ssico Pedra, Papel e
+        Tesoura. Mas n\xE3o se engane, nada nesse mundo \xE9 o que parece.\r\nO objetivo
+        aqui ser\xE1 destruir a base do seu oponente. Para isso, todos contar\xE3o
+        com tropas que ser\xE3o invocadas de tempos em tempos.\r\nQuando o tempo
+        ficar verde, os her\xF3is e o vil\xE3o poder\xE3o escolher entre Pedra, Papel
+        ou Tesoura e, se ganharem, ter\xE3o mais uma tropa para ajudar nessa miss\xE3o!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069949027091876, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_Text
+      value: "Informa\xE7\xF5es:\n\n\xC9 preciso 4 jogadores, sendo um vil\xE3o.\n\nObjetivos:\n\nComo
+        <color=red>Vil\xE3o</color>, voc\xEA precisar\xE1 definir a ordem dos desafios
+        do seu covil.\n\nComo <color=blue>Jogador</color>, voc\xEAs precisar\xE3o
+        pontuar nos desafios e avan\xE7ando pelo covil do vil\xE3o."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069949027091879, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069949027091882, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 836.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069949027091882, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 434.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069949027091882, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440069949027091882, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -52.27
       objectReference: {fileID: 0}
     - target: {fileID: 6440069949262577931, guid: df8aed0fc2313b04190193de12ad270a, type: 3}
       propertyPath: m_IsActive
