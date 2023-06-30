@@ -16,11 +16,13 @@ public class Movimento : MonoBehaviour
 
     [SerializeField] private AudioClip playerWalkSfx;
     [SerializeField] private AudioClip bossWalkSfx;
+    private Animator anim;
     void Awake()
     {
         jumper = transform.Find("Jumper");
         SR = GetComponentInChildren<SpriteRenderer>();
         AS = GetComponent<AudioSource>();
+        anim = GetComponentInChildren<Animator>();
     }
     private void Start()
     {
@@ -34,10 +36,12 @@ public class Movimento : MonoBehaviour
     public void PlayWalkSound()//Tocar o clipe a partir do MoveSequenceState, porque se fosse daqui, ele ficaria resetando varias vezes
     {
         AS.Play();
+        AnimController.SetInt(anim, 1);
     }
     public void StopSound()
     {
         AS.Stop();
+        AnimController.SetInt(anim, 0);
     }
     public IEnumerator Move(List<TileLogic> path)// Divide a função ou tarefa em vários frames
     {
@@ -61,16 +65,21 @@ public class Movimento : MonoBehaviour
     IEnumerator Walk(TileLogic to)
     {
         int id = LeanTween.move(transform.gameObject,to.worldPos, MoveSpeed).id;// cria um ID único enquanto esta se movendo(pega a posição desse objeto e o leva para a posição final em X tempo )
+        if (transform.position.x >= to.worldPos.x)
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        else
+            transform.eulerAngles = new Vector3(0, 180, 0);
         tileAtual = to;
 
         yield return new WaitForSeconds(MoveSpeed*0.5f);// espera o tempo de movimento
         SR.sortingOrder = to.contentOrder;
-
+        
         while(LeanTween.descr(id)!=null)
         {
             yield return null;//pula para o proximo frame
         }
         //to.content = this.gameObject;
+
     }
 
     IEnumerator Jump(TileLogic to)

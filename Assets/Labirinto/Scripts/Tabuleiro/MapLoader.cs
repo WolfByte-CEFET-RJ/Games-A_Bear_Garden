@@ -58,29 +58,43 @@ public class MapLoader : MonoBehaviour
         //Rodrigo --> Método utilizado para atribuir os valores de equipe, ataque e vida às unidades dependendo se suas "classes" (herói ou vilão)
         if (_classe == '1'){
         //Rodrigo --> é um herói
-        _unidade.equipe = '1';
-        _unidade.atk = 1;
-        _unidade.mana = 0;
-        _unidade.hp = 4;
+            _unidade.equipe = '1';
+            _unidade.atk = 1;
+            _unidade.mana = 0;
+            _unidade.hp = 4;
+            //Animator anim = _unidade.GetComponent<Animator>();
+            //if(anim != null)
+            //{
+            //    Debug.Log("atribuindo animators");
+            //    if(_unidade.name.Contains("1"))//Se e o Jogador1, ou seja, o arqueiro
+            //        anim.runtimeAnimatorController = AnimController.SetAnimController(0);
+            //    else if(_unidade.name.Contains("2"))//Jogador2 - Guerreiro
+            //        anim.runtimeAnimatorController = AnimController.SetAnimController(1);
+            //    else//Jogador3 - mago
+            //        anim.runtimeAnimatorController = AnimController.SetAnimController(2);
+            //}
         }
         else if (_classe == '0'){
-        //Rodrigo --> é um vilão
-        _unidade.equipe = '0';
-        _unidade.atk = 2;
-        _unidade.mana = 0;
-        _unidade.hp = 5;
+            //Rodrigo --> é um vilão
+            _unidade.equipe = '0';
+            _unidade.atk = 2;
+            _unidade.mana = 0;
+            _unidade.hp = 5;
+            //Animator anim = _unidade.GetComponent<Animator>();
+            //if (anim != null)
+            //    anim.runtimeAnimatorController = AnimController.SetAnimController(3);
         }
 
     }
-
+    int cont = 0;
     public Unit CreateUnit(Vector3Int pos, string name)
     {
         TileLogic t = Tabuleiro.GetTile(pos);
-        Unit unit = Instantiate(unitPrefab, t.worldPos, Quaternion.identity, holder.transform);
+        Unit unit = Instantiate(AnimController.GetUnitPrefab(cont), t.worldPos, Quaternion.identity, holder.transform);
         unit.tile = t;
         unit.name = name;
         t.content = unit.gameObject;
-
+        cont++;
         for(int i=0; i<unit.stats.stats.Count; i++)
         {
             unit.stats.stats[i].value = Random.Range(1,100);

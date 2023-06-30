@@ -15,6 +15,9 @@ public class PerformaceHabilidadeState : State
     {
         
         yield return null;
+        Animator anim = Turnos.unit.GetComponentInChildren<Animator>();
+        if (anim != null)
+            AnimController.SetTrigger(anim, "atk");
         AudioController.AttackSound(Turnos.unit.name);
         Turnos.habilidade.Efeito();
         yield return null;
