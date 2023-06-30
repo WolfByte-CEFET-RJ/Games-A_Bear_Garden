@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.5}
   m_Children: []
   m_Father: {fileID: 3730179925075588018}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &434415534032510464
 SpriteRenderer:
@@ -379,8 +379,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3730179925298880454}
   - {fileID: 361257456569518594}
+  - {fileID: 3730179925298880454}
   m_Father: {fileID: 3730179924340375547}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -394,7 +394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3730179925298880454}
   - component: {fileID: 3730179925298880449}
-  - component: {fileID: 7888635193297729969}
+  - component: {fileID: 6243736099684265420}
   m_Layer: 0
   m_Name: 'Sprite '
   m_TagString: Untagged
@@ -414,7 +414,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.5}
   m_Children: []
   m_Father: {fileID: 3730179925075588018}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3730179925298880449
 SpriteRenderer:
@@ -468,7 +468,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7888635193297729969
+--- !u!95 &6243736099684265420
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -478,7 +478,7 @@ Animator:
   m_GameObject: {fileID: 3730179925298880448}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5888d08fb52fa42408c67664b101e3eb, type: 2}
+  m_Controller: {fileID: 9100000, guid: b48f2a8f04011314e8085e06df96b545, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

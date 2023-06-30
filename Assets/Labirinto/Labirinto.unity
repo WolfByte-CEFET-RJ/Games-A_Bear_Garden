@@ -12237,6 +12237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d9d4c5db29f4b448ad520a6afcf814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  victory: 
 --- !u!114 &1508312135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12249,8 +12250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf65073649363f646a91a7bebc835e53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minutos: 0
-  segundos: 0
   tempTxt: {fileID: 1370244582}
 --- !u!1 &1508839845
 GameObject:
@@ -15525,6 +15524,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2042858414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2042858415}
+  - component: {fileID: 2042858416}
+  m_Layer: 0
+  m_Name: New Animation Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2042858415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042858414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.7036927, y: 2.720935, z: -6.4162188}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2042858416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042858414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc7aba4bca408241ad99bc1683f68c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arqueiro: {fileID: 2167098474695380184, guid: af752632450dab745b00c7f0d1f671f2, type: 3}
+  guerreiro: {fileID: 2167098474695380184, guid: c45d67e514438e24290dce72d27d9690, type: 3}
+  mago: {fileID: 2167098474695380184, guid: 907507ae09ae7fe45a4870ca49aa85ff, type: 3}
+  vilao: {fileID: 2167098474695380184, guid: 2f8f7fee58be65740a629a25f96f29c9, type: 3}
 --- !u!4 &2043082523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8566673279068610178, guid: 4fc797185012daa49ba72766e3c5ce76, type: 3}
