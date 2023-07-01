@@ -18,7 +18,7 @@ public class GameTimer : MonoBehaviour
     {
         //Rodrigo --> aqui, todas as variáveis recebem seus valores
         _scriptDeath = GameObject.Find("EventSystem").GetComponent<PlayerDeath>();
-        minutos = 5; segundos = 0;
+        minutos = 7; segundos = 0;
         temporizador = 0;
         tempoInt = 0;
         j = true;
