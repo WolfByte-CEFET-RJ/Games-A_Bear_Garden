@@ -36,11 +36,10 @@ public class UiPlayers : MonoBehaviour
     }
     void Update()
     {
-        if(players.Count >= 3)
-        {
+        
             ManageLifeBarUI();
             ManageManaBarUI();
-        }
+        
         
     }
 
@@ -52,28 +51,74 @@ public class UiPlayers : MonoBehaviour
             switch(target.name)
             {
                 case "Vilao":
-                    lifeBars[0].transform.DOScaleX(lentghsOfLifeBars[0] - 0.3f,2);
-                    lentghsOfLifeBars[0] = lentghsOfLifeBars[0] - 0.3f;
-                    target = null;
+                    
+                    if(lentghsOfLifeBars[0] - 0.4f >= 0)
+                    {
+                        lifeBars[0].transform.DOScaleX(lentghsOfLifeBars[0] - 0.4f,2);
+                        lentghsOfLifeBars[0] = lentghsOfLifeBars[0] - 0.4f;
+                        Debug.Log(lentghsOfLifeBars[0]);
+                        
+                    }
+                    else
+                    {
+                        lifeBars[0].transform.DOScaleX(0,2);
+                    }
+
+                        target = null;
+
                     break;
 
                 case "Jogador 1":
-                    lifeBars[1].transform.DOScaleX(lentghsOfLifeBars[1] - 0.5f,2);
-                    lentghsOfLifeBars[1] = lentghsOfLifeBars[1] - 0.5f;
-                    target = null;
+                    
+                    if(lentghsOfLifeBars[1] - (Turnos.unit.atk*0.5f) >= 0)
+                    {
+                        lifeBars[1].transform.DOScaleX(lentghsOfLifeBars[1] - (Turnos.unit.atk*0.5f),2);
+                        lentghsOfLifeBars[1] = lentghsOfLifeBars[1] - (Turnos.unit.atk*0.5f);
+                        Debug.Log("Comprimento da barra de vida heroi: "+lentghsOfLifeBars[1]);
+                        
+                    }
+                    else
+                    {
+                        lifeBars[1].transform.DOScaleX(0,2);
+                    }
+                        target = null;
                     break;
 
                 case "Jogador 2":
-                    lifeBars[2].transform.DOScaleX(lentghsOfLifeBars[2] - 0.5f,2);
-                    lentghsOfLifeBars[2] = lentghsOfLifeBars[2] - 0.5f;
-                    target = null;
+                    
+                    if(lentghsOfLifeBars[2] - (Turnos.unit.atk*0.5f) >= 0)
+                    {
+                        lifeBars[2].transform.DOScaleX(lentghsOfLifeBars[2] - (Turnos.unit.atk*0.5f),2);
+                        lentghsOfLifeBars[2] = lentghsOfLifeBars[2] - (Turnos.unit.atk*0.5f);
+                        Debug.Log("Comprimento da barra de vida heroi: "+lentghsOfLifeBars[2]);
+                        
+                    }
+                    else
+                    {
+                        lifeBars[2].transform.DOScaleX(0,2);
+                    }
+
+                        target = null;
                     break;
 
                 case "Jogador 3":
-                    lifeBars[3].transform.DOScaleX(lentghsOfLifeBars[3] - 0.5f,2);
-                    lentghsOfLifeBars[3] = lentghsOfLifeBars[3] - 0.5f;
-                    target = null;
+                    
+                    if(lentghsOfLifeBars[3] - (Turnos.unit.atk*0.5f) >= 0)
+                    {
+                        lifeBars[3].transform.DOScaleX(lentghsOfLifeBars[3] - (Turnos.unit.atk*0.5f),2);
+                        lentghsOfLifeBars[3] = lentghsOfLifeBars[3] - (Turnos.unit.atk*0.5f);
+                        Debug.Log("Comprimento da barra de vida heroi: "+lentghsOfLifeBars[3]);
+                        
+                    }
+                    else
+                    {
+                        lifeBars[3].transform.DOScaleX(0,2);
+                    }
+
+                        target = null;
                     break;
+
+                
             }
         }
         
@@ -114,6 +159,8 @@ public class UiPlayers : MonoBehaviour
                     manaBars[3].transform.DOScaleX(Turnos.unit.mana * 0.1f,2);
                     target = null;
                     break;
+                
+                
             }
         }
         
