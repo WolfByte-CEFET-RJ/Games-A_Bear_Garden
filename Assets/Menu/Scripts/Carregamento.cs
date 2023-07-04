@@ -32,4 +32,11 @@ public class Carregamento : MonoBehaviour
             yield return null;
 		}
 	}
+
+	// Método para voltar para o menu quando estiver nos creditos - Natty
+	private void Update()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 5 && Input.anyKeyDown)
+			StartCoroutine(LoadAsynchronously("Menu"));
+    }
 }
