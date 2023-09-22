@@ -42,13 +42,13 @@ public class Mute : MonoBehaviour {
         if (muted == false)
         {
             muted = true;
-            //AudioListener.pause = true;
+            AudioListener.pause = true;
             //AudioListener.volume = 0.0001f; //Natty
         }
         else
         {
             muted = false;
-            //AudioListener.pause = false;
+            AudioListener.pause = false;
             //AudioListener.volume = 1f;  //Natty
         }
         UpdateButtonIcon();

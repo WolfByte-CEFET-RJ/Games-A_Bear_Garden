@@ -41,6 +41,7 @@ public class ModoTelaCheia : MonoBehaviour
 
     public void telaCheiaConfig()
     {
+        Debug.Log(_modoTelaCheia);
         if (_modoTelaCheia == 1)
         {
             Screen.fullScreen = false;
